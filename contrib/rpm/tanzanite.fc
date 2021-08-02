@@ -1,0 +1,8 @@
+/usr/bin/tanzanite-cli		--	gen_context(system_u:object_r:tanzanite_exec_t,s0)
+/usr/sbin/tanzanited		--	gen_context(system_u:object_r:tanzanite_exec_t,s0)
+/usr/lib(64)?/tanzanite/tanzanited		--	gen_context(system_u:object_r:tanzanite_exec_t,s0)
+
+/etc/tanzanite(/.*)?		gen_context(system_u:object_r:tanzanite_conf_t,s0)
+/var/lib/tanzanite(/.*)?		gen_context(system_u:object_r:tanzanite_var_lib_t,s0)
+
+(/var)?/run/tanzanited(/.*)?   gen_context(system_u:object_r:tanzanite_var_run_t,s0)

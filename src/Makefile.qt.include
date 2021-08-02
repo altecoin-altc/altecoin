@@ -1,0 +1,860 @@
+# Copyright (c) 2013-2016 The Bitcoin Core developers
+# Distributed under the MIT software license, see the accompanying
+# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+bin_PROGRAMS += qt/tanzanite-qt
+EXTRA_LIBRARIES += qt/libbitcoinqt.a
+
+# tanzanite qt core #
+QT_TS = \
+  qt/locale/tanzanite_bg.ts \
+  qt/locale/tanzanite_ca.ts \
+  qt/locale/tanzanite_cs.ts \
+  qt/locale/tanzanite_da.ts \
+  qt/locale/tanzanite_de.ts \
+  qt/locale/tanzanite_en.ts \
+  qt/locale/tanzanite_en_GB.ts \
+  qt/locale/tanzanite_en_US.ts \
+  qt/locale/tanzanite_eo.ts \
+  qt/locale/tanzanite_es.ts \
+  qt/locale/tanzanite_es_ES.ts \
+  qt/locale/tanzanite_fi.ts \
+  qt/locale/tanzanite_fr_FR.ts \
+  qt/locale/tanzanite_hi_IN.ts \
+  qt/locale/tanzanite_hr.ts \
+  qt/locale/tanzanite_hr_HR.ts \
+  qt/locale/tanzanite_it.ts \
+  qt/locale/tanzanite_ja.ts \
+  qt/locale/tanzanite_ko_KR.ts \
+  qt/locale/tanzanite_lt_LT.ts \
+  qt/locale/tanzanite_nl.ts \
+  qt/locale/tanzanite_pl.ts \
+  qt/locale/tanzanite_pt.ts \
+  qt/locale/tanzanite_pt_BR.ts \
+  qt/locale/tanzanite_ro_RO.ts \
+  qt/locale/tanzanite_ru.ts \
+  qt/locale/tanzanite_sk.ts \
+  qt/locale/tanzanite_sv.ts \
+  qt/locale/tanzanite_tr.ts \
+  qt/locale/tanzanite_uk.ts \
+  qt/locale/tanzanite_vi.ts \
+  qt/locale/tanzanite_zh_CN.ts \
+  qt/locale/tanzanite_zh_TW.ts
+
+QT_FORMS_UI = \
+  qt/forms/addressbookpage.ui \
+  qt/forms/askpassphrasedialog.ui \
+  qt/forms/coincontroldialog.ui \
+  qt/forms/blockexplorer.ui \
+  qt/forms/editaddressdialog.ui \
+  qt/forms/governancepage.ui \
+  qt/forms/helpmessagedialog.ui \
+  qt/forms/intro.ui \
+  qt/forms/openuridialog.ui \
+  qt/forms/optionsdialog.ui \
+  qt/forms/rpcconsole.ui \
+  qt/tanzanite/forms/loadingdialog.ui \
+  qt/forms/zpivcontroldialog.ui \
+  qt/tanzanite/forms/snackbar.ui \
+  qt/tanzanite/forms/navmenuwidget.ui \
+  qt/tanzanite/forms/lockunlock.ui \
+  qt/tanzanite/forms/expandablebutton.ui \
+  qt/tanzanite/forms/receivedialog.ui \
+  qt/tanzanite/forms/walletpassworddialog.ui \
+  qt/tanzanite/forms/topbar.ui \
+  qt/tanzanite/forms/txrow.ui \
+  qt/tanzanite/forms/dashboardwidget.ui \
+  qt/tanzanite/forms/coincontrolpivwidget.ui \
+  qt/tanzanite/forms/addresslabelrow.ui \
+  qt/tanzanite/forms/contactdropdownrow.ui \
+  qt/tanzanite/forms/mninfodialog.ui \
+  qt/tanzanite/forms/optionbutton.ui \
+  qt/tanzanite/forms/masternodewizarddialog.ui \
+  qt/tanzanite/forms/mnrow.ui \
+  qt/tanzanite/forms/masternodeswidget.ui \
+  qt/tanzanite/forms/myaddressrow.ui \
+  qt/tanzanite/forms/csrow.ui \
+  qt/tanzanite/forms/sendchangeaddressdialog.ui \
+  qt/tanzanite/forms/sendconfirmdialog.ui \
+  qt/tanzanite/forms/sendcustomfeedialog.ui \
+  qt/tanzanite/forms/sendchangeaddressdialog.ui \
+  qt/tanzanite/forms/sendmultirow.ui \
+  qt/tanzanite/forms/send.ui \
+  qt/tanzanite/forms/addnewaddressdialog.ui \
+  qt/tanzanite/forms/addnewcontactdialog.ui \
+  qt/tanzanite/forms/requestdialog.ui \
+  qt/tanzanite/forms/receivewidget.ui \
+  qt/tanzanite/forms/tooltipmenu.ui \
+  qt/tanzanite/forms/addresseswidget.ui \
+  qt/tanzanite/forms/defaultdialog.ui \
+  qt/tanzanite/forms/denomgenerationdialog.ui \
+  qt/tanzanite/forms/privacywidget.ui \
+  qt/tanzanite/forms/coldstakingwidget.ui \
+  qt/tanzanite/settings/forms/settingsbackupwallet.ui \
+  qt/tanzanite/settings/forms/settingsbittoolwidget.ui \
+  qt/tanzanite/settings/forms/settingsconsolewidget.ui \
+  qt/tanzanite/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/tanzanite/settings/forms/settingsfaqwidget.ui \
+  qt/tanzanite/settings/forms/settingsinformationwidget.ui \
+  qt/tanzanite/settings/forms/settingsmainoptionswidget.ui \
+  qt/tanzanite/settings/forms/settingsmultisenddialog.ui \
+  qt/tanzanite/settings/forms/settingsmultisendwidget.ui \
+  qt/tanzanite/settings/forms/settingssignmessagewidgets.ui \
+  qt/tanzanite/settings/forms/settingswalletoptionswidget.ui \
+  qt/tanzanite/settings/forms/settingswalletrepairwidget.ui \
+  qt/tanzanite/settings/forms/settingswidget.ui \
+  qt/tanzanite/forms/welcomecontentwidget.ui \
+  qt/tanzanite/forms/splash.ui
+
+QT_MOC_CPP = \
+  qt/moc_addressbookpage.cpp \
+  qt/moc_addresstablemodel.cpp \
+  qt/moc_askpassphrasedialog.cpp \
+  qt/moc_bantablemodel.cpp \
+  qt/moc_bitcoinaddressvalidator.cpp \
+  qt/moc_bitcoinamountfield.cpp \
+  qt/tanzanite/moc_tanzanitegui.cpp \
+  qt/moc_bitcoinunits.cpp \
+  qt/moc_blockexplorer.cpp \
+  qt/moc_clientmodel.cpp \
+  qt/moc_coincontroldialog.cpp \
+  qt/moc_coincontroltreewidget.cpp \
+  qt/moc_csvmodelwriter.cpp \
+  qt/moc_editaddressdialog.cpp \
+  qt/moc_governancepage.cpp \
+  qt/moc_guiutil.cpp \
+  qt/moc_intro.cpp \
+  qt/moc_macdockiconhandler.cpp \
+  qt/moc_macnotificationhandler.cpp \
+  qt/moc_notificator.cpp \
+  qt/moc_openuridialog.cpp \
+  qt/moc_optionsdialog.cpp \
+  qt/moc_optionsmodel.cpp \
+  qt/moc_peertablemodel.cpp \
+  qt/moc_paymentserver.cpp \
+  qt/moc_qvalidatedlineedit.cpp \
+  qt/moc_qvaluecombobox.cpp \
+  qt/moc_proposalframe.cpp \
+  qt/moc_recentrequeststablemodel.cpp \
+  qt/moc_rpcconsole.cpp \
+  qt/moc_splashscreen.cpp \
+  qt/moc_trafficgraphwidget.cpp \
+  qt/moc_transactiondesc.cpp \
+  qt/moc_transactionfilterproxy.cpp \
+  qt/moc_transactiontablemodel.cpp \
+  qt/moc_utilitydialog.cpp \
+  qt/moc_walletmodel.cpp \
+  qt/tanzanite/moc_loadingdialog.cpp \
+  qt/moc_zpivcontroldialog.cpp \
+  qt/tanzanite/moc_pwidget.cpp \
+  qt/tanzanite/moc_snackbar.cpp \
+  qt/tanzanite/moc_navmenuwidget.cpp \
+  qt/tanzanite/moc_lockunlock.cpp \
+  qt/tanzanite/moc_expandablebutton.cpp \
+  qt/tanzanite/moc_furabstractlistitemdelegate.cpp \
+  qt/tanzanite/moc_receivedialog.cpp \
+  qt/tanzanite/moc_walletpassworddialog.cpp \
+  qt/tanzanite/moc_pfborderimage.cpp \
+  qt/tanzanite/moc_topbar.cpp \
+  qt/tanzanite/moc_txrow.cpp \
+  qt/tanzanite/moc_dashboardwidget.cpp \
+  qt/tanzanite/moc_coincontrolpivwidget.cpp \
+  qt/tanzanite/moc_addresslabelrow.cpp \
+  qt/tanzanite/moc_contactdropdownrow.cpp \
+  qt/tanzanite/moc_mninfodialog.cpp \
+  qt/tanzanite/moc_optionbutton.cpp \
+  qt/tanzanite/moc_coldstakingmodel.cpp \
+  qt/tanzanite/moc_mnmodel.cpp \
+  qt/tanzanite/moc_masternodewizarddialog.cpp \
+  qt/tanzanite/moc_mnrow.cpp \
+  qt/tanzanite/moc_masternodeswidget.cpp \
+  qt/tanzanite/moc_myaddressrow.cpp \
+  qt/tanzanite/moc_csrow.cpp \
+  qt/tanzanite/moc_contactsdropdown.cpp \
+  qt/tanzanite/moc_sendchangeaddressdialog.cpp \
+  qt/tanzanite/moc_sendconfirmdialog.cpp \
+  qt/tanzanite/moc_sendcustomfeedialog.cpp \
+  qt/tanzanite/moc_sendchangeaddressdialog.cpp \
+  qt/tanzanite/moc_sendmultirow.cpp \
+  qt/tanzanite/moc_send.cpp \
+  qt/tanzanite/moc_addnewaddressdialog.cpp \
+  qt/tanzanite/moc_addnewcontactdialog.cpp \
+  qt/tanzanite/moc_requestdialog.cpp \
+  qt/tanzanite/moc_receivewidget.cpp \
+  qt/tanzanite/moc_tooltipmenu.cpp \
+  qt/tanzanite/moc_addresseswidget.cpp \
+  qt/tanzanite/moc_defaultdialog.cpp \
+  qt/tanzanite/moc_denomgenerationdialog.cpp \
+  qt/tanzanite/moc_privacywidget.cpp \
+  qt/tanzanite/moc_coldstakingwidget.cpp \
+  qt/tanzanite/settings/moc_settingsbackupwallet.cpp \
+  qt/tanzanite/settings/moc_settingsbittoolwidget.cpp \
+  qt/tanzanite/settings/moc_settingsconsolewidget.cpp \
+  qt/tanzanite/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/tanzanite/settings/moc_settingsfaqwidget.cpp \
+  qt/tanzanite/settings/moc_settingsinformationwidget.cpp \
+  qt/tanzanite/settings/moc_settingsmainoptionswidget.cpp \
+  qt/tanzanite/settings/moc_settingsmultisenddialog.cpp \
+  qt/tanzanite/settings/moc_settingsmultisendwidget.cpp \
+  qt/tanzanite/settings/moc_settingssignmessagewidgets.cpp \
+  qt/tanzanite/settings/moc_settingswalletoptionswidget.cpp \
+  qt/tanzanite/settings/moc_settingswalletrepairwidget.cpp \
+  qt/tanzanite/settings/moc_settingswidget.cpp \
+  qt/tanzanite/moc_welcomecontentwidget.cpp \
+  qt/tanzanite/moc_splash.cpp
+
+BITCOIN_MM = \
+  qt/macdockiconhandler.mm \
+  qt/macnotificationhandler.mm
+
+QT_MOC = \
+  qt/tanzanite.moc \
+  qt/bitcoinamountfield.moc \
+  qt/intro.moc \
+  qt/rpcconsole.moc \
+  qt/tanzanite/settings/moc_settingsconsolewidget.cpp
+
+QT_QRC_CPP = qt/qrc_tanzanite.cpp
+QT_QRC = qt/tanzanite.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_tanzanite_locale.cpp
+QT_QRC_LOCALE = qt/tanzanite_locale.qrc
+
+PROTOBUF_CC = qt/paymentrequest.pb.cc
+PROTOBUF_H = qt/paymentrequest.pb.h
+PROTOBUF_PROTO = qt/paymentrequest.proto
+
+BITCOIN_QT_H = \
+  qt/addressbookpage.h \
+  qt/addresstablemodel.h \
+  qt/askpassphrasedialog.h \
+  qt/bantablemodel.h \
+  qt/bitcoinaddressvalidator.h \
+  qt/bitcoinamountfield.h \
+  qt/tanzanite/tanzanitegui.h \
+  qt/bitcoinunits.h \
+  qt/blockexplorer.h \
+  qt/clientmodel.h \
+  qt/coincontroldialog.h \
+  qt/coincontroltreewidget.h \
+  qt/csvmodelwriter.h \
+  qt/editaddressdialog.h \
+  qt/governancepage.h \
+  qt/guiconstants.h \
+  qt/guiutil.h \
+  qt/intro.h \
+  qt/macdockiconhandler.h \
+  qt/macnotificationhandler.h \
+  qt/networkstyle.h \
+  qt/notificator.h \
+  qt/openuridialog.h \
+  qt/optionsdialog.h \
+  qt/optionsmodel.h \
+  qt/paymentrequestplus.h \
+  qt/paymentserver.h \
+  qt/peertablemodel.h \
+  qt/platformstyle.h \
+  qt/proposalframe.h \
+  qt/qvalidatedlineedit.h \
+  qt/qvaluecombobox.h \
+  qt/recentrequeststablemodel.h \
+  qt/rpcconsole.h \
+  qt/splashscreen.h \
+  qt/trafficgraphwidget.h \
+  qt/transactiondesc.h \
+  qt/transactionfilterproxy.h \
+  qt/transactionrecord.h \
+  qt/transactiontablemodel.h \
+  qt/utilitydialog.h \
+  qt/walletmodel.h \
+  qt/walletmodeltransaction.h \
+  qt/tanzanite/prunnable.h \
+  qt/tanzanite/pfborderimage.h \
+  qt/tanzanite/loadingdialog.h \
+  qt/winshutdownmonitor.h \
+  qt/zpivcontroldialog.h \
+  qt/tanzanite/pwidget.h \
+  qt/tanzanite/guitransactionsutils.h \
+  qt/tanzanite/snackbar.h \
+  qt/tanzanite/navmenuwidget.h \
+  qt/tanzanite/lockunlock.h \
+  qt/tanzanite/receivedialog.h \
+  qt/tanzanite/furlistrow.h \
+  qt/tanzanite/furabstractlistitemdelegate.h \
+  qt/tanzanite/txviewholder.h \
+  qt/tanzanite/qtutils.h \
+  qt/tanzanite/expandablebutton.h \
+  qt/tanzanite/walletpassworddialog.h \
+  qt/tanzanite/topbar.h \
+  qt/tanzanite/txrow.h \
+  qt/tanzanite/addressholder.h \
+  qt/tanzanite/addressfilterproxymodel.h \
+  qt/tanzanite/dashboardwidget.h \
+  qt/tanzanite/coincontrolpivwidget.h \
+  qt/tanzanite/addresslabelrow.h \
+  qt/tanzanite/contactdropdownrow.h \
+  qt/tanzanite/mninfodialog.h \
+  qt/tanzanite/optionbutton.h \
+  qt/tanzanite/coldstakingmodel.h \
+  qt/tanzanite/mnmodel.h \
+  qt/tanzanite/masternodewizarddialog.h \
+  qt/tanzanite/mnrow.h \
+  qt/tanzanite/masternodeswidget.h \
+  qt/tanzanite/myaddressrow.h \
+  qt/tanzanite/csrow.h \
+  qt/tanzanite/contactsdropdown.h \
+  qt/tanzanite/sendchangeaddressdialog.h \
+  qt/tanzanite/sendconfirmdialog.h \
+  qt/tanzanite/sendcustomfeedialog.h \
+  qt/tanzanite/sendchangeaddressdialog.h \
+  qt/tanzanite/sendmultirow.h \
+  qt/tanzanite/send.h \
+  qt/tanzanite/addnewaddressdialog.h \
+  qt/tanzanite/addnewcontactdialog.h \
+  qt/tanzanite/requestdialog.h \
+  qt/tanzanite/receivewidget.h \
+  qt/tanzanite/tooltipmenu.h \
+  qt/tanzanite/addresseswidget.h \
+  qt/tanzanite/defaultdialog.h \
+  qt/tanzanite/denomgenerationdialog.h \
+  qt/tanzanite/privacywidget.h \
+  qt/tanzanite/coldstakingwidget.h \
+  qt/tanzanite/settings/settingsbackupwallet.h \
+  qt/tanzanite/settings/settingsbittoolwidget.h \
+  qt/tanzanite/settings/settingsconsolewidget.h \
+  qt/tanzanite/settings/settingsdisplayoptionswidget.h \
+  qt/tanzanite/settings/settingsfaqwidget.h \
+  qt/tanzanite/settings/settingsinformationwidget.h \
+  qt/tanzanite/settings/settingsmainoptionswidget.h \
+  qt/tanzanite/settings/settingsmultisenddialog.h \
+  qt/tanzanite/settings/settingsmultisendwidget.h \
+  qt/tanzanite/settings/settingssignmessagewidgets.h \
+  qt/tanzanite/settings/settingswalletoptionswidget.h \
+  qt/tanzanite/settings/settingswalletrepairwidget.h \
+  qt/tanzanite/settings/settingswidget.h \
+  qt/tanzanite/welcomecontentwidget.h \
+  qt/tanzanite/splash.h
+
+RES_ICONS = \
+  qt/res/icons/add.png \
+  qt/res/icons/address-book.png \
+  qt/res/icons/automint_active.png \
+  qt/res/icons/automint_inactive.png \
+  qt/res/icons/bitcoin.ico \
+  qt/res/icons/bitcoin.png \
+  qt/res/icons/bitcoin_testnet.ico \
+  qt/res/icons/bitcoin_testnet.png \
+  qt/res/icons/bitcoin_regtest.png \
+  qt/res/icons/browse.png \
+  qt/res/icons/clock1.png \
+  qt/res/icons/clock2.png \
+  qt/res/icons/clock3.png \
+  qt/res/icons/clock4.png \
+  qt/res/icons/clock5.png \
+  qt/res/icons/configure.png \
+  qt/res/icons/connect0_16.png \
+  qt/res/icons/connect1_16.png \
+  qt/res/icons/connect2_16.png \
+  qt/res/icons/connect3_16.png \
+  qt/res/icons/connect4_16.png \
+  qt/res/icons/debugwindow.png \
+  qt/res/icons/edit.png \
+  qt/res/icons/editcopy.png \
+  qt/res/icons/editpaste.png \
+  qt/res/icons/explorer.png \
+  qt/res/icons/export.png \
+  qt/res/icons/eye.png \
+  qt/res/icons/eye_minus.png \
+  qt/res/icons/eye_plus.png \
+  qt/res/icons/filesave.png \
+  qt/res/icons/history.png \
+  qt/res/icons/key.png \
+  qt/res/icons/lock_closed.png \
+  qt/res/icons/lock_open.png \
+  qt/res/icons/masternodes.png \
+  qt/res/icons/onion.png \
+  qt/res/icons/overview.png \
+  qt/res/icons/qrcode.png \
+  qt/res/icons/quit.png \
+  qt/res/icons/receive.png \
+  qt/res/icons/receive_dark.png \
+  qt/res/icons/privacy.png \
+  qt/res/icons/remove.png \
+  qt/res/icons/send.png \
+  qt/res/icons/send_dark.png \
+  qt/res/icons/governance.png \
+  qt/res/icons/governance_dark.png \
+  qt/res/icons/staking_active.png \
+  qt/res/icons/staking_inactive.png \
+  qt/res/icons/synced.png \
+  qt/res/icons/trade.png \
+  qt/res/icons/transaction0.png \
+  qt/res/icons/transaction2.png \
+  qt/res/icons/transaction_conflicted.png \
+  qt/res/icons/tx_inout.png \
+  qt/res/icons/tx_input.png \
+  qt/res/icons/tx_output.png \
+  qt/res/icons/tx_mined.png \
+  qt/res/icons/ic-transaction-received.svg \
+  qt/res/icons/ic-transaction-mint.svg \
+  qt/res/icons/ic-transaction-sent.svg \
+  qt/res/icons/ic-transaction-staked.svg \
+  qt/res/icons/unit_tanzanite.png \
+  qt/res/icons/unit_mtanzanite.png \
+  qt/res/icons/unit_utanzanite.png \
+  qt/res/icons/unit_ttanzanite.png \
+  qt/res/icons/unit_tmtanzanite.png \
+  qt/res/icons/unit_tutanzanite.png \
+  qt/res/icons/yesvote.png \
+  qt/res/icons/novote.png \
+  qt/res/icons/abstainvote.png \
+  qt/tanzanite/res/img/bg-dashboard-banner.png \
+  qt/tanzanite/res/img/bg-multi-number-dark.svg \
+  qt/tanzanite/res/img/ic-check-locked.svg \
+  qt/tanzanite/res/img/ic-nav-address.svg \
+  qt/tanzanite/res/img/ic-update.svg \
+  qt/tanzanite/res/img/bg-multi-number.svg \
+  qt/tanzanite/res/img/ic-check-mint-off.svg \
+  qt/tanzanite/res/img/ic-nav-cold-staking.svg \
+  qt/tanzanite/res/img/ic-nav-cold-staking-active.svg \
+  qt/tanzanite/res/img/ic-nav-dashboard-active.svg \
+  qt/tanzanite/res/img/ic-wallet-status-locked.svg \
+  qt/tanzanite/res/img/bg-splash.svg \
+  qt/tanzanite/res/img/bg-splash.png \
+  qt/tanzanite/res/img/ic-check-mint.svg \
+  qt/tanzanite/res/img/ic-nav-dashboard-hover.svg \
+  qt/tanzanite/res/img/ic-wallet-status-staking.svg \
+  qt/tanzanite/res/img/ic-check-peers-off.svg \
+  qt/tanzanite/res/img/ic-nav-dashboard.svg \
+  qt/tanzanite/res/img/ic-wallet-status-unlocked.svg \
+  qt/tanzanite/res/img/ic-check-peers.svg \
+  qt/tanzanite/res/img/ic-nav-master-active.svg \
+  qt/tanzanite/res/img/ic-watch-password-white.svg \
+  qt/tanzanite/res/img/bg-welcome-container.jpg \
+  qt/tanzanite/res/img/bg-welcome-container.png \
+  qt/tanzanite/res/img/bg-welcome-container.svg \
+  qt/tanzanite/res/img/bg-welcome-container@2x.png \
+  qt/tanzanite/res/img/bg-welcome-container@3x.png \
+  qt/tanzanite/res/img/ic-check-staking-off.svg \
+  qt/tanzanite/res/img/ic-nav-master-hover.svg \
+  qt/tanzanite/res/img/ic-watch-password.svg \
+  qt/tanzanite/res/img/bg-welcome.jpg \
+  qt/tanzanite/res/img/bg-welcome.svg \
+  qt/tanzanite/res/img/bg-welcome@2x.jpg \
+  qt/tanzanite/res/img/bg-welcome@3x.jpg \
+  qt/tanzanite/res/img/bg-welcome.png \
+  qt/tanzanite/res/img/ic-check-staking.svg \
+  qt/tanzanite/res/img/ic-nav-master.svg \
+  qt/tanzanite/res/img/img-dashboard-banner.jpg \
+  qt/tanzanite/res/img/btn-radio-active.svg \
+  qt/tanzanite/res/img/ic-check-sync-off.svg \
+  qt/tanzanite/res/img/ic-nav-privacy-active.svg \
+  qt/tanzanite/res/img/img-empty-contacts.svg \
+  qt/tanzanite/res/img/btn-radio-off.svg \
+  qt/tanzanite/res/img/ic-check-sync.png \
+  qt/tanzanite/res/img/ic-nav-privacy-hover.svg \
+  qt/tanzanite/res/img/img-empty-dark-contacts.svg \
+  qt/tanzanite/res/img/ic-contact-arrow-down.svg \
+  qt/tanzanite/res/img/ic-contact-arrow-down-white.svg \
+  qt/tanzanite/res/img/ic-check-sync.svg \
+  qt/tanzanite/res/img/ic-check-faq.svg \
+  qt/tanzanite/res/img/ic-nav-privacy.svg \
+  qt/tanzanite/res/img/img-empty-dark-error.svg \
+  qt/tanzanite/res/img/ic-add-label.svg \
+  qt/tanzanite/res/img/ic-pending.svg \
+  qt/tanzanite/res/img/ic-check-theme-dark.svg \
+  qt/tanzanite/res/img/ic-nav-receive-active.svg \
+  qt/tanzanite/res/img/img-empty-dark-masternode.svg \
+  qt/tanzanite/res/img/ic-add-liliac.svg \
+  qt/tanzanite/res/img/ic-check-theme-light.svg \
+  qt/tanzanite/res/img/ic-nav-receive-hover.svg \
+  qt/tanzanite/res/img/img-empty-dark-multisend.svg \
+  qt/tanzanite/res/img/ic-add-purple.svg \
+  qt/tanzanite/res/img/ic-check-white.svg \
+  qt/tanzanite/res/img/ic-nav-receive.svg \
+  qt/tanzanite/res/img/img-empty-dark-peers.svg \
+  qt/tanzanite/res/img/ic-add.svg \
+  qt/tanzanite/res/img/ic-check.svg \
+  qt/tanzanite/res/img/ic-nav-send-active.svg \
+  qt/tanzanite/res/img/img-empty-dark-staking-off.svg \
+  qt/tanzanite/res/img/img-empty-dark-staking-on.svg \
+  qt/tanzanite/res/img/ic-address-book-grey.svg \
+  qt/tanzanite/res/img/ic-chevron-left.svg \
+  qt/tanzanite/res/img/ic-nav-send-hover.svg \
+  qt/tanzanite/res/img/img-empty-dark-transactions.svg \
+  qt/tanzanite/res/img/ic-address-book-white.svg \
+  qt/tanzanite/res/img/ic-chevron-right.svg \
+  qt/tanzanite/res/img/ic-nav-send.svg \
+  qt/tanzanite/res/img/img-empty-error.svg \
+  qt/tanzanite/res/img/ic-address-book.svg \
+  qt/tanzanite/res/img/ic-clear-liliac.svg \
+  qt/tanzanite/res/img/ic-nav-settings-active.svg \
+  qt/tanzanite/res/img/img-empty-masternode.svg \
+  qt/tanzanite/res/img/ic-address-send-white.svg \
+  qt/tanzanite/res/img/ic-clear-purple.svg \
+  qt/tanzanite/res/img/ic-nav-settings-hover.svg \
+  qt/tanzanite/res/img/img-empty-multisend.svg \
+  qt/tanzanite/res/img/ic-address-send.svg \
+  qt/tanzanite/res/img/ic-close-white.svg \
+  qt/tanzanite/res/img/ic-nav-settings.svg \
+  qt/tanzanite/res/img/img-empty-peers.svg \
+  qt/tanzanite/res/img/img-empty-privacy.svg \
+  qt/tanzanite/res/img/img-empty-privacy-dark.svg \
+  qt/tanzanite/res/img/ic-arrow-drop-down-white.svg \
+  qt/tanzanite/res/img/ic-close.svg \
+  qt/tanzanite/res/img/ic-radio-liliac-on.svg \
+  qt/tanzanite/res/img/img-empty-staking-off.svg \
+  qt/tanzanite/res/img/ic-arrow-drop-down.svg \
+  qt/tanzanite/res/img/ic-coin-piv.svg \
+  qt/tanzanite/res/img/ic-receive-off.svg \
+  qt/tanzanite/res/img/img-empty-staking-on.svg \
+  qt/tanzanite/res/img/ic-arrow-drop-up-white.svg \
+  qt/tanzanite/res/img/ic-coin-zpiv.png \
+  qt/tanzanite/res/img/ic-receive-on.svg \
+  qt/tanzanite/res/img/img-empty-transactions.svg \
+  qt/tanzanite/res/img/ic-arrow-drop-up.svg \
+  qt/tanzanite/res/img/ic-coin-zpiv.svg \
+  qt/tanzanite/res/img/ic-received.svg \
+  qt/tanzanite/res/img/img-logo-tanzanite.png \
+  qt/tanzanite/res/img/ic-arrow-drop-white-down.svg \
+  qt/tanzanite/res/img/ic-combo-box.svg \
+  qt/tanzanite/res/img/ic-send.svg \
+  qt/tanzanite/res/img/img-logo-tanzanite@2x.png \
+  qt/tanzanite/res/img/ic-arrow-purple-down.svg \
+  qt/tanzanite/res/img/ic-connect.svg \
+  qt/tanzanite/res/img/ic-submenu-lock.svg \
+  qt/tanzanite/res/img/img-logo-tanzanite@3x.png \
+  qt/tanzanite/res/img/img-logo-tanzanite.svg \
+  qt/tanzanite/res/img/ic-arrow-right-white.svg \
+  qt/tanzanite/res/img/ic-arrow-left-white.svg \
+  qt/tanzanite/res/img/ic-arrow-left.svg \
+  qt/tanzanite/res/img/ic-copy-liliac.svg \
+  qt/tanzanite/res/img/ic-submenu-staking.svg \
+  qt/tanzanite/res/img/img-nav-logo-tanzanite.png \
+  qt/tanzanite/res/img/ic-arrow-right.svg \
+  qt/tanzanite/res/img/ic-copy.svg \
+  qt/tanzanite/res/img/ic-copy-big.svg \
+  qt/tanzanite/res/img/ic-copy-big-white.svg \
+  qt/tanzanite/res/img/ic-submenu-unlock.svg \
+  qt/tanzanite/res/img/img-nav-logo.png \
+  qt/tanzanite/res/img/ic-arrow-white-left.svg \
+  qt/tanzanite/res/img/ic-exit.svg \
+  qt/tanzanite/res/img/ic-switch-liliac-on.svg \
+  qt/tanzanite/res/img/img-nav-logo.svg \
+  qt/tanzanite/res/img/ic-arrow-white-right.svg \
+  qt/tanzanite/res/img/ic-expand.svg \
+  qt/tanzanite/res/img/ic-switch-off.svg \
+  qt/tanzanite/res/img/img-qr-test-big.png \
+  qt/tanzanite/res/img/ic-check-active.svg \
+  qt/tanzanite/res/img/ic-folder.svg \
+  qt/tanzanite/res/img/ic-switch-on.svg \
+  qt/tanzanite/res/img/img-qr-test.png \
+  qt/tanzanite/res/img/ic-check-box.svg \
+  qt/tanzanite/res/img/ic-check-box-dark-active.svg \
+  qt/tanzanite/res/img/ic-check-box-indeterminate.svg \
+  qt/tanzanite/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/tanzanite/res/img/ic-label-liliac.svg \
+  qt/tanzanite/res/img/ic-transaction-warning.svg \
+  qt/tanzanite/res/img/ic-transaction-mint.svg \
+  qt/tanzanite/res/img/ic-transaction-mint-inactive.svg \
+  qt/tanzanite/res/img/ic-check-cold-staking.svg \
+  qt/tanzanite/res/img/ic-check-cold-staking-off.svg \
+  qt/tanzanite/res/img/ic-check-cold-staking-enabled.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-cs-contract.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-cs-contract-inactive.svg \
+  qt/tanzanite/res/img/img-qr.svg \
+  qt/tanzanite/res/img/ic-check-connect-off.svg \
+  qt/tanzanite/res/img/ic-label.svg \
+  qt/tanzanite/res/img/ic-transaction-received.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-received.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-warning.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-mint.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/tanzanite/res/img/ic-transaction-received-inactive.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/tanzanite/res/img/img-welcome-step1.png \
+  qt/tanzanite/res/img/ic-check-connect.svg \
+  qt/tanzanite/res/img/ic-menu-hover.svg \
+  qt/tanzanite/res/img/ic-transaction-sent.svg \
+  qt/tanzanite/res/img/ic-transaction-sent-inactive.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-sent.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/tanzanite/res/img/img-welcome-step2.png \
+  qt/tanzanite/res/img/ic-check-dark.svg \
+  qt/tanzanite/res/img/ic-mint.svg \
+  qt/tanzanite/res/img/ic-transaction-staked.svg \
+  qt/tanzanite/res/img/ic-transaction-staked-inactive.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-staked.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/tanzanite/res/img/img-welcome-step3.png \
+  qt/tanzanite/res/img/ic-check-liliac-on.svg \
+  qt/tanzanite/res/img/ic-nav-address-active.svg \
+  qt/tanzanite/res/img/ic-unlock-staking.svg \
+  qt/tanzanite/res/img/img-welcome-step4.png \
+  qt/tanzanite/res/img/ic-check-locked-off.svg \
+  qt/tanzanite/res/img/ic-nav-address-hover.svg \
+  qt/tanzanite/res/img/ic-update-liliac.svg \
+  qt/tanzanite/res/img/ic-arrow-drop-down-purple.svg \
+  qt/tanzanite/res/img/ic-arrow-drop-up-purple.svg \
+  qt/tanzanite/res/img/ic-check-liliac-indeterminate.svg \
+  qt/tanzanite/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/tanzanite/res/img/ic-transaction-stake-delegated.svg \
+  qt/tanzanite/res/img/ic-transaction-stake-delegated-inactive.svg \
+  qt/tanzanite/res/img/ic-transaction-stake-hot.svg \
+  qt/tanzanite/res/img/ic-transaction-stake-hot-inactive.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-stake-hot.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-stake-hot-inactive.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-stake-delegated.svg \
+  qt/tanzanite/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
+  qt/tanzanite/res/img/ic-transaction-cs-contract.svg \
+  qt/tanzanite/res/img/ic-transaction-cs-contract-inactive.svg \
+  qt/tanzanite/res/img/ic-check-box-indeterminate.svg \
+  qt/tanzanite/res/img/ani-loading-dark.gif \
+  qt/tanzanite/res/img/ani-loading.gif
+
+
+
+BITCOIN_QT_BASE_CPP = \
+  qt/bantablemodel.cpp \
+  qt/bitcoinaddressvalidator.cpp \
+  qt/bitcoinamountfield.cpp \
+  qt/tanzanite/tanzanitegui.cpp \
+  qt/bitcoinunits.cpp \
+  qt/blockexplorer.cpp \
+  qt/clientmodel.cpp \
+  qt/csvmodelwriter.cpp \
+  qt/guiutil.cpp \
+  qt/intro.cpp \
+  qt/networkstyle.cpp \
+  qt/notificator.cpp \
+  qt/optionsdialog.cpp \
+  qt/optionsmodel.cpp \
+  qt/peertablemodel.cpp \
+  qt/platformstyle.cpp \
+  qt/qvalidatedlineedit.cpp \
+  qt/qvaluecombobox.cpp \
+  qt/rpcconsole.cpp \
+  qt/splashscreen.cpp \
+  qt/trafficgraphwidget.cpp \
+  qt/utilitydialog.cpp
+
+BITCOIN_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
+
+BITCOIN_QT_WALLET_CPP = \
+  qt/addressbookpage.cpp \
+  qt/addresstablemodel.cpp \
+  qt/askpassphrasedialog.cpp \
+  qt/blockexplorer.cpp \
+  qt/coincontroldialog.cpp \
+  qt/coincontroltreewidget.cpp \
+  qt/editaddressdialog.cpp \
+  qt/governancepage.cpp \
+  qt/openuridialog.cpp \
+  qt/paymentrequestplus.cpp \
+  qt/paymentserver.cpp \
+  qt/proposalframe.cpp \
+  qt/recentrequeststablemodel.cpp \
+  qt/transactiondesc.cpp \
+  qt/transactionfilterproxy.cpp \
+  qt/transactionrecord.cpp \
+  qt/transactiontablemodel.cpp \
+  qt/walletmodel.cpp \
+  qt/walletmodeltransaction.cpp \
+  qt/tanzanite/loadingdialog.cpp \
+  qt/zpivcontroldialog.cpp \
+  qt/tanzanite/pwidget.cpp \
+  qt/tanzanite/guitransactionsutils.cpp \
+  qt/tanzanite/snackbar.cpp \
+  qt/tanzanite/navmenuwidget.cpp \
+  qt/tanzanite/lockunlock.cpp \
+  qt/tanzanite/receivedialog.cpp \
+  qt/tanzanite/furabstractlistitemdelegate.cpp \
+  qt/tanzanite/txviewholder.cpp \
+  qt/tanzanite/qtutils.cpp \
+  qt/tanzanite/expandablebutton.cpp \
+  qt/tanzanite/walletpassworddialog.cpp \
+  qt/tanzanite/topbar.cpp \
+  qt/tanzanite/txrow.cpp \
+  qt/tanzanite/addressholder.cpp \
+  qt/tanzanite/addressfilterproxymodel.cpp \
+  qt/tanzanite/dashboardwidget.cpp \
+  qt/tanzanite/coincontrolpivwidget.cpp \
+  qt/tanzanite/addresslabelrow.cpp \
+  qt/tanzanite/contactdropdownrow.cpp \
+  qt/tanzanite/contactsdropdown.cpp \
+  qt/tanzanite/optionbutton.cpp \
+  qt/tanzanite/mninfodialog.cpp \
+  qt/tanzanite/coldstakingmodel.cpp \
+  qt/tanzanite/mnmodel.cpp \
+  qt/tanzanite/masternodewizarddialog.cpp \
+  qt/tanzanite/mnrow.cpp \
+  qt/tanzanite/masternodeswidget.cpp \
+  qt/tanzanite/myaddressrow.cpp \
+  qt/tanzanite/csrow.cpp \
+  qt/tanzanite/sendchangeaddressdialog.cpp \
+  qt/tanzanite/sendconfirmdialog.cpp \
+  qt/tanzanite/sendcustomfeedialog.cpp \
+  qt/tanzanite/sendchangeaddressdialog.cpp \
+  qt/tanzanite/sendmultirow.cpp \
+  qt/tanzanite/send.cpp \
+  qt/tanzanite/addnewaddressdialog.cpp \
+  qt/tanzanite/addnewcontactdialog.cpp \
+  qt/tanzanite/requestdialog.cpp \
+  qt/tanzanite/receivewidget.cpp \
+  qt/tanzanite/tooltipmenu.cpp \
+  qt/tanzanite/addresseswidget.cpp \
+  qt/tanzanite/defaultdialog.cpp \
+  qt/tanzanite/denomgenerationdialog.cpp \
+  qt/tanzanite/privacywidget.cpp \
+  qt/tanzanite/coldstakingwidget.cpp \
+  qt/tanzanite/settings/settingsbackupwallet.cpp \
+  qt/tanzanite/settings/settingsbittoolwidget.cpp \
+  qt/tanzanite/settings/settingsconsolewidget.cpp \
+  qt/tanzanite/settings/settingsdisplayoptionswidget.cpp \
+  qt/tanzanite/settings/settingsfaqwidget.cpp \
+  qt/tanzanite/settings/settingsinformationwidget.cpp \
+  qt/tanzanite/settings/settingsmainoptionswidget.cpp \
+  qt/tanzanite/settings/settingsmultisenddialog.cpp \
+  qt/tanzanite/settings/settingsmultisendwidget.cpp \
+  qt/tanzanite/settings/settingssignmessagewidgets.cpp \
+  qt/tanzanite/settings/settingswalletoptionswidget.cpp \
+  qt/tanzanite/settings/settingswalletrepairwidget.cpp \
+  qt/tanzanite/settings/settingswidget.cpp \
+  qt/tanzanite/welcomecontentwidget.cpp \
+  qt/tanzanite/splash.cpp
+
+
+BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
+if TARGET_WINDOWS
+BITCOIN_QT_CPP += $(BITCOIN_QT_WINDOWS_CPP)
+endif
+if ENABLE_WALLET
+BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
+endif
+
+RES_IMAGES = \
+  qt/res/images/about.png \
+  qt/res/images/splash.png \
+  qt/res/images/splash_testnet.png \
+  qt/res/images/splash_regtest.png \
+  qt/res/images/tanzanite_logo_horizontal.png \
+  qt/res/images/downArrow_dark.png \
+  qt/res/images/downArrow_small_dark.png \
+  qt/res/images/downArrow_small.png \
+  qt/res/images/upArrow_small_dark.png \
+  qt/res/images/upArrow_small.png \
+  qt/res/images/leftArrow_small_dark.png \
+  qt/res/images/rightArrow_small_dark.png \
+  qt/res/images/qtreeview_selected.png
+
+RES_CSS = \
+  qt/res/css/default.css \
+  qt/tanzanite/res/css/style_dark.css \
+  qt/tanzanite/res/css/style_light.css
+
+RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
+
+BITCOIN_RC = qt/res/tanzanite-qt-res.rc
+
+BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
+  -I$(builddir)/qt/forms
+
+qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
+qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
+
+qt_libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
+  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES)
+
+nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+  $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
+
+# forms/foo.h -> forms/ui_foo.h
+QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
+
+# Most files will depend on the forms and moc files as includes. Generate them
+# before anything else.
+$(QT_MOC): $(QT_FORMS_H)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_tanzanite_qt_OBJECTS) : | $(QT_MOC)
+
+#Generating these with a half-written protobuf header leads to wacky results.
+#This makes sure it's done.
+$(QT_MOC): $(PROTOBUF_H)
+$(QT_MOC_CPP): $(PROTOBUF_H)
+
+# tanzanite-qt binary #
+qt_tanzanite_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
+qt_tanzanite_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+
+qt_tanzanite_qt_SOURCES = qt/tanzanite.cpp
+if TARGET_DARWIN
+  qt_tanzanite_qt_SOURCES += $(BITCOIN_MM)
+endif
+if TARGET_WINDOWS
+  qt_tanzanite_qt_SOURCES += $(BITCOIN_RC)
+endif
+qt_tanzanite_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+if ENABLE_WALLET
+qt_tanzanite_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+endif
+if ENABLE_ZMQ
+qt_tanzanite_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+endif
+qt_tanzanite_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+  $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+qt_tanzanite_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_tanzanite_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+
+#locale/foo.ts -> locale/foo.qm
+QT_QM=$(QT_TS:.ts=.qm)
+
+SECONDARY: $(QT_QM)
+
+$(srcdir)/qt/tanzanitestrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
+	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
+
+translate: $(srcdir)/qt/tanzanitestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/tanzanite.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/tanzanite_en.ts
+
+$(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
+	@test -f $(RCC)
+	@cp -f $< $(@D)/temp_$(<F)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name tanzanite_locale $(@D)/temp_$(<F) | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+	@rm $(@D)/temp_$(<F)
+
+$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
+	@test -f $(RCC)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name tanzanite $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_tanzanite_locale.qrc
+
+CLEANFILES += $(CLEAN_QT)
+
+tanzanite_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_tanzanite_qt_OBJECTS) qt/tanzanite-qt$(EXEEXT) $(LIBBITCOINQT)
+
+tanzanite_qt : qt/tanzanite-qt$(EXEEXT)
+
+ui_%.h: %.ui
+	@test -f $(UIC)
+	@$(MKDIR_P) $(@D)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(UIC) -o $@ $< || (echo "Error creating $@"; false)
+
+%.moc: %.cpp
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+moc_%.cpp: %.h
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+%.qm: %.ts
+	@test -f $(LRELEASE)
+	@$(MKDIR_P) $(@D)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@

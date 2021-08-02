@@ -1,0 +1,6 @@
+usr/local/bin/tanzanite-qt usr/bin
+share/pixmaps/tanzanite32.xpm usr/share/pixmaps
+share/pixmaps/tanzanite16.xpm usr/share/pixmaps
+share/pixmaps/tanzanite128.png usr/share/pixmaps
+debian/tanzanite-qt.desktop usr/share/applications
+debian/tanzanite-qt.protocol usr/share/kde4/services/

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Tanzanite Core
+Comment=Tanzanite P2P Cryptocurrency
+Exec=tanzanite-qt %u
+Terminal=false
+Type=Application
+Icon=tanzanite128
+MimeType=x-scheme-handler/tanzanite;
+Categories=Office;Finance;
+StartupWMClass=Tanzanite-qt
+Name[en_US]=tanzanite-qt.desktop
