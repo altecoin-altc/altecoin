@@ -13,7 +13,7 @@ Altecoin Core integration/staging repository
 • Prefix: ALTC adresses start with the capital letter "X"  
 • Ports: 52367 (p2p) / 52366 (rpc)
 
-• Explorer http://tztcoinexplorer.com
+• Explorer http://explorer.altecoin.com
 
 • Website [altecoincoin.com](http://www.altecoincoin.com)
 
