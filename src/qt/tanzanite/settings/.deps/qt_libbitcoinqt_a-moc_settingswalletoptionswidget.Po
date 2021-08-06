@@ -1,7 +1,7 @@
-qt/tanzanite/settings/qt_libbitcoinqt_a-moc_settingswalletoptionswidget.o: \
- qt/tanzanite/settings/moc_settingswalletoptionswidget.cpp \
+qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingswalletoptionswidget.o: \
+ qt/altecoin/settings/moc_settingswalletoptionswidget.cpp \
  /usr/include/stdc-predef.h \
- qt/tanzanite/settings/settingswalletoptionswidget.h \
+ qt/altecoin/settings/settingswalletoptionswidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -256,15 +256,15 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-moc_settingswalletoptionswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDataWidgetMapper \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdatawidgetmapper.h \
- qt/tanzanite/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/tanzanite/prunnable.h
+ qt/altecoin/prunnable.h
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/settings/settingswalletoptionswidget.h:
+qt/altecoin/settings/settingswalletoptionswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -872,7 +872,7 @@ qt/tanzanite/settings/settingswalletoptionswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdatawidgetmapper.h:
 
-qt/tanzanite/pwidget.h:
+qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -882,4 +882,4 @@ qt/tanzanite/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/tanzanite/prunnable.h:
+qt/altecoin/prunnable.h:

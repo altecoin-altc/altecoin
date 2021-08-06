@@ -22,7 +22,7 @@ make
 make install # optional
 ```
 
-This will build tanzanite-qt as well, if the dependencies are met.
+This will build altecoin-qt as well, if the dependencies are met.
 
 Dependencies
 ---------------------
@@ -108,7 +108,7 @@ ZMQ dependencies (provides ZMQ API):
 
 GUI dependencies:
 
-If you want to build tanzanite-qt, make sure that the required packages for Qt development
+If you want to build altecoin-qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
 To build without GUI pass `--without-gui`.
 
@@ -116,7 +116,7 @@ To build with Qt 5 you need the following:
 
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 libqt5svg5-dev libqt5charts5-dev qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev
 
-Once these are installed, they will be found by configure and a tanzanite-qt executable will be
+Once these are installed, they will be found by configure and a altecoin-qt executable will be
 built by default.
 
 
@@ -138,7 +138,7 @@ To build with Qt 5 you need the following:
 
 Notes
 -----
-The release is built with GCC and then "strip tanzanited" to strip the debug
+The release is built with GCC and then "strip altecoind" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -209,7 +209,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./tanzanited
+    	scanelf -e ./altecoind
 
     The output should contain:
 
@@ -223,7 +223,7 @@ Hardening enables the following features:
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./tanzanited`
+    `scanelf -e ./altecoind`
 
     The output should contain:
 	STK/REL/PTL

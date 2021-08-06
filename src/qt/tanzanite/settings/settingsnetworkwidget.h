@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,7 +7,7 @@
 
 #include <QWidget>
 #include <QDataWidgetMapper>
-#include "qt/tanzanite/pwidget.h"
+#include "qt/altecoin/pwidget.h"
 
 namespace Ui {
 class SettingsNetworkWidget;
@@ -18,7 +18,7 @@ class SettingsNetworkWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsNetworkWidget(TanzaniteGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsNetworkWidget(AltecoinGUI* _window, QWidget *parent = nullptr);
     ~SettingsNetworkWidget();
 
     void setMapper(QDataWidgetMapper *mapper);

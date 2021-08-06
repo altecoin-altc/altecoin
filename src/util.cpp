@@ -1,12 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2020-2021 The Tanzanite developers
+// Copyright (c) 2020-2021 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/tanzanite-config.h"
+#include "config/altecoin-config.h"
 #endif
 
 #include "util.h"
@@ -85,7 +85,7 @@
 #include <openssl/rand.h>
 
 
-// Tanzanite only features
+// Altecoin only features
 // Masternode
 bool fMasterNode = false;
 std::string strMasterNodePrivKey = "";
@@ -215,8 +215,8 @@ bool LogAcceptCategory(const char* category)
             const std::vector<std::string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new std::set<std::string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "tanzanite" is a composite category enabling all Tanzanite-related debug output
-            if (ptrCategory->count(std::string("tanzanite"))) {
+            // "altecoin" is a composite category enabling all Altecoin-related debug output
+            if (ptrCategory->count(std::string("altecoin"))) {
                 ptrCategory->insert(std::string("obfuscation"));
                 ptrCategory->insert(std::string("swiftx"));
                 ptrCategory->insert(std::string("masternode"));
@@ -382,7 +382,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "tanzanite";
+    const char* pszModule = "altecoin";
 #endif
     if (pex)
         return strprintf(
@@ -403,13 +403,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\Tanzanite
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\Tanzanite
-// Mac: ~/Library/Application Support/Tanzanite
-// Unix: ~/.tanzanite
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Altecoin
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Altecoin
+// Mac: ~/Library/Application Support/Altecoin
+// Unix: ~/.altecoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Tanzanite";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Altecoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -421,10 +421,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Tanzanite";
+    return pathRet / "Altecoin";
 #else
     // Unix
-    return pathRet / ".tanzanite";
+    return pathRet / ".altecoin";
 #endif
 #endif
 }
@@ -471,7 +471,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "tanzanite.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "altecoin.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -490,7 +490,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty tanzanite.conf if it does not exist
+        // Create empty altecoin.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -501,7 +501,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override tanzanite.conf
+        // Don't overwrite existing settings so command line settings override altecoin.conf
         std::string strKey = std::string("-") + it->string_key;
         std::string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);
@@ -516,7 +516,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 #ifndef WIN32
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "tanzanited.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "altecoind.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

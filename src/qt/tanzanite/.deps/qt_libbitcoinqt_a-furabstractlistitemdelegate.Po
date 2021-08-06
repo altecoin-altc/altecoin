@@ -1,6 +1,6 @@
-qt/tanzanite/qt_libbitcoinqt_a-furabstractlistitemdelegate.o: \
- qt/tanzanite/furabstractlistitemdelegate.cpp /usr/include/stdc-predef.h \
- qt/tanzanite/furabstractlistitemdelegate.h qt/tanzanite/furlistrow.h \
+qt/altecoin/qt_libbitcoinqt_a-furabstractlistitemdelegate.o: \
+ qt/altecoin/furabstractlistitemdelegate.cpp /usr/include/stdc-predef.h \
+ qt/altecoin/furabstractlistitemdelegate.h qt/altecoin/furlistrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -290,9 +290,9 @@ qt/tanzanite/qt_libbitcoinqt_a-furabstractlistitemdelegate.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/furabstractlistitemdelegate.h:
+qt/altecoin/furabstractlistitemdelegate.h:
 
-qt/tanzanite/furlistrow.h:
+qt/altecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 

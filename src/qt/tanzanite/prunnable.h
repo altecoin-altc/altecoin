@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_CORE_NEW_GUI_PRUNNABLE_H
-#define Tanzanite_CORE_NEW_GUI_PRUNNABLE_H
+#ifndef Altecoin_CORE_NEW_GUI_PRUNNABLE_H
+#define Altecoin_CORE_NEW_GUI_PRUNNABLE_H
 
 class Runnable {
 public:
@@ -11,4 +11,4 @@ public:
     virtual void onError(QString error, int type) = 0;
 };
 
-#endif //Tanzanite_CORE_NEW_GUI_PRUNNABLE_H
+#endif //Altecoin_CORE_NEW_GUI_PRUNNABLE_H

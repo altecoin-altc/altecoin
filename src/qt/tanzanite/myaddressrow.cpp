@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/myaddressrow.h"
-#include "qt/tanzanite/forms/ui_myaddressrow.h"
+#include "qt/altecoin/myaddressrow.h"
+#include "qt/altecoin/forms/ui_myaddressrow.h"
 
 MyAddressRow::MyAddressRow(QWidget *parent) :
     QWidget(parent),

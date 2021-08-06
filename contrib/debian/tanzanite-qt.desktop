@@ -1,12 +1,12 @@
 [Desktop Entry]
 Version=1.0
-Name=Tanzanite Core
-Comment=Tanzanite P2P Cryptocurrency
-Exec=tanzanite-qt %u
+Name=Altecoin Core
+Comment=Altecoin P2P Cryptocurrency
+Exec=altecoin-qt %u
 Terminal=false
 Type=Application
-Icon=tanzanite128
-MimeType=x-scheme-handler/tanzanite;
+Icon=altecoin128
+MimeType=x-scheme-handler/altecoin;
 Categories=Office;Finance;
-StartupWMClass=Tanzanite-qt
-Name[en_US]=tanzanite-qt.desktop
+StartupWMClass=Altecoin-qt
+Name[en_US]=altecoin-qt.desktop

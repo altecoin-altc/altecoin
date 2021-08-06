@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2020 The Tanzanite developers
+// Copyright (c) 2018-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_WITNESS_H
-#define Tanzanite_WITNESS_H
+#ifndef Altecoin_WITNESS_H
+#define Altecoin_WITNESS_H
 
 
 #include <libzerocoin/Accumulator.h>
@@ -33,4 +33,4 @@ public:
     std::string ToString();
 };
 
-#endif //Tanzanite_WITNESS_H
+#endif //Altecoin_WITNESS_H

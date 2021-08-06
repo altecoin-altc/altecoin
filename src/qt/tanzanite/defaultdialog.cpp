@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/defaultdialog.h"
-#include "qt/tanzanite/forms/ui_defaultdialog.h"
+#include "qt/altecoin/defaultdialog.h"
+#include "qt/altecoin/forms/ui_defaultdialog.h"
 #include "guiutil.h"
 DefaultDialog::DefaultDialog(QWidget *parent) :
     QDialog(parent),

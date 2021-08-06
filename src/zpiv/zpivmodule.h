@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
-#ifndef Tanzanite_ZTZTMODULE_H
-#define Tanzanite_ZTZTMODULE_H
+#ifndef Altecoin_ZALTCMODULE_H
+#define Altecoin_ZALTCMODULE_H
 
 #include "libzerocoin/bignum.h"
 #include "libzerocoin/Denominations.h"
@@ -81,7 +81,7 @@ public:
 
 class CValidationState;
 
-namespace ZTZTModule {
+namespace ZALTCModule {
     bool createInput(CTxIn &in, CZerocoinMint& mint, uint256 hashTxOut, const int spendVersion);
     PublicCoinSpend parseCoinSpend(const CTxIn &in);
     bool parseCoinSpend(const CTxIn &in, const CTransaction& tx, const CTxOut &prevOut, PublicCoinSpend& publicCoinSpend);
@@ -99,4 +99,4 @@ namespace ZTZTModule {
 };
 
 
-#endif //Tanzanite_ZTZTMODULE_H
+#endif //Altecoin_ZALTCMODULE_H

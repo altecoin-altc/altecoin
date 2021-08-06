@@ -5,8 +5,8 @@ Release Process
 
 ### Before every release candidate
 
-* Update translations (ping Fuzzbawls on Discord) see [translation_process.md](https://github.com/Tanzanite-Project/Tanzanite/blob/master/doc/translation_process.md#synchronising-translations).
-* Update manpages, see [gen-manpages.sh](https://github.com/tanzanite-project/tanzanite/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update translations (ping Fuzzbawls on Discord) see [translation_process.md](https://github.com/Altecoin-Project/Altecoin/blob/master/doc/translation_process.md#synchronising-translations).
+* Update manpages, see [gen-manpages.sh](https://github.com/altecoin-project/altecoin/blob/master/contrib/devtools/README.md#gen-manpagessh).
 * Update release candidate version in `configure.ac` (`CLIENT_VERSION_RC`)
 
 ### Before every major and minor release
@@ -49,12 +49,12 @@ If you're using the automated script (found in [contrib/gitian-build.py](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/tanzanite-project/gitian.sigs.git
-    git clone https://github.com/tanzanite-project/tanzanite-detached-sigs.git
+    git clone https://github.com/altecoin-project/gitian.sigs.git
+    git clone https://github.com/altecoin-project/altecoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/tanzanite-project/tanzanite.git
+    git clone https://github.com/altecoin-project/altecoin.git
 
-### Tanzanite maintainers/release engineers, suggestion for writing release notes
+### Altecoin maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -75,7 +75,7 @@ If you're using the automated script (found in [contrib/gitian-build.py](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./tanzanite
+    pushd ./altecoin
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -108,10 +108,10 @@ Create the macOS SDK tarball, see the [macOS build instructions](build-osx.md#de
 
 NOTE: Gitian is sometimes unable to download files. If you have errors, try the step below.
 
-By default, Gitian will fetch source files as needed. To cache them ahead of time, make sure you have checked out the tag you want to build in tanzanite, then:
+By default, Gitian will fetch source files as needed. To cache them ahead of time, make sure you have checked out the tag you want to build in altecoin, then:
 
     pushd ./gitian-builder
-    make -C ../tanzanite/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../altecoin/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -119,50 +119,50 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url tanzanite=/path/to/tanzanite,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url altecoin=/path/to/altecoin,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Tanzanite Core for Linux, Windows, and macOS:
+### Build and sign Altecoin Core for Linux, Windows, and macOS:
 
     pushd ./gitian-builder
-    ./bin/gbuild --num-make 2 --memory 3000 --commit tanzanite=v${VERSION} ../tanzanite/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-linux --destination ../gitian.sigs/ ../tanzanite/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/tanzanite-*.tar.gz build/out/src/tanzanite-*.tar.gz ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit altecoin=v${VERSION} ../altecoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-linux --destination ../gitian.sigs/ ../altecoin/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/altecoin-*.tar.gz build/out/src/altecoin-*.tar.gz ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit tanzanite=v${VERSION} ../tanzanite/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../tanzanite/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/tanzanite-*-win-unsigned.tar.gz inputs/tanzanite-win-unsigned.tar.gz
-    mv build/out/tanzanite-*.zip build/out/tanzanite-*.exe ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit altecoin=v${VERSION} ../altecoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../altecoin/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/altecoin-*-win-unsigned.tar.gz inputs/altecoin-win-unsigned.tar.gz
+    mv build/out/altecoin-*.zip build/out/altecoin-*.exe ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit tanzanite=v${VERSION} ../tanzanite/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../tanzanite/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/tanzanite-*-osx-unsigned.tar.gz inputs/tanzanite-osx-unsigned.tar.gz
-    mv build/out/tanzanite-*.tar.gz build/out/tanzanite-*.dmg ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit altecoin=v${VERSION} ../altecoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../altecoin/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/altecoin-*-osx-unsigned.tar.gz inputs/altecoin-osx-unsigned.tar.gz
+    mv build/out/altecoin-*.tar.gz build/out/altecoin-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`tanzanite-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`tanzanite-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`tanzanite-${VERSION}-win[32|64]-setup-unsigned.exe`, `tanzanite-${VERSION}-win[32|64].zip`)
-  4. macOS unsigned installer and dist tarball (`tanzanite-${VERSION}-osx-unsigned.dmg`, `tanzanite-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`altecoin-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`altecoin-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`altecoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `altecoin-${VERSION}-win[32|64].zip`)
+  4. macOS unsigned installer and dist tarball (`altecoin-${VERSION}-osx-unsigned.dmg`, `altecoin-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import tanzanite/contrib/gitian-keys/*.pgp
+    gpg --import altecoin/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../tanzanite/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../tanzanite/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../tanzanite/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../altecoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../altecoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../altecoin/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -183,22 +183,22 @@ Codesigner only: Create Windows/macOS detached signatures:
 
 Codesigner only: Sign the macOS binary:
 
-    transfer tanzanite-osx-unsigned.tar.gz to macOS for signing
-    tar xf tanzanite-osx-unsigned.tar.gz
+    transfer altecoin-osx-unsigned.tar.gz to macOS for signing
+    tar xf altecoin-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf tanzanite-win-unsigned.tar.gz
+    tar xf altecoin-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/tanzanite-detached-sigs
+    cd ~/altecoin-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -211,25 +211,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/macOS detached signatures:
 
 - Once the Windows/macOS builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [tanzanite-detached-sigs](https://github.com/tanzanite-Project/tanzanite-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [altecoin-detached-sigs](https://github.com/altecoin-Project/altecoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed macOS binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../tanzanite/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../tanzanite/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../tanzanite/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/tanzanite-osx-signed.dmg ../tanzanite-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../altecoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../altecoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../altecoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/altecoin-osx-signed.dmg ../altecoin-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../tanzanite/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../tanzanite/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../tanzanite/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/tanzanite-*win64-setup.exe ../tanzanite-${VERSION}-win64-setup.exe
-    mv build/out/tanzanite-*win32-setup.exe ../tanzanite-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../altecoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../altecoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../altecoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/altecoin-*win64-setup.exe ../altecoin-${VERSION}-win64-setup.exe
+    mv build/out/altecoin-*win32-setup.exe ../altecoin-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed macOS/Windows binaries:
@@ -251,18 +251,18 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-tanzanite-${VERSION}-aarch64-linux-gnu.tar.gz
-tanzanite-${VERSION}-arm-linux-gnueabihf.tar.gz
-tanzanite-${VERSION}-i686-pc-linux-gnu.tar.gz
-tanzanite-${VERSION}-riscv64-linux-gnu.tar.gz
-tanzanite-${VERSION}-x86_64-linux-gnu.tar.gz
-tanzanite-${VERSION}-osx64.tar.gz
-tanzanite-${VERSION}-osx.dmg
-tanzanite-${VERSION}.tar.gz
-tanzanite-${VERSION}-win32-setup.exe
-tanzanite-${VERSION}-win32.zip
-tanzanite-${VERSION}-win64-setup.exe
-tanzanite-${VERSION}-win64.zip
+altecoin-${VERSION}-aarch64-linux-gnu.tar.gz
+altecoin-${VERSION}-arm-linux-gnueabihf.tar.gz
+altecoin-${VERSION}-i686-pc-linux-gnu.tar.gz
+altecoin-${VERSION}-riscv64-linux-gnu.tar.gz
+altecoin-${VERSION}-x86_64-linux-gnu.tar.gz
+altecoin-${VERSION}-osx64.tar.gz
+altecoin-${VERSION}-osx.dmg
+altecoin-${VERSION}.tar.gz
+altecoin-${VERSION}-win32-setup.exe
+altecoin-${VERSION}-win32.zip
+altecoin-${VERSION}-win64-setup.exe
+altecoin-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
@@ -284,10 +284,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/tanzanite, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/altecoin, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/Tanzanite-Project/Tanzanite/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/Altecoin-Project/Altecoin/releases/new) with a link to the archived release notes.
 
   - Celebrate

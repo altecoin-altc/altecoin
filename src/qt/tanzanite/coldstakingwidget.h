@@ -1,18 +1,18 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef COLDSTAKINGWIDGET_H
 #define COLDSTAKINGWIDGET_H
 
-#include "qt/tanzanite/pwidget.h"
-#include "qt/tanzanite/furabstractlistitemdelegate.h"
-#include "qt/tanzanite/txviewholder.h"
-#include "qt/tanzanite/tooltipmenu.h"
-#include "qt/tanzanite/sendmultirow.h"
-#include "qt/tanzanite/coldstakingmodel.h"
-#include "qt/tanzanite/contactsdropdown.h"
-#include "qt/tanzanite/addressholder.h"
+#include "qt/altecoin/pwidget.h"
+#include "qt/altecoin/furabstractlistitemdelegate.h"
+#include "qt/altecoin/txviewholder.h"
+#include "qt/altecoin/tooltipmenu.h"
+#include "qt/altecoin/sendmultirow.h"
+#include "qt/altecoin/coldstakingmodel.h"
+#include "qt/altecoin/contactsdropdown.h"
+#include "qt/altecoin/addressholder.h"
 #include "transactiontablemodel.h"
 #include "addresstablemodel.h"
 #include "addressfilterproxymodel.h"
@@ -24,7 +24,7 @@
 #include <QSpacerItem>
 #include <atomic>
 
-class TanzaniteGUI;
+class AltecoinGUI;
 class WalletModel;
 class CSDelegationHolder;
 
@@ -41,7 +41,7 @@ class ColdStakingWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit ColdStakingWidget(TanzaniteGUI* parent);
+    explicit ColdStakingWidget(AltecoinGUI* parent);
     ~ColdStakingWidget();
 
     void loadWalletModel() override;

@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2016-2018 The Tanzanite developers
+// Copyright (c) 2016-2018 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_PUBKEY_H
-#define Tanzanite_PUBKEY_H
+#ifndef Altecoin_PUBKEY_H
+#define Altecoin_PUBKEY_H
 
 #include "hash.h"
 #include "serialize.h"
@@ -263,4 +263,4 @@ public:
     ~ECCVerifyHandle();
 };
 
-#endif // Tanzanite_PUBKEY_H
+#endif // Altecoin_PUBKEY_H

@@ -1,21 +1,21 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef ADDRESSESWIDGET_H
 #define ADDRESSESWIDGET_H
 
-#include "qt/tanzanite/pwidget.h"
+#include "qt/altecoin/pwidget.h"
 #include "addresstablemodel.h"
-#include "qt/tanzanite/tooltipmenu.h"
+#include "qt/altecoin/tooltipmenu.h"
 #include "furabstractlistitemdelegate.h"
-#include "qt/tanzanite/addressfilterproxymodel.h"
+#include "qt/altecoin/addressfilterproxymodel.h"
 
 #include <QWidget>
 
 class AddressViewDelegate;
 class TooltipMenu;
-class TanzaniteGUI;
+class AltecoinGUI;
 class WalletModel;
 
 namespace Ui {
@@ -31,7 +31,7 @@ class AddressesWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit AddressesWidget(TanzaniteGUI* parent);
+    explicit AddressesWidget(AltecoinGUI* parent);
     ~AddressesWidget();
 
     void loadWalletModel() override;

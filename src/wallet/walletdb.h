@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
-// Copyright (c) 2016-2020 The Tanzanite developers
+// Copyright (c) 2016-2020 The Altecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -177,14 +177,14 @@ public:
     bool ReadZerocoinSpendSerialEntry(const CBigNum& bnSerial);
     bool WriteCurrentSeedHash(const uint256& hashSeed);
     bool ReadCurrentSeedHash(uint256& hashSeed);
-    bool WriteZTZTSeed(const uint256& hashSeed, const std::vector<unsigned char>& seed);
-    bool ReadZTZTSeed(const uint256& hashSeed, std::vector<unsigned char>& seed);
-    bool ReadZTZTSeed_deprecated(uint256& seed);
-    bool EraseZTZTSeed();
-    bool EraseZTZTSeed_deprecated();
+    bool WriteZALTCSeed(const uint256& hashSeed, const std::vector<unsigned char>& seed);
+    bool ReadZALTCSeed(const uint256& hashSeed, std::vector<unsigned char>& seed);
+    bool ReadZALTCSeed_deprecated(uint256& seed);
+    bool EraseZALTCSeed();
+    bool EraseZALTCSeed_deprecated();
 
-    bool WriteZTZTCount(const uint32_t& nCount);
-    bool ReadZTZTCount(uint32_t& nCount);
+    bool WriteZALTCCount(const uint32_t& nCount);
+    bool ReadZALTCCount(uint32_t& nCount);
     std::map<uint256, std::vector<std::pair<uint256, uint32_t> > > MapMintPool();
     bool WriteMintPoolPair(const uint256& hashMasterSeed, const uint256& hashPubcoin, const uint32_t& nCount);
 

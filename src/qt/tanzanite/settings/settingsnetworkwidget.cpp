@@ -1,13 +1,13 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/settings/settingsnetworkwidget.h"
-#include "qt/tanzanite/settings/forms/ui_settingsnetworkwidget.h"
+#include "qt/altecoin/settings/settingsnetworkwidget.h"
+#include "qt/altecoin/settings/forms/ui_settingsnetworkwidget.h"
 #include "optionsmodel.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/qtutils.h"
 
-SettingsNetworkWidget::SettingsNetworkWidget(TanzaniteGUI* _window, QWidget *parent) :
+SettingsNetworkWidget::SettingsNetworkWidget(AltecoinGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsNetworkWidget)
 {

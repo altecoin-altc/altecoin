@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_PAIRRESULT_H
-#define Tanzanite_PAIRRESULT_H
+#ifndef Altecoin_PAIRRESULT_H
+#define Altecoin_PAIRRESULT_H
 
 
 class PairResult {
@@ -17,4 +17,4 @@ public:
 };
 
 
-#endif //Tanzanite_PAIRRESULT_H
+#endif //Altecoin_PAIRRESULT_H

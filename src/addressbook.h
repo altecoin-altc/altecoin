@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_ADDRESSBOOK_H
-#define Tanzanite_ADDRESSBOOK_H
+#ifndef Altecoin_ADDRESSBOOK_H
+#define Altecoin_ADDRESSBOOK_H
 
 #include <map>
 #include <string>
@@ -43,4 +43,4 @@ namespace AddressBook {
 
 }
 
-#endif //Tanzanite_ADDRESSBOOK_H
+#endif //Altecoin_ADDRESSBOOK_H

@@ -1,6 +1,6 @@
-qt/tanzanite/qt_libbitcoinqt_a-moc_coincontrolpivwidget.o: \
- qt/tanzanite/moc_coincontrolpivwidget.cpp /usr/include/stdc-predef.h \
- qt/tanzanite/coincontrolpivwidget.h \
+qt/altecoin/qt_libbitcoinqt_a-moc_coincontrolpivwidget.o: \
+ qt/altecoin/moc_coincontrolpivwidget.cpp /usr/include/stdc-predef.h \
+ qt/altecoin/coincontrolpivwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -257,7 +257,7 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_coincontrolpivwidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/coincontrolpivwidget.h:
+qt/altecoin/coincontrolpivwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

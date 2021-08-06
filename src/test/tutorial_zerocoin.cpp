@@ -9,7 +9,7 @@
 * @copyright  Copyright 2013 Ian Miers, Christina Garman and Matthew Green
 * @license    This project is released under the MIT license.
 **/
-// Copyright (c) 2017-2019 The Tanzanite developers
+// Copyright (c) 2017-2019 The Altecoin developers
 
 #include <boost/test/unit_test.hpp>
 #include <string>
@@ -24,7 +24,7 @@
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/CoinSpend.h"
 #include "libzerocoin/Accumulator.h"
-#include "test_tanzanite.h"
+#include "test_altecoin.h"
 
 
 #define COINS_TO_ACCUMULATE     5

@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The Tanzanite developers
+// Copyright (c) 2015-2019 The Altecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -21,18 +21,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(TZT);
-    unitlist.append(mTZT);
-    unitlist.append(uTZT);
+    unitlist.append(ALTC);
+    unitlist.append(mALTC);
+    unitlist.append(uALTC);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case TZT:
-    case mTZT:
-    case uTZT:
+    case ALTC:
+    case mALTC:
+    case uALTC:
         return true;
     default:
         return false;
@@ -42,12 +42,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case TZT:
-        return QString("tanzanite");
-    case mTZT:
-        return QString("mtanzanite");
-    case uTZT:
-        return QString::fromUtf8("utanzanite");
+    case ALTC:
+        return QString("altecoin");
+    case mALTC:
+        return QString("maltecoin");
+    case uALTC:
+        return QString::fromUtf8("ualtecoin");
     default:
         return QString("???");
     }
@@ -59,23 +59,23 @@ QString BitcoinUnits::name(int unit, bool isZpiv)
     if(isZpiv) z = "z";
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TZT:
-            return z + QString("TZT");
-        case mTZT:
-            return z + QString("mTZT");
-        case uTZT:
-            return z + QString::fromUtf8("μTZT");
+        case ALTC:
+            return z + QString("ALTC");
+        case mALTC:
+            return z + QString("mALTC");
+        case uALTC:
+            return z + QString::fromUtf8("μALTC");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TZT:
-            return z + QString("tTZT");
-        case mTZT:
-            return z + QString("mtTZT");
-        case uTZT:
-            return z + QString::fromUtf8("μtTZT");
+        case ALTC:
+            return z + QString("tALTC");
+        case mALTC:
+            return z + QString("mtALTC");
+        case uALTC:
+            return z + QString::fromUtf8("μtALTC");
         default:
             return QString("???");
         }
@@ -86,23 +86,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TZT:
-            return QString("TZT");
-        case mTZT:
-            return QString("Milli-TZT (1 / 1" THIN_SP_UTF8 "000)");
-        case uTZT:
-            return QString("Micro-TZT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case ALTC:
+            return QString("ALTC");
+        case mALTC:
+            return QString("Milli-ALTC (1 / 1" THIN_SP_UTF8 "000)");
+        case uALTC:
+            return QString("Micro-ALTC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TZT:
-            return QString("TestTZTs");
-        case mTZT:
-            return QString("Milli-TestTZT (1 / 1" THIN_SP_UTF8 "000)");
-        case uTZT:
-            return QString("Micro-TestTZT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case ALTC:
+            return QString("TestALTCs");
+        case mALTC:
+            return QString("Milli-TestALTC (1 / 1" THIN_SP_UTF8 "000)");
+        case uALTC:
+            return QString("Micro-TestALTC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -112,11 +112,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case TZT:
+    case ALTC:
         return 100000000;
-    case mTZT:
+    case mALTC:
         return 100000;
-    case uTZT:
+    case uALTC:
         return 100;
     default:
         return 100000000;
@@ -126,11 +126,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case TZT:
+    case ALTC:
         return 8;
-    case mTZT:
+    case mALTC:
         return 5;
-    case uTZT:
+    case uALTC:
         return 2;
     default:
         return 0;
@@ -212,7 +212,7 @@ QString BitcoinUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool p
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }
 
-QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZTZT)
+QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZALTC)
 {
     QSettings settings;
     int digits = settings.value("digits").toInt();
@@ -229,12 +229,12 @@ QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussi
         }
     }
 
-    return result + QString(" ") + name(unit, isZTZT);
+    return result + QString(" ") + name(unit, isZALTC);
 }
 
-QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZTZT)
+QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZALTC)
 {
-    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZTZT));
+    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZALTC));
     str.replace(QChar(THIN_SP_CP), QString(COMMA_HTML));
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }

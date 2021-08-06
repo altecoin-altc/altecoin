@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The Tanzanite developers
+// Copyright (c) 2019-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,14 +6,14 @@
 #define MASTERNODESWIDGET_H
 
 #include <QWidget>
-#include "qt/tanzanite/pwidget.h"
-#include "qt/tanzanite/furabstractlistitemdelegate.h"
-#include "qt/tanzanite/mnmodel.h"
-#include "qt/tanzanite/tooltipmenu.h"
+#include "qt/altecoin/pwidget.h"
+#include "qt/altecoin/furabstractlistitemdelegate.h"
+#include "qt/altecoin/mnmodel.h"
+#include "qt/altecoin/tooltipmenu.h"
 #include <QTimer>
 #include <atomic>
 
-class TanzaniteGUI;
+class AltecoinGUI;
 
 namespace Ui {
 class MasterNodesWidget;
@@ -29,7 +29,7 @@ class MasterNodesWidget : public PWidget
 
 public:
 
-    explicit MasterNodesWidget(TanzaniteGUI *parent = nullptr);
+    explicit MasterNodesWidget(AltecoinGUI *parent = nullptr);
     ~MasterNodesWidget();
 
     void loadWalletModel() override;

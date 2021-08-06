@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2020 The Tanzanite developers
+// Copyright (c) 2018-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_ZTZTTRACKER_H
-#define Tanzanite_ZTZTTRACKER_H
+#ifndef Altecoin_ZALTCTRACKER_H
+#define Altecoin_ZALTCTRACKER_H
 
 #include "zerocoin.h"
 #include "witness.h"
@@ -11,9 +11,9 @@
 #include <list>
 
 class CDeterministicMint;
-class CzTZTWallet;
+class CzALTCWallet;
 
-class CzTZTTracker
+class CzALTCTracker
 {
 private:
     bool fInitialized;
@@ -22,9 +22,9 @@ private:
     std::map<uint256, uint256> mapPendingSpends; //serialhash, txid of spend
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
-    CzTZTTracker(std::string strWalletFile);
-    ~CzTZTTracker();
-    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzTZTWallet* zTZTWallet = NULL);
+    CzALTCTracker(std::string strWalletFile);
+    ~CzALTCTracker();
+    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzALTCWallet* zALTCWallet = NULL);
     void Add(const CZerocoinMint& mint, bool isNew = false, bool isArchived = false);
     bool Archive(CMintMeta& meta);
     bool HasPubcoin(const CBigNum& bnValue) const;
@@ -51,4 +51,4 @@ public:
     void Clear();
 };
 
-#endif //Tanzanite_ZTZTTRACKER_H
+#endif //Altecoin_ZALTCTRACKER_H

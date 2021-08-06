@@ -1,10 +1,10 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/qtutils.h"
 
-#include "qt/tanzanite/snackbar.h"
+#include "qt/altecoin/snackbar.h"
 #include "qrencode.h"
 #include "guiconstants.h"
 
@@ -35,7 +35,7 @@ bool openDialog(QDialog *widget, QWidget *gui){
     return widget->exec();
 }
 
-void closeDialog(QDialog *widget, TanzaniteGUI *gui){
+void closeDialog(QDialog *widget, AltecoinGUI *gui){
     widget->setWindowFlags(Qt::CustomizeWindowHint);
     widget->setAttribute(Qt::WA_TranslucentBackground, true);
     QPropertyAnimation* animation = new QPropertyAnimation(widget, "pos");
@@ -54,7 +54,7 @@ void openDialogFullScreen(QWidget *parent, QWidget * dialog){
     dialog->resize(parent->width(),parent->height());
 }
 
-bool openDialogWithOpaqueBackgroundY(QDialog *widget, TanzaniteGUI *gui, double posX, int posY){
+bool openDialogWithOpaqueBackgroundY(QDialog *widget, AltecoinGUI *gui, double posX, int posY){
     widget->setWindowFlags(Qt::CustomizeWindowHint);
     widget->setAttribute(Qt::WA_TranslucentBackground, true);
     QPropertyAnimation* animation = new QPropertyAnimation(widget, "pos");
@@ -70,11 +70,11 @@ bool openDialogWithOpaqueBackgroundY(QDialog *widget, TanzaniteGUI *gui, double 
     return res;
 }
 
-bool openDialogWithOpaqueBackground(QDialog *widget, TanzaniteGUI *gui, double posX){
+bool openDialogWithOpaqueBackground(QDialog *widget, AltecoinGUI *gui, double posX){
     return openDialogWithOpaqueBackgroundY(widget, gui, posX, 5);
 }
 
-bool openDialogWithOpaqueBackgroundFullScreen(QDialog *widget, TanzaniteGUI *gui){
+bool openDialogWithOpaqueBackgroundFullScreen(QDialog *widget, AltecoinGUI *gui){
     widget->setWindowFlags(Qt::CustomizeWindowHint);
     widget->setAttribute(Qt::WA_TranslucentBackground, true);
 

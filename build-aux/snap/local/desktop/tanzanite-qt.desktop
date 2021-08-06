@@ -2,15 +2,15 @@
 
 [Desktop Entry]
 Encoding=UTF-8
-Name=Tanzanite Core
-Comment=Tanzanite Core QT main network
-GenericName=Tanzanite Digital Currency QT client main network
-Exec=tanzanite-core.qt %u
+Name=Altecoin Core
+Comment=Altecoin Core QT main network
+GenericName=Altecoin Digital Currency QT client main network
+Exec=altecoin-core.qt %u
 Terminal=false
 Type=Application
-Icon=${SNAP}/share/pixmaps/tanzanite.png
-MimeType=x-scheme-handler/tanzanite;
+Icon=${SNAP}/share/pixmaps/altecoin.png
+MimeType=x-scheme-handler/altecoin;
 Categories=X-Office;X-Finance;
-Keywords=internet;tanzanite;zpiv;piv;core;wallet;qt;main;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
+Keywords=internet;altecoin;zpiv;piv;core;wallet;qt;main;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
 Version=1.0
-Name[en_US]=tanzanite-qt.desktop
+Name[en_US]=altecoin-qt.desktop

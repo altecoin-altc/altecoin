@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-# Copyright (c) 2019 The Tanzanite developers
+# Copyright (c) 2019 The Altecoin developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 import time
 
-from test_framework.test_framework import TanzaniteTestFramework
+from test_framework.test_framework import AltecoinTestFramework
 from test_framework.util import (
     assert_equal,
     connect_nodes_bi,
     set_node_times
 )
 
-class TimeOffsetTest(TanzaniteTestFramework):
+class TimeOffsetTest(AltecoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 8

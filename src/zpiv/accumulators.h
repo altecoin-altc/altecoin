@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2019 The Tanzanite developers
+// Copyright (c) 2017-2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_ACCUMULATORS_H
-#define Tanzanite_ACCUMULATORS_H
+#ifndef Altecoin_ACCUMULATORS_H
+#define Altecoin_ACCUMULATORS_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -90,5 +90,5 @@ public:
     searchMintHeightException(const std::string &message) : message(message) {}
 };
 
-#endif //Tanzanite_ACCUMULATORS_H
+#endif //Altecoin_ACCUMULATORS_H
 

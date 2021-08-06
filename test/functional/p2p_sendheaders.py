@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 from test_framework.mininode import *
-from test_framework.test_framework import TanzaniteTestFramework
+from test_framework.test_framework import AltecoinTestFramework
 from test_framework.util import *
 from test_framework.blocktools import create_block, create_coinbase
 
@@ -222,7 +222,7 @@ class TestNode(BaseNode):
     def __init__(self):
         BaseNode.__init__(self)
 
-class SendHeadersTest(TanzaniteTestFramework):
+class SendHeadersTest(AltecoinTestFramework):
     def __init__(self):
         super().__init__()
         self.setup_clean_chain = True

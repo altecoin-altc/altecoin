@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../tanzanite.qrc"/>
+  <include location="../altecoin.qrc"/>
  </resources>
  <connections/>
 </ui>

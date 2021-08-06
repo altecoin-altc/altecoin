@@ -43,8 +43,8 @@ Build Auop Coin
 
 1. Clone the Auop Coin source code:
 
-        git clone https://github.com/tanzanitenet/tanzanite
-        cd tanzanite
+        git clone https://github.com/altecoinnet/altecoin
+        cd altecoin
 
 2.  Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).
 
@@ -79,28 +79,28 @@ In this case there is no dependency on Berkeley DB 4.8.
 Running
 -------
 
-Auop Coin is now available at `./src/tanzanited`
+Auop Coin is now available at `./src/altecoind`
 
 Before running, you may create an empty configuration file:
 
-    mkdir -p "/Users/${USER}/Library/Application Support/tanzanite"
+    mkdir -p "/Users/${USER}/Library/Application Support/altecoin"
 
-    touch "/Users/${USER}/Library/Application Support/tanzanite/tanzanite.conf"
+    touch "/Users/${USER}/Library/Application Support/altecoin/altecoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/tanzanite/tanzanite.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/altecoin/altecoin.conf"
 
-The first time you run tanzanited, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
+The first time you run altecoind, it will start downloading the blockchain. This process could take many hours, or even days on slower than average systems.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/tanzanite/debug.log
+    tail -f $HOME/Library/Application\ Support/altecoin/debug.log
 
 Other commands:
 -------
 
-    ./src/tanzanited -daemon # Starts The Tanzanite daemon.
-    ./src/tanzanite-cli --help # Outputs a list of command-line options.
-    ./src/tanzanite-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/altecoind -daemon # Starts The Altecoin daemon.
+    ./src/altecoin-cli --help # Outputs a list of command-line options.
+    ./src/altecoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Notes
 -----

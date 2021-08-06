@@ -10,10 +10,10 @@
 - verify that getchaintips now returns two chain tips.
 """
 
-from test_framework.test_framework import TanzaniteTestFramework
+from test_framework.test_framework import AltecoinTestFramework
 from test_framework.util import assert_equal
 
-class GetChainTipsTest (TanzaniteTestFramework):
+class GetChainTipsTest (AltecoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 4
 

@@ -4,7 +4,7 @@
 
 #include "random.h"
 
-#include "test/test_tanzanite.h"
+#include "test/test_altecoin.h"
 
 #include <boost/test/unit_test.hpp>
 

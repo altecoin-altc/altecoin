@@ -1,6 +1,6 @@
-qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
- qt/tanzanite/settings/settingswidget.cpp /usr/include/stdc-predef.h \
- qt/tanzanite/settings/settingswidget.h \
+qt/altecoin/settings/qt_libbitcoinqt_a-settingswidget.o: \
+ qt/altecoin/settings/settingswidget.cpp /usr/include/stdc-predef.h \
+ qt/altecoin/settings/settingswidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -253,13 +253,13 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- qt/tanzanite/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ qt/altecoin/pwidget.h /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/tanzanite/prunnable.h qt/tanzanite/settings/settingsbackupwallet.h \
- qt/tanzanite/settings/settingsbittoolwidget.h \
- qt/tanzanite/contactsdropdown.h qt/addresstablemodel.h \
+ qt/altecoin/prunnable.h qt/altecoin/settings/settingsbackupwallet.h \
+ qt/altecoin/settings/settingsbittoolwidget.h \
+ qt/altecoin/contactsdropdown.h qt/addresstablemodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
@@ -268,8 +268,8 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
  /usr/include/c++/7/bits/refwrap.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
- qt/tanzanite/contactdropdownrow.h \
- qt/tanzanite/furabstractlistitemdelegate.h qt/tanzanite/furlistrow.h \
+ qt/altecoin/contactdropdownrow.h \
+ qt/altecoin/furabstractlistitemdelegate.h qt/altecoin/furlistrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractItemDelegate \
@@ -297,7 +297,7 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintEngine \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
- qt/tanzanite/addressfilterproxymodel.h \
+ qt/altecoin/addressfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractproxymodel.h \
@@ -788,15 +788,15 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
  /usr/include/c++/7/bits/codecvt.h /usr/include/c++/7/bits/unique_ptr.h \
  /usr/include/openssl/sha.h /usr/include/openssl/e_os2.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
- qt/tanzanite/settings/settingssignmessagewidgets.h \
- qt/tanzanite/settings/settingswalletrepairwidget.h \
- qt/tanzanite/settings/settingswalletoptionswidget.h \
+ qt/altecoin/settings/settingssignmessagewidgets.h \
+ qt/altecoin/settings/settingswalletrepairwidget.h \
+ qt/altecoin/settings/settingswalletoptionswidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDataWidgetMapper \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdatawidgetmapper.h \
- qt/tanzanite/settings/settingsmainoptionswidget.h \
- qt/tanzanite/settings/settingsdisplayoptionswidget.h \
- qt/tanzanite/settings/settingsmultisendwidget.h \
- qt/tanzanite/settings/settingsinformationwidget.h qt/rpcconsole.h \
+ qt/altecoin/settings/settingsmainoptionswidget.h \
+ qt/altecoin/settings/settingsdisplayoptionswidget.h \
+ qt/altecoin/settings/settingsmultisendwidget.h \
+ qt/altecoin/settings/settingsinformationwidget.h qt/rpcconsole.h \
  qt/guiutil.h amount.h qt/askpassphrasedialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h allocators.h \
@@ -910,12 +910,12 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
  /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
  /usr/include/c++/7/bits/fstream.tcc qt/peertablemodel.h main.h \
- config/tanzanite-config.h amount.h chain.h chainparams.h \
+ config/altecoin-config.h amount.h chain.h chainparams.h \
  chainparamsbase.h checkpoints.h primitives/block.h \
  primitives/transaction.h libzerocoin/CoinSpend.h streams.h \
  utilstrencodings.h libzerocoin/Accumulator.h libzerocoin/Coin.h \
  libzerocoin/Denominations.h libzerocoin/Params.h libzerocoin/bignum.h \
- config/tanzanite-config.h /usr/include/x86_64-linux-gnu/gmp.h \
+ config/altecoin-config.h /usr/include/x86_64-linux-gnu/gmp.h \
  serialize.h uint256.h version.h random.h crypto/chacha20.h \
  crypto/common.h compat/endian.h compat/byteswap.h \
  /usr/include/byteswap.h libzerocoin/ZerocoinDefines.h util.h compat.h \
@@ -1346,8 +1346,8 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
  /usr/include/boost/detail/atomic_redef_macros.hpp net.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCompleter \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcompleter.h \
- qt/tanzanite/settings/settingsconsolewidget.h qt/guiutil.h \
- qt/tanzanite/settings/forms/ui_settingswidget.h \
+ qt/altecoin/settings/settingsconsolewidget.h qt/guiutil.h \
+ qt/altecoin/settings/forms/ui_settingswidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction \
@@ -1384,7 +1384,7 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstackedwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
- qt/tanzanite/qtutils.h \
+ qt/altecoin/qtutils.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPropertyAnimation \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpropertyanimation.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariantanimation.h \
@@ -1402,15 +1402,15 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStandardPaths \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h \
- qt/tanzanite/tanzanitegui.h \
+ qt/altecoin/altecoingui.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStackedWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSystemTrayIcon \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsystemtrayicon.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
- qt/tanzanite/navmenuwidget.h qt/tanzanite/topbar.h \
- qt/tanzanite/lockunlock.h qt/walletmodel.h qt/paymentrequestplus.h \
+ qt/altecoin/navmenuwidget.h qt/altecoin/topbar.h \
+ qt/altecoin/lockunlock.h qt/walletmodel.h qt/paymentrequestplus.h \
  qt/paymentrequest.pb.h /usr/include/google/protobuf/stubs/common.h \
  /usr/include/google/protobuf/stubs/port.h \
  /usr/include/x86_64-linux-gnu/sys/param.h /usr/include/signal.h \
@@ -1492,10 +1492,10 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
- qt/tanzanite/dashboardwidget.h qt/transactiontablemodel.h \
+ qt/altecoin/dashboardwidget.h qt/transactiontablemodel.h \
  qt/bitcoinunits.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractListModel \
- qt/tanzanite/txviewholder.h qt/tanzanite/txrow.h \
+ qt/altecoin/txviewholder.h qt/altecoin/txrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  qt/transactionrecord.h qt/bitcoinunits.h qt/transactionfilterproxy.h \
@@ -1548,12 +1548,12 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/qbarset.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/QValueAxis \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/qvalueaxis.h \
- qt/tanzanite/send.h \
+ qt/altecoin/send.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
- qt/tanzanite/sendmultirow.h \
+ qt/altecoin/sendmultirow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction \
- qt/tanzanite/sendcustomfeedialog.h qt/coincontroldialog.h \
- qt/tanzanite/snackbar.h \
+ qt/altecoin/sendcustomfeedialog.h qt/coincontroldialog.h \
+ qt/altecoin/snackbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractButton \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu \
@@ -1562,23 +1562,23 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-settingswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreeview.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtreewidgetitemiterator.h \
- qt/zpivcontroldialog.h qt/tanzanite/tooltipmenu.h \
- qt/tanzanite/receivewidget.h \
+ qt/zpivcontroldialog.h qt/altecoin/tooltipmenu.h \
+ qt/altecoin/receivewidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem \
- qt/tanzanite/addresseswidget.h \
- qt/tanzanite/furabstractlistitemdelegate.h qt/tanzanite/privacywidget.h \
- qt/tanzanite/coldstakingwidget.h qt/tanzanite/coldstakingmodel.h \
- qt/tanzanite/addressholder.h qt/tanzanite/myaddressrow.h \
- qt/tanzanite/addressfilterproxymodel.h qt/tanzanite/masternodeswidget.h \
- qt/tanzanite/mnmodel.h masternode.h masternodeconfig.h qt/rpcconsole.h \
- qt/tanzanite/defaultdialog.h qt/optionsmodel.h qt/clientmodel.h \
+ qt/altecoin/addresseswidget.h \
+ qt/altecoin/furabstractlistitemdelegate.h qt/altecoin/privacywidget.h \
+ qt/altecoin/coldstakingwidget.h qt/altecoin/coldstakingmodel.h \
+ qt/altecoin/addressholder.h qt/altecoin/myaddressrow.h \
+ qt/altecoin/addressfilterproxymodel.h qt/altecoin/masternodeswidget.h \
+ qt/altecoin/mnmodel.h masternode.h masternodeconfig.h qt/rpcconsole.h \
+ qt/altecoin/defaultdialog.h qt/optionsmodel.h qt/clientmodel.h \
  qt/utilitydialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollBar \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollbar.h
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/settings/settingswidget.h:
+qt/altecoin/settings/settingswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -2182,7 +2182,7 @@ qt/tanzanite/settings/settingswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
 
-qt/tanzanite/pwidget.h:
+qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -2192,13 +2192,13 @@ qt/tanzanite/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/tanzanite/prunnable.h:
+qt/altecoin/prunnable.h:
 
-qt/tanzanite/settings/settingsbackupwallet.h:
+qt/altecoin/settings/settingsbackupwallet.h:
 
-qt/tanzanite/settings/settingsbittoolwidget.h:
+qt/altecoin/settings/settingsbittoolwidget.h:
 
-qt/tanzanite/contactsdropdown.h:
+qt/altecoin/contactsdropdown.h:
 
 qt/addresstablemodel.h:
 
@@ -2220,11 +2220,11 @@ qt/addresstablemodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h:
 
-qt/tanzanite/contactdropdownrow.h:
+qt/altecoin/contactdropdownrow.h:
 
-qt/tanzanite/furabstractlistitemdelegate.h:
+qt/altecoin/furabstractlistitemdelegate.h:
 
-qt/tanzanite/furlistrow.h:
+qt/altecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
 
@@ -2280,7 +2280,7 @@ qt/tanzanite/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:
 
-qt/tanzanite/addressfilterproxymodel.h:
+qt/altecoin/addressfilterproxymodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel:
 
@@ -3378,23 +3378,23 @@ crypto/sha512.h:
 
 /usr/include/x86_64-linux-gnu/openssl/opensslconf.h:
 
-qt/tanzanite/settings/settingssignmessagewidgets.h:
+qt/altecoin/settings/settingssignmessagewidgets.h:
 
-qt/tanzanite/settings/settingswalletrepairwidget.h:
+qt/altecoin/settings/settingswalletrepairwidget.h:
 
-qt/tanzanite/settings/settingswalletoptionswidget.h:
+qt/altecoin/settings/settingswalletoptionswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDataWidgetMapper:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdatawidgetmapper.h:
 
-qt/tanzanite/settings/settingsmainoptionswidget.h:
+qt/altecoin/settings/settingsmainoptionswidget.h:
 
-qt/tanzanite/settings/settingsdisplayoptionswidget.h:
+qt/altecoin/settings/settingsdisplayoptionswidget.h:
 
-qt/tanzanite/settings/settingsmultisendwidget.h:
+qt/altecoin/settings/settingsmultisendwidget.h:
 
-qt/tanzanite/settings/settingsinformationwidget.h:
+qt/altecoin/settings/settingsinformationwidget.h:
 
 qt/rpcconsole.h:
 
@@ -3658,7 +3658,7 @@ qt/peertablemodel.h:
 
 main.h:
 
-config/tanzanite-config.h:
+config/altecoin-config.h:
 
 amount.h:
 
@@ -3690,7 +3690,7 @@ libzerocoin/Params.h:
 
 libzerocoin/bignum.h:
 
-config/tanzanite-config.h:
+config/altecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/gmp.h:
 
@@ -4720,11 +4720,11 @@ net.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcompleter.h:
 
-qt/tanzanite/settings/settingsconsolewidget.h:
+qt/altecoin/settings/settingsconsolewidget.h:
 
 qt/guiutil.h:
 
-qt/tanzanite/settings/forms/ui_settingswidget.h:
+qt/altecoin/settings/forms/ui_settingswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant:
 
@@ -4798,7 +4798,7 @@ qt/tanzanite/settings/forms/ui_settingswidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
-qt/tanzanite/qtutils.h:
+qt/altecoin/qtutils.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QPropertyAnimation:
 
@@ -4834,7 +4834,7 @@ qt/tanzanite/qtutils.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h:
 
-qt/tanzanite/tanzanitegui.h:
+qt/altecoin/altecoingui.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:
 
@@ -4848,11 +4848,11 @@ qt/tanzanite/tanzanitegui.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel:
 
-qt/tanzanite/navmenuwidget.h:
+qt/altecoin/navmenuwidget.h:
 
-qt/tanzanite/topbar.h:
+qt/altecoin/topbar.h:
 
-qt/tanzanite/lockunlock.h:
+qt/altecoin/lockunlock.h:
 
 qt/walletmodel.h:
 
@@ -5110,7 +5110,7 @@ wallet/wallet.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h:
 
-qt/tanzanite/dashboardwidget.h:
+qt/altecoin/dashboardwidget.h:
 
 qt/transactiontablemodel.h:
 
@@ -5118,9 +5118,9 @@ qt/bitcoinunits.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractListModel:
 
-qt/tanzanite/txviewholder.h:
+qt/altecoin/txviewholder.h:
 
-qt/tanzanite/txrow.h:
+qt/altecoin/txrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime:
 
@@ -5230,19 +5230,19 @@ qt/transactionfilterproxy.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCharts/qvalueaxis.h:
 
-qt/tanzanite/send.h:
+qt/altecoin/send.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton:
 
-qt/tanzanite/sendmultirow.h:
+qt/altecoin/sendmultirow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction:
 
-qt/tanzanite/sendcustomfeedialog.h:
+qt/altecoin/sendcustomfeedialog.h:
 
 qt/coincontroldialog.h:
 
-qt/tanzanite/snackbar.h:
+qt/altecoin/snackbar.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractButton:
 
@@ -5262,31 +5262,31 @@ qt/tanzanite/snackbar.h:
 
 qt/zpivcontroldialog.h:
 
-qt/tanzanite/tooltipmenu.h:
+qt/altecoin/tooltipmenu.h:
 
-qt/tanzanite/receivewidget.h:
+qt/altecoin/receivewidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem:
 
-qt/tanzanite/addresseswidget.h:
+qt/altecoin/addresseswidget.h:
 
-qt/tanzanite/furabstractlistitemdelegate.h:
+qt/altecoin/furabstractlistitemdelegate.h:
 
-qt/tanzanite/privacywidget.h:
+qt/altecoin/privacywidget.h:
 
-qt/tanzanite/coldstakingwidget.h:
+qt/altecoin/coldstakingwidget.h:
 
-qt/tanzanite/coldstakingmodel.h:
+qt/altecoin/coldstakingmodel.h:
 
-qt/tanzanite/addressholder.h:
+qt/altecoin/addressholder.h:
 
-qt/tanzanite/myaddressrow.h:
+qt/altecoin/myaddressrow.h:
 
-qt/tanzanite/addressfilterproxymodel.h:
+qt/altecoin/addressfilterproxymodel.h:
 
-qt/tanzanite/masternodeswidget.h:
+qt/altecoin/masternodeswidget.h:
 
-qt/tanzanite/mnmodel.h:
+qt/altecoin/mnmodel.h:
 
 masternode.h:
 
@@ -5294,7 +5294,7 @@ masternodeconfig.h:
 
 qt/rpcconsole.h:
 
-qt/tanzanite/defaultdialog.h:
+qt/altecoin/defaultdialog.h:
 
 qt/optionsmodel.h:
 

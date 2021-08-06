@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2019 The Tanzanite developers
+// Copyright (c) 2017-2019 The Altecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_CSPORKDB_H
-#define Tanzanite_CSPORKDB_H
+#ifndef Altecoin_CSPORKDB_H
+#define Altecoin_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //Tanzanite_CSPORKDB_H
+#endif //Altecoin_CSPORKDB_H

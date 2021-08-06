@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_PFBorderImage_H
-#define Tanzanite_PFBorderImage_H
+#ifndef Altecoin_PFBorderImage_H
+#define Altecoin_PFBorderImage_H
 
 #include <QPainter>
 #include <QPixmap>
@@ -52,4 +52,4 @@ protected:
 
 };
 
-#endif //Tanzanite_PFBorderImage_H
+#endif //Altecoin_PFBorderImage_H

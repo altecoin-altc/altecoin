@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2015-2018 The Tanzanite developers
+// Copyright (c) 2015-2018 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_KEY_H
-#define Tanzanite_KEY_H
+#ifndef Altecoin_KEY_H
+#define Altecoin_KEY_H
 
 #include "allocators.h"
 #include "serialize.h"
@@ -181,4 +181,4 @@ void ECC_Stop(void);
 /** Check that required EC support is available at runtime. */
 bool ECC_InitSanityCheck(void);
 
-#endif // Tanzanite_KEY_H
+#endif // Altecoin_KEY_H

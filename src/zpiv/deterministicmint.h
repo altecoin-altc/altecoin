@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The Tanzanite developers
+// Copyright (c) 2018 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_DETERMINISTICMINT_H
-#define Tanzanite_DETERMINISTICMINT_H
+#ifndef Altecoin_DETERMINISTICMINT_H
+#define Altecoin_DETERMINISTICMINT_H
 
 #include <libzerocoin/Denominations.h>
 #include <uint256.h>
@@ -64,4 +64,4 @@ public:
     };
 };
 
-#endif //Tanzanite_DETERMINISTICMINT_H
+#endif //Altecoin_DETERMINISTICMINT_H

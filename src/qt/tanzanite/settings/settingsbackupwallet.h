@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,7 +6,7 @@
 #define SETTINGSBACKUPWALLET_H
 
 #include <QWidget>
-#include "qt/tanzanite/pwidget.h"
+#include "qt/altecoin/pwidget.h"
 
 namespace Ui {
 class SettingsBackupWallet;
@@ -17,7 +17,7 @@ class SettingsBackupWallet : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsBackupWallet(TanzaniteGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsBackupWallet(AltecoinGUI* _window, QWidget *parent = nullptr);
     ~SettingsBackupWallet();
 
 private slots:

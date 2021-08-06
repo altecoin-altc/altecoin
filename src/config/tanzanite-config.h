@@ -1,9 +1,9 @@
-/* src/config/tanzanite-config.h.  Generated from tanzanite-config.h.in by configure.  */
-/* src/config/tanzanite-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/altecoin-config.h.  Generated from altecoin-config.h.in by configure.  */
+/* src/config/altecoin-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef TZT_CONFIG_H
+#ifndef ALTC_CONFIG_H
 
-#define TZT_CONFIG_H
+#define ALTC_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -346,19 +346,19 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "https://github.com/tanzanite-project/tanzanite/issues"
+#define PACKAGE_BUGREPORT "https://github.com/altecoin-project/altecoin/issues"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Tanzanite Core"
+#define PACKAGE_NAME "Altecoin Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Tanzanite Core 1.0.0"
+#define PACKAGE_STRING "Altecoin Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "tanzanite"
+#define PACKAGE_TARNAME "altecoin"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "https://tanzanite.org/"
+#define PACKAGE_URL "https://altecoin.org/"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "1.0.0"
@@ -433,4 +433,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //TZT_CONFIG_H
+#endif //ALTC_CONFIG_H

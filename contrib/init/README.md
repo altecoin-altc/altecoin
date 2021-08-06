@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: tanzanited.service
-Upstart: tanzanited.conf
-OpenRC:  tanzanited.openrc
-         tanzanited.openrcconf
-CentOS:  tanzanited.init
-macOS:    org.tanzanite.tanzanited.plist
+SystemD: altecoind.service
+Upstart: altecoind.conf
+OpenRC:  altecoind.openrc
+         altecoind.openrcconf
+CentOS:  altecoind.init
+macOS:    org.altecoin.altecoind.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

@@ -130,12 +130,12 @@
         <translation>Mottagar adresser</translation>
     </message>
     <message>
-        <source>These are your Tanzanite addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina Tanzanite adresser för att skicka betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <source>These are your Altecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Det här är dina Altecoin adresser för att skicka betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
-        <source>These are your Tanzanite addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina Tanzanite adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your Altecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Det här är dina Altecoin adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -370,16 +370,16 @@ for staking</source>
         <translation>cancel</translation>
     </message>
     <message>
-        <source>Tanzanite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TZTs from being stolen by malware infecting your computer.</source>
-        <translation>Tanzanite kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina TZTs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>Altecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALTCs from being stolen by malware infecting your computer.</source>
+        <translation>Altecoin kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina ALTCs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TZT&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA TZT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALTC&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA ALTC&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -464,8 +464,8 @@ for staking</source>
         <translation>text etikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tanzanite.conf).</source>
-        <translation>Alla transaktioner kommer inte visas. För att visa alla transaktioner behöver du sätta txindex=1 i konfigurationsfilen (tanzanite.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (altecoin.conf).</source>
+        <translation>Alla transaktioner kommer inte visas. För att visa alla transaktioner behöver du sätta txindex=1 i konfigurationsfilen (altecoin.conf).</translation>
     </message>
 </context>
 <context>
@@ -541,8 +541,8 @@ for staking</source>
         <translation>Tryck på knappen</translation>
     </message>
     <message>
-        <source>0.00 TZT</source>
-        <translation>0.00 TZT</translation>
+        <source>0.00 ALTC</source>
+        <translation>0.00 ALTC</translation>
     </message>
     <message>
         <source>0</source>
@@ -752,8 +752,8 @@ for staking</source>
         <translation>Tryck på knappen</translation>
     </message>
     <message>
-        <source>TZT:</source>
-        <translation>TZT:</translation>
+        <source>ALTC:</source>
+        <translation>ALTC:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -889,12 +889,12 @@ for staking</source>
         <translation>Staking statistik</translation>
     </message>
     <message>
-        <source>TZT</source>
-        <translation>TZT</translation>
+        <source>ALTC</source>
+        <translation>ALTC</translation>
     </message>
     <message>
-        <source>zTZT</source>
-        <translation>zTZT</translation>
+        <source>zALTC</source>
+        <translation>zALTC</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -925,8 +925,8 @@ for staking</source>
         <translation>Du kan se ditt kontos historik</translation>
     </message>
     <message>
-        <source>Amount of TZT and zTZT staked.</source>
-        <translation>Mängden TZT och zTZT som präglats.</translation>
+        <source>Amount of ALTC and zALTC staked.</source>
+        <translation>Mängden ALTC och zALTC som präglats.</translation>
     </message>
     <message>
         <source>All</source>
@@ -965,8 +965,8 @@ for staking</source>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>How to get TZT or zTZT</source>
-        <translation>Hur man får TZT eller zTZT.</translation>
+        <source>How to get ALTC or zALTC</source>
+        <translation>Hur man får ALTC eller zALTC.</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1116,8 +1116,8 @@ Den startar automatiskt så snart plånboken har tillräckligt många bekräftel
         <translation>Redigera skickande adress</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Tanzanite address.</source>
-        <translation>Den inmatade adressen "%1" är ej en giltig Tanzanite adress.</translation>
+        <source>The entered address "%1" is not a valid Altecoin address.</source>
+        <translation>Den inmatade adressen "%1" är ej en giltig Altecoin adress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1212,16 +1212,16 @@ Den startar automatiskt så snart plånboken har tillräckligt många bekräftel
         <translation>version</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Tanzanite Core</source>
-        <translation>Om Tanzanite Kärna</translation>
+        <source>About Altecoin Core</source>
+        <translation>Om Altecoin Kärna</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1271,16 +1271,16 @@ Den startar automatiskt så snart plånboken har tillräckligt många bekräftel
         <translation>Välkommen</translation>
     </message>
     <message>
-        <source>Welcome to Tanzanite Core.</source>
-        <translation>Välkommen till Tanzanite Core.</translation>
+        <source>Welcome to Altecoin Core.</source>
+        <translation>Välkommen till Altecoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Tanzanite Core will store its data.</source>
-        <translation>Eftersom detta är första gången programmet körs så kan du välja var Tanzanite Core ska spara sin data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Altecoin Core will store its data.</source>
+        <translation>Eftersom detta är första gången programmet körs så kan du välja var Altecoin Core ska spara sin data.</translation>
     </message>
     <message>
-        <source>Tanzanite Core will download and store a copy of the Tanzanite block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Tanzanite Kärnan kommer ladda ner och spara en kopia av Tanzanite block chain. Minst %1GB data kommer sparas i denna katalog och den kommer växa med tiden. Plånboken kommer också sparas i denna katalog.</translation>
+        <source>Altecoin Core will download and store a copy of the Altecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Altecoin Kärnan kommer ladda ner och spara en kopia av Altecoin block chain. Minst %1GB data kommer sparas i denna katalog och den kommer växa med tiden. Plånboken kommer också sparas i denna katalog.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1299,8 +1299,8 @@ Den startar automatiskt så snart plånboken har tillräckligt många bekräftel
         <translation>ok</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1403,16 +1403,16 @@ Den startar automatiskt så snart plånboken har tillräckligt många bekräftel
         <translation>Adress</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Tanzanite Masternode you must dedicate 10.000 TZT (the unit of Tanzanite) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>För att skapa en Tanzanite Masternode måste du avsätta 10.000 TZT (enheten till Tanzanite) till nätverket (dessa mynt är dock fortfarande dina och kommer aldrig att lämna ditt innehav). Du kan stänga av noden och låsa upp mynt när som helst.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Altecoin Masternode you must dedicate 10.000 ALTC (the unit of Altecoin) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>För att skapa en Altecoin Masternode måste du avsätta 10.000 ALTC (enheten till Altecoin) till nätverket (dessa mynt är dock fortfarande dina och kommer aldrig att lämna ditt innehav). Du kan stänga av noden och låsa upp mynt när som helst.</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
         <translation>Se till att du har denna mängd mynt.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 TZT will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>En transaktion på 10 000 TZT kommer göras till en ny tom adress i din plånbok. Adressen är märkt under huvudnodens namn.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 ALTC will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>En transaktion på 10 000 ALTC kommer göras till en ny tom adress i din plånbok. Adressen är märkt under huvudnodens namn.</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1578,14 +1578,14 @@ Please wait few more minutes.</source>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the tanzanite.conf file
+You will only have to paste the data in the altecoin.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
         <translation>Du är precis på väg att exportera nödvändig data för att köra en Masternode
 på en server.
 
-Du behöver bara infoga data i filen tanzanite.conf
+Du behöver bara infoga data i filen altecoin.conf
 på din server och starta den och starta sedan Masternode med
 denna plånbok (välj Masternode i listan och tryck på "start").</translation>
     </message>
@@ -1617,8 +1617,8 @@ Are you sure?</source>
         <translation>Masternode conf file existerar inte</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 TZT required.</source>
-        <translation>Inte nog på saldot för att skapa en Masternode, 10000 TZT behövs.</translation>
+        <source>Not enough balance to create a masternode, 10,000 ALTC required.</source>
+        <translation>Inte nog på saldot för att skapa en Masternode, 10000 ALTC behövs.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1771,8 +1771,8 @@ Are you sure?</source>
         <translation>Om du avaktiverar spenderandet av okonfirmerad växel så kommer växeln från en transaktion &lt;br/&gt;ej kunna användas föräns transaktionen har minst en bekräftelse. &lt;br/&gt; Detta påverkar även hur ditt saldo beräknas.</translation>
     </message>
     <message>
-        <source>Automatically open the Tanzanite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt Tanzanite klient porten på denna router. Detta funkar endast om din router stödjer UPnP och är påslaget.</translation>
+        <source>Automatically open the Altecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt Altecoin klient porten på denna router. Detta funkar endast om din router stödjer UPnP och är påslaget.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1791,12 +1791,12 @@ Are you sure?</source>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Tanzanite after logging in to the system.</source>
-        <translation>Starta Tanzanite automatiskt efter inloggning på systemet.</translation>
+        <source>Automatically start Altecoin after logging in to the system.</source>
+        <translation>Starta Altecoin automatiskt efter inloggning på systemet.</translation>
     </message>
     <message>
-        <source>&amp;Start Tanzanite on system login</source>
-        <translation>&amp;Starta Tanzanite vid systeminloggning</translation>
+        <source>&amp;Start Altecoin on system login</source>
+        <translation>&amp;Starta Altecoin vid systeminloggning</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1823,58 +1823,58 @@ Are you sure?</source>
         <translation>&amp;Nätverk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Tanzanite.</source>
-        <translation>Användargränssnittets språk kan väljas här. Denna inställning börjar gälla efter att man startat om Tanzanite.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Altecoin.</source>
+        <translation>Användargränssnittets språk kan väljas här. Denna inställning börjar gälla efter att man startat om Altecoin.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tanzanite-project/tanzanite-project-translations</source>
+https://www.transifex.com/altecoin-project/altecoin-project-translations</source>
         <translation>Fattas språk eller är översättningen ofullständig? Hjälp till att bidra med översättning här:
-https://www.transifex.com/tanzanite-project/tanzanite-project-translations</translation>
+https://www.transifex.com/altecoin-project/altecoin-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Kartlägg port med &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of TZT units to zTZT</source>
-        <translation>Tillåt automatisk prägling med TZT enheter till zTZT</translation>
+        <source>Enable automatic minting of ALTC units to zALTC</source>
+        <translation>Tillåt automatisk prägling med ALTC enheter till zALTC</translation>
     </message>
     <message>
-        <source>Enable zTZT Automint</source>
-        <translation>Tillåt zTZT Autoprägling</translation>
+        <source>Enable zALTC Automint</source>
+        <translation>Tillåt zALTC Autoprägling</translation>
     </message>
     <message>
-        <source>Enable automatic zTZT minting from specific addresses</source>
-        <translation>Aktivera automatisk zTZT prägling från specifika adresser</translation>
+        <source>Enable automatic zALTC minting from specific addresses</source>
+        <translation>Aktivera automatisk zALTC prägling från specifika adresser</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Aktivera autopräglingsadresser</translation>
     </message>
     <message>
-        <source>Percentage of incoming TZT which get automatically converted to zTZT via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent av inkommande TZT som automatiskt konverteras till zTZT via Zerocoin Protokollet (min: 10%)</translation>
+        <source>Percentage of incoming ALTC which get automatically converted to zALTC via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent av inkommande ALTC som automatiskt konverteras till zALTC via Zerocoin Protokollet (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTZT</source>
-        <translation>Procent av autopräglade zTZT</translation>
+        <source>Percentage of autominted zALTC</source>
+        <translation>Procent av autopräglade zALTC</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough TZT for this denomination is available</source>
-        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många TZT för denna valör är tillgängliga</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough ALTC for this denomination is available</source>
+        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många ALTC för denna valör är tillgängliga</translation>
     </message>
     <message>
-        <source>Preferred Automint zTZT Denomination</source>
-        <translation>Preferens på zTZT valör i autoprägling</translation>
+        <source>Preferred Automint zALTC Denomination</source>
+        <translation>Preferens på zALTC valör i autoprägling</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Staking delnings tröskel:</translation>
     </message>
     <message>
-        <source>Connect to the Tanzanite network through a SOCKS5 proxy.</source>
-        <translation>Anslut till Tanzanite nätverket via en SOCKS5 proxy.</translation>
+        <source>Connect to the Altecoin network through a SOCKS5 proxy.</source>
+        <translation>Anslut till Altecoin nätverket via en SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2018,10 +2018,10 @@ https://www.transifex.com/tanzanite-project/tanzanite-project-translations</tran
     </message>
 </context>
 <context>
-    <name>TanzaniteGUI</name>
+    <name>AltecoinGUI</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -2048,8 +2048,8 @@ https://www.transifex.com/tanzanite-project/tanzanite-project-translations</tran
         <translation>Avsluta applikationen</translation>
     </message>
     <message>
-        <source>Tanzanite Core client</source>
-        <translation>Tanzanite kärn klient</translation>
+        <source>Altecoin Core client</source>
+        <translation>Altecoin kärn klient</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2092,8 +2092,8 @@ Adress: %4
 </translation>
     </message>
     <message>
-        <source>A fatal error occurred. Tanzanite can no longer continue safely and will quit.</source>
-        <translation>Ett fel inträffade. Tanzanite kan inte längre köras säkert och kommer att stängas ned för tillfället.</translation>
+        <source>A fatal error occurred. Altecoin can no longer continue safely and will quit.</source>
+        <translation>Ett fel inträffade. Altecoin kan inte längre köras säkert och kommer att stängas ned för tillfället.</translation>
     </message>
 </context>
 <context>
@@ -2126,12 +2126,12 @@ Adress: %4
         <translation>Ogiltig betalningsadress %1</translation>
     </message>
     <message>
-        <source>Cannot start tanzanite: click-to-pay handler</source>
-        <translation>Kan ej starta tanzanite: klicka-för-att-betala hanterare</translation>
+        <source>Cannot start altecoin: click-to-pay handler</source>
+        <translation>Kan ej starta altecoin: klicka-för-att-betala hanterare</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Tanzanite address or malformed URI parameters.</source>
-        <translation>URI kunde ej analyseras! Detta kan orsakas av en ogiltig Tanzanite adress eller felproducerade URI parametrar.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Altecoin address or malformed URI parameters.</source>
+        <translation>URI kunde ej analyseras! Detta kan orsakas av en ogiltig Altecoin adress eller felproducerade URI parametrar.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2244,42 +2244,42 @@ Adress: %4
         <translation>Prägla</translation>
     </message>
     <message>
-        <source>Minting zTZT anonymizes your TZT by removing any
+        <source>Minting zALTC anonymizes your ALTC by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Prägling av zTZT anonymiserar dina TZT genom att ta bort
+        <translation>Prägling av zALTC anonymiserar dina ALTC genom att ta bort
 transaktionshistorik, vilket gör transaktioner ospårbara</translation>
     </message>
     <message>
-        <source>Mint new zTZT or convert back to TZT</source>
-        <translation>Prägla nya zTZT eller konvertera tillbaka till TZT</translation>
+        <source>Mint new zALTC or convert back to ALTC</source>
+        <translation>Prägla nya zALTC eller konvertera tillbaka till ALTC</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>Mint zTZT</source>
-        <translation>Prägla zTZT</translation>
+        <source>Mint zALTC</source>
+        <translation>Prägla zALTC</translation>
     </message>
     <message>
-        <source>Enter amount of TZT to mint into zTZT</source>
-        <translation>Ange TZT beloppet att prägla till zTZT</translation>
+        <source>Enter amount of ALTC to mint into zALTC</source>
+        <translation>Ange ALTC beloppet att prägla till zALTC</translation>
     </message>
     <message>
-        <source>Convert back to TZT</source>
-        <translation>Konvertera tillbaka till TZT</translation>
+        <source>Convert back to ALTC</source>
+        <translation>Konvertera tillbaka till ALTC</translation>
     </message>
     <message>
-        <source>Enter amount of zTZT to convert back into TZT</source>
-        <translation>Ange mängden zTZT som ska konverteras tillbaka till TZT</translation>
+        <source>Enter amount of zALTC to convert back into ALTC</source>
+        <translation>Ange mängden zALTC som ska konverteras tillbaka till ALTC</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zTZT is currently undergoing maintenance</source>
-        <translation>zTZT genomgår underhåll</translation>
+        <source>zALTC is currently undergoing maintenance</source>
+        <translation>zALTC genomgår underhåll</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2404,8 +2404,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2416,8 +2416,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Fel vid inläsning av masternodens konfigurationsfil: %1</translation>
     </message>
     <message>
-        <source>Tanzanite Core didn't yet exit safely...</source>
-        <translation>Tanzanite Core avslutades ännu inte säkert...</translation>
+        <source>Altecoin Core didn't yet exit safely...</source>
+        <translation>Altecoin Core avslutades ännu inte säkert...</translation>
     </message>
 </context>
 <context>
@@ -2491,8 +2491,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the Tanzanite debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna Tanzanite felsökningslogg från den nuvarande data katalogen. Detta kan ta några sekunder för stora logg filer.</translation>
+        <source>Open the Altecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna Altecoin felsökningslogg från den nuvarande data katalogen. Detta kan ta några sekunder för stora logg filer.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2627,8 +2627,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Vanlig Backup Sökväg:</translation>
     </message>
     <message>
-        <source>Custom zTZT Backup Path:</source>
-        <translation>Vanlig zTZT Backup Sökväg:</translation>
+        <source>Custom zALTC Backup Path:</source>
+        <translation>Vanlig zALTC Backup Sökväg:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2707,8 +2707,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Ut:</translation>
     </message>
     <message>
-        <source>Welcome to the Tanzanite RPC console.</source>
-        <translation>Välkommen till Tanzanite RPC konsol.</translation>
+        <source>Welcome to the Altecoin RPC console.</source>
+        <translation>Välkommen till Altecoin RPC konsol.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2903,8 +2903,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Mängd</translation>
     </message>
     <message>
-        <source>TZT</source>
-        <translation>TZT</translation>
+        <source>ALTC</source>
+        <translation>ALTC</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2999,12 +2999,12 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Spendera Zerocoin</translation>
     </message>
     <message>
-        <source>zTZT is currently undergoing maintenance.</source>
-        <translation>zTZT genomgår för tillfället underhåll.</translation>
+        <source>zALTC is currently undergoing maintenance.</source>
+        <translation>zALTC genomgår för tillfället underhåll.</translation>
     </message>
     <message>
-        <source>Version 1 zTZT require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zTZT kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
+        <source>Version 1 zALTC require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zALTC kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3148,8 +3148,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>text etikett</translation>
     </message>
     <message>
-        <source>Welcome to the Tanzanite RPC console.</source>
-        <translation>Välkommen till Tanzanite RPC konsol.</translation>
+        <source>Welcome to the Altecoin RPC console.</source>
+        <translation>Välkommen till Altecoin RPC konsol.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3567,8 +3567,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Tanzanite Core is shutting down...</source>
-        <translation>Tanzanite Core stängs ner...</translation>
+        <source>Altecoin Core is shutting down...</source>
+        <translation>Altecoin Core stängs ner...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3589,15 +3589,15 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Formulär</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3612,8 +3612,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Dash Core utvecklarna</translation>
     </message>
     <message>
-        <source>The Tanzanite Core developers</source>
-        <translation>Tanzanite Core utvecklarna</translation>
+        <source>The Altecoin Core developers</source>
+        <translation>Altecoin Core utvecklarna</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3883,12 +3883,12 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Mottaget via Fördunkling</translation>
     </message>
     <message>
-        <source>TZT Stake</source>
-        <translation>TZT staking</translation>
+        <source>ALTC Stake</source>
+        <translation>ALTC staking</translation>
     </message>
     <message>
-        <source>zTZT Stake</source>
-        <translation>zTZT Staking</translation>
+        <source>zALTC Stake</source>
+        <translation>zALTC Staking</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3907,24 +3907,24 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Obfuscation Skapa tecken</translation>
     </message>
     <message>
-        <source>Converted TZT to zTZT</source>
-        <translation>Konvertera TZT till zTZT</translation>
+        <source>Converted ALTC to zALTC</source>
+        <translation>Konvertera ALTC till zALTC</translation>
     </message>
     <message>
-        <source>Spent zTZT</source>
-        <translation>Spendera zTZT</translation>
+        <source>Spent zALTC</source>
+        <translation>Spendera zALTC</translation>
     </message>
     <message>
-        <source>Received TZT from zTZT</source>
-        <translation>Mottog TZT från zTZT</translation>
+        <source>Received ALTC from zALTC</source>
+        <translation>Mottog ALTC från zALTC</translation>
     </message>
     <message>
-        <source>Minted Change as zTZT from zTZT Spend</source>
-        <translation>Myntad Växel som zTZT från zTZT Spendering</translation>
+        <source>Minted Change as zALTC from zALTC Spend</source>
+        <translation>Myntad Växel som zALTC från zALTC Spendering</translation>
     </message>
     <message>
-        <source>Converted zTZT to TZT</source>
-        <translation>Konverterad zTZT till TZT</translation>
+        <source>Converted zALTC to ALTC</source>
+        <translation>Konverterad zALTC till ALTC</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4040,8 +4040,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Skicka Mynt</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TZT.</source>
-        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 TZT.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ALTC.</source>
+        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 ALTC.</translation>
     </message>
 </context>
 <context>
@@ -4097,8 +4097,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zTZT to Spend</source>
-        <translation>Välj zTZT att Spendera</translation>
+        <source>Select zALTC to Spend</source>
+        <translation>Välj zALTC att Spendera</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -4126,7 +4126,7 @@ Var vänlig kontrollera adressen och försök igen.</translation>
     </message>
     </context>
 <context>
-    <name>tanzanite-core</name>
+    <name>altecoin-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behåll tx meta data t.ex. kontoägare och information om betalningsförfråga, 2 = släpp tx meta data)</translation>
@@ -4152,8 +4152,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Beräknade ackumulator kontrollstation är inte vad som sparats av block index</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Tanzanite Core is probably already running.</source>
-        <translation>Kan ej låsa in på data katalog %s. Tanzanite Kärna körs förmodligen redan.</translation>
+        <source>Cannot obtain a lock on data directory %s. Altecoin Core is probably already running.</source>
+        <translation>Kan ej låsa in på data katalog %s. Altecoin Kärna körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4180,16 +4180,16 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Distribuerad under MIT mjukvarulicensen, se medföljande fil COPYING eller &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zTZT minting (0-1, default: %u)</source>
-        <translation>Aktivera automatisk plånboksbackup efter varje zTZT minting (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zALTC minting (0-1, default: %u)</source>
+        <translation>Aktivera automatisk plånboksbackup efter varje zALTC minting (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for TZT inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för TZT inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for ALTC inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för ALTC inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zTZT inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för zTZT inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zALTC inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för zALTC inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4224,12 +4224,12 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Exekvera kommando när den bästa block ändras (%s i cmd är utbytt mot block hash)</translation>
     </message>
     <message>
-        <source>Fees (in TZT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Avgifter (i TZT/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
+        <source>Fees (in ALTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Avgifter (i ALTC/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TZT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Avgifter (i TZT/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
+        <source>Fees (in ALTC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Avgifter (i ALTC/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4328,20 +4328,20 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Totala längden av nätverks verisionens sträng (%i) överskrider maximala längd (%i). Minska mängden eller storleken av uakommentarer.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Tanzanite Core is probably already running.</source>
-        <translation>Kan inte binda till %s på denna dator. Tanzanite Core körs förmodligen redan.</translation>
+        <source>Unable to bind to %s on this computer. Altecoin Core is probably already running.</source>
+        <translation>Kan inte binda till %s på denna dator. Altecoin Core körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Kan ej lokalisera tillräckligt Fördunklingsdenominationerade pengar för denna transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TZT.</source>
-        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 TZT.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 ALTC.</source>
+        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 ALTC.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 TZT.</source>
-        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 TZT.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 ALTC.</source>
+        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 ALTC.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4356,8 +4356,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Varning: -maxtxfee är sätt väldigt högt! Detta är transaktionsavgiften du kommer betala om du skickar en transaktion.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Tanzanite Core will not work properly.</source>
-        <translation>Varning: Var vänlig kontrollera att din dators tid och datum är korrekt! Om din klocka är fel så kommer Tanzanite Core inte att fungera korrekt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Altecoin Core will not work properly.</source>
+        <translation>Varning: Var vänlig kontrollera att din dators tid och datum är korrekt! Om din klocka är fel så kommer Altecoin Core inte att fungera korrekt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4488,8 +4488,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Tanzanite Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Tanzanite Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Altecoin Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Altecoin Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4568,8 +4568,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Fel vid laddning av wallet.dat: Plånbok korrupterad</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Tanzanite Core</source>
-        <translation>Fel vid laddning av wallet.dat: Plånbok  kräver nyare Tanzanite Kärna version</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Altecoin Core</source>
+        <translation>Fel vid laddning av wallet.dat: Plånbok  kräver nyare Altecoin Kärna version</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4620,8 +4620,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Misslyckades läsa block</translation>
     </message>
     <message>
-        <source>Fee (in TZT/kB) to add to transactions you send (default: %s)</source>
-        <translation>Avgift (i TZT/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
+        <source>Fee (in ALTC/kB) to add to transactions you send (default: %s)</source>
+        <translation>Avgift (i ALTC/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4660,8 +4660,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Tanzanite Core is shutting down.</source>
-        <translation>Initierings renlighetscheck misslyckades. Tanzanite Kärna stängs ner.</translation>
+        <source>Initialization sanity check failed. Altecoin Core is shutting down.</source>
+        <translation>Initierings renlighetscheck misslyckades. Altecoin Kärna stängs ner.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -4720,8 +4720,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Procent automatiskt mintad Zerocoin (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the TZT and zTZT money supply statistics</source>
-        <translation>Indexera TZT och zTZT pengarna tillgång statistik på nytt</translation>
+        <source>Reindex the ALTC and zALTC money supply statistics</source>
+        <translation>Indexera ALTC och zALTC pengarna tillgång statistik på nytt</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4764,8 +4764,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all Tanzanite specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Avaktivera all Tanzanite funktionalitet (Huvudnoder, Zerocoin, SwiftX, Budgeting) (0-1, standard: %u)</translation>
+        <source>Disable all Altecoin specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Avaktivera all Altecoin funktionalitet (Huvudnoder, Zerocoin, SwiftX, Budgeting) (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -4800,8 +4800,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Valör aatt föredra för automatiskt mintad Zerocoin (1/5/10/50/100/500/1000/5000), 0 för ingen preface. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zTZT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zTZT backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
+        <source>Specify custom backup path to add a copy of any automatic zALTC backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zALTC backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5208,8 +5208,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Synkroniserar sporks...</translation>
     </message>
     <message>
-        <source>Syncing zTZT wallet...</source>
-        <translation>Synkroniserar zTZT plånbok...</translation>
+        <source>Syncing zALTC wallet...</source>
+        <translation>Synkroniserar zALTC plånbok...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5320,8 +5320,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Användarnamn för JSON-RPC anslutningar</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zTZT</source>
-        <translation>Värde är under den minsta tillgängliga valören (=1) av zTZT</translation>
+        <source>Value is below the smallest available denomination (= 1) of zALTC</source>
+        <translation>Värde är under den minsta tillgängliga valören (=1) av zALTC</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5336,8 +5336,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Plånbok %s finns utanför data katalog %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Tanzanite Core to complete</source>
-        <translation>Plånbok behöver skrivas om: starta om Tanzanite Kärna för att göra klart</translation>
+        <source>Wallet needed to be rewritten: restart Altecoin Core to complete</source>
+        <translation>Plånbok behöver skrivas om: starta om Altecoin Kärna för att göra klart</translation>
     </message>
     <message>
         <source>Wallet options:</source>

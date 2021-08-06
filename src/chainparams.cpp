@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The Tanzanite developers
+// Copyright (c) 2015-2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -168,7 +168,7 @@ public:
         pchMessageStart[3] = 0xe6;
         vAlertPubKey = ParseHex("0429094540a8b623d33ebf63678e7bdb8e26b74deb92abdda5f34449d39b834592661b9f16ca2459373edbc85cb3121f79521adf7590634c5ccd037568e34cde68");
         nDefaultPort = 52367;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Tanzanite starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Altecoin starting difficulty is 1 / 2^12
         bnProofOfStakeLimit = ~uint256(0) >> 24;
         bnProofOfStakeLimit_V2 = ~uint256(0) >> 20; // 60/4 = 15 ==> use 2**4 higher limit
         nSubsidyHalvingInterval = 999999999;
@@ -192,8 +192,8 @@ public:
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 500;
-        nTanzaniteBadBlockTime = 4070908800; // Skip nBit validation of Block 259201 per PR #915
-        nTanzaniteBadBlocknBits = 0x00; // Skip nBit validation of Block 259201 per PR #915
+        nAltecoinBadBlockTime = 4070908800; // Skip nBit validation of Block 259201 per PR #915
+        nAltecoinBadBlocknBits = 0x00; // Skip nBit validation of Block 259201 per PR #915
         nModifierUpdateBlock = 495;
         nZerocoinStartHeight = 999999999;
         nZerocoinStartTime = 4070908800; // October 17, 2017 4:30:00 AM
@@ -340,8 +340,8 @@ public:
         nToCheckBlockUpgradeMajority = 5760; // 4 days
         nMinerThreads = 0;
         nLastPOWBlock = 200;
-        nTanzaniteBadBlockTime = 1489001494; // Skip nBit validation of Block 259201 per PR #915
-        nTanzaniteBadBlocknBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
+        nAltecoinBadBlockTime = 1489001494; // Skip nBit validation of Block 259201 per PR #915
+        nAltecoinBadBlocknBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
         nMaturity = 15;
         nStakeMinDepth = 100;
         nMasternodeCountDrift = 4;
@@ -387,15 +387,15 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet tanzanite addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 135);  // Testnet tanzanite script addresses start with 'w'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet altecoin addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 135);  // Testnet altecoin script addresses start with 'w'
         base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 125);     // starting with 's'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet tanzanite BIP32 pubkeys start with 'DRKV'
+        // Testnet altecoin BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet tanzanite BIP32 prvkeys start with 'DRKP'
+        // Testnet altecoin BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet tanzanite BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet altecoin BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));

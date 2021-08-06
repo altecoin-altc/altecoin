@@ -1,10 +1,10 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/sendcustomfeedialog.h"
-#include "qt/tanzanite/forms/ui_sendcustomfeedialog.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/sendcustomfeedialog.h"
+#include "qt/altecoin/forms/ui_sendcustomfeedialog.h"
+#include "qt/altecoin/qtutils.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
 #include "guiutil.h"
@@ -37,7 +37,7 @@ SendCustomFeeDialog::SendCustomFeeDialog(QWidget *parent) :
 
     // Custom
     setCssProperty(ui->labelCustomFee, "label-subtitle-dialog");
-    ui->lineEditCustomFee->setPlaceholderText("0.000001 TZT");
+    ui->lineEditCustomFee->setPlaceholderText("0.000001 ALTC");
     initCssEditLine(ui->lineEditCustomFee, true);
 
     // Buttons

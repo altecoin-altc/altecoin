@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef COINCONTROLTZTWIDGET_H
-#define COINCONTROLTZTWIDGET_H
+#ifndef COINCONTROLALTCWIDGET_H
+#define COINCONTROLALTCWIDGET_H
 
 #include <QDialog>
 
@@ -23,4 +23,4 @@ private:
     Ui::CoinControlPivWidget *ui;
 };
 
-#endif // COINCONTROLTZTWIDGET_H
+#endif // COINCONTROLALTCWIDGET_H

@@ -1,17 +1,17 @@
-// Copyright (c) 2019-2020 The Tanzanite developers
+// Copyright (c) 2019-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/addresseswidget.h"
-#include "qt/tanzanite/forms/ui_addresseswidget.h"
-#include "qt/tanzanite/addresslabelrow.h"
-#include "qt/tanzanite/addnewaddressdialog.h"
-#include "qt/tanzanite/tooltipmenu.h"
+#include "qt/altecoin/addresseswidget.h"
+#include "qt/altecoin/forms/ui_addresseswidget.h"
+#include "qt/altecoin/addresslabelrow.h"
+#include "qt/altecoin/addnewaddressdialog.h"
+#include "qt/altecoin/tooltipmenu.h"
 
-#include "qt/tanzanite/addnewcontactdialog.h"
-#include "qt/tanzanite/tanzanitegui.h"
+#include "qt/altecoin/addnewcontactdialog.h"
+#include "qt/altecoin/altecoingui.h"
 #include "guiutil.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/qtutils.h"
 #include "walletmodel.h"
 
 #include <QModelIndex>
@@ -56,7 +56,7 @@ public:
 };
 
 
-AddressesWidget::AddressesWidget(TanzaniteGUI* parent) :
+AddressesWidget::AddressesWidget(AltecoinGUI* parent) :
     PWidget(parent),
     ui(new Ui::AddressesWidget)
 {
@@ -113,7 +113,7 @@ AddressesWidget::AddressesWidget(TanzaniteGUI* parent) :
     setCssEditLine(ui->lineEditName, true);
 
     // Address
-    ui->labelAddress->setText(tr("Enter Tanzanite address"));
+    ui->labelAddress->setText(tr("Enter Altecoin address"));
     setCssProperty(ui->labelAddress, "text-title");
     ui->lineEditAddress->setPlaceholderText("e.g. D7VFR83SQbiezrW72hjc…");
     setCssEditLine(ui->lineEditAddress, true);

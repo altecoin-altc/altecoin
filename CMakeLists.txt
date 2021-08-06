@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(Tanzanite)
+project(Altecoin)
 
 set(BDB_VER "4.8.30")
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/contrib/cmake")
@@ -31,7 +31,7 @@ elseif(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
         message(STATUS "Compiling on WSL")
         set(ENV{DISPLAY} ":0")
         set(ENV{LIBGL_ALWAYS_INDIRECT} 1)
-        set(CMAKE_RUNTIME_OUTPUT_DIRECTORY /home/$ENV{USER}/tanzanite-run)
+        set(CMAKE_RUNTIME_OUTPUT_DIRECTORY /home/$ENV{USER}/altecoin-run)
         message(WARNING "WSL Runtime support requires VcXsrv to be installed and running")
     else()
         message(STATUS "Compiling on Linux")
@@ -85,8 +85,8 @@ else()
     )
 endif()
 
-# run configure if tanzanite_config.h doesn't exist
-if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/config/tanzanite-config.h")
+# run configure if altecoin_config.h doesn't exist
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/config/altecoin-config.h")
 else()
     execute_process(
         COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/configure ${CONFIGSITE} ${BDB_CONFIGURE_FLAGS} ${BIGNUM_CONFIGURE_FLAGS} ${SSL_CONFIGURE_FLAGS}
@@ -522,13 +522,13 @@ link_directories(
         ${CMAKE_SOURCE_DIR}/src/secp256k1/.libs
         )
 
-set(tanzanite-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/tanzanite-cli.cpp)
+set(altecoin-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoin-cli.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND tanzanite-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/tanzanite-cli-res.rc)
+    list(APPEND altecoin-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoin-cli-res.rc)
 endif()
-add_executable(tanzanite-cli ${tanzanite-cli_SOURCES})
-add_dependencies(tanzanite-cli libunivalue)
-target_link_libraries(tanzanite-cli
+add_executable(altecoin-cli ${altecoin-cli_SOURCES})
+add_dependencies(altecoin-cli libunivalue)
+target_link_libraries(altecoin-cli
         CLI_A
         univalue
         UTIL_A
@@ -536,16 +536,16 @@ target_link_libraries(tanzanite-cli
         ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB}
         )
 if($ENV{target} MATCHES "Windows")
-    target_link_libraries(tanzanite-cli ${WINDOWS_LDADD})
+    target_link_libraries(altecoin-cli ${WINDOWS_LDADD})
 endif()
 
-set(tanzanite-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/tanzanite-tx.cpp)
+set(altecoin-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoin-tx.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND tanzanite-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/tanzanite-tx-res.rc)
+    list(APPEND altecoin-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoin-tx-res.rc)
 endif()
-add_executable(tanzanite-tx ${tanzanite-tx_SOURCES})
-add_dependencies(tanzanite-tx libunivalue libsecp256k1)
-target_link_libraries(tanzanite-tx
+add_executable(altecoin-tx ${altecoin-tx_SOURCES})
+add_dependencies(altecoin-tx libunivalue libsecp256k1)
+target_link_libraries(altecoin-tx
         univalue
         COMMON_A
         ZEROCOIN_A
@@ -555,26 +555,26 @@ target_link_libraries(tanzanite-tx
         ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB}
         )
 if($ENV{target} MATCHES "Windows")
-    target_link_libraries(tanzanite-tx ${WINDOWS_LDADD})
+    target_link_libraries(altecoin-tx ${WINDOWS_LDADD})
 endif()
 if(GMP_FOUND)
-    target_link_libraries(tanzanite-tx ${GMP_LIBRARY})
+    target_link_libraries(altecoin-tx ${GMP_LIBRARY})
 endif()
 
 link_directories(${CMAKE_BINARY_DIR})
 
-set(tanzanited_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/tanzanited.cpp)
+set(altecoind_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoind.cpp)
 if($ENV{target} MATCHES "Windows")
-    list(APPEND tanzanited_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/tanzanited-res.rc)
+    list(APPEND altecoind_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/altecoind-res.rc)
 endif()
-add_executable(tanzanited ${tanzanited_SOURCES} ${BitcoinHeaders})
-add_dependencies(tanzanited libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
-target_include_directories(tanzanited PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
+add_executable(altecoind ${altecoind_SOURCES} ${BitcoinHeaders})
+add_dependencies(altecoind libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
+target_include_directories(altecoind PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/helpers/memenv
         ${LIBEVENT_INCLUDE_DIR})
-target_link_libraries(tanzanited
+target_link_libraries(altecoind
         pthread
         SERVER_A
         WALLET_A
@@ -591,22 +591,22 @@ target_link_libraries(tanzanited
         )
 if($ENV{target} MATCHES "Windows")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wstack-protector -fstack-protector-all -fPIE -pipe -O2 -pthread -Wl,--dynamicbase -Wl,--nxcompat -Wl,--high-entropy-va -pie --static")
-    target_link_libraries(tanzanited ${WINDOWS_LDADD})
+    target_link_libraries(altecoind ${WINDOWS_LDADD})
 endif()
 if(GMP_FOUND)
-    target_link_libraries(tanzanited ${GMP_LIBRARY})
-    target_include_directories(tanzanited PUBLIC ${GMP_INCLUDE_DIR})
+    target_link_libraries(altecoind ${GMP_LIBRARY})
+    target_include_directories(altecoind PUBLIC ${GMP_INCLUDE_DIR})
 endif()
 if(ZMQ_FOUND)
-    target_link_libraries(tanzanited ZMQ_A ${ZMQ_LIB})
-    target_include_directories(tanzanited PUBLIC ${ZMQ_INCLUDE_DIR})
+    target_link_libraries(altecoind ZMQ_A ${ZMQ_LIB})
+    target_include_directories(altecoind PUBLIC ${ZMQ_INCLUDE_DIR})
 endif()
 if(MINIUPNP_FOUND)
-    target_compile_definitions(tanzanited PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
-    target_link_libraries(tanzanited ${MINIUPNP_LIBRARY})
-    target_include_directories(tanzanited PUBLIC ${MINIUPNP_INCLUDE_DIR})
+    target_compile_definitions(altecoind PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
+    target_link_libraries(altecoind ${MINIUPNP_LIBRARY})
+    target_include_directories(altecoind PUBLIC ${MINIUPNP_INCLUDE_DIR})
 endif()
 
-target_link_libraries(tanzanited -lpthread)
+target_link_libraries(altecoind -lpthread)
 
 add_subdirectory(src/qt)

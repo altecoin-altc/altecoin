@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/contactsdropdown.h"
+#include "qt/altecoin/contactsdropdown.h"
 
 #include <QPainter>
 #include <QSizePolicy>
-#include "qt/tanzanite/addresslabelrow.h"
-#include "qt/tanzanite/contactdropdownrow.h"
-#include "qt/tanzanite/qtutils.h"
-#include "qt/tanzanite/furlistrow.h"
+#include "qt/altecoin/addresslabelrow.h"
+#include "qt/altecoin/contactdropdownrow.h"
+#include "qt/altecoin/qtutils.h"
+#include "qt/altecoin/furlistrow.h"
 #include "walletmodel.h"
 #include "addresstablemodel.h"
 

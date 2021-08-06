@@ -1,4 +1,4 @@
-// Copyright (c) 2020 The Tanzanite developers
+// Copyright (c) 2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
  

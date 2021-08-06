@@ -1,13 +1,13 @@
-// Copyright (c) 2019-2020 The Tanzanite developers
+// Copyright (c) 2019-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/topbar.h"
-#include "qt/tanzanite/forms/ui_topbar.h"
+#include "qt/altecoin/topbar.h"
+#include "qt/altecoin/forms/ui_topbar.h"
 #include <QPixmap>
-#include "qt/tanzanite/lockunlock.h"
-#include "qt/tanzanite/qtutils.h"
-#include "qt/tanzanite/receivedialog.h"
+#include "qt/altecoin/lockunlock.h"
+#include "qt/altecoin/qtutils.h"
+#include "qt/altecoin/receivedialog.h"
 #include "askpassphrasedialog.h"
 
 #include "bitcoinunits.h"
@@ -22,7 +22,7 @@
 #include "guiinterface.h"
 
 
-TopBar::TopBar(TanzaniteGUI* _mainWindow, QWidget *parent) :
+TopBar::TopBar(AltecoinGUI* _mainWindow, QWidget *parent) :
     PWidget(_mainWindow, parent),
     ui(new Ui::TopBar)
 {
@@ -484,7 +484,7 @@ void TopBar::loadWalletModel(){
             SLOT(updateBalances(CAmount, CAmount, CAmount, CAmount, CAmount, CAmount, CAmount, CAmount, CAmount, CAmount, CAmount)));
     connect(walletModel->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     connect(walletModel, &WalletModel::encryptionStatusChanged, this, &TopBar::refreshStatus);
-    // update the display unit, to not use the default ("Tanzanite")
+    // update the display unit, to not use the default ("Altecoin")
     updateDisplayUnit();
 
     refreshStatus();
@@ -546,9 +546,9 @@ void TopBar::updateBalances(const CAmount& balance, const CAmount& unconfirmedBa
     }
     ui->labelTitle1->setText(nLockedBalance > 0 ? tr("Available (Locked included)") : tr("Available"));
 
-    // TZT Total
+    // ALTC Total
     CAmount pivAvailableBalance = balance;
-    // zTZT Balance
+    // zALTC Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
     // Set

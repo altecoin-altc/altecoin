@@ -8,10 +8,10 @@
 - Test that it is not possible to mine to an invalid address.
 """
 
-from test_framework.test_framework import TanzaniteTestFramework
+from test_framework.test_framework import AltecoinTestFramework
 from test_framework.util import *
 
-class DisableWalletTest (TanzaniteTestFramework):
+class DisableWalletTest (AltecoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1

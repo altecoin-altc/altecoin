@@ -1,6 +1,6 @@
-qt/tanzanite/qt_libbitcoinqt_a-moc_pfborderimage.o: \
- qt/tanzanite/moc_pfborderimage.cpp /usr/include/stdc-predef.h \
- qt/tanzanite/pfborderimage.h \
+qt/altecoin/qt_libbitcoinqt_a-moc_pfborderimage.o: \
+ qt/altecoin/moc_pfborderimage.cpp /usr/include/stdc-predef.h \
+ qt/altecoin/pfborderimage.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
@@ -265,7 +265,7 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_pfborderimage.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/pfborderimage.h:
+qt/altecoin/pfborderimage.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter:
 

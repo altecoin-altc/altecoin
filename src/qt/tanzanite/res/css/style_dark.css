@@ -61,8 +61,8 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     /*border-right: 1px solid rgba(73, 99, 145, 0.7);*/
 }
 
-QPushButton[cssClass="img-nav-logo-tanzanite"] {
-    qproperty-icon: url("://img-nav-logo-tanzanite");
+QPushButton[cssClass="img-nav-logo-altecoin"] {
+    qproperty-icon: url("://img-nav-logo-altecoin");
     qproperty-iconSize: 49px 60px;
 }
 

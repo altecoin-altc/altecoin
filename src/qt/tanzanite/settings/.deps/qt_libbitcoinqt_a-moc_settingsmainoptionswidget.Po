@@ -1,7 +1,7 @@
-qt/tanzanite/settings/qt_libbitcoinqt_a-moc_settingsmainoptionswidget.o: \
- qt/tanzanite/settings/moc_settingsmainoptionswidget.cpp \
+qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsmainoptionswidget.o: \
+ qt/altecoin/settings/moc_settingsmainoptionswidget.cpp \
  /usr/include/stdc-predef.h \
- qt/tanzanite/settings/settingsmainoptionswidget.h qt/tanzanite/pwidget.h \
+ qt/altecoin/settings/settingsmainoptionswidget.h qt/altecoin/pwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
@@ -258,13 +258,13 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-moc_settingsmainoptionswidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/tanzanite/prunnable.h
+ qt/altecoin/prunnable.h
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/settings/settingsmainoptionswidget.h:
+qt/altecoin/settings/settingsmainoptionswidget.h:
 
-qt/tanzanite/pwidget.h:
+qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -876,4 +876,4 @@ qt/tanzanite/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/tanzanite/prunnable.h:
+qt/altecoin/prunnable.h:

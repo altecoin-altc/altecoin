@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2016 The Dash developers
-// Copyright (c) 2016-2020 The Tanzanite developers
+// Copyright (c) 2016-2020 The Altecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -453,13 +453,13 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::SendToSelf:
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
-        return tr("TZT Stake");
-    case TransactionRecord::StakeZTZT:
-        return tr("zTZT Stake");
+        return tr("ALTC Stake");
+    case TransactionRecord::StakeZALTC:
+        return tr("zALTC Stake");
     case TransactionRecord::StakeDelegated:
-        return tr("TZT Cold Stake");
+        return tr("ALTC Cold Stake");
     case TransactionRecord::StakeHot:
-        return tr("TZT Stake on behalf of");
+        return tr("ALTC Stake on behalf of");
     case TransactionRecord::P2CSDelegationSent:
     case TransactionRecord::P2CSDelegationSentOwner:
     case TransactionRecord::P2CSDelegation:
@@ -480,15 +480,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Obfuscated:
         return tr("Obfuscated");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted TZT to zTZT");
+        return tr("Converted ALTC to zALTC");
     case TransactionRecord::ZerocoinSpend:
-        return tr("Spent zTZT");
+        return tr("Spent zALTC");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received TZT from zTZT");
+        return tr("Received ALTC from zALTC");
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
-        return tr("Minted Change as zTZT from zTZT Spend");
+        return tr("Minted Change as zALTC from zALTC Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zTZT to TZT");
+        return tr("Converted zALTC to ALTC");
     default:
         return QString();
     }
@@ -499,7 +499,7 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     switch (wtx->type) {
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
-    case TransactionRecord::StakeZTZT:
+    case TransactionRecord::StakeZALTC:
     case TransactionRecord::MNReward:
         return QIcon(":/icons/tx_mined");
     case TransactionRecord::RecvWithObfuscation:
@@ -543,7 +543,7 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
         return QString::fromStdString(wtx->address) + watchAddress;
     case TransactionRecord::ZerocoinMint:
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
-    case TransactionRecord::StakeZTZT:
+    case TransactionRecord::StakeZALTC:
         return tr("Anonymous");
     case TransactionRecord::P2CSDelegation:
     case TransactionRecord::P2CSDelegationSent:
@@ -703,7 +703,7 @@ QVariant TransactionTableModel::data(const QModelIndex& index, int role) const
     case Qt::ForegroundRole:
         // Minted
         if (rec->type == TransactionRecord::Generated || rec->type == TransactionRecord::StakeMint ||
-                rec->type == TransactionRecord::StakeZTZT || rec->type == TransactionRecord::MNReward) {
+                rec->type == TransactionRecord::StakeZALTC || rec->type == TransactionRecord::MNReward) {
             if (rec->status.status == TransactionStatus::Conflicted || rec->status.status == TransactionStatus::NotAccepted)
                 return COLOR_ORPHAN;
             else

@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/masternodewizarddialog.h"
-#include "qt/tanzanite/forms/ui_masternodewizarddialog.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/masternodewizarddialog.h"
+#include "qt/altecoin/forms/ui_masternodewizarddialog.h"
+#include "qt/altecoin/qtutils.h"
 #include "optionsmodel.h"
 #include "collateral.h"
 #include "pairresult.h"
 #include "activemasternode.h"
-#include "qt/tanzanite/guitransactionsutils.h"
+#include "qt/altecoin/guitransactionsutils.h"
 #include <QFile>
 #include <QIntValidator>
 #include <QHostAddress>

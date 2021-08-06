@@ -1,20 +1,20 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/settings/settingswidget.h"
-#include "qt/tanzanite/settings/forms/ui_settingswidget.h"
-#include "qt/tanzanite/settings/settingsbackupwallet.h"
-#include "qt/tanzanite/settings/settingsbittoolwidget.h"
-#include "qt/tanzanite/settings/settingswalletrepairwidget.h"
-#include "qt/tanzanite/settings/settingswalletoptionswidget.h"
-#include "qt/tanzanite/settings/settingsmainoptionswidget.h"
-#include "qt/tanzanite/settings/settingsdisplayoptionswidget.h"
-#include "qt/tanzanite/settings/settingsmultisendwidget.h"
-#include "qt/tanzanite/settings/settingsinformationwidget.h"
-#include "qt/tanzanite/settings/settingsconsolewidget.h"
-#include "qt/tanzanite/qtutils.h"
-#include "qt/tanzanite/defaultdialog.h"
+#include "qt/altecoin/settings/settingswidget.h"
+#include "qt/altecoin/settings/forms/ui_settingswidget.h"
+#include "qt/altecoin/settings/settingsbackupwallet.h"
+#include "qt/altecoin/settings/settingsbittoolwidget.h"
+#include "qt/altecoin/settings/settingswalletrepairwidget.h"
+#include "qt/altecoin/settings/settingswalletoptionswidget.h"
+#include "qt/altecoin/settings/settingsmainoptionswidget.h"
+#include "qt/altecoin/settings/settingsdisplayoptionswidget.h"
+#include "qt/altecoin/settings/settingsmultisendwidget.h"
+#include "qt/altecoin/settings/settingsinformationwidget.h"
+#include "qt/altecoin/settings/settingsconsolewidget.h"
+#include "qt/altecoin/qtutils.h"
+#include "qt/altecoin/defaultdialog.h"
 #include "optionsmodel.h"
 #include "clientmodel.h"
 #include "utilitydialog.h"
@@ -22,7 +22,7 @@
 #include <QScrollBar>
 #include <QDataWidgetMapper>
 
-SettingsWidget::SettingsWidget(TanzaniteGUI* parent) :
+SettingsWidget::SettingsWidget(AltecoinGUI* parent) :
     PWidget(parent),
     ui(new Ui::SettingsWidget)
 {

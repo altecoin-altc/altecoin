@@ -1,4 +1,4 @@
-Source: tanzanite
+Source: altecoin
 Section: utils
 Priority: optional
 Maintainer: Fuzzbawls <fuzzbawls@gmail.com>
@@ -28,15 +28,15 @@ Build-Depends: debhelper,
  libzmq3-dev,
  dh-systemd
 Standards-Version: 3.9.2
-Homepage: http://www.tanzanite.org
-Vcs-Git: git://github.com/Tanzanite-Project/Tanzanite.git
-Vcs-Browser: http://github.com/Tanzanite-Project/Tanzanite
+Homepage: http://www.altecoin.org
+Vcs-Git: git://github.com/Altecoin-Project/Altecoin.git
+Vcs-Browser: http://github.com/Altecoin-Project/Altecoin
 
-Package: tanzanited
+Package: altecoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Tanzanite is a free open source peer-to-peer electronic cash system that
+ Altecoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -45,14 +45,14 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 10+ GB of space, slowly growing.
  .
- This package provides the daemon, tanzanited, and the CLI tool
- tanzanite-cli to interact with the daemon.
+ This package provides the daemon, altecoind, and the CLI tool
+ altecoin-cli to interact with the daemon.
 
-Package: tanzanite-qt
+Package: altecoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Tanzanite is a free open source peer-to-peer electronic cash system that
+ Altecoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -61,4 +61,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 10+ GB of space, slowly growing.
  .
- This package provides Tanzanite-Qt, a GUI for Tanzanite based on Qt.
+ This package provides Altecoin-Qt, a GUI for Altecoin based on Qt.

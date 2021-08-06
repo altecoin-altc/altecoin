@@ -1,8 +1,8 @@
-// Copyright (c) 2019-2020 The Tanzanite developers
+// Copyright (c) 2019-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/tanzanitegui.h"
+#include "qt/altecoin/altecoingui.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -14,9 +14,9 @@
 #include "networkstyle.h"
 #include "notificator.h"
 #include "guiinterface.h"
-#include "qt/tanzanite/qtutils.h"
-#include "qt/tanzanite/defaultdialog.h"
-#include "qt/tanzanite/settings/settingsfaqwidget.h"
+#include "qt/altecoin/qtutils.h"
+#include "qt/altecoin/defaultdialog.h"
+#include "qt/altecoin/settings/settingsfaqwidget.h"
 
 #include <QDesktopWidget>
 #include <QHBoxLayout>
@@ -35,9 +35,9 @@
 #define BASE_WINDOW_MIN_WIDTH 1100
 
 
-const QString TanzaniteGUI::DEFAULT_WALLET = "~Default";
+const QString AltecoinGUI::DEFAULT_WALLET = "~Default";
 
-TanzaniteGUI::TanzaniteGUI(const NetworkStyle* networkStyle, QWidget* parent) :
+AltecoinGUI::AltecoinGUI(const NetworkStyle* networkStyle, QWidget* parent) :
         QMainWindow(parent),
         clientModel(0){
 
@@ -63,7 +63,7 @@ TanzaniteGUI::TanzaniteGUI(const NetworkStyle* networkStyle, QWidget* parent) :
     enableWallet = false;
 #endif // ENABLE_WALLET
 
-    QString windowTitle = tr("Tanzanite Core") + " - ";
+    QString windowTitle = tr("Altecoin Core") + " - ";
     windowTitle += ((enableWallet) ? tr("Wallet") : tr("Node"));
     windowTitle += " " + networkStyle->getTitleAddText();
     setWindowTitle(windowTitle);
@@ -171,7 +171,7 @@ TanzaniteGUI::TanzaniteGUI(const NetworkStyle* networkStyle, QWidget* parent) :
 
 }
 
-void TanzaniteGUI::createActions(const NetworkStyle* networkStyle){
+void AltecoinGUI::createActions(const NetworkStyle* networkStyle){
     toggleHideAction = new QAction(networkStyle->getAppIcon(), tr("&Show / Hide"), this);
     toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
 
@@ -187,7 +187,7 @@ void TanzaniteGUI::createActions(const NetworkStyle* networkStyle){
 /**
  * Here add every event connection
  */
-void TanzaniteGUI::connectActions() {
+void AltecoinGUI::connectActions() {
     QShortcut *consoleShort = new QShortcut(this);
     consoleShort->setKey(QKeySequence(SHORT_KEY + Qt::Key_C));
     connect(consoleShort, &QShortcut::activated, [this](){
@@ -195,26 +195,26 @@ void TanzaniteGUI::connectActions() {
         settingsWidget->showDebugConsole();
         goToSettings();
     });
-    connect(topBar, &TopBar::showHide, this, &TanzaniteGUI::showHide);
-    connect(topBar, &TopBar::themeChanged, this, &TanzaniteGUI::changeTheme);
+    connect(topBar, &TopBar::showHide, this, &AltecoinGUI::showHide);
+    connect(topBar, &TopBar::themeChanged, this, &AltecoinGUI::changeTheme);
     connect(topBar, &TopBar::onShowHideColdStakingChanged, navMenu, &NavMenuWidget::onShowHideColdStakingChanged);
-    connect(settingsWidget, &SettingsWidget::showHide, this, &TanzaniteGUI::showHide);
-    connect(sendWidget, &SendWidget::showHide, this, &TanzaniteGUI::showHide);
-    connect(receiveWidget, &ReceiveWidget::showHide, this, &TanzaniteGUI::showHide);
-    connect(addressesWidget, &AddressesWidget::showHide, this, &TanzaniteGUI::showHide);
-    connect(privacyWidget, &PrivacyWidget::showHide, this, &TanzaniteGUI::showHide);
-    connect(masterNodesWidget, &MasterNodesWidget::showHide, this, &TanzaniteGUI::showHide);
-    connect(masterNodesWidget, &MasterNodesWidget::execDialog, this, &TanzaniteGUI::execDialog);
-    connect(coldStakingWidget, &ColdStakingWidget::showHide, this, &TanzaniteGUI::showHide);
-    connect(coldStakingWidget, &ColdStakingWidget::execDialog, this, &TanzaniteGUI::execDialog);
-    connect(settingsWidget, &SettingsWidget::execDialog, this, &TanzaniteGUI::execDialog);
+    connect(settingsWidget, &SettingsWidget::showHide, this, &AltecoinGUI::showHide);
+    connect(sendWidget, &SendWidget::showHide, this, &AltecoinGUI::showHide);
+    connect(receiveWidget, &ReceiveWidget::showHide, this, &AltecoinGUI::showHide);
+    connect(addressesWidget, &AddressesWidget::showHide, this, &AltecoinGUI::showHide);
+    connect(privacyWidget, &PrivacyWidget::showHide, this, &AltecoinGUI::showHide);
+    connect(masterNodesWidget, &MasterNodesWidget::showHide, this, &AltecoinGUI::showHide);
+    connect(masterNodesWidget, &MasterNodesWidget::execDialog, this, &AltecoinGUI::execDialog);
+    connect(coldStakingWidget, &ColdStakingWidget::showHide, this, &AltecoinGUI::showHide);
+    connect(coldStakingWidget, &ColdStakingWidget::execDialog, this, &AltecoinGUI::execDialog);
+    connect(settingsWidget, &SettingsWidget::execDialog, this, &AltecoinGUI::execDialog);
 }
 
 
-void TanzaniteGUI::createTrayIcon(const NetworkStyle* networkStyle) {
+void AltecoinGUI::createTrayIcon(const NetworkStyle* networkStyle) {
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
-    QString toolTip = tr("Tanzanite Core client") + " " + networkStyle->getTitleAddText();
+    QString toolTip = tr("Altecoin Core client") + " " + networkStyle->getTitleAddText();
     trayIcon->setToolTip(toolTip);
     trayIcon->setIcon(networkStyle->getAppIcon());
     trayIcon->hide();
@@ -223,7 +223,7 @@ void TanzaniteGUI::createTrayIcon(const NetworkStyle* networkStyle) {
 }
 
 //
-TanzaniteGUI::~TanzaniteGUI() {
+AltecoinGUI::~AltecoinGUI() {
     // Unsubscribe from notifications from core
     unsubscribeFromCoreSignals();
 
@@ -237,13 +237,13 @@ TanzaniteGUI::~TanzaniteGUI() {
 
 
 /** Get restart command-line parameters and request restart */
-void TanzaniteGUI::handleRestart(QStringList args){
+void AltecoinGUI::handleRestart(QStringList args){
     if (!ShutdownRequested())
         emit requestedRestart(args);
 }
 
 
-void TanzaniteGUI::setClientModel(ClientModel* clientModel) {
+void AltecoinGUI::setClientModel(ClientModel* clientModel) {
     this->clientModel = clientModel;
     if(this->clientModel) {
 
@@ -281,7 +281,7 @@ void TanzaniteGUI::setClientModel(ClientModel* clientModel) {
     }
 }
 
-void TanzaniteGUI::createTrayIconMenu() {
+void AltecoinGUI::createTrayIconMenu() {
 #ifndef Q_OS_MAC
     // return if trayIcon is unset (only on non-Mac OSes)
     if (!trayIcon)
@@ -310,7 +310,7 @@ void TanzaniteGUI::createTrayIconMenu() {
 }
 
 #ifndef Q_OS_MAC
-void TanzaniteGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
+void AltecoinGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 {
     if (reason == QSystemTrayIcon::Trigger) {
         // Click on system tray icon triggers show/hide of the main window
@@ -319,7 +319,7 @@ void TanzaniteGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 }
 #endif
 
-void TanzaniteGUI::changeEvent(QEvent* e)
+void AltecoinGUI::changeEvent(QEvent* e)
 {
     QMainWindow::changeEvent(e);
 #ifndef Q_OS_MAC // Ignored on Mac
@@ -335,7 +335,7 @@ void TanzaniteGUI::changeEvent(QEvent* e)
 #endif
 }
 
-void TanzaniteGUI::closeEvent(QCloseEvent* event)
+void AltecoinGUI::closeEvent(QCloseEvent* event)
 {
 #ifndef Q_OS_MAC // Ignored on Mac
     if (clientModel && clientModel->getOptionsModel()) {
@@ -348,7 +348,7 @@ void TanzaniteGUI::closeEvent(QCloseEvent* event)
 }
 
 
-void TanzaniteGUI::messageInfo(const QString& text){
+void AltecoinGUI::messageInfo(const QString& text){
     if(!this->snackBar) this->snackBar = new SnackBar(this, this);
     this->snackBar->setText(text);
     this->snackBar->resize(this->width(), snackBar->height());
@@ -356,8 +356,8 @@ void TanzaniteGUI::messageInfo(const QString& text){
 }
 
 
-void TanzaniteGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret) {
-    QString strTitle =  tr("Tanzanite Core"); // default title
+void AltecoinGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret) {
+    QString strTitle =  tr("Altecoin Core"); // default title
     // Default to information icon
     int nNotifyIcon = Notificator::Information;
 
@@ -407,14 +407,14 @@ void TanzaniteGUI::message(const QString& title, const QString& message, unsigne
     } else if(style & CClientUIInterface::MSG_INFORMATION_SNACK){
         messageInfo(message);
     }else {
-        // Append title to "Tanzanite - "
+        // Append title to "Altecoin - "
         if (!msgType.isEmpty())
             strTitle += " - " + msgType;
         notificator->notify((Notificator::Class) nNotifyIcon, strTitle, message);
     }
 }
 
-bool TanzaniteGUI::openStandardDialog(QString title, QString body, QString okBtn, QString cancelBtn){
+bool AltecoinGUI::openStandardDialog(QString title, QString body, QString okBtn, QString cancelBtn){
     DefaultDialog *dialog;
     if (isVisible()) {
         showHide(true);
@@ -425,7 +425,7 @@ bool TanzaniteGUI::openStandardDialog(QString title, QString body, QString okBtn
     } else {
         dialog = new DefaultDialog();
         dialog->setText(title, body, okBtn);
-        dialog->setWindowTitle(tr("Tanzanite Core"));
+        dialog->setWindowTitle(tr("Altecoin Core"));
         dialog->adjustSize();
         dialog->raise();
         dialog->exec();
@@ -436,7 +436,7 @@ bool TanzaniteGUI::openStandardDialog(QString title, QString body, QString okBtn
 }
 
 
-void TanzaniteGUI::showNormalIfMinimized(bool fToggleHidden) {
+void AltecoinGUI::showNormalIfMinimized(bool fToggleHidden) {
     if (!clientModel)
         return;
     // activateWindow() (sometimes) helps with keyboard focus on Windows
@@ -453,11 +453,11 @@ void TanzaniteGUI::showNormalIfMinimized(bool fToggleHidden) {
         hide();
 }
 
-void TanzaniteGUI::toggleHidden() {
+void AltecoinGUI::toggleHidden() {
     showNormalIfMinimized(true);
 }
 
-void TanzaniteGUI::detectShutdown() {
+void AltecoinGUI::detectShutdown() {
     if (ShutdownRequested()) {
         if (rpcConsole)
             rpcConsole->hide();
@@ -465,49 +465,49 @@ void TanzaniteGUI::detectShutdown() {
     }
 }
 
-void TanzaniteGUI::goToDashboard(){
+void AltecoinGUI::goToDashboard(){
     if(stackedContainer->currentWidget() != dashboard){
         stackedContainer->setCurrentWidget(dashboard);
         topBar->showBottom();
     }
 }
 
-void TanzaniteGUI::goToSend(){
+void AltecoinGUI::goToSend(){
     showTop(sendWidget);
 }
 
-void TanzaniteGUI::goToAddresses(){
+void AltecoinGUI::goToAddresses(){
     showTop(addressesWidget);
 }
 
-void TanzaniteGUI::goToPrivacy(){
+void AltecoinGUI::goToPrivacy(){
     showTop(privacyWidget);
 }
 
-void TanzaniteGUI::goToMasterNodes(){
+void AltecoinGUI::goToMasterNodes(){
     showTop(masterNodesWidget);
 }
 
-void TanzaniteGUI::goToColdStaking(){
+void AltecoinGUI::goToColdStaking(){
     showTop(coldStakingWidget);
 }
 
-void TanzaniteGUI::goToSettings(){
+void AltecoinGUI::goToSettings(){
     showTop(settingsWidget);
 }
 
-void TanzaniteGUI::goToReceive(){
+void AltecoinGUI::goToReceive(){
     showTop(receiveWidget);
 }
 
-void TanzaniteGUI::showTop(QWidget* view){
+void AltecoinGUI::showTop(QWidget* view){
     if(stackedContainer->currentWidget() != view){
         stackedContainer->setCurrentWidget(view);
         topBar->showTop();
     }
 }
 
-void TanzaniteGUI::changeTheme(bool isLightTheme){
+void AltecoinGUI::changeTheme(bool isLightTheme){
 
     QString css = GUIUtil::loadStyleSheet();
     this->setStyleSheet(css);
@@ -519,7 +519,7 @@ void TanzaniteGUI::changeTheme(bool isLightTheme){
     updateStyle(this);
 }
 
-void TanzaniteGUI::resizeEvent(QResizeEvent* event){
+void AltecoinGUI::resizeEvent(QResizeEvent* event){
     // Parent..
     QMainWindow::resizeEvent(event);
     // background
@@ -528,11 +528,11 @@ void TanzaniteGUI::resizeEvent(QResizeEvent* event){
     emit windowResizeEvent(event);
 }
 
-bool TanzaniteGUI::execDialog(QDialog *dialog, int xDiv, int yDiv){
+bool AltecoinGUI::execDialog(QDialog *dialog, int xDiv, int yDiv){
     return openDialogWithOpaqueBackgroundY(dialog, this);
 }
 
-void TanzaniteGUI::showHide(bool show){
+void AltecoinGUI::showHide(bool show){
     if(!op) op = new QLabel(this);
     if(!show){
         op->setVisible(false);
@@ -559,11 +559,11 @@ void TanzaniteGUI::showHide(bool show){
     }
 }
 
-int TanzaniteGUI::getNavWidth(){
+int AltecoinGUI::getNavWidth(){
     return this->navMenu->width();
 }
 
-void TanzaniteGUI::openFAQ(int section){
+void AltecoinGUI::openFAQ(int section){
     showHide(true);
     SettingsFaqWidget* dialog = new SettingsFaqWidget(this);
     if (section > 0) dialog->setSection(section);
@@ -573,7 +573,7 @@ void TanzaniteGUI::openFAQ(int section){
 
 
 #ifdef ENABLE_WALLET
-bool TanzaniteGUI::addWallet(const QString& name, WalletModel* walletModel)
+bool AltecoinGUI::addWallet(const QString& name, WalletModel* walletModel)
 {
     // Single wallet supported for now..
     if(!stackedContainer || !clientModel || !walletModel)
@@ -592,14 +592,14 @@ bool TanzaniteGUI::addWallet(const QString& name, WalletModel* walletModel)
     settingsWidget->setWalletModel(walletModel);
 
     // Connect actions..
-    connect(privacyWidget, &PrivacyWidget::message, this, &TanzaniteGUI::message);
-    connect(masterNodesWidget, &MasterNodesWidget::message, this, &TanzaniteGUI::message);
-    connect(coldStakingWidget, &MasterNodesWidget::message, this, &TanzaniteGUI::message);
-    connect(topBar, &TopBar::message, this, &TanzaniteGUI::message);
-    connect(sendWidget, &SendWidget::message,this, &TanzaniteGUI::message);
-    connect(receiveWidget, &ReceiveWidget::message,this, &TanzaniteGUI::message);
-    connect(addressesWidget, &AddressesWidget::message,this, &TanzaniteGUI::message);
-    connect(settingsWidget, &SettingsWidget::message, this, &TanzaniteGUI::message);
+    connect(privacyWidget, &PrivacyWidget::message, this, &AltecoinGUI::message);
+    connect(masterNodesWidget, &MasterNodesWidget::message, this, &AltecoinGUI::message);
+    connect(coldStakingWidget, &MasterNodesWidget::message, this, &AltecoinGUI::message);
+    connect(topBar, &TopBar::message, this, &AltecoinGUI::message);
+    connect(sendWidget, &SendWidget::message,this, &AltecoinGUI::message);
+    connect(receiveWidget, &ReceiveWidget::message,this, &AltecoinGUI::message);
+    connect(addressesWidget, &AddressesWidget::message,this, &AltecoinGUI::message);
+    connect(settingsWidget, &SettingsWidget::message, this, &AltecoinGUI::message);
 
     // Pass through transaction notifications
     connect(dashboard, SIGNAL(incomingTransaction(QString, int, CAmount, QString, QString)), this, SLOT(incomingTransaction(QString, int, CAmount, QString, QString)));
@@ -607,16 +607,16 @@ bool TanzaniteGUI::addWallet(const QString& name, WalletModel* walletModel)
     return true;
 }
 
-bool TanzaniteGUI::setCurrentWallet(const QString& name) {
+bool AltecoinGUI::setCurrentWallet(const QString& name) {
     // Single wallet supported.
     return true;
 }
 
-void TanzaniteGUI::removeAllWallets() {
+void AltecoinGUI::removeAllWallets() {
     // Single wallet supported.
 }
 
-void TanzaniteGUI::incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address) {
+void AltecoinGUI::incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address) {
     // Only send notifications when not disabled
     if(!bdisableSystemnotifications){
         // On new transaction, make an info balloon
@@ -638,7 +638,7 @@ void TanzaniteGUI::incomingTransaction(const QString& date, int unit, const CAmo
 #endif // ENABLE_WALLET
 
 
-static bool ThreadSafeMessageBox(TanzaniteGUI* gui, const std::string& message, const std::string& caption, unsigned int style)
+static bool ThreadSafeMessageBox(AltecoinGUI* gui, const std::string& message, const std::string& caption, unsigned int style)
 {
     bool modal = (style & CClientUIInterface::MODAL);
     // The SECURE flag has no effect in the Qt GUI.
@@ -657,13 +657,13 @@ static bool ThreadSafeMessageBox(TanzaniteGUI* gui, const std::string& message, 
 }
 
 
-void TanzaniteGUI::subscribeToCoreSignals()
+void AltecoinGUI::subscribeToCoreSignals()
 {
     // Connect signals to client
     uiInterface.ThreadSafeMessageBox.connect(boost::bind(ThreadSafeMessageBox, this, _1, _2, _3));
 }
 
-void TanzaniteGUI::unsubscribeFromCoreSignals()
+void AltecoinGUI::unsubscribeFromCoreSignals()
 {
     // Disconnect signals from client
     uiInterface.ThreadSafeMessageBox.disconnect(boost::bind(ThreadSafeMessageBox, this, _1, _2, _3));

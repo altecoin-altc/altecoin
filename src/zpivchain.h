@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The Tanzanite developers
+// Copyright (c) 2018 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_ZTZTCHAIN_H
-#define Tanzanite_ZTZTCHAIN_H
+#ifndef Altecoin_ZALTCCHAIN_H
+#define Altecoin_ZALTCCHAIN_H
 
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/Denominations.h"
@@ -39,4 +39,4 @@ bool TxOutToPublicCoin(const CTxOut& txout, libzerocoin::PublicCoin& pubCoin, CV
 std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock& block, bool fFilterInvalid);
 
 
-#endif //Tanzanite_ZTZTCHAIN_H
+#endif //Altecoin_ZALTCCHAIN_H

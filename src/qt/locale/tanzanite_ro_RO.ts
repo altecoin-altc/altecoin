@@ -157,7 +157,7 @@
     <name>OptionsDialog</name>
     </context>
 <context>
-    <name>TanzaniteGUI</name>
+    <name>AltecoinGUI</name>
     </context>
 <context>
     <name>PWidget</name>
@@ -289,7 +289,7 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>tanzanite-core</name>
+    <name>altecoin-core</name>
     </context>
 <context>
     <name>send</name>

@@ -1,10 +1,10 @@
 
-## <summary>policy for tanzanite</summary>
+## <summary>policy for altecoin</summary>
 
 
 ########################################
 ## <summary>
-##	Transition to tanzanite.
+##	Transition to altecoin.
 ## </summary>
 ## <param name="domain">
 ## <summary>
@@ -12,19 +12,19 @@
 ## </summary>
 ## </param>
 #
-interface(`tanzanite_domtrans',`
+interface(`altecoin_domtrans',`
 	gen_require(`
-		type tanzanite_t, tanzanite_exec_t;
+		type altecoin_t, altecoin_exec_t;
 	')
 
 	corecmd_search_bin($1)
-	domtrans_pattern($1, tanzanite_exec_t, tanzanite_t)
+	domtrans_pattern($1, altecoin_exec_t, altecoin_t)
 ')
 
 
 ########################################
 ## <summary>
-##	Execute tanzanite server in the tanzanite domain.
+##	Execute altecoin server in the altecoin domain.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -32,18 +32,18 @@ interface(`tanzanite_domtrans',`
 ##	</summary>
 ## </param>
 #
-interface(`tanzanite_initrc_domtrans',`
+interface(`altecoin_initrc_domtrans',`
 	gen_require(`
-		type tanzanite_initrc_exec_t;
+		type altecoin_initrc_exec_t;
 	')
 
-	init_labeled_script_domtrans($1, tanzanite_initrc_exec_t)
+	init_labeled_script_domtrans($1, altecoin_initrc_exec_t)
 ')
 
 
 ########################################
 ## <summary>
-##	Search tanzanite lib directories.
+##	Search altecoin lib directories.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -51,18 +51,18 @@ interface(`tanzanite_initrc_domtrans',`
 ##	</summary>
 ## </param>
 #
-interface(`tanzanite_search_lib',`
+interface(`altecoin_search_lib',`
 	gen_require(`
-		type tanzanite_var_lib_t;
+		type altecoin_var_lib_t;
 	')
 
-	allow $1 tanzanite_var_lib_t:dir search_dir_perms;
+	allow $1 altecoin_var_lib_t:dir search_dir_perms;
 	files_search_var_lib($1)
 ')
 
 ########################################
 ## <summary>
-##	Read tanzanite lib files.
+##	Read altecoin lib files.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -70,18 +70,18 @@ interface(`tanzanite_search_lib',`
 ##	</summary>
 ## </param>
 #
-interface(`tanzanite_read_lib_files',`
+interface(`altecoin_read_lib_files',`
 	gen_require(`
-		type tanzanite_var_lib_t;
+		type altecoin_var_lib_t;
 	')
 
 	files_search_var_lib($1)
-	read_files_pattern($1, tanzanite_var_lib_t, tanzanite_var_lib_t)
+	read_files_pattern($1, altecoin_var_lib_t, altecoin_var_lib_t)
 ')
 
 ########################################
 ## <summary>
-##	Manage tanzanite lib files.
+##	Manage altecoin lib files.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -89,18 +89,18 @@ interface(`tanzanite_read_lib_files',`
 ##	</summary>
 ## </param>
 #
-interface(`tanzanite_manage_lib_files',`
+interface(`altecoin_manage_lib_files',`
 	gen_require(`
-		type tanzanite_var_lib_t;
+		type altecoin_var_lib_t;
 	')
 
 	files_search_var_lib($1)
-	manage_files_pattern($1, tanzanite_var_lib_t, tanzanite_var_lib_t)
+	manage_files_pattern($1, altecoin_var_lib_t, altecoin_var_lib_t)
 ')
 
 ########################################
 ## <summary>
-##	Manage tanzanite lib directories.
+##	Manage altecoin lib directories.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -108,20 +108,20 @@ interface(`tanzanite_manage_lib_files',`
 ##	</summary>
 ## </param>
 #
-interface(`tanzanite_manage_lib_dirs',`
+interface(`altecoin_manage_lib_dirs',`
 	gen_require(`
-		type tanzanite_var_lib_t;
+		type altecoin_var_lib_t;
 	')
 
 	files_search_var_lib($1)
-	manage_dirs_pattern($1, tanzanite_var_lib_t, tanzanite_var_lib_t)
+	manage_dirs_pattern($1, altecoin_var_lib_t, altecoin_var_lib_t)
 ')
 
 
 ########################################
 ## <summary>
 ##	All of the rules required to administrate
-##	a tanzanite environment
+##	a altecoin environment
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -135,23 +135,23 @@ interface(`tanzanite_manage_lib_dirs',`
 ## </param>
 ## <rolecap/>
 #
-interface(`tanzanite_admin',`
+interface(`altecoin_admin',`
 	gen_require(`
-		type tanzanite_t;
-		type tanzanite_initrc_exec_t;
-		type tanzanite_var_lib_t;
+		type altecoin_t;
+		type altecoin_initrc_exec_t;
+		type altecoin_var_lib_t;
 	')
 
-	allow $1 tanzanite_t:process { ptrace signal_perms };
-	ps_process_pattern($1, tanzanite_t)
+	allow $1 altecoin_t:process { ptrace signal_perms };
+	ps_process_pattern($1, altecoin_t)
 
-	tanzanite_initrc_domtrans($1)
+	altecoin_initrc_domtrans($1)
 	domain_system_change_exemption($1)
-	role_transition $2 tanzanite_initrc_exec_t system_r;
+	role_transition $2 altecoin_initrc_exec_t system_r;
 	allow $2 system_r;
 
 	files_search_var_lib($1)
-	admin_pattern($1, tanzanite_var_lib_t)
+	admin_pattern($1, altecoin_var_lib_t)
 
 ')
 

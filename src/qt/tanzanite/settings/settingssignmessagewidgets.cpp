@@ -1,10 +1,10 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/settings/settingssignmessagewidgets.h"
-#include "qt/tanzanite/settings/forms/ui_settingssignmessagewidgets.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/settings/settingssignmessagewidgets.h"
+#include "qt/altecoin/settings/forms/ui_settingssignmessagewidgets.h"
+#include "qt/altecoin/qtutils.h"
 #include "guiutil.h"
 #include "walletmodel.h"
 
@@ -19,7 +19,7 @@
 
 #include <QClipboard>
 
-SettingsSignMessageWidgets::SettingsSignMessageWidgets(TanzaniteGUI* _window, QWidget *parent) :
+SettingsSignMessageWidgets::SettingsSignMessageWidgets(AltecoinGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsSignMessageWidgets)
 {
@@ -39,7 +39,7 @@ SettingsSignMessageWidgets::SettingsSignMessageWidgets(TanzaniteGUI* _window, QW
     ui->labelSubtitle1->setProperty("cssClass", "text-subtitle");
 
     // Address
-    ui->labelSubtitleAddress->setText(tr("Tanzanite address or contact label"));
+    ui->labelSubtitleAddress->setText(tr("Altecoin address or contact label"));
     ui->labelSubtitleAddress->setProperty("cssClass", "text-title");
 
     ui->addressIn_SM->setPlaceholderText(tr("Enter address"));

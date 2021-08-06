@@ -11,7 +11,7 @@
 #include "clientversion.h"
 #include "main.h"
 #include "utiltime.h"
-#include "test/test_tanzanite.h"
+#include "test/test_altecoin.h"
 
 #include <cstdio>
 

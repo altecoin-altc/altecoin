@@ -1,21 +1,21 @@
-Tanzanite Core integration/staging repository
+Altecoin Core integration/staging repository
 =====================================
 
 ### Coin Specs
 
 • PoW Algorithm: Quark  
-• Premine: 1000000 TZT (0.5%)
+• Premine: 1000000 ALTC (0.5%)
 • PoW Blocks: 1 - 500  
 • PoS Blocks: Starting from 501  
 • Block Time: 60 Seconds    
 • Maturity: 100 Confirmations 
 • Total Coin Supply: 200000000 
-• Prefix: TZT adresses start with the capital letter "X"  
+• Prefix: ALTC adresses start with the capital letter "X"  
 • Ports: 52367 (p2p) / 52366 (rpc)
 
 • Explorer http://tztcoinexplorer.com
 
-• Website [tanzanitecoin.com](http://www.tanzanitecoin.com)
+• Website [altecoincoin.com](http://www.altecoincoin.com)
 
 ### Rewards Breakdown
 <table border=0 cellpadding=0 cellspacing=0 width=701 class=xl6553517252

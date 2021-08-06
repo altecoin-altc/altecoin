@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2020-2021 The Tanzanite developers
+// Copyright (c) 2020-2021 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -89,30 +89,30 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT10000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 TZT at the same time
+    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 ALTC at the same time
     ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for zTZT send
+// Possible states for zALTC send
 enum ZerocoinSpendStatus {
-    ZTZT_SPEND_OKAY = 0,                            // No error
-    ZTZT_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZTZT_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZTZT_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZTZT_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZTZT_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZTZT_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZTZT_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZTZT_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZTZT_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZTZT_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZTZT_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZTZT_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZTZT_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZTZT_SPENT_USED_ZTZT = 14,                      // Coin has already been spend
-    ZTZT_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
-    ZTZT_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
+    ZALTC_SPEND_OKAY = 0,                            // No error
+    ZALTC_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZALTC_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZALTC_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZALTC_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZALTC_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZALTC_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZALTC_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZALTC_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZALTC_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZALTC_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZALTC_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZALTC_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZALTC_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZALTC_SPENT_USED_ZALTC = 14,                      // Coin has already been spend
+    ZALTC_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
+    ZALTC_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
 };
 
 struct CompactTallyItem {
@@ -257,7 +257,7 @@ public:
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored, std::list<CDeterministicMint>& listDMintsRestored);
     void ZPivBackupWallet();
     bool GetZerocoinKey(const CBigNum& bnSerial, CKey& key);
-    bool CreateZTZTOutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
+    bool CreateZALTCOutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
     bool GetMint(const uint256& hashSerial, CZerocoinMint& mint);
     bool GetMintFromStakeHash(const uint256& hashStake, CZerocoinMint& mint);
     bool DatabaseMint(CDeterministicMint& dMint);
@@ -280,7 +280,7 @@ public:
      */
     mutable CCriticalSection cs_wallet;
 
-    CzTZTWallet* zwalletMain;
+    CzALTCWallet* zwalletMain;
 
     std::set<CBitcoinAddress> setAutoConvertAddresses;
 
@@ -288,7 +288,7 @@ public:
     bool fWalletUnlockAnonymizeOnly;
     std::string strWalletFile;
     bool fBackupMints;
-    std::unique_ptr<CzTZTTracker> zpivTracker;
+    std::unique_ptr<CzALTCTracker> zpivTracker;
 
     std::set<int64_t> setKeyPool;
     std::map<CKeyID, CKeyMetadata> mapKeyMetadata;
@@ -320,8 +320,8 @@ public:
     ~CWallet();
     void SetNull();
     int getZeromintPercentage();
-    void setZWallet(CzTZTWallet* zwallet);
-    CzTZTWallet* getZWallet();
+    void setZWallet(CzALTCWallet* zwallet);
+    CzALTCWallet* getZWallet();
     bool isZeromintEnabled();
     void setZPivAutoBackups(bool fEnabled);
     bool isMultiSendEnabled();
@@ -358,7 +358,7 @@ public:
     std::map<CBitcoinAddress, std::vector<COutput> > AvailableCoinsByAddress(bool fConfirmed = true, CAmount maxCoinValue = 0);
     bool SelectCoinsMinConf(const CAmount& nTargetValue, int nConfMine, int nConfTheirs, std::vector<COutput> vCoins, std::set<std::pair<const CWalletTx*, unsigned int> >& setCoinsRet, CAmount& nValueRet) const;
 
-    /// Get 10000 TZT output and keys which can be used for the Masternode
+    /// Get 10000 ALTC output and keys which can be used for the Masternode
     bool GetMasternodeVinAndKeys(CTxIn& txinRet, CPubKey& pubKeyRet, CKey& keyRet, std::string strTxHash = "", std::string strOutputIndex = "");
     /// Extract txin information and keys from output
     bool GetVinAndKeysFromOutput(COutput out, CTxIn& txinRet, CPubKey& pubKeyRet, CKey& keyRet, bool fColdStake = false);
@@ -575,8 +575,8 @@ public:
     /** MultiSig address added */
     boost::signals2::signal<void(bool fHaveMultiSig)> NotifyMultiSigChanged;
 
-    /** zTZT reset */
-    boost::signals2::signal<void()> NotifyzTZTReset;
+    /** zALTC reset */
+    boost::signals2::signal<void()> NotifyzALTCReset;
 
     /** notify wallet file backed up */
     boost::signals2::signal<void (const bool& fSuccess, const std::string& filename)> NotifyWalletBacked;

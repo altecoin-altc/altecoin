@@ -72,12 +72,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your Tanzanite addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços Tanzanite para onde enviar pagamentos. Confira sempre o montante e os endereços de destino antes de enviar moedas.</translation>
+        <source>These are your Altecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços Altecoin para onde enviar pagamentos. Confira sempre o montante e os endereços de destino antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your Tanzanite addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços Tanzanite onde receber pagamentos. Recomenda-se o uso de um novo endereço para cada transacção.</translation>
+        <source>These are your Altecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços Altecoin onde receber pagamentos. Recomenda-se o uso de um novo endereço para cada transacção.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>Tanzanite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TZTs from being stolen by malware infecting your computer.</source>
-        <translation>Tanzanite encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas TZTs contra roubo por malware infectando seu computador.</translation>
+        <source>Altecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALTCs from being stolen by malware infecting your computer.</source>
+        <translation>Altecoin encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas ALTCs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Tem certeza que deseja encriptar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TZT&lt;/b&gt;!</source>
-        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA TZT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALTC&lt;/b&gt;!</source>
+        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA ALTC&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -377,7 +377,7 @@
     <name>OptionsDialog</name>
     </context>
 <context>
-    <name>TanzaniteGUI</name>
+    <name>AltecoinGUI</name>
     <message>
         <source>Wallet</source>
         <translation>Carteira</translation>
@@ -709,7 +709,7 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>tanzanite-core</name>
+    <name>altecoin-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>
@@ -975,8 +975,8 @@
         <translation>carteira %s reside fora do diretório %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Tanzanite Core to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o Tanzanite Core para completar.</translation>
+        <source>Wallet needed to be rewritten: restart Altecoin Core to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o Altecoin Core para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

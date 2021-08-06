@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2020 The Tanzanite developers
+// Copyright (c) 2017-2020 The Altecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZTZTCONTROLDIALOG_H
-#define ZTZTCONTROLDIALOG_H
+#ifndef ZALTCCONTROLDIALOG_H
+#define ZALTCCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -62,4 +62,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZTZTCONTROLDIALOG_H
+#endif // ZALTCCONTROLDIALOG_H

@@ -1,12 +1,12 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef TXVIEWHOLDER_H
 #define TXVIEWHOLDER_H
 
-#include "qt/tanzanite/furlistrow.h"
-#include "qt/tanzanite/txrow.h"
+#include "qt/altecoin/furlistrow.h"
+#include "qt/altecoin/txrow.h"
 #include "bitcoinunits.h"
 #include <transactionfilterproxy.h>
 

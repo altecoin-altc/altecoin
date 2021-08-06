@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,18 +8,18 @@
 #include <QWidget>
 #include <QPushButton>
 
-#include "qt/tanzanite/pwidget.h"
-#include "qt/tanzanite/contactsdropdown.h"
-#include "qt/tanzanite/sendmultirow.h"
-#include "qt/tanzanite/sendcustomfeedialog.h"
+#include "qt/altecoin/pwidget.h"
+#include "qt/altecoin/contactsdropdown.h"
+#include "qt/altecoin/sendmultirow.h"
+#include "qt/altecoin/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
 #include "zpivcontroldialog.h"
-#include "qt/tanzanite/tooltipmenu.h"
+#include "qt/altecoin/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;
 
-class TanzaniteGUI;
+class AltecoinGUI;
 class ClientModel;
 class WalletModel;
 class WalletModelTransaction;
@@ -34,7 +34,7 @@ class SendWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SendWidget(TanzaniteGUI* parent);
+    explicit SendWidget(AltecoinGUI* parent);
     ~SendWidget();
 
     void addEntry();
@@ -59,7 +59,7 @@ protected:
     void resizeEvent(QResizeEvent *event) override;
 
 private slots:
-    void onTZTSelected(bool _isTZT);
+    void onALTCSelected(bool _isALTC);
     void onSendClicked();
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
@@ -87,7 +87,7 @@ private:
     // Current focus entry
     SendMultiRow* focusedEntry = nullptr;
 
-    bool isTZT = true;
+    bool isALTC = true;
     void resizeMenu();
     QString recipientsToString(QList<SendCoinsRecipient> recipients);
     SendMultiRow* createEntry();

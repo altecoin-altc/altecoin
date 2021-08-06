@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The Tanzanite developers
+// Copyright (c) 2015-2019 The Altecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,10 +11,10 @@
 #include "guiconstants.h"
 #include "guiutil.h"
 #include "walletmodel.h"
-#include "qt/tanzanite/qtutils.h"
-#include "qt/tanzanite/loadingdialog.h"
-#include "qt/tanzanite/defaultdialog.h"
-#include "qt/tanzanite/tanzanitegui.h"
+#include "qt/altecoin/qtutils.h"
+#include "qt/altecoin/loadingdialog.h"
+#include "qt/altecoin/defaultdialog.h"
+#include "qt/altecoin/altecoingui.h"
 #include <QDebug>
 
 #include <QKeyEvent>
@@ -183,13 +183,13 @@ void AskPassphraseDialog::accept()
         hide();
         bool ret = openStandardDialog(
                 tr("Confirm wallet encryption"),
-                tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR TZT</b>!") + "<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
+                tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR ALTC</b>!") + "<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
                 tr("ENCRYPT"), tr("CANCEL")
         );
         if (ret) {
             if (newpass1 == newpass2) {
                 newpassCache = newpass1;
-                TanzaniteGUI* window = static_cast<TanzaniteGUI*>(parentWidget());
+                AltecoinGUI* window = static_cast<AltecoinGUI*>(parentWidget());
                 LoadingDialog *dialog = new LoadingDialog(window);
                 dialog->execute(this, 1);
                 openDialogWithOpaqueBackgroundFullScreen(dialog, window);
@@ -311,7 +311,7 @@ bool AskPassphraseDialog::eventFilter(QObject* object, QEvent* event)
 
 bool AskPassphraseDialog::openStandardDialog(QString title, QString body, QString okBtn, QString cancelBtn)
 {
-    TanzaniteGUI* gui = static_cast<TanzaniteGUI*>(parentWidget());
+    AltecoinGUI* gui = static_cast<AltecoinGUI*>(parentWidget());
     DefaultDialog *confirmDialog = new DefaultDialog(gui);
     confirmDialog->setText(title, body, okBtn, cancelBtn);
     confirmDialog->adjustSize();
@@ -324,13 +324,13 @@ bool AskPassphraseDialog::openStandardDialog(QString title, QString body, QStrin
 void AskPassphraseDialog::warningMessage()
 {
     hide();
-    static_cast<TanzaniteGUI*>(parentWidget())->showHide(true);
+    static_cast<AltecoinGUI*>(parentWidget())->showHide(true);
     openStandardDialog(
             tr("Wallet encrypted"),
             "<qt>" +
-            tr("Tanzanite will close now to finish the encryption process. "
+            tr("Altecoin will close now to finish the encryption process. "
                "Remember that encrypting your wallet cannot fully protect "
-               "your TZTs from being stolen by malware infecting your computer.") +
+               "your ALTCs from being stolen by malware infecting your computer.") +
             "<br><br><b>" +
             tr("IMPORTANT: Any previous backups you have made of your wallet file "
                "should be replaced with the newly generated, encrypted wallet file. "

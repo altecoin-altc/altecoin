@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The Tanzanite developers
+// Copyright (c) 2019-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,13 +6,13 @@
 #define TOPBAR_H
 
 #include <QWidget>
-#include "qt/tanzanite/pwidget.h"
-#include "qt/tanzanite/lockunlock.h"
+#include "qt/altecoin/pwidget.h"
+#include "qt/altecoin/lockunlock.h"
 #include "amount.h"
 #include <QTimer>
 #include <QProgressBar>
 
-class TanzaniteGUI;
+class AltecoinGUI;
 class WalletModel;
 class ClientModel;
 
@@ -25,7 +25,7 @@ class TopBar : public PWidget
     Q_OBJECT
 
 public:
-    explicit TopBar(TanzaniteGUI* _mainWindow, QWidget *parent = nullptr);
+    explicit TopBar(AltecoinGUI* _mainWindow, QWidget *parent = nullptr);
     ~TopBar();
 
     void showTop();

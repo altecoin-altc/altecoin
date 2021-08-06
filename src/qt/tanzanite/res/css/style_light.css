@@ -60,8 +60,8 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     background-color: qlineargradient(y1:0, y2: 1, stop: 0 #000000, stop:0.5 #000000, stop: 1 #003b61);
 }
 
-QPushButton[cssClass="img-nav-logo-tanzanite"] {
-    qproperty-icon: url("://img-nav-logo-tanzanite");
+QPushButton[cssClass="img-nav-logo-altecoin"] {
+    qproperty-icon: url("://img-nav-logo-altecoin");
     qproperty-iconSize: 49px 60px;
 }
 

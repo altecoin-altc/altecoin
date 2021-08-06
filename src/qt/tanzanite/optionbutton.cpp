@@ -1,10 +1,10 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/optionbutton.h"
-#include "qt/tanzanite/forms/ui_optionbutton.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/optionbutton.h"
+#include "qt/altecoin/forms/ui_optionbutton.h"
+#include "qt/altecoin/qtutils.h"
 #include <QMouseEvent>
 
 OptionButton::OptionButton(QWidget *parent) :

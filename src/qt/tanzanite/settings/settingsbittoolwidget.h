@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,8 +6,8 @@
 #define SETTINGSBITTOOLWIDGET_H
 
 #include <QWidget>
-#include "qt/tanzanite/pwidget.h"
-#include "qt/tanzanite/contactsdropdown.h"
+#include "qt/altecoin/pwidget.h"
+#include "qt/altecoin/contactsdropdown.h"
 #include "key.h"
 
 namespace Ui {
@@ -19,7 +19,7 @@ class SettingsBitToolWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsBitToolWidget(TanzaniteGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsBitToolWidget(AltecoinGUI* _window, QWidget *parent = nullptr);
     ~SettingsBitToolWidget();
 protected:
     void resizeEvent(QResizeEvent *event) override;

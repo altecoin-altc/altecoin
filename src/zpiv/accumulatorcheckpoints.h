@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The Tanzanite developers
+// Copyright (c) 2018 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_ACCUMULATORCHECKPOINTS_H
-#define Tanzanite_ACCUMULATORCHECKPOINTS_H
+#ifndef Altecoin_ACCUMULATORCHECKPOINTS_H
+#define Altecoin_ACCUMULATORCHECKPOINTS_H
 
 #include <libzerocoin/bignum.h>
 #include <univalue/include/univalue.h>
@@ -18,4 +18,4 @@ namespace AccumulatorCheckpoints
     Checkpoint GetClosestCheckpoint(const int& nHeight, int& nHeightCheckpoint);
 }
 
-#endif //Tanzanite_ACCUMULATORCHECKPOINTS_H
+#endif //Altecoin_ACCUMULATORCHECKPOINTS_H

@@ -1,18 +1,18 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/settings/settingsinformationwidget.h"
-#include "qt/tanzanite/settings/forms/ui_settingsinformationwidget.h"
+#include "qt/altecoin/settings/settingsinformationwidget.h"
+#include "qt/altecoin/settings/forms/ui_settingsinformationwidget.h"
 #include "clientmodel.h"
 #include "chainparams.h"
 #include "db.h"
 #include "util.h"
 #include "guiutil.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/qtutils.h"
 #include <QDir>
 
-SettingsInformationWidget::SettingsInformationWidget(TanzaniteGUI* _window,QWidget *parent) :
+SettingsInformationWidget::SettingsInformationWidget(AltecoinGUI* _window,QWidget *parent) :
     PWidget(_window,parent),
     ui(new Ui::SettingsInformationWidget)
 {
@@ -114,7 +114,7 @@ SettingsInformationWidget::SettingsInformationWidget(TanzaniteGUI* _window,QWidg
     });
     connect(ui->pushButtonFile, &QPushButton::clicked, [this](){
         if (!GUIUtil::openConfigfile())
-            inform(tr("Unable to open tanzanite.conf with default application"));
+            inform(tr("Unable to open altecoin.conf with default application"));
     });
     connect(ui->pushButtonNetworkMonitor, SIGNAL(clicked()), this, SLOT(openNetworkMonitor()));
 }

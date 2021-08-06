@@ -1,27 +1,27 @@
-Name "Tanzanite Core (-bit)"
+Name "Altecoin Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define COMPANY "Tanzanite Core project"
-!define URL https://www.tanzanite.org
+!define COMPANY "Altecoin Core project"
+!define URL https://www.altecoin.org
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/vm/Crypto/Tanzanite/share/pixmaps/tanzanite.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/vm/Crypto/Tanzanite/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/vm/Crypto/Altecoin/share/pixmaps/altecoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/vm/Crypto/Altecoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/vm/Crypto/Tanzanite/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/vm/Crypto/Altecoin/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Tanzanite Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\tanzanite-qt
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Altecoin Core"
+!define MUI_FINISHPAGE_RUN $INSTDIR\altecoin-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/vm/Crypto/Tanzanite/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/vm/Crypto/Altecoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -47,18 +47,18 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/vm/Crypto/Tanzanite/tanzanite-1.0.0-win-setup.exe
+OutFile /home/vm/Crypto/Altecoin/altecoin-1.0.0-win-setup.exe
 !if "" == "64"
-InstallDir $PROGRAMFILES64\Tanzanite
+InstallDir $PROGRAMFILES64\Altecoin
 !else
-InstallDir $PROGRAMFILES\Tanzanite
+InstallDir $PROGRAMFILES\Altecoin
 !endif
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion 1.0.0.0
-VIAddVersionKey ProductName "Tanzanite Core"
+VIAddVersionKey ProductName "Altecoin Core"
 VIAddVersionKey ProductVersion "1.0.0"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -72,14 +72,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/vm/Crypto/Tanzanite/release/tanzanite-qt
-    File /oname=COPYING.txt /home/vm/Crypto/Tanzanite/COPYING
-    File /oname=readme.txt /home/vm/Crypto/Tanzanite/doc/README_windows.txt
+    File /home/vm/Crypto/Altecoin/release/altecoin-qt
+    File /oname=COPYING.txt /home/vm/Crypto/Altecoin/COPYING
+    File /oname=readme.txt /home/vm/Crypto/Altecoin/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/vm/Crypto/Tanzanite/release/tanzanited
-    File /home/vm/Crypto/Tanzanite/release/tanzanite-cli
+    File /home/vm/Crypto/Altecoin/release/altecoind
+    File /home/vm/Crypto/Altecoin/release/altecoin-cli
     SetOutPath $INSTDIR\doc
-    File /r /home/vm/Crypto/Tanzanite/doc\*.*
+    File /r /home/vm/Crypto/Altecoin/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
@@ -90,8 +90,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\tanzanite-qt
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Tanzanite Core (testnet, -bit).lnk" "$INSTDIR\tanzanite-qt" "-testnet" "$INSTDIR\tanzanite-qt" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\altecoin-qt
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Altecoin Core (testnet, -bit).lnk" "$INSTDIR\altecoin-qt" "-testnet" "$INSTDIR\altecoin-qt" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -102,10 +102,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "tanzanite" "URL Protocol" ""
-    WriteRegStr HKCR "tanzanite" "" "URL:Tanzanite"
-    WriteRegStr HKCR "tanzanite\DefaultIcon" "" $INSTDIR\tanzanite-qt
-    WriteRegStr HKCR "tanzanite\shell\open\command" "" '"$INSTDIR\tanzanite-qt" "%1"'
+    WriteRegStr HKCR "altecoin" "URL Protocol" ""
+    WriteRegStr HKCR "altecoin" "" "URL:Altecoin"
+    WriteRegStr HKCR "altecoin\DefaultIcon" "" $INSTDIR\altecoin-qt
+    WriteRegStr HKCR "altecoin\shell\open\command" "" '"$INSTDIR\altecoin-qt" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -123,7 +123,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\tanzanite-qt
+    Delete /REBOOTOK $INSTDIR\altecoin-qt
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -135,8 +135,8 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Tanzanite Core (testnet, -bit).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Tanzanite.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Altecoin Core (testnet, -bit).lnk"
+    Delete /REBOOTOK "$SMSTARTUP\Altecoin.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -144,7 +144,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "tanzanite"
+    DeleteRegKey HKCR "altecoin"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

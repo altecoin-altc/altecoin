@@ -1,14 +1,14 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_ADDRESSHOLDER_H
-#define Tanzanite_ADDRESSHOLDER_H
+#ifndef Altecoin_ADDRESSHOLDER_H
+#define Altecoin_ADDRESSHOLDER_H
 
 #include <QWidget>
 #include <QColor>
-#include "qt/tanzanite/myaddressrow.h"
-#include "qt/tanzanite/furlistrow.h"
+#include "qt/altecoin/myaddressrow.h"
+#include "qt/altecoin/furlistrow.h"
 #include "guiutil.h"
 
 
@@ -38,4 +38,4 @@ public:
 };
 
 
-#endif //Tanzanite_ADDRESSHOLDER_H
+#endif //Altecoin_ADDRESSHOLDER_H

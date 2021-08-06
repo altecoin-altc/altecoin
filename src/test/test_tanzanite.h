@@ -1,9 +1,9 @@
-// Copyright (c) 2015-2019 The Tanzanite developers
+// Copyright (c) 2015-2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_TEST_TEST_Tanzanite_H
-#define Tanzanite_TEST_TEST_Tanzanite_H
+#ifndef Altecoin_TEST_TEST_Altecoin_H
+#define Altecoin_TEST_TEST_Altecoin_H
 
 #include "txdb.h"
 

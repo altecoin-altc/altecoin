@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019 The Tanzanite developers
+// Copyright (c) 2017-2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +12,7 @@
 #include "zpivchain.h"
 
 
-CzTZTWallet::CzTZTWallet(std::string strWalletFile)
+CzALTCWallet::CzALTCWallet(std::string strWalletFile)
 {
     this->strWalletFile = strWalletFile;
     CWalletDB walletdb(strWalletFile);
@@ -23,13 +23,13 @@ CzTZTWallet::CzTZTWallet(std::string strWalletFile)
     //Check for old db version of storing zpiv seed
     if (fFirstRun) {
         uint256 seed;
-        if (walletdb.ReadZTZTSeed_deprecated(seed)) {
+        if (walletdb.ReadZALTCSeed_deprecated(seed)) {
             //Update to new format, erase old
             seedMaster = seed;
             hashSeed = Hash(seed.begin(), seed.end());
             if (pwalletMain->AddDeterministicSeed(seed)) {
-                if (walletdb.EraseZTZTSeed_deprecated()) {
-                    LogPrintf("%s: Updated zTZT seed databasing\n", __func__);
+                if (walletdb.EraseZALTCSeed_deprecated()) {
+                    LogPrintf("%s: Updated zALTC seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
                     LogPrintf("%s: failed to remove old zpiv seed\n", __func__);
@@ -67,7 +67,7 @@ CzTZTWallet::CzTZTWallet(std::string strWalletFile)
     this->mintPool = CMintPool(nCountLastUsed);
 }
 
-bool CzTZTWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
+bool CzALTCWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
 {
 
     CWalletDB walletdb(strWalletFile);
@@ -83,8 +83,8 @@ bool CzTZTWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
     nCountLastUsed = 0;
 
     if (fResetCount)
-        walletdb.WriteZTZTCount(nCountLastUsed);
-    else if (!walletdb.ReadZTZTCount(nCountLastUsed))
+        walletdb.WriteZALTCCount(nCountLastUsed);
+    else if (!walletdb.ReadZALTCCount(nCountLastUsed))
         nCountLastUsed = 0;
 
     mintPool.Reset();
@@ -92,18 +92,18 @@ bool CzTZTWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
     return true;
 }
 
-void CzTZTWallet::Lock()
+void CzALTCWallet::Lock()
 {
     seedMaster = 0;
 }
 
-void CzTZTWallet::AddToMintPool(const std::pair<uint256, uint32_t>& pMint, bool fVerbose)
+void CzALTCWallet::AddToMintPool(const std::pair<uint256, uint32_t>& pMint, bool fVerbose)
 {
     mintPool.Add(pMint, fVerbose);
 }
 
 //Add the next 20 mints to the mint pool
-void CzTZTWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
+void CzALTCWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
 {
 
     //Is locked
@@ -145,7 +145,7 @@ void CzTZTWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
         CBigNum bnSerial;
         CBigNum bnRandomness;
         CKey key;
-        SeedToZTZT(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+        SeedToZALTC(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
 
         mintPool.Add(bnValue, i);
         CWalletDB(strWalletFile).WriteMintPoolPair(hashSeed, GetPubCoinHash(bnValue), i);
@@ -154,7 +154,7 @@ void CzTZTWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
 }
 
 // pubcoin hashes are stored to db so that a full accounting of mints belonging to the seed can be tracked without regenerating
-bool CzTZTWallet::LoadMintPoolFromDB()
+bool CzALTCWallet::LoadMintPoolFromDB()
 {
     std::map<uint256, std::vector<std::pair<uint256, uint32_t> > > mapMintPool = CWalletDB(strWalletFile).MapMintPool();
 
@@ -165,20 +165,20 @@ bool CzTZTWallet::LoadMintPoolFromDB()
     return true;
 }
 
-void CzTZTWallet::RemoveMintsFromPool(const std::vector<uint256>& vPubcoinHashes)
+void CzALTCWallet::RemoveMintsFromPool(const std::vector<uint256>& vPubcoinHashes)
 {
     for (const uint256& hash : vPubcoinHashes)
         mintPool.Remove(hash);
 }
 
-void CzTZTWallet::GetState(int& nCount, int& nLastGenerated)
+void CzALTCWallet::GetState(int& nCount, int& nLastGenerated)
 {
     nCount = this->nCountLastUsed + 1;
     nLastGenerated = mintPool.CountOfLastGenerated();
 }
 
 //Catch the counter up with the chain
-void CzTZTWallet::SyncWithChain(bool fGenerateMintPool)
+void CzALTCWallet::SyncWithChain(bool fGenerateMintPool)
 {
     uint32_t nLastCountUsed = 0;
     bool found = true;
@@ -279,7 +279,7 @@ void CzTZTWallet::SyncWithChain(bool fGenerateMintPool)
     }
 }
 
-bool CzTZTWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const libzerocoin::CoinDenomination& denom)
+bool CzALTCWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const libzerocoin::CoinDenomination& denom)
 {
     if (!mintPool.Has(bnValue))
         return error("%s: value not in pool", __func__);
@@ -291,7 +291,7 @@ bool CzTZTWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const 
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZTZT(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
+    SeedToZALTC(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
 
     //Sanity check
     if (bnValueGen != bnValue)
@@ -333,7 +333,7 @@ bool CzTZTWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const 
     if (nCountLastUsed < pMint.second) {
         CWalletDB walletdb(strWalletFile);
         nCountLastUsed = pMint.second;
-        walletdb.WriteZTZTCount(nCountLastUsed);
+        walletdb.WriteZALTCCount(nCountLastUsed);
     }
 
     //remove from the pool
@@ -350,7 +350,7 @@ bool IsValidCoinValue(const CBigNum& bnValue)
     bnValue.isPrime();
 }
 
-void CzTZTWallet::SeedToZTZT(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
+void CzALTCWallet::SeedToZALTC(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
 {
     libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
 
@@ -399,7 +399,7 @@ void CzTZTWallet::SeedToZTZT(const uint512& seedZerocoin, CBigNum& bnValue, CBig
     }
 }
 
-uint512 CzTZTWallet::GetZerocoinSeed(uint32_t n)
+uint512 CzALTCWallet::GetZerocoinSeed(uint32_t n)
 {
     CDataStream ss(SER_GETHASH, 0);
     ss << seedMaster << n;
@@ -407,14 +407,14 @@ uint512 CzTZTWallet::GetZerocoinSeed(uint32_t n)
     return zerocoinSeed;
 }
 
-void CzTZTWallet::UpdateCount()
+void CzALTCWallet::UpdateCount()
 {
     nCountLastUsed++;
     CWalletDB walletdb(strWalletFile);
-    walletdb.WriteZTZTCount(nCountLastUsed);
+    walletdb.WriteZALTCCount(nCountLastUsed);
 }
 
-void CzTZTWallet::GenerateDeterministicZTZT(libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
+void CzALTCWallet::GenerateDeterministicZALTC(libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
 {
     GenerateMint(nCountLastUsed + 1, denom, coin, dMint);
     if (fGenerateOnly)
@@ -424,14 +424,14 @@ void CzTZTWallet::GenerateDeterministicZTZT(libzerocoin::CoinDenomination denom,
     //LogPrintf("%s : Generated new deterministic mint. Count=%d pubcoin=%s seed=%s\n", __func__, nCount, coin.getPublicCoin().getValue().GetHex().substr(0,6), seedZerocoin.GetHex().substr(0, 4));
 }
 
-void CzTZTWallet::GenerateMint(const uint32_t& nCount, const libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint)
+void CzALTCWallet::GenerateMint(const uint32_t& nCount, const libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint)
 {
     uint512 seedZerocoin = GetZerocoinSeed(nCount);
     CBigNum bnValue;
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZTZT(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+    SeedToZALTC(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
     coin = libzerocoin::PrivateCoin(Params().Zerocoin_Params(false), denom, bnSerial, bnRandomness);
     coin.setPrivKey(key.GetPrivKey());
     coin.setVersion(libzerocoin::PrivateCoin::CURRENT_VERSION);
@@ -445,14 +445,14 @@ void CzTZTWallet::GenerateMint(const uint32_t& nCount, const libzerocoin::CoinDe
     dMint.SetDenomination(denom);
 }
 
-bool CzTZTWallet::CheckSeed(const CDeterministicMint& dMint)
+bool CzALTCWallet::CheckSeed(const CDeterministicMint& dMint)
 {
     //Check that the seed is correct    todo:handling of incorrect, or multiple seeds
     uint256 hashSeed = Hash(seedMaster.begin(), seedMaster.end());
     return hashSeed == dMint.GetSeedHash();
 }
 
-bool CzTZTWallet::RegenerateMint(const CDeterministicMint& dMint, CZerocoinMint& mint)
+bool CzALTCWallet::RegenerateMint(const CDeterministicMint& dMint, CZerocoinMint& mint)
 {
     if (!CheckSeed(dMint)) {
         uint256 hashSeed = Hash(seedMaster.begin(), seedMaster.end());

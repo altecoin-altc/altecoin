@@ -1,6 +1,6 @@
-qt/tanzanite/qt_libbitcoinqt_a-moc_loadingdialog.o: \
- qt/tanzanite/moc_loadingdialog.cpp /usr/include/stdc-predef.h \
- qt/tanzanite/loadingdialog.h \
+qt/altecoin/qt_libbitcoinqt_a-moc_loadingdialog.o: \
+ qt/altecoin/moc_loadingdialog.cpp /usr/include/stdc-predef.h \
+ qt/altecoin/loadingdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -262,11 +262,11 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_loadingdialog.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
- qt/tanzanite/prunnable.h
+ qt/altecoin/prunnable.h
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/loadingdialog.h:
+qt/altecoin/loadingdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 
@@ -888,4 +888,4 @@ qt/tanzanite/loadingdialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h:
 
-qt/tanzanite/prunnable.h:
+qt/altecoin/prunnable.h:

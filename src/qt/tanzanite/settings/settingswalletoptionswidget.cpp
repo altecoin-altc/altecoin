@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/settings/settingswalletoptionswidget.h"
-#include "qt/tanzanite/settings/forms/ui_settingswalletoptionswidget.h"
+#include "qt/altecoin/settings/settingswalletoptionswidget.h"
+#include "qt/altecoin/settings/forms/ui_settingswalletoptionswidget.h"
 #include <QListView>
 #include "optionsmodel.h"
 #include "clientmodel.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/qtutils.h"
 
-SettingsWalletOptionsWidget::SettingsWalletOptionsWidget(TanzaniteGUI* _window, QWidget *parent) :
+SettingsWalletOptionsWidget::SettingsWalletOptionsWidget(AltecoinGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsWalletOptionsWidget)
 {

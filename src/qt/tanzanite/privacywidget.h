@@ -1,13 +1,13 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef PRIVACYWIDGET_H
 #define PRIVACYWIDGET_H
 
-#include "qt/tanzanite/pwidget.h"
-#include "qt/tanzanite/furabstractlistitemdelegate.h"
-#include "qt/tanzanite/txviewholder.h"
+#include "qt/altecoin/pwidget.h"
+#include "qt/altecoin/furabstractlistitemdelegate.h"
+#include "qt/altecoin/txviewholder.h"
 #include "transactiontablemodel.h"
 #include "transactionfilterproxy.h"
 #include "coincontroldialog.h"
@@ -15,7 +15,7 @@
 #include <QLabel>
 #include <QWidget>
 
-class TanzaniteGUI;
+class AltecoinGUI;
 class WalletModel;
 
 namespace Ui {
@@ -31,7 +31,7 @@ class PrivacyWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit PrivacyWidget(TanzaniteGUI* parent);
+    explicit PrivacyWidget(AltecoinGUI* parent);
     ~PrivacyWidget();
 
     void loadWalletModel() override;

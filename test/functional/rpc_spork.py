@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-# Copyright (c) 2019 The Tanzanite developers
+# Copyright (c) 2019 The Altecoin developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 # -*- coding: utf-8 -*-
 
 from time import sleep
 
-from test_framework.test_framework import TanzaniteTestFramework
+from test_framework.test_framework import AltecoinTestFramework
 from test_framework.util import set_node_times, assert_equal
 
 
-class Tanzanite_RPCSporkTest(TanzaniteTestFramework):
+class Altecoin_RPCSporkTest(AltecoinTestFramework):
 
     def set_test_params(self):
         self.setup_clean_chain = True
@@ -70,5 +70,5 @@ class Tanzanite_RPCSporkTest(TanzaniteTestFramework):
 
 
 if __name__ == '__main__':
-    Tanzanite_RPCSporkTest().main()
+    Altecoin_RPCSporkTest().main()
 

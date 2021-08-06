@@ -1,6 +1,6 @@
-qt/tanzanite/qt_libbitcoinqt_a-moc_privacywidget.o: \
- qt/tanzanite/moc_privacywidget.cpp /usr/include/stdc-predef.h \
- qt/tanzanite/privacywidget.h qt/tanzanite/pwidget.h \
+qt/altecoin/qt_libbitcoinqt_a-moc_privacywidget.o: \
+ qt/altecoin/moc_privacywidget.cpp /usr/include/stdc-predef.h \
+ qt/altecoin/privacywidget.h qt/altecoin/pwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
@@ -257,8 +257,8 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_privacywidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/tanzanite/prunnable.h qt/tanzanite/furabstractlistitemdelegate.h \
- qt/tanzanite/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
+ qt/altecoin/prunnable.h qt/altecoin/furabstractlistitemdelegate.h \
+ qt/altecoin/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractItemDelegate \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
@@ -290,7 +290,7 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_privacywidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintEngine \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
- qt/tanzanite/txviewholder.h qt/tanzanite/txrow.h \
+ qt/altecoin/txviewholder.h qt/altecoin/txrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  qt/transactionrecord.h amount.h serialize.h /usr/include/assert.h \
@@ -315,7 +315,7 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_privacywidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
- qt/coincontroldialog.h qt/tanzanite/snackbar.h \
+ qt/coincontroldialog.h qt/altecoin/snackbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractButton \
@@ -341,9 +341,9 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_privacywidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/privacywidget.h:
+qt/altecoin/privacywidget.h:
 
-qt/tanzanite/pwidget.h:
+qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -955,11 +955,11 @@ qt/tanzanite/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/tanzanite/prunnable.h:
+qt/altecoin/prunnable.h:
 
-qt/tanzanite/furabstractlistitemdelegate.h:
+qt/altecoin/furabstractlistitemdelegate.h:
 
-qt/tanzanite/furlistrow.h:
+qt/altecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
 
@@ -1027,9 +1027,9 @@ qt/tanzanite/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:
 
-qt/tanzanite/txviewholder.h:
+qt/altecoin/txviewholder.h:
 
-qt/tanzanite/txrow.h:
+qt/altecoin/txrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime:
 
@@ -1101,7 +1101,7 @@ qt/bitcoinunits.h:
 
 qt/coincontroldialog.h:
 
-qt/tanzanite/snackbar.h:
+qt/altecoin/snackbar.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

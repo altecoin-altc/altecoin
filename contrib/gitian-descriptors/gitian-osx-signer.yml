@@ -1,5 +1,5 @@
 ---
-name: "tanzanite-dmg-signer"
+name: "altecoin-dmg-signer"
 distro: "ubuntu"
 suites:
 - "bionic"
@@ -8,10 +8,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/tanzanite-project/tanzanite-detached-sigs.git"
+- "url": "https://github.com/altecoin-project/altecoin-detached-sigs.git"
   "dir": "signature"
 files:
-- "tanzanite-osx-unsigned.tar.gz"
+- "altecoin-osx-unsigned.tar.gz"
 script: |
   set -e -o pipefail
 
@@ -30,8 +30,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=tanzanite-osx-unsigned.tar.gz
-  SIGNED=tanzanite-osx-signed.dmg
+  UNSIGNED=altecoin-osx-unsigned.tar.gz
+  SIGNED=altecoin-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

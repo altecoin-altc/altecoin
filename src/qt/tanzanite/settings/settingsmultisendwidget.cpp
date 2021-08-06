@@ -1,11 +1,11 @@
-// Copyright (c) 2019-2020 The Tanzanite developers
+// Copyright (c) 2019-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/settings/settingsmultisendwidget.h"
-#include "qt/tanzanite/settings/forms/ui_settingsmultisendwidget.h"
-#include "qt/tanzanite/settings/settingsmultisenddialog.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/settings/settingsmultisendwidget.h"
+#include "qt/altecoin/settings/forms/ui_settingsmultisendwidget.h"
+#include "qt/altecoin/settings/settingsmultisenddialog.h"
+#include "qt/altecoin/qtutils.h"
 #include "addresstablemodel.h"
 #include "base58.h"
 #include "init.h"
@@ -153,7 +153,7 @@ SettingsMultisendWidget::SettingsMultisendWidget(PWidget *parent) :
     ui->labelTitle->setText("Multisend");
     setCssTitleScreen(ui->labelTitle);
 
-    ui->labelSubtitle1->setText(tr("MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Tanzanite addresses after it matures."));
+    ui->labelSubtitle1->setText(tr("MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Altecoin addresses after it matures."));
     setCssSubtitleScreen(ui->labelSubtitle1);
 
     //Button Group

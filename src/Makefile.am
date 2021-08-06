@@ -66,15 +66,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += tanzanited
+  bin_PROGRAMS += altecoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += tanzanite-cli tanzanite-tx
+  bin_PROGRAMS += altecoin-cli altecoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# tanzanite core #
+# altecoin core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -206,7 +206,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between tanzanited and tanzanite-qt
+# server: shared between altecoind and altecoin-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -254,7 +254,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between tanzanited and tanzanite-qt, but only linked
+# wallet: shared between altecoind and altecoin-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -368,7 +368,7 @@ if USE_NUM_OPENSSL
   libzerocoin_libbitcoin_zerocoin_a_SOURCES += libzerocoin/bignum_openssl.cpp
 endif
 
-# common: shared between tanzanited, and tanzanite-qt and non-server tools
+# common: shared between altecoind, and altecoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -434,7 +434,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between tanzanite-cli and tanzanite-qt
+# cli: shared between altecoin-cli and altecoin-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -444,16 +444,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# tanzanited binary #
-tanzanited_SOURCES = tanzanited.cpp
-tanzanited_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-tanzanited_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-tanzanited_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# altecoind binary #
+altecoind_SOURCES = altecoind.cpp
+altecoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+altecoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+altecoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-tanzanited_SOURCES += tanzanited-res.rc
+altecoind_SOURCES += altecoind-res.rc
 endif
-tanzanited_LDADD = \
+altecoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
@@ -467,38 +467,38 @@ tanzanited_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-tanzanited_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+altecoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# tanzanite-cli binary #
-tanzanite_cli_SOURCES = tanzanite-cli.cpp
-tanzanite_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-tanzanite_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-tanzanite_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# altecoin-cli binary #
+altecoin_cli_SOURCES = altecoin-cli.cpp
+altecoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+altecoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+altecoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-tanzanite_cli_SOURCES += tanzanite-cli-res.rc
+altecoin_cli_SOURCES += altecoin-cli-res.rc
 endif
 
-tanzanite_cli_LDADD = \
+altecoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-tanzanite_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+altecoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# tanzanite-tx binary #
-tanzanite_tx_SOURCES = tanzanite-tx.cpp
-tanzanite_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-tanzanite_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-tanzanite_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# altecoin-tx binary #
+altecoin_tx_SOURCES = altecoin-tx.cpp
+altecoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+altecoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+altecoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-tanzanite_tx_SOURCES += tanzanite-tx-res.rc
+altecoin_tx_SOURCES += altecoin-tx-res.rc
 endif
 
-tanzanite_tx_LDADD = \
+altecoin_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -506,7 +506,7 @@ tanzanite_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-tanzanite_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+altecoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #
@@ -561,12 +561,12 @@ CLEANFILES += obj/build.h
 EXTRA_DIST =
 
 
-config/tanzanite-config.h: config/stamp-h1
+config/altecoin-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/tanzanite-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/altecoin-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/tanzanite-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/tanzanite-config.h.in
+$(top_srcdir)/$(subdir)/config/altecoin-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/altecoin-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean

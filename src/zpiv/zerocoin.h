@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2019 The Tanzanite developers
+// Copyright (c) 2017-2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_ZEROCOIN_H
-#define Tanzanite_ZEROCOIN_H
+#ifndef Altecoin_ZEROCOIN_H
+#define Altecoin_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -263,4 +263,4 @@ int GetWrapppedSerialInflation(libzerocoin::CoinDenomination denom);
 
 int64_t GetWrapppedSerialInflationAmount();
 
-#endif //Tanzanite_ZEROCOIN_H
+#endif //Altecoin_ZEROCOIN_H

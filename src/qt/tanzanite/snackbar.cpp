@@ -1,14 +1,14 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/snackbar.h"
-#include "qt/tanzanite/forms/ui_snackbar.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/snackbar.h"
+#include "qt/altecoin/forms/ui_snackbar.h"
+#include "qt/altecoin/qtutils.h"
 #include <QTimer>
 
 
-SnackBar::SnackBar(TanzaniteGUI* _window, QWidget *parent) :
+SnackBar::SnackBar(AltecoinGUI* _window, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::SnackBar),
     window(_window)

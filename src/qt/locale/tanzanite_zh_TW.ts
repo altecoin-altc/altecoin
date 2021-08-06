@@ -57,11 +57,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>選擇要匯出Tanzanite幣的位址</translation>
+        <translation>選擇要匯出Altecoin幣的位址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>選擇要接收Tanzanite幣的位址</translation>
+        <translation>選擇要接收Altecoin幣的位址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -76,12 +76,12 @@
         <translation>接收的位址</translation>
     </message>
     <message>
-        <source>These are your Tanzanite addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>這是你用來付款的 Tanzanite 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
+        <source>These are your Altecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>這是你用來付款的 Altecoin 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
     </message>
     <message>
-        <source>These are your Tanzanite addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>這是你用來接收款項的 Tanzanite 位址, 建議你每次付款都使用新的位址.</translation>
+        <source>These are your Altecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>這是你用來接收款項的 Altecoin 位址, 建議你每次付款都使用新的位址.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -180,16 +180,16 @@
         <translation>錢包確認加密</translation>
     </message>
     <message>
-        <source>Tanzanite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TZTs from being stolen by malware infecting your computer.</source>
-        <translation>Tanzanite 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 TZT 幣被可疑軟體或病毒偷走的風險.</translation>
+        <source>Altecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALTCs from being stolen by malware infecting your computer.</source>
+        <translation>Altecoin 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 ALTC 幣被可疑軟體或病毒偷走的風險.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>確定要加密你的錢包?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TZT&lt;/b&gt;!</source>
-        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(TZT)&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALTC&lt;/b&gt;!</source>
+        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(ALTC)&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -308,15 +308,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     </context>
 <context>
@@ -373,10 +373,10 @@
     <name>OptionsDialog</name>
     </context>
 <context>
-    <name>TanzaniteGUI</name>
+    <name>AltecoinGUI</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -403,8 +403,8 @@
         <translation>關閉程式</translation>
     </message>
     <message>
-        <source>Tanzanite Core client</source>
-        <translation>Tanzanite Core 客戶端</translation>
+        <source>Altecoin Core client</source>
+        <translation>Altecoin Core 客戶端</translation>
     </message>
     </context>
 <context>
@@ -429,8 +429,8 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     </context>
 <context>
@@ -676,15 +676,15 @@
 <context>
     <name>Splash</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     </context>
 <context>
@@ -733,7 +733,7 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>tanzanite-core</name>
+    <name>altecoin-core</name>
     </context>
 <context>
     <name>send</name>

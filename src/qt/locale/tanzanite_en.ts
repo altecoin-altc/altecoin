@@ -4,7 +4,7 @@
 <context>
     <name>AddNewAddressDialog</name>
     <message>
-        <location filename="../tanzanite/forms/addnewaddressdialog.ui" line="+14"/>
+        <location filename="../altecoin/forms/addnewaddressdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -37,7 +37,7 @@
 <context>
     <name>AddNewContactDialog</name>
     <message>
-        <location filename="../tanzanite/forms/addnewcontactdialog.ui" line="+14"/>
+        <location filename="../altecoin/forms/addnewcontactdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -58,7 +58,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/addnewcontactdialog.cpp" line="+20"/>
+        <location filename="../altecoin/addnewcontactdialog.cpp" line="+20"/>
         <source>Edit Contact</source>
         <translation type="unfinished"></translation>
     </message>
@@ -163,12 +163,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Tanzanite addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Altecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Tanzanite addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Altecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -210,7 +210,7 @@
 <context>
     <name>AddressLabelRow</name>
     <message>
-        <location filename="../tanzanite/forms/addresslabelrow.ui" line="+20"/>
+        <location filename="../altecoin/forms/addresslabelrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -251,7 +251,7 @@
 <context>
     <name>AddressesWidget</name>
     <message>
-        <location filename="../tanzanite/forms/addresseswidget.ui" line="+14"/>
+        <location filename="../altecoin/forms/addresseswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -272,7 +272,7 @@
     </message>
     <message>
         <location line="+74"/>
-        <location filename="../tanzanite/addresseswidget.cpp" line="+110"/>
+        <location filename="../altecoin/addresseswidget.cpp" line="+110"/>
         <source>Contact name</source>
         <translation type="unfinished"></translation>
     </message>
@@ -287,7 +287,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/addresseswidget.cpp" line="-29"/>
+        <location filename="../altecoin/addresseswidget.cpp" line="-29"/>
         <source>Contacts</source>
         <translation type="unfinished"></translation>
     </message>
@@ -308,7 +308,7 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Enter Tanzanite address</source>
+        <source>Enter Altecoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -465,7 +465,7 @@ for staking</source>
     </message>
     <message>
         <location line="+144"/>
-        <source>Tanzanite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TZTs from being stolen by malware infecting your computer.</source>
+        <source>Altecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALTCs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -475,7 +475,7 @@ for staking</source>
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TZT&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALTC&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -591,14 +591,14 @@ for staking</source>
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+480"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tanzanite.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (altecoin.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CSRow</name>
     <message>
-        <location filename="../tanzanite/forms/csrow.ui" line="+14"/>
+        <location filename="../altecoin/forms/csrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -609,7 +609,7 @@ for staking</source>
     </message>
     <message>
         <location line="+20"/>
-        <source>0,00 TZT</source>
+        <source>0,00 ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -623,7 +623,7 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/csrow.cpp" line="+27"/>
+        <location filename="../altecoin/csrow.cpp" line="+27"/>
         <source>Own delegation</source>
         <translation type="unfinished"></translation>
     </message>
@@ -708,7 +708,7 @@ for staking</source>
         <location line="+27"/>
         <location line="+72"/>
         <location line="+357"/>
-        <source>0.00 TZT</source>
+        <source>0.00 ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -964,7 +964,7 @@ for staking</source>
 <context>
     <name>CoinControlPivWidget</name>
     <message>
-        <location filename="../tanzanite/forms/coincontrolpivwidget.ui" line="+14"/>
+        <location filename="../altecoin/forms/coincontrolpivwidget.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -980,7 +980,7 @@ for staking</source>
     </message>
     <message>
         <location line="+30"/>
-        <source>TZT:</source>
+        <source>ALTC:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1073,7 +1073,7 @@ for staking</source>
 <context>
     <name>ColdStakingWidget</name>
     <message>
-        <location filename="../tanzanite/forms/coldstakingwidget.ui" line="+14"/>
+        <location filename="../altecoin/forms/coldstakingwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1109,7 +1109,7 @@ for staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/coldstakingwidget.cpp" line="+89"/>
+        <location filename="../altecoin/coldstakingwidget.cpp" line="+89"/>
         <source>Cold Staking</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1155,7 +1155,7 @@ for staking</source>
     </message>
     <message>
         <location line="-174"/>
-        <source>You can delegate your TZTs, letting a hot node (24/7 online node)
+        <source>You can delegate your ALTCs, letting a hot node (24/7 online node)
 stake on your behalf, while you keep the keys securely offline.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1166,7 +1166,7 @@ stake on your behalf, while you keep the keys securely offline.</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Accept TZT delegation / Delegate TZT</source>
+        <source>Accept ALTC delegation / Delegate ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1237,7 +1237,7 @@ Do you wish to proceed?</source>
     </message>
     <message>
         <location line="+28"/>
-        <source>You don&apos;t have any TZT to select.</source>
+        <source>You don&apos;t have any ALTC to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1335,7 +1335,7 @@ address</source>
 <context>
     <name>ContactDropdownRow</name>
     <message>
-        <location filename="../tanzanite/forms/contactdropdownrow.ui" line="+20"/>
+        <location filename="../altecoin/forms/contactdropdownrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1353,7 +1353,7 @@ address</source>
 <context>
     <name>DashboardWidget</name>
     <message>
-        <location filename="../tanzanite/forms/dashboardwidget.ui" line="+14"/>
+        <location filename="../altecoin/forms/dashboardwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1379,7 +1379,7 @@ address</source>
     </message>
     <message>
         <location line="+93"/>
-        <location filename="../tanzanite/dashboardwidget.cpp" line="+49"/>
+        <location filename="../altecoin/dashboardwidget.cpp" line="+49"/>
         <source>Staking Rewards</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1398,12 +1398,12 @@ address</source>
     </message>
     <message>
         <location line="+39"/>
-        <source>TZT</source>
+        <source>ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+42"/>
-        <source>zTZT</source>
+        <source>zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1437,13 +1437,13 @@ address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/dashboardwidget.cpp" line="+5"/>
+        <location filename="../altecoin/dashboardwidget.cpp" line="+5"/>
         <source>You can view your account&apos;s history</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Amount of TZT and zTZT staked.</source>
+        <source>Amount of ALTC and zALTC staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1513,7 +1513,7 @@ address</source>
     </message>
     <message>
         <location line="+5"/>
-        <source>How to get TZT or zTZT</source>
+        <source>How to get ALTC or zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1559,7 +1559,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>DefaultDialog</name>
     <message>
-        <location filename="../tanzanite/forms/defaultdialog.ui" line="+14"/>
+        <location filename="../altecoin/forms/defaultdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1587,7 +1587,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>DenomGenerationDialog</name>
     <message>
-        <location filename="../tanzanite/forms/denomgenerationdialog.ui" line="+14"/>
+        <location filename="../altecoin/forms/denomgenerationdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1706,7 +1706,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid Tanzanite address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Altecoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1728,7 +1728,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>ExpandableButton</name>
     <message>
-        <location filename="../tanzanite/forms/expandablebutton.ui" line="+26"/>
+        <location filename="../altecoin/forms/expandablebutton.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1828,7 +1828,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+0"/>
-        <source>Tanzanite Core</source>
+        <source>Altecoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1839,7 +1839,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+6"/>
-        <source>About Tanzanite Core</source>
+        <source>About Altecoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1902,17 +1902,17 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+90"/>
-        <source>Welcome to Tanzanite Core.</source>
+        <source>Welcome to Altecoin Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
-        <source>As this is the first time the program is launched, you can choose where Tanzanite Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Altecoin Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>Tanzanite Core will download and store a copy of the Tanzanite block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Altecoin Core will download and store a copy of the Altecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1937,7 +1937,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location filename="../intro.cpp" line="+101"/>
-        <source>Tanzanite Core</source>
+        <source>Altecoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1964,7 +1964,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>LoadingDialog</name>
     <message>
-        <location filename="../tanzanite/forms/loadingdialog.ui" line="+14"/>
+        <location filename="../altecoin/forms/loadingdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -1975,7 +1975,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+44"/>
-        <location filename="../tanzanite/loadingdialog.cpp" line="+43"/>
+        <location filename="../altecoin/loadingdialog.cpp" line="+43"/>
         <source>Loading</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1988,12 +1988,12 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>LockUnlock</name>
     <message>
-        <location filename="../tanzanite/forms/lockunlock.ui" line="+14"/>
+        <location filename="../altecoin/forms/lockunlock.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location filename="../tanzanite/lockunlock.cpp" line="+26"/>
+        <location filename="../altecoin/lockunlock.cpp" line="+26"/>
         <source>Unlock Wallet</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2011,7 +2011,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>MNRow</name>
     <message>
-        <location filename="../tanzanite/forms/mnrow.ui" line="+14"/>
+        <location filename="../altecoin/forms/mnrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2034,7 +2034,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>MasterNodeWizardDialog</name>
     <message>
-        <location filename="../tanzanite/forms/masternodewizarddialog.ui" line="+14"/>
+        <location filename="../altecoin/forms/masternodewizarddialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2090,7 +2090,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="-253"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Tanzanite Masternode you must dedicate 10.000 TZT (the unit of Tanzanite) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a Altecoin Masternode you must dedicate 10.000 ALTC (the unit of Altecoin) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2100,7 +2100,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+93"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 TZT will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 ALTC will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2124,7 +2124,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/masternodewizarddialog.cpp" line="+52"/>
+        <location filename="../altecoin/masternodewizarddialog.cpp" line="+52"/>
         <source>e.g user_masternode</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2197,7 +2197,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
 <context>
     <name>MasterNodesWidget</name>
     <message>
-        <location filename="../tanzanite/forms/masternodeswidget.ui" line="+14"/>
+        <location filename="../altecoin/forms/masternodeswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2223,7 +2223,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/masternodeswidget.cpp" line="+93"/>
+        <location filename="../altecoin/masternodeswidget.cpp" line="+93"/>
         <source>Masternodes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2311,7 +2311,7 @@ Please wait few more minutes.</source>
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the tanzanite.conf file
+You will only have to paste the data in the altecoin.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press &quot;start&quot;).
 </source>
@@ -2352,7 +2352,7 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>Not enough balance to create a masternode, 10,000 TZT required.</source>
+        <source>Not enough balance to create a masternode, 10,000 ALTC required.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2364,7 +2364,7 @@ Are you sure?</source>
 <context>
     <name>MnInfoDialog</name>
     <message>
-        <location filename="../tanzanite/forms/mninfodialog.ui" line="+20"/>
+        <location filename="../altecoin/forms/mninfodialog.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2428,7 +2428,7 @@ Are you sure?</source>
 <context>
     <name>MyAddressRow</name>
     <message>
-        <location filename="../tanzanite/forms/myaddressrow.ui" line="+14"/>
+        <location filename="../altecoin/forms/myaddressrow.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2451,7 +2451,7 @@ Are you sure?</source>
 <context>
     <name>NavMenuWidget</name>
     <message>
-        <location filename="../tanzanite/forms/navmenuwidget.ui" line="+14"/>
+        <location filename="../altecoin/forms/navmenuwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2461,7 +2461,7 @@ Are you sure?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/navmenuwidget.cpp" line="+23"/>
+        <location filename="../altecoin/navmenuwidget.cpp" line="+23"/>
         <source>v%1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2515,14 +2515,14 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Invalid URI, not starting with &quot;tanzanite&quot; prefix</source>
+        <source>Invalid URI, not starting with &quot;altecoin&quot; prefix</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OptionButton</name>
     <message>
-        <location filename="../tanzanite/forms/optionbutton.ui" line="+14"/>
+        <location filename="../altecoin/forms/optionbutton.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -2577,7 +2577,7 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the Tanzanite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Altecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2602,12 +2602,12 @@ Are you sure?</source>
     </message>
     <message>
         <location line="-236"/>
-        <source>Automatically start Tanzanite after logging in to the system.</source>
+        <source>Automatically start Altecoin after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Tanzanite on system login</source>
+        <source>&amp;Start Altecoin on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2642,13 +2642,13 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Tanzanite.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Altecoin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tanzanite-project/tanzanite-project-translations</source>
+https://www.transifex.com/altecoin-project/altecoin-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2658,17 +2658,17 @@ https://www.transifex.com/tanzanite-project/tanzanite-project-translations</sour
     </message>
     <message>
         <location line="-187"/>
-        <source>Enable automatic minting of TZT units to zTZT</source>
+        <source>Enable automatic minting of ALTC units to zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zTZT Automint</source>
+        <source>Enable zALTC Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Enable automatic zTZT minting from specific addresses</source>
+        <source>Enable automatic zALTC minting from specific addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2678,23 +2678,23 @@ https://www.transifex.com/tanzanite-project/tanzanite-project-translations</sour
     </message>
     <message>
         <location line="+11"/>
-        <source>Percentage of incoming TZT which get automatically converted to zTZT via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming ALTC which get automatically converted to zALTC via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zTZT</source>
+        <source>Percentage of autominted zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough TZT for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough ALTC for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zTZT Denomination</source>
+        <source>Preferred Automint zALTC Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2704,7 +2704,7 @@ https://www.transifex.com/tanzanite-project/tanzanite-project-translations</sour
     </message>
     <message>
         <location line="+98"/>
-        <source>Connect to the Tanzanite network through a SOCKS5 proxy.</source>
+        <source>Connect to the Altecoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2887,12 +2887,12 @@ https://www.transifex.com/tanzanite-project/tanzanite-project-translations</sour
     </message>
 </context>
 <context>
-    <name>TanzaniteGUI</name>
+    <name>AltecoinGUI</name>
     <message>
-        <location filename="../tanzanite/tanzanitegui.cpp" line="+54"/>
+        <location filename="../altecoin/altecoingui.cpp" line="+54"/>
         <location line="+294"/>
         <location line="+68"/>
-        <source>Tanzanite Core</source>
+        <source>Altecoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2927,7 +2927,7 @@ https://www.transifex.com/tanzanite-project/tanzanite-project-translations</sour
     </message>
     <message>
         <location line="+38"/>
-        <source>Tanzanite Core client</source>
+        <source>Altecoin Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2979,15 +2979,15 @@ Address: %4
 </translation>
     </message>
     <message>
-        <location filename="../tanzanite.cpp" line="+505"/>
-        <source>A fatal error occurred. Tanzanite can no longer continue safely and will quit.</source>
+        <location filename="../altecoin.cpp" line="+505"/>
+        <source>A fatal error occurred. Altecoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>PWidget</name>
     <message>
-        <location filename="../tanzanite/pwidget.cpp" line="+94"/>
+        <location filename="../altecoin/pwidget.cpp" line="+94"/>
         <source>Wallet locked, you need to unlock it to perform this action</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3028,12 +3028,12 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Cannot start tanzanite: click-to-pay handler</source>
+        <source>Cannot start altecoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+110"/>
-        <source>URI cannot be parsed! This can be caused by an invalid Tanzanite address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Altecoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3135,7 +3135,7 @@ Address: %4
 <context>
     <name>PrivacyWidget</name>
     <message>
-        <location filename="../tanzanite/forms/privacywidget.ui" line="+14"/>
+        <location filename="../altecoin/forms/privacywidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -3181,7 +3181,7 @@ Address: %4
         <translation type="unfinished">N/A</translation>
     </message>
     <message>
-        <location filename="../tanzanite/privacywidget.cpp" line="+38"/>
+        <location filename="../altecoin/privacywidget.cpp" line="+38"/>
         <source>Privacy</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3197,18 +3197,18 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>Minting zTZT anonymizes your TZT by removing any
+        <source>Minting zALTC anonymizes your ALTC by removing any
 transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Mint new zTZT or convert back to TZT</source>
+        <source>Mint new zALTC or convert back to ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+53"/>
-        <source>Last zTZT Movements</source>
+        <source>Last zALTC Movements</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3218,22 +3218,22 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+90"/>
-        <source>Mint zTZT</source>
+        <source>Mint zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of TZT to mint into zTZT</source>
+        <source>Enter amount of ALTC to mint into zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Convert back to TZT</source>
+        <source>Convert back to ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of zTZT to convert back into TZT</source>
+        <source>Enter amount of zALTC to convert back into ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3243,12 +3243,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+0"/>
-        <source>zTZT is currently undergoing maintenance</source>
+        <source>zALTC is currently undergoing maintenance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+8"/>
-        <source>You need to unlock the wallet to be able to %1 zTZT</source>
+        <source>You need to unlock the wallet to be able to %1 zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3268,17 +3268,17 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+18"/>
-        <source>zTZT minted successfully</source>
+        <source>zALTC minted successfully</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
-        <source>zTZT converted back to TZT</source>
+        <source>zALTC converted back to ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>You don&apos;t have any TZT to select.</source>
+        <source>You don&apos;t have any ALTC to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3293,7 +3293,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+8"/>
-        <source>Reset Spent zTZT</source>
+        <source>Reset Spent zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3400,7 +3400,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+143"/>
-        <source>Enter Tanzanite address (e.g. %1)</source>
+        <source>Enter Altecoin address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3460,11 +3460,11 @@ transaction history, making transactions untraceable </source>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <location filename="../tanzanite.cpp" line="+75"/>
+        <location filename="../altecoin.cpp" line="+75"/>
         <location line="+7"/>
         <location line="+13"/>
         <location line="+19"/>
-        <source>Tanzanite Core</source>
+        <source>Altecoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3489,7 +3489,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+61"/>
-        <source>Tanzanite Core didn&apos;t yet exit safely...</source>
+        <source>Altecoin Core didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3614,7 +3614,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+93"/>
-        <source>Open the Tanzanite debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Altecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3796,7 +3796,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zTZT Backup Path:</source>
+        <source>Custom zALTC Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3896,7 +3896,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="-39"/>
-        <source>Welcome to the Tanzanite RPC console.</source>
+        <source>Welcome to the Altecoin RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4043,7 +4043,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>ReceiveDialog</name>
     <message>
-        <location filename="../tanzanite/forms/receivedialog.ui" line="+14"/>
+        <location filename="../altecoin/forms/receivedialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4071,7 +4071,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>ReceiveWidget</name>
     <message>
-        <location filename="../tanzanite/forms/receivewidget.ui" line="+20"/>
+        <location filename="../altecoin/forms/receivewidget.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4085,36 +4085,36 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+25"/>
-        <location filename="../tanzanite/receivewidget.cpp" line="+219"/>
+        <location filename="../altecoin/receivewidget.cpp" line="+219"/>
         <source>No address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <location filename="../tanzanite/receivewidget.cpp" line="-151"/>
+        <location filename="../altecoin/receivewidget.cpp" line="-151"/>
         <source>Add Label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <location filename="../tanzanite/receivewidget.cpp" line="+4"/>
+        <location filename="../altecoin/receivewidget.cpp" line="+4"/>
         <source>Generate Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <location filename="../tanzanite/receivewidget.cpp" line="+4"/>
+        <location filename="../altecoin/receivewidget.cpp" line="+4"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/receivewidget.cpp" line="-32"/>
+        <location filename="../altecoin/receivewidget.cpp" line="-32"/>
         <source>Receive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Scan the QR code or copy the address to receive TZT.</source>
+        <source>Scan the QR code or copy the address to receive ALTC.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4221,7 +4221,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>RequestDialog</name>
     <message>
-        <location filename="../tanzanite/forms/requestdialog.ui" line="+14"/>
+        <location filename="../altecoin/forms/requestdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4237,13 +4237,13 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+43"/>
-        <location filename="../tanzanite/requestdialog.cpp" line="+42"/>
+        <location filename="../altecoin/requestdialog.cpp" line="+42"/>
         <source>Amount</source>
         <translation type="unfinished">Amount</translation>
     </message>
     <message>
         <location line="+71"/>
-        <source>TZT</source>
+        <source>ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4278,7 +4278,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/requestdialog.cpp" line="-6"/>
+        <location filename="../altecoin/requestdialog.cpp" line="-6"/>
         <source>Label</source>
         <translation type="unfinished">Label</translation>
     </message>
@@ -4294,7 +4294,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Instead of sharing only a Tanzanite address, you can create a payment request, bundling up more information.</source>
+        <source>Instead of sharing only a Altecoin address, you can create a payment request, bundling up more information.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4336,7 +4336,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>SendChangeAddressDialog</name>
     <message>
-        <location filename="../tanzanite/forms/sendchangeaddressdialog.ui" line="+14"/>
+        <location filename="../altecoin/forms/sendchangeaddressdialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4361,20 +4361,20 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/sendchangeaddressdialog.cpp" line="+21"/>
+        <location filename="../altecoin/sendchangeaddressdialog.cpp" line="+21"/>
         <source>Custom Change Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; Tanzanite address</source>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; Altecoin address</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SendCustomFeeDialog</name>
     <message>
-        <location filename="../tanzanite/forms/sendcustomfeedialog.ui" line="+14"/>
+        <location filename="../altecoin/forms/sendcustomfeedialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4419,7 +4419,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/sendcustomfeedialog.cpp" line="+25"/>
+        <location filename="../altecoin/sendcustomfeedialog.cpp" line="+25"/>
         <source>Customize Fee</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4452,7 +4452,7 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>SendMultiRow</name>
     <message>
-        <location filename="../tanzanite/forms/sendmultirow.ui" line="+26"/>
+        <location filename="../altecoin/forms/sendmultirow.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4462,7 +4462,7 @@ transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/sendmultirow.cpp" line="+22"/>
+        <location filename="../altecoin/sendmultirow.cpp" line="+22"/>
         <source>Enter address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4475,13 +4475,13 @@ transaction history, making transactions untraceable </source>
 <context>
     <name>SendWidget</name>
     <message>
-        <location filename="../tanzanite/send.cpp" line="+44"/>
+        <location filename="../altecoin/send.cpp" line="+44"/>
         <source>Send</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
-        <source>You can transfer public coins (TZT) or private coins (zTZT)</source>
+        <source>You can transfer public coins (ALTC) or private coins (zALTC)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4491,7 +4491,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Tanzanite address or contact label</source>
+        <source>Altecoin address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4526,12 +4526,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+40"/>
-        <source>Send TZT</source>
+        <source>Send ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Send zTZT</source>
+        <source>Send zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4600,7 +4600,7 @@ These coins will no longer be cold-staked.</source>
     </message>
     <message>
         <location line="-38"/>
-        <source>zTZT is currently undergoing maintenance.</source>
+        <source>zALTC is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4622,12 +4622,12 @@ These coins will no longer be cold-staked.</source>
     </message>
     <message>
         <location line="+31"/>
-        <source>zTZT transaction sent!</source>
+        <source>zALTC transaction sent!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Version 1 zTZT require a security level of 100 to successfully spend.</source>
+        <source>Version 1 zALTC require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4674,12 +4674,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+23"/>
-        <source>You don&apos;t have any TZT to select.</source>
+        <source>You don&apos;t have any ALTC to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>You don&apos;t have any zTZT in your balance to select.</source>
+        <source>You don&apos;t have any zALTC in your balance to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4731,7 +4731,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SettingsBackupWallet</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingsbackupwallet.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingsbackupwallet.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4745,7 +4745,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingsbackupwallet.cpp" line="+26"/>
+        <location filename="../altecoin/settings/settingsbackupwallet.cpp" line="+26"/>
         <source>Backup Wallet </source>
         <translation type="unfinished"></translation>
     </message>
@@ -4816,7 +4816,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
 <context>
     <name>SettingsBitToolWidget</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingsbittoolwidget.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingsbittoolwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -4844,7 +4844,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
     </message>
     <message>
         <location line="+63"/>
-        <location filename="../tanzanite/settings/settingsbittoolwidget.cpp" line="+74"/>
+        <location filename="../altecoin/settings/settingsbittoolwidget.cpp" line="+74"/>
         <source>Import Address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4855,7 +4855,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation type="unfinished">Clear</translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingsbittoolwidget.cpp" line="-39"/>
+        <location filename="../altecoin/settings/settingsbittoolwidget.cpp" line="-39"/>
         <source>BIP38 Tool</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4908,7 +4908,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
     </message>
     <message>
         <location line="+13"/>
-        <source>Tanzanite address</source>
+        <source>Altecoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5032,7 +5032,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
 <context>
     <name>SettingsConsoleWidget</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingsconsolewidget.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingsconsolewidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5042,7 +5042,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingsconsolewidget.cpp" line="+254"/>
+        <location filename="../altecoin/settings/settingsconsolewidget.cpp" line="+254"/>
         <source>Console</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5069,7 +5069,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+142"/>
-        <source>Welcome to the Tanzanite RPC console.</source>
+        <source>Welcome to the Altecoin RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5091,7 +5091,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsDisplayOptionsWidget</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingsdisplayoptionswidget.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingsdisplayoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5107,7 +5107,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+58"/>
-        <location filename="../tanzanite/settings/settingsdisplayoptionswidget.cpp" line="+98"/>
+        <location filename="../altecoin/settings/settingsdisplayoptionswidget.cpp" line="+98"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5117,7 +5117,7 @@ Verify that you have installed a predetermined text editor.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingsdisplayoptionswidget.cpp" line="-69"/>
+        <location filename="../altecoin/settings/settingsdisplayoptionswidget.cpp" line="-69"/>
         <source>Display</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5170,7 +5170,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsFaqWidget</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingsfaqwidget.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingsfaqwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5188,38 +5188,38 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="-280"/>
-        <source>1) What is Tanzanite?</source>
+        <source>1) What is Altecoin?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>2) Why are my TZT unspendable?</source>
+        <source>2) Why are my ALTC unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+28"/>
-        <source>3) Tanzanite privacy? What is Zerocoin (zTZT)?</source>
+        <source>3) Altecoin privacy? What is Zerocoin (zALTC)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+28"/>
-        <source>4) Why are my zTZT unspendable?</source>
+        <source>4) Why are my zALTC unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
         <source>5) Why did my wallet convert the balance
-    into zTZT automatically?</source>
+    into zALTC automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>6) How do I receive TZT/zTZT?</source>
+        <source>6) How do I receive ALTC/zALTC?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
-        <source>7) How do I stake TZT/zTZT?</source>
+        <source>7) How do I stake ALTC/zALTC?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5244,21 +5244,21 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>What is Tanzanite?</source>
+        <source>What is Altecoin?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Tanzanite is a form of digital online money using blockchain technology
+                           Altecoin is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  Tanzanite incorporates market leading security &amp;
+                           zero fees.  Altecoin incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zTZT) and Zerocoin staking.
+                           to implement ZeroCoin(zALTC) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Tanzanite utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of Tanzanite to participate in earning block rewards
+                           Altecoin utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of Altecoin to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -5272,17 +5272,17 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>Why are my TZT unspendable?</source>
+        <source>Why are my ALTC unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Newly received Tanzanite requires 6 confirmations on the network
+                           Newly received Altecoin requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Your Tanzanite wallet also needs to be completely synchronized
+                           Your Altecoin wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5295,18 +5295,18 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Tanzanite privacy? What is Zerocoin (zTZT)?</source>
+        <source>Altecoin privacy? What is Zerocoin (zALTC)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zTZT is an optional privacy-centric method of coin mixing on the
-                           Tanzanite blockchain. Basically all your transactions cannot be tracked
+                           zALTC is an optional privacy-centric method of coin mixing on the
+                           Altecoin blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://Tanzanite.org/zpiv/&apos;&gt;
-                           &quot;Tanzanite Zerocoin (zTZT) Technical Paper&quot;&lt;/a&gt;.
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://Altecoin.org/zpiv/&apos;&gt;
+                           &quot;Altecoin Zerocoin (zALTC) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -5318,14 +5318,14 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Why are my zTZT unspendable?</source>
+        <source>Why are my zALTC unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           After minting, zTZT will require 20 confirmations as well as 1
+                           After minting, zALTC will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -5339,25 +5339,25 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Why did my wallet convert the balance into zTZT automatically?</source>
+        <source>Why did my wallet convert the balance into zALTC automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           By default the Tanzanite wallet will convert 10% of your entire TZT
-                           balance to zTZT to assist the network. If you do not wish to
-                           stake zTZT or take advantage of the privacy benefit it brings,
-                           you can disable the automatic minting in your Tanzanite wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zTZT Automint”.
-                           If you are not making use of the Tanzanite-QT or GUI you can simply open
-                           your tanzanite.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           By default the Altecoin wallet will convert 10% of your entire ALTC
+                           balance to zALTC to assist the network. If you do not wish to
+                           stake zALTC or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your Altecoin wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zALTC Automint”.
+                           If you are not making use of the Altecoin-QT or GUI you can simply open
+                           your altecoin.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           You can read more about zTZT in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://Tanzanite.org/zpiv/&apos;&gt; &quot;Tanzanite Zerocoin (zTZT) Technical Paper&quot;&lt;/a&gt;.
-                           If you would like to keep and stake your zTZT, please read the &quot;How do I stake&quot;
+                           You can read more about zALTC in the
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://Altecoin.org/zpiv/&apos;&gt; &quot;Altecoin Zerocoin (zALTC) Technical Paper&quot;&lt;/a&gt;.
+                           If you would like to keep and stake your zALTC, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5370,17 +5370,17 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>How do I receive TZT/zTZT?</source>
+        <source>How do I receive ALTC/zALTC?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zTZT can be spent and sent to any Tanzanite address. The receiver will
-                           receive standard Tanzanite but the origin of the Tanzanite is anonymized by the zTZT Protocol.
+                           zALTC can be spent and sent to any Altecoin address. The receiver will
+                           receive standard Altecoin but the origin of the Altecoin is anonymized by the zALTC Protocol.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           If you want more zTZT you will need to mint your balance in the “Privacy” tab.
+                           If you want more zALTC you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -5392,33 +5392,33 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>How do I stake TZT/zTZT?</source>
+        <source>How do I stake ALTC/zALTC?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake Tanzanite:
+                           To Stake Altecoin:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of Tanzanite with a minimum of 600 confirmations.
+                           You must have a balance of Altecoin with a minimum of 600 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for staking purposes.
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
-                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (tanzanite-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (altecoin-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake zTZT:
+                           To Stake zALTC:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zTZT balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zALTC balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -5444,7 +5444,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 TZT collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 ALTC collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5457,10 +5457,10 @@ Verify that you have installed a predetermined text editor.</source>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://discord.Tanzanite.org&apos;&gt;
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://discord.Altecoin.org&apos;&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://Tanzanite.freshdesk.com&apos;&gt;
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://Altecoin.freshdesk.com&apos;&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5475,8 +5475,8 @@ Verify that you have installed a predetermined text editor.</source>
         <location line="+44"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           A masternode is a computer running a full node Tanzanite core wallet with a
-                           requirement of 10,000 TZT secured collateral to provide extra services
+                           A masternode is a computer running a full node Altecoin core wallet with a
+                           requirement of 10,000 ALTC secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
@@ -5498,17 +5498,17 @@ Verify that you have installed a predetermined text editor.</source>
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in Tanzanite Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in Altecoin Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the Tanzanite network&lt;/li&gt;
+                           &lt;li&gt;Help secure the Altecoin network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
 
                            Requirements:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 TZT per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 ALTC per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -5523,7 +5523,7 @@ Verify that you have installed a predetermined text editor.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingsfaqwidget.cpp" line="+19"/>
+        <location filename="../altecoin/settings/settingsfaqwidget.cpp" line="+19"/>
         <source>Frequently Asked Questions</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5541,7 +5541,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsInformationWidget</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingsinformationwidget.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingsinformationwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5576,12 +5576,12 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="-536"/>
-        <location filename="../tanzanite/settings/settingsinformationwidget.cpp" line="+96"/>
+        <location filename="../altecoin/settings/settingsinformationwidget.cpp" line="+96"/>
         <source>Network Monitor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingsinformationwidget.cpp" line="-67"/>
+        <location filename="../altecoin/settings/settingsinformationwidget.cpp" line="-67"/>
         <source>Information</source>
         <translation type="unfinished">Information</translation>
     </message>
@@ -5682,7 +5682,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Unable to open tanzanite.conf with default application</source>
+        <source>Unable to open altecoin.conf with default application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5699,7 +5699,7 @@ Verify that you have installed a predetermined text editor.</source>
 <context>
     <name>SettingsMainOptionsWidget</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingsmainoptionswidget.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingsmainoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5729,7 +5729,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+40"/>
-        <location filename="../tanzanite/settings/settingsmainoptionswidget.cpp" line="+81"/>
+        <location filename="../altecoin/settings/settingsmainoptionswidget.cpp" line="+81"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5740,12 +5740,12 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+38"/>
-        <location filename="../tanzanite/settings/settingsmainoptionswidget.cpp" line="-1"/>
+        <location filename="../altecoin/settings/settingsmainoptionswidget.cpp" line="-1"/>
         <source>SAVE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingsmainoptionswidget.cpp" line="-31"/>
+        <location filename="../altecoin/settings/settingsmainoptionswidget.cpp" line="-31"/>
         <source>Main</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5761,7 +5761,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Start Tanzanite on system login</source>
+        <source>Start Altecoin on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5796,7 +5796,7 @@ Are you sure?
 <context>
     <name>SettingsMultisendDialog</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingsmultisenddialog.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingsmultisenddialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5823,7 +5823,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingsmultisenddialog.cpp" line="+24"/>
+        <location filename="../altecoin/settings/settingsmultisenddialog.cpp" line="+24"/>
         <source>New recipient for multisend</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5846,7 +5846,7 @@ Are you sure?
 <context>
     <name>SettingsMultisendWidget</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingsmultisendwidget.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingsmultisendwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5868,8 +5868,8 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingsmultisendwidget.cpp" line="+156"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Tanzanite addresses after it matures.</source>
+        <location filename="../altecoin/settings/settingsmultisendwidget.cpp" line="+156"/>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Altecoin addresses after it matures.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5978,7 +5978,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsSignMessageWidgets</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingssignmessagewidgets.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingssignmessagewidgets.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -5998,7 +5998,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished">Clear</translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingssignmessagewidgets.cpp" line="+35"/>
+        <location filename="../altecoin/settings/settingssignmessagewidgets.cpp" line="+35"/>
         <source>Sign/Verify Message</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6024,7 +6024,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="-19"/>
-        <source>Tanzanite address or contact label</source>
+        <source>Altecoin address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6144,7 +6144,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWalletOptionsWidget</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingswalletoptionswidget.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingswalletoptionswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6173,7 +6173,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="+139"/>
-        <location filename="../tanzanite/settings/settingswalletoptionswidget.cpp" line="+69"/>
+        <location filename="../altecoin/settings/settingswalletoptionswidget.cpp" line="+69"/>
         <source>Reset to default</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6183,7 +6183,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingswalletoptionswidget.cpp" line="-43"/>
+        <location filename="../altecoin/settings/settingswalletoptionswidget.cpp" line="-43"/>
         <source>Wallet</source>
         <translation type="unfinished">Wallet</translation>
     </message>
@@ -6256,7 +6256,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWalletRepairWidget</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingswalletrepairwidget.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingswalletrepairwidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6274,7 +6274,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingswalletrepairwidget.cpp" line="+22"/>
+        <location filename="../altecoin/settings/settingswalletrepairwidget.cpp" line="+22"/>
         <source>Wallet Repair</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6382,7 +6382,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
 <context>
     <name>SettingsWidget</name>
     <message>
-        <location filename="../tanzanite/settings/forms/settingswidget.ui" line="+14"/>
+        <location filename="../altecoin/settings/forms/settingswidget.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6469,11 +6469,11 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <location line="+31"/>
-        <source>About Tanzanite</source>
+        <source>About Altecoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/settings/settingswidget.cpp" line="+47"/>
+        <location filename="../altecoin/settings/settingswidget.cpp" line="+47"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6546,7 +6546,7 @@ Are you sure?
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+70"/>
-        <source>Tanzanite Core is shutting down...</source>
+        <source>Altecoin Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6558,7 +6558,7 @@ Are you sure?
 <context>
     <name>SnackBar</name>
     <message>
-        <location filename="../tanzanite/forms/snackbar.ui" line="+26"/>
+        <location filename="../altecoin/forms/snackbar.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6571,7 +6571,7 @@ Are you sure?
 <context>
     <name>Splash</name>
     <message>
-        <location filename="../tanzanite/forms/splash.ui" line="+26"/>
+        <location filename="../altecoin/forms/splash.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6581,8 +6581,8 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/splash.cpp" line="+29"/>
-        <source>Tanzanite Core</source>
+        <location filename="../altecoin/splash.cpp" line="+29"/>
+        <source>Altecoin Core</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6590,7 +6590,7 @@ Are you sure?
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>Tanzanite Core</source>
+        <source>Altecoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6610,7 +6610,7 @@ Are you sure?
     </message>
     <message>
         <location line="+1"/>
-        <source>The Tanzanite Core developers</source>
+        <source>The Altecoin Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6622,7 +6622,7 @@ Are you sure?
 <context>
     <name>TooltipMenu</name>
     <message>
-        <location filename="../tanzanite/forms/tooltipmenu.ui" line="+26"/>
+        <location filename="../altecoin/forms/tooltipmenu.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -6650,26 +6650,26 @@ Are you sure?
 <context>
     <name>TopBar</name>
     <message>
-        <location filename="../tanzanite/forms/topbar.ui" line="+26"/>
+        <location filename="../altecoin/forms/topbar.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location line="+96"/>
         <location line="+279"/>
-        <source>480.0685 TZT</source>
+        <source>480.0685 ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-210"/>
         <location line="+321"/>
-        <source>1,000 zTZT</source>
+        <source>1,000 zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-118"/>
         <location line="+111"/>
-        <location filename="../tanzanite/topbar.cpp" line="+548"/>
+        <location filename="../altecoin/topbar.cpp" line="+548"/>
         <source>Available</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6681,7 +6681,7 @@ Are you sure?
     </message>
     <message>
         <location line="-104"/>
-        <source>6.943 TZT</source>
+        <source>6.943 ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6692,21 +6692,21 @@ Are you sure?
     </message>
     <message>
         <location line="-104"/>
-        <source>10 TZT</source>
+        <source>10 ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+77"/>
-        <source>60 zTZT</source>
+        <source>60 zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>10 zTZT</source>
+        <source>10 zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/topbar.cpp" line="-301"/>
+        <location filename="../altecoin/topbar.cpp" line="-301"/>
         <source>Wallet Unlocked for staking</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7144,17 +7144,17 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>TZT Stake</source>
+        <source>ALTC Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>zTZT Stake</source>
+        <source>zALTC Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>TZT Cold Stake</source>
+        <source>ALTC Cold Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7184,27 +7184,27 @@ Are you sure?
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted TZT to zTZT</source>
+        <source>Converted ALTC to zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zTZT</source>
+        <source>Spent zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received TZT from zTZT</source>
+        <source>Received ALTC from zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zTZT from zTZT Spend</source>
+        <source>Minted Change as zALTC from zALTC Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zTZT to TZT</source>
+        <source>Converted zALTC to ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7224,7 +7224,7 @@ Are you sure?
     </message>
     <message>
         <location line="+8"/>
-        <source>TZT Stake on behalf of</source>
+        <source>ALTC Stake on behalf of</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7291,13 +7291,13 @@ Are you sure?
 <context>
     <name>TxDetailDialog</name>
     <message>
-        <location filename="../tanzanite/forms/sendconfirmdialog.ui" line="+26"/>
+        <location filename="../altecoin/forms/sendconfirmdialog.ui" line="+26"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
         <location line="+90"/>
-        <location filename="../tanzanite/sendconfirmdialog.cpp" line="+74"/>
+        <location filename="../altecoin/sendconfirmdialog.cpp" line="+74"/>
         <source>Transaction Details</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7328,7 +7328,7 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>2 TZT</source>
+        <source>2 ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7358,7 +7358,7 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>0.0001 TZT</source>
+        <source>0.0001 ALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7427,7 +7427,7 @@ Are you sure?
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/sendconfirmdialog.cpp" line="-26"/>
+        <location filename="../altecoin/sendconfirmdialog.cpp" line="-26"/>
         <source>Confirm Your Transaction</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7450,7 +7450,7 @@ Are you sure?
 <context>
     <name>TxRow</name>
     <message>
-        <location filename="../tanzanite/forms/txrow.ui" line="+20"/>
+        <location filename="../altecoin/forms/txrow.ui" line="+20"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
@@ -7466,7 +7466,7 @@ Are you sure?
     </message>
     <message>
         <location line="+15"/>
-        <source>+0.000585 TZT</source>
+        <source>+0.000585 ALTC</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7482,14 +7482,14 @@ Are you sure?
     <message>
         <location line="-27"/>
         <location line="+18"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TZT.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 ALTC.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>WalletPasswordDialog</name>
     <message>
-        <location filename="../tanzanite/forms/walletpassworddialog.ui" line="+14"/>
+        <location filename="../altecoin/forms/walletpassworddialog.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7519,7 +7519,7 @@ Are you sure?
 <context>
     <name>WelcomeContentWidget</name>
     <message>
-        <location filename="../tanzanite/forms/welcomecontentwidget.ui" line="+244"/>
+        <location filename="../altecoin/forms/welcomecontentwidget.ui" line="+244"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7566,27 +7566,27 @@ Are you sure?
     <message>
         <location line="+89"/>
         <source>Welcome to
-Tanzanite Core Wallet</source>
+Altecoin Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+27"/>
-        <source>Tanzanite is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <source>Altecoin is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - Tanzanite believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - Altecoin believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+83"/>
-        <source>The masternode network is Tanzanite&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <source>The masternode network is Altecoin&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-103"/>
-        <source>How Tanzanite respects your privacy?</source>
+        <source>How Altecoin respects your privacy?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7595,7 +7595,7 @@ Tanzanite Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tanzanite/welcomecontentwidget.cpp" line="+178"/>
+        <location filename="../altecoin/welcomecontentwidget.cpp" line="+178"/>
         <source>default</source>
         <translation type="unfinished">default</translation>
     </message>
@@ -7604,7 +7604,7 @@ Tanzanite Core Wallet</source>
     <name>ZPivControlDialog</name>
     <message>
         <location filename="../forms/zpivcontroldialog.ui" line="+20"/>
-        <source>Select zTZT to Spend</source>
+        <source>Select zALTC to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7649,14 +7649,14 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location filename="../zpivcontroldialog.cpp" line="+39"/>
-        <source>Select zTZT Denominations to Spend</source>
+        <source>Select zALTC Denominations to Spend</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>tanzanite-core</name>
+    <name>altecoin-core</name>
     <message>
-        <location filename="../tanzanitestrings.cpp" line="+15"/>
+        <location filename="../altecoinstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -7687,7 +7687,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. Tanzanite Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Altecoin Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7727,7 +7727,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable automatic wallet backups triggered after each zTZT minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zALTC minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7737,12 +7737,12 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for TZT inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for ALTC inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for zTZT inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for zALTC inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7787,12 +7787,12 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+8"/>
-        <source>Fees (in TZT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in ALTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in TZT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in ALTC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7932,7 +7932,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to bind to %s on this computer. Tanzanite Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Altecoin Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7942,12 +7942,12 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TZT.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 ALTC.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 TZT.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 ALTC.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7967,12 +7967,12 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Peers are being disconnected due time differences. Please check that your computer&apos;s date and time are correct! If your clock is wrong Tanzanite Core will not work properly.</source>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer&apos;s date and time are correct! If your clock is wrong Altecoin Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Tanzanite Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Altecoin Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8147,7 +8147,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The Tanzanite Core Developers</source>
+        <source>Copyright (C) 2015-%i The Altecoin Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8252,7 +8252,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Tanzanite Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Altecoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8317,7 +8317,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Fee (in TZT/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in ALTC/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8367,7 +8367,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Tanzanite Core is shutting down.</source>
+        <source>Initialization sanity check failed. Altecoin Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8442,22 +8442,22 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+9"/>
-        <source>Recalculating TZT supply...</source>
+        <source>Recalculating ALTC supply...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Recalculating minted ZTZT...</source>
+        <source>Recalculating minted ZALTC...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Recalculating spent ZTZT...</source>
+        <source>Recalculating spent ZALTC...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Reindex the TZT and zTZT money supply statistics</source>
+        <source>Reindex the ALTC and zALTC money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8509,7 +8509,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+38"/>
-        <source>Disable all Tanzanite specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all Altecoin specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8554,7 +8554,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify custom backup path to add a copy of any automatic zTZT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <source>Specify custom backup path to add a copy of any automatic zALTC backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9094,7 +9094,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zTZT wallet...</source>
+        <source>Syncing zALTC wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9239,7 +9239,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zTZT</source>
+        <source>Value is below the smallest available denomination (= 1) of zALTC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9259,7 +9259,7 @@ Tanzanite Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Tanzanite Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Altecoin Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9331,7 +9331,7 @@ Tanzanite Core Wallet</source>
 <context>
     <name>send</name>
     <message>
-        <location filename="../tanzanite/forms/send.ui" line="+14"/>
+        <location filename="../altecoin/forms/send.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>

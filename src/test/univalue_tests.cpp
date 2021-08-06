@@ -1,5 +1,5 @@
 // Copyright 2014 BitPay, Inc.
-// Copyright (c) 2017-2019 The Tanzanite developers
+// Copyright (c) 2017-2019 The Altecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,7 +8,7 @@
 #include <string>
 #include <map>
 #include <univalue.h>
-#include "test/test_tanzanite.h"
+#include "test/test_altecoin.h"
 
 #include <boost/test/unit_test.hpp>
 

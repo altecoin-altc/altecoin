@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2020-2021 The Tanzanite developers
+// Copyright (c) 2020-2021 The Altecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -365,7 +365,7 @@ public:
 
     // Verify and vote on finalized budget
     void CheckAndVote();
-    //total tanzanite paid out by this budget
+    //total altecoin paid out by this budget
     CAmount GetTotalPayout();
     //vote on this finalized budget as a masternode
     void SubmitVote();

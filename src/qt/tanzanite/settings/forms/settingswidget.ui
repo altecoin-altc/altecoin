@@ -837,7 +837,7 @@
                          <enum>Qt::NoFocus</enum>
                         </property>
                         <property name="text">
-                         <string>About Tanzanite</string>
+                         <string>About Altecoin</string>
                         </property>
                         <property name="checkable">
                          <bool>false</bool>

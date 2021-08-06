@@ -1,12 +1,12 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_CORE_NEW_GUI_TanzaniteGUI_H
-#define Tanzanite_CORE_NEW_GUI_TanzaniteGUI_H
+#ifndef Altecoin_CORE_NEW_GUI_AltecoinGUI_H
+#define Altecoin_CORE_NEW_GUI_AltecoinGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/tanzanite-config.h"
+#include "config/altecoin-config.h"
 #endif
 
 #include <QMainWindow>
@@ -14,17 +14,17 @@
 #include <QSystemTrayIcon>
 #include <QLabel>
 
-#include "qt/tanzanite/navmenuwidget.h"
-#include "qt/tanzanite/topbar.h"
-#include "qt/tanzanite/dashboardwidget.h"
-#include "qt/tanzanite/send.h"
-#include "qt/tanzanite/receivewidget.h"
-#include "qt/tanzanite/addresseswidget.h"
-#include "qt/tanzanite/privacywidget.h"
-#include "qt/tanzanite/coldstakingwidget.h"
-#include "qt/tanzanite/masternodeswidget.h"
-#include "qt/tanzanite/snackbar.h"
-#include "qt/tanzanite/settings/settingswidget.h"
+#include "qt/altecoin/navmenuwidget.h"
+#include "qt/altecoin/topbar.h"
+#include "qt/altecoin/dashboardwidget.h"
+#include "qt/altecoin/send.h"
+#include "qt/altecoin/receivewidget.h"
+#include "qt/altecoin/addresseswidget.h"
+#include "qt/altecoin/privacywidget.h"
+#include "qt/altecoin/coldstakingwidget.h"
+#include "qt/altecoin/masternodeswidget.h"
+#include "qt/altecoin/snackbar.h"
+#include "qt/altecoin/settings/settingswidget.h"
 #include "qt/rpcconsole.h"
 
 
@@ -35,18 +35,18 @@ class WalletModel;
 
 
 /**
-  Tanzanite GUI main class. This class represents the main window of the Tanzanite UI. It communicates with both the client and
+  Altecoin GUI main class. This class represents the main window of the Altecoin UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
-class TanzaniteGUI : public QMainWindow
+class AltecoinGUI : public QMainWindow
 {
     Q_OBJECT
 
 public:
     static const QString DEFAULT_WALLET;
 
-    explicit TanzaniteGUI(const NetworkStyle* networkStyle, QWidget* parent = 0);
-    ~TanzaniteGUI();
+    explicit AltecoinGUI(const NetworkStyle* networkStyle, QWidget* parent = 0);
+    ~AltecoinGUI();
 
     /** Set the client model.
         The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic.
@@ -186,4 +186,4 @@ signals:
 };
 
 
-#endif //Tanzanite_CORE_NEW_GUI_TanzaniteGUI_H
+#endif //Altecoin_CORE_NEW_GUI_AltecoinGUI_H

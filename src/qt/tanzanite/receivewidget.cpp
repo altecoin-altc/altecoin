@@ -1,15 +1,15 @@
-// Copyright (c) 2019-2020 The Tanzanite developers
+// Copyright (c) 2019-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/receivewidget.h"
-#include "qt/tanzanite/forms/ui_receivewidget.h"
-#include "qt/tanzanite/requestdialog.h"
-#include "qt/tanzanite/addnewcontactdialog.h"
-#include "qt/tanzanite/qtutils.h"
-#include "qt/tanzanite/myaddressrow.h"
-#include "qt/tanzanite/furlistrow.h"
-#include "qt/tanzanite/addressholder.h"
+#include "qt/altecoin/receivewidget.h"
+#include "qt/altecoin/forms/ui_receivewidget.h"
+#include "qt/altecoin/requestdialog.h"
+#include "qt/altecoin/addnewcontactdialog.h"
+#include "qt/altecoin/qtutils.h"
+#include "qt/altecoin/myaddressrow.h"
+#include "qt/altecoin/furlistrow.h"
+#include "qt/altecoin/addressholder.h"
 #include "walletmodel.h"
 #include "guiutil.h"
 #include "pairresult.h"
@@ -21,7 +21,7 @@
 #define DECORATION_SIZE 70
 #define NUM_ITEMS 3
 
-ReceiveWidget::ReceiveWidget(TanzaniteGUI* parent) :
+ReceiveWidget::ReceiveWidget(AltecoinGUI* parent) :
     PWidget(parent),
     ui(new Ui::ReceiveWidget)
 {
@@ -42,7 +42,7 @@ ReceiveWidget::ReceiveWidget(TanzaniteGUI* parent) :
 
     // Title
     ui->labelTitle->setText(tr("Receive"));
-    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive TZT."));
+    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive ALTC."));
     setCssTitleScreen(ui->labelTitle);
     setCssSubtitleScreen(ui->labelSubtitle1);
 

@@ -1,6 +1,6 @@
 [Protocol]
-exec=tanzanite-qt '%u'
-protocol=tanzanite
+exec=altecoin-qt '%u'
+protocol=altecoin
 input=none
 output=none
 helper=true

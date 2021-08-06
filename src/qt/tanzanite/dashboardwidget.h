@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef DASHBOARDWIDGET_H
 #define DASHBOARDWIDGET_H
 
-#include "qt/tanzanite/pwidget.h"
-#include "qt/tanzanite/furabstractlistitemdelegate.h"
-#include "qt/tanzanite/furlistrow.h"
+#include "qt/altecoin/pwidget.h"
+#include "qt/altecoin/furabstractlistitemdelegate.h"
+#include "qt/altecoin/furlistrow.h"
 #include "transactiontablemodel.h"
-#include "qt/tanzanite/txviewholder.h"
+#include "qt/altecoin/txviewholder.h"
 #include "transactionfilterproxy.h"
 
 #include <atomic>
@@ -19,7 +19,7 @@
 #include <QMap>
 
 #if defined(HAVE_CONFIG_H)
-#include "config/tanzanite-config.h" /* for USE_QTCHARTS */
+#include "config/altecoin-config.h" /* for USE_QTCHARTS */
 #endif
 
 #ifdef USE_QTCHARTS
@@ -37,7 +37,7 @@ using namespace QtCharts;
 
 #endif
 
-class TanzaniteGUI;
+class AltecoinGUI;
 class WalletModel;
 
 namespace Ui {
@@ -96,7 +96,7 @@ class DashboardWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit DashboardWidget(TanzaniteGUI* _window);
+    explicit DashboardWidget(AltecoinGUI* _window);
     ~DashboardWidget();
 
     void loadWalletModel() override;

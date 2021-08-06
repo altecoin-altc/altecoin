@@ -1,6 +1,6 @@
-qt/tanzanite/qt_libbitcoinqt_a-addressfilterproxymodel.o: \
- qt/tanzanite/addressfilterproxymodel.cpp /usr/include/stdc-predef.h \
- qt/tanzanite/addressfilterproxymodel.h \
+qt/altecoin/qt_libbitcoinqt_a-addressfilterproxymodel.o: \
+ qt/altecoin/addressfilterproxymodel.cpp /usr/include/stdc-predef.h \
+ qt/altecoin/addressfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractproxymodel.h \
@@ -233,7 +233,7 @@ qt/tanzanite/qt_libbitcoinqt_a-addressfilterproxymodel.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/addressfilterproxymodel.h:
+qt/altecoin/addressfilterproxymodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QSortFilterProxyModel:
 

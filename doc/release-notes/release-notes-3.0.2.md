@@ -1,30 +1,30 @@
-Tanzanite Core version 3.0.2 is now available from:
+Altecoin Core version 3.0.2 is now available from:
 
-  <https://github.com/tanzanite-project/tanzanite/releases>
+  <https://github.com/altecoin-project/altecoin/releases>
 
 This is a new minor-revision version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/tanzanite-project/tanzanite/issues>
+  <https://github.com/altecoin-project/altecoin/issues>
 
 Recommended Update
 ==============
 
-Tanzanite Core v3.0.2 is a recommended, semi-mandatory update for all users. This release contains transaction creation bug fixes for zTZT spends, automint calculation adjustments, and other various updates/fixes.
+Altecoin Core v3.0.2 is a recommended, semi-mandatory update for all users. This release contains transaction creation bug fixes for zALTC spends, automint calculation adjustments, and other various updates/fixes.
 
-zTZT spending requires this update.
+zALTC spending requires this update.
 
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Tanzanite-Qt (on Mac) or tanzanited/tanzanite-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Altecoin-Qt (on Mac) or altecoind/altecoin-qt (on Linux).
 
 Compatibility
 ==============
 
-Tanzanite Core is extensively tested on multiple operating systems using
+Altecoin Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -32,7 +32,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-Tanzanite Core should also work on most other Unix-like systems but is not
+Altecoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 ### :exclamation::exclamation::exclamation: MacOS 10.13 High Sierra :exclamation::exclamation::exclamation:
@@ -45,21 +45,21 @@ Notable Changes
 
 Auto Wallet Backup
 ---------------------
-In addition to the automatic wallet backup that is done at each start of the client, a new automatic backup function has been added that will, by default, create a backup of the wallet file during each zTZT mint operation (zTZT spends which re-mint their change are also included in this). This functionality is controlled by the `-backupzpiv` command-line option, which defaults to `1` (enabled, auto-backup).
+In addition to the automatic wallet backup that is done at each start of the client, a new automatic backup function has been added that will, by default, create a backup of the wallet file during each zALTC mint operation (zALTC spends which re-mint their change are also included in this). This functionality is controlled by the `-backupzpiv` command-line option, which defaults to `1` (enabled, auto-backup).
 
-Users that wish to prevent this behavior (not recommended) can pass `-backupzpiv=0` at the command-line when starting the client, or add `backupzpiv=0` to their `tanzanite.conf` file.
+Users that wish to prevent this behavior (not recommended) can pass `-backupzpiv=0` at the command-line when starting the client, or add `backupzpiv=0` to their `altecoin.conf` file.
 
-zTZT Automint Calculations
+zALTC Automint Calculations
 ---------------------
-A bug in the automint calculations was made apparent on mainnet when block times exceeded expectations, resulting in zTZT mint transactions that were in an unconfirmed state to still be treated as if they had never been minted. This caused automint to effectively mint more than what was intended.
+A bug in the automint calculations was made apparent on mainnet when block times exceeded expectations, resulting in zALTC mint transactions that were in an unconfirmed state to still be treated as if they had never been minted. This caused automint to effectively mint more than what was intended.
 
-zTZT Spending Fix
+zALTC Spending Fix
 ---------------------
-The size of zTZT spend transactions is knowingly larger than normal transactions, and while this was expected, a much stricter check against the scriptsig size is used for mainnet, causing the transactions to be rejected by the mempool, and thus not being packaged into any blocks.
+The size of zALTC spend transactions is knowingly larger than normal transactions, and while this was expected, a much stricter check against the scriptsig size is used for mainnet, causing the transactions to be rejected by the mempool, and thus not being packaged into any blocks.
 
-zTZT Transaction Recovery
+zALTC Transaction Recovery
 ---------------------
-Due to the aforementioned issue with zTZT spending, users may find that their attempted spends are now conflicted and zTZT balances are not represented as expected. "Recovery" of these transactions can be done using the following methods:
+Due to the aforementioned issue with zALTC spending, users may find that their attempted spends are now conflicted and zALTC balances are not represented as expected. "Recovery" of these transactions can be done using the following methods:
 
 1. GUI:
 
@@ -71,7 +71,7 @@ Due to the aforementioned issue with zTZT spending, users may find that their at
 
 RPC Changes
 ---------------------
-The `bip38decrypt` command has had it's parameter order changed to be more consistent with it's counterpart. The command now expects the Tanzanite address as it's first parameter and the passphrase as it's second parameter.
+The `bip38decrypt` command has had it's parameter order changed to be more consistent with it's counterpart. The command now expects the Altecoin address as it's first parameter and the passphrase as it's second parameter.
 
 Bip38 Compatibility With 3rd Party Tools
 ---------------------
@@ -125,4 +125,4 @@ Thanks to everyone who directly contributed to this release:
 - rejectedpromise
 - Warrows
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/tanzanite-project-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/altecoin-project-translations/).

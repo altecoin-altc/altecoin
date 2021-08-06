@@ -2,44 +2,44 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/tanzanite-qt
+bin_PROGRAMS += qt/altecoin-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# tanzanite qt core #
+# altecoin qt core #
 QT_TS = \
-  qt/locale/tanzanite_bg.ts \
-  qt/locale/tanzanite_ca.ts \
-  qt/locale/tanzanite_cs.ts \
-  qt/locale/tanzanite_da.ts \
-  qt/locale/tanzanite_de.ts \
-  qt/locale/tanzanite_en.ts \
-  qt/locale/tanzanite_en_GB.ts \
-  qt/locale/tanzanite_en_US.ts \
-  qt/locale/tanzanite_eo.ts \
-  qt/locale/tanzanite_es.ts \
-  qt/locale/tanzanite_es_ES.ts \
-  qt/locale/tanzanite_fi.ts \
-  qt/locale/tanzanite_fr_FR.ts \
-  qt/locale/tanzanite_hi_IN.ts \
-  qt/locale/tanzanite_hr.ts \
-  qt/locale/tanzanite_hr_HR.ts \
-  qt/locale/tanzanite_it.ts \
-  qt/locale/tanzanite_ja.ts \
-  qt/locale/tanzanite_ko_KR.ts \
-  qt/locale/tanzanite_lt_LT.ts \
-  qt/locale/tanzanite_nl.ts \
-  qt/locale/tanzanite_pl.ts \
-  qt/locale/tanzanite_pt.ts \
-  qt/locale/tanzanite_pt_BR.ts \
-  qt/locale/tanzanite_ro_RO.ts \
-  qt/locale/tanzanite_ru.ts \
-  qt/locale/tanzanite_sk.ts \
-  qt/locale/tanzanite_sv.ts \
-  qt/locale/tanzanite_tr.ts \
-  qt/locale/tanzanite_uk.ts \
-  qt/locale/tanzanite_vi.ts \
-  qt/locale/tanzanite_zh_CN.ts \
-  qt/locale/tanzanite_zh_TW.ts
+  qt/locale/altecoin_bg.ts \
+  qt/locale/altecoin_ca.ts \
+  qt/locale/altecoin_cs.ts \
+  qt/locale/altecoin_da.ts \
+  qt/locale/altecoin_de.ts \
+  qt/locale/altecoin_en.ts \
+  qt/locale/altecoin_en_GB.ts \
+  qt/locale/altecoin_en_US.ts \
+  qt/locale/altecoin_eo.ts \
+  qt/locale/altecoin_es.ts \
+  qt/locale/altecoin_es_ES.ts \
+  qt/locale/altecoin_fi.ts \
+  qt/locale/altecoin_fr_FR.ts \
+  qt/locale/altecoin_hi_IN.ts \
+  qt/locale/altecoin_hr.ts \
+  qt/locale/altecoin_hr_HR.ts \
+  qt/locale/altecoin_it.ts \
+  qt/locale/altecoin_ja.ts \
+  qt/locale/altecoin_ko_KR.ts \
+  qt/locale/altecoin_lt_LT.ts \
+  qt/locale/altecoin_nl.ts \
+  qt/locale/altecoin_pl.ts \
+  qt/locale/altecoin_pt.ts \
+  qt/locale/altecoin_pt_BR.ts \
+  qt/locale/altecoin_ro_RO.ts \
+  qt/locale/altecoin_ru.ts \
+  qt/locale/altecoin_sk.ts \
+  qt/locale/altecoin_sv.ts \
+  qt/locale/altecoin_tr.ts \
+  qt/locale/altecoin_uk.ts \
+  qt/locale/altecoin_vi.ts \
+  qt/locale/altecoin_zh_CN.ts \
+  qt/locale/altecoin_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -53,58 +53,58 @@ QT_FORMS_UI = \
   qt/forms/openuridialog.ui \
   qt/forms/optionsdialog.ui \
   qt/forms/rpcconsole.ui \
-  qt/tanzanite/forms/loadingdialog.ui \
+  qt/altecoin/forms/loadingdialog.ui \
   qt/forms/zpivcontroldialog.ui \
-  qt/tanzanite/forms/snackbar.ui \
-  qt/tanzanite/forms/navmenuwidget.ui \
-  qt/tanzanite/forms/lockunlock.ui \
-  qt/tanzanite/forms/expandablebutton.ui \
-  qt/tanzanite/forms/receivedialog.ui \
-  qt/tanzanite/forms/walletpassworddialog.ui \
-  qt/tanzanite/forms/topbar.ui \
-  qt/tanzanite/forms/txrow.ui \
-  qt/tanzanite/forms/dashboardwidget.ui \
-  qt/tanzanite/forms/coincontrolpivwidget.ui \
-  qt/tanzanite/forms/addresslabelrow.ui \
-  qt/tanzanite/forms/contactdropdownrow.ui \
-  qt/tanzanite/forms/mninfodialog.ui \
-  qt/tanzanite/forms/optionbutton.ui \
-  qt/tanzanite/forms/masternodewizarddialog.ui \
-  qt/tanzanite/forms/mnrow.ui \
-  qt/tanzanite/forms/masternodeswidget.ui \
-  qt/tanzanite/forms/myaddressrow.ui \
-  qt/tanzanite/forms/csrow.ui \
-  qt/tanzanite/forms/sendchangeaddressdialog.ui \
-  qt/tanzanite/forms/sendconfirmdialog.ui \
-  qt/tanzanite/forms/sendcustomfeedialog.ui \
-  qt/tanzanite/forms/sendchangeaddressdialog.ui \
-  qt/tanzanite/forms/sendmultirow.ui \
-  qt/tanzanite/forms/send.ui \
-  qt/tanzanite/forms/addnewaddressdialog.ui \
-  qt/tanzanite/forms/addnewcontactdialog.ui \
-  qt/tanzanite/forms/requestdialog.ui \
-  qt/tanzanite/forms/receivewidget.ui \
-  qt/tanzanite/forms/tooltipmenu.ui \
-  qt/tanzanite/forms/addresseswidget.ui \
-  qt/tanzanite/forms/defaultdialog.ui \
-  qt/tanzanite/forms/denomgenerationdialog.ui \
-  qt/tanzanite/forms/privacywidget.ui \
-  qt/tanzanite/forms/coldstakingwidget.ui \
-  qt/tanzanite/settings/forms/settingsbackupwallet.ui \
-  qt/tanzanite/settings/forms/settingsbittoolwidget.ui \
-  qt/tanzanite/settings/forms/settingsconsolewidget.ui \
-  qt/tanzanite/settings/forms/settingsdisplayoptionswidget.ui \
-  qt/tanzanite/settings/forms/settingsfaqwidget.ui \
-  qt/tanzanite/settings/forms/settingsinformationwidget.ui \
-  qt/tanzanite/settings/forms/settingsmainoptionswidget.ui \
-  qt/tanzanite/settings/forms/settingsmultisenddialog.ui \
-  qt/tanzanite/settings/forms/settingsmultisendwidget.ui \
-  qt/tanzanite/settings/forms/settingssignmessagewidgets.ui \
-  qt/tanzanite/settings/forms/settingswalletoptionswidget.ui \
-  qt/tanzanite/settings/forms/settingswalletrepairwidget.ui \
-  qt/tanzanite/settings/forms/settingswidget.ui \
-  qt/tanzanite/forms/welcomecontentwidget.ui \
-  qt/tanzanite/forms/splash.ui
+  qt/altecoin/forms/snackbar.ui \
+  qt/altecoin/forms/navmenuwidget.ui \
+  qt/altecoin/forms/lockunlock.ui \
+  qt/altecoin/forms/expandablebutton.ui \
+  qt/altecoin/forms/receivedialog.ui \
+  qt/altecoin/forms/walletpassworddialog.ui \
+  qt/altecoin/forms/topbar.ui \
+  qt/altecoin/forms/txrow.ui \
+  qt/altecoin/forms/dashboardwidget.ui \
+  qt/altecoin/forms/coincontrolpivwidget.ui \
+  qt/altecoin/forms/addresslabelrow.ui \
+  qt/altecoin/forms/contactdropdownrow.ui \
+  qt/altecoin/forms/mninfodialog.ui \
+  qt/altecoin/forms/optionbutton.ui \
+  qt/altecoin/forms/masternodewizarddialog.ui \
+  qt/altecoin/forms/mnrow.ui \
+  qt/altecoin/forms/masternodeswidget.ui \
+  qt/altecoin/forms/myaddressrow.ui \
+  qt/altecoin/forms/csrow.ui \
+  qt/altecoin/forms/sendchangeaddressdialog.ui \
+  qt/altecoin/forms/sendconfirmdialog.ui \
+  qt/altecoin/forms/sendcustomfeedialog.ui \
+  qt/altecoin/forms/sendchangeaddressdialog.ui \
+  qt/altecoin/forms/sendmultirow.ui \
+  qt/altecoin/forms/send.ui \
+  qt/altecoin/forms/addnewaddressdialog.ui \
+  qt/altecoin/forms/addnewcontactdialog.ui \
+  qt/altecoin/forms/requestdialog.ui \
+  qt/altecoin/forms/receivewidget.ui \
+  qt/altecoin/forms/tooltipmenu.ui \
+  qt/altecoin/forms/addresseswidget.ui \
+  qt/altecoin/forms/defaultdialog.ui \
+  qt/altecoin/forms/denomgenerationdialog.ui \
+  qt/altecoin/forms/privacywidget.ui \
+  qt/altecoin/forms/coldstakingwidget.ui \
+  qt/altecoin/settings/forms/settingsbackupwallet.ui \
+  qt/altecoin/settings/forms/settingsbittoolwidget.ui \
+  qt/altecoin/settings/forms/settingsconsolewidget.ui \
+  qt/altecoin/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/altecoin/settings/forms/settingsfaqwidget.ui \
+  qt/altecoin/settings/forms/settingsinformationwidget.ui \
+  qt/altecoin/settings/forms/settingsmainoptionswidget.ui \
+  qt/altecoin/settings/forms/settingsmultisenddialog.ui \
+  qt/altecoin/settings/forms/settingsmultisendwidget.ui \
+  qt/altecoin/settings/forms/settingssignmessagewidgets.ui \
+  qt/altecoin/settings/forms/settingswalletoptionswidget.ui \
+  qt/altecoin/settings/forms/settingswalletrepairwidget.ui \
+  qt/altecoin/settings/forms/settingswidget.ui \
+  qt/altecoin/forms/welcomecontentwidget.ui \
+  qt/altecoin/forms/splash.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -113,7 +113,7 @@ QT_MOC_CPP = \
   qt/moc_bantablemodel.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
-  qt/tanzanite/moc_tanzanitegui.cpp \
+  qt/altecoin/moc_altecoingui.cpp \
   qt/moc_bitcoinunits.cpp \
   qt/moc_blockexplorer.cpp \
   qt/moc_clientmodel.cpp \
@@ -144,80 +144,80 @@ QT_MOC_CPP = \
   qt/moc_transactiontablemodel.cpp \
   qt/moc_utilitydialog.cpp \
   qt/moc_walletmodel.cpp \
-  qt/tanzanite/moc_loadingdialog.cpp \
+  qt/altecoin/moc_loadingdialog.cpp \
   qt/moc_zpivcontroldialog.cpp \
-  qt/tanzanite/moc_pwidget.cpp \
-  qt/tanzanite/moc_snackbar.cpp \
-  qt/tanzanite/moc_navmenuwidget.cpp \
-  qt/tanzanite/moc_lockunlock.cpp \
-  qt/tanzanite/moc_expandablebutton.cpp \
-  qt/tanzanite/moc_furabstractlistitemdelegate.cpp \
-  qt/tanzanite/moc_receivedialog.cpp \
-  qt/tanzanite/moc_walletpassworddialog.cpp \
-  qt/tanzanite/moc_pfborderimage.cpp \
-  qt/tanzanite/moc_topbar.cpp \
-  qt/tanzanite/moc_txrow.cpp \
-  qt/tanzanite/moc_dashboardwidget.cpp \
-  qt/tanzanite/moc_coincontrolpivwidget.cpp \
-  qt/tanzanite/moc_addresslabelrow.cpp \
-  qt/tanzanite/moc_contactdropdownrow.cpp \
-  qt/tanzanite/moc_mninfodialog.cpp \
-  qt/tanzanite/moc_optionbutton.cpp \
-  qt/tanzanite/moc_coldstakingmodel.cpp \
-  qt/tanzanite/moc_mnmodel.cpp \
-  qt/tanzanite/moc_masternodewizarddialog.cpp \
-  qt/tanzanite/moc_mnrow.cpp \
-  qt/tanzanite/moc_masternodeswidget.cpp \
-  qt/tanzanite/moc_myaddressrow.cpp \
-  qt/tanzanite/moc_csrow.cpp \
-  qt/tanzanite/moc_contactsdropdown.cpp \
-  qt/tanzanite/moc_sendchangeaddressdialog.cpp \
-  qt/tanzanite/moc_sendconfirmdialog.cpp \
-  qt/tanzanite/moc_sendcustomfeedialog.cpp \
-  qt/tanzanite/moc_sendchangeaddressdialog.cpp \
-  qt/tanzanite/moc_sendmultirow.cpp \
-  qt/tanzanite/moc_send.cpp \
-  qt/tanzanite/moc_addnewaddressdialog.cpp \
-  qt/tanzanite/moc_addnewcontactdialog.cpp \
-  qt/tanzanite/moc_requestdialog.cpp \
-  qt/tanzanite/moc_receivewidget.cpp \
-  qt/tanzanite/moc_tooltipmenu.cpp \
-  qt/tanzanite/moc_addresseswidget.cpp \
-  qt/tanzanite/moc_defaultdialog.cpp \
-  qt/tanzanite/moc_denomgenerationdialog.cpp \
-  qt/tanzanite/moc_privacywidget.cpp \
-  qt/tanzanite/moc_coldstakingwidget.cpp \
-  qt/tanzanite/settings/moc_settingsbackupwallet.cpp \
-  qt/tanzanite/settings/moc_settingsbittoolwidget.cpp \
-  qt/tanzanite/settings/moc_settingsconsolewidget.cpp \
-  qt/tanzanite/settings/moc_settingsdisplayoptionswidget.cpp \
-  qt/tanzanite/settings/moc_settingsfaqwidget.cpp \
-  qt/tanzanite/settings/moc_settingsinformationwidget.cpp \
-  qt/tanzanite/settings/moc_settingsmainoptionswidget.cpp \
-  qt/tanzanite/settings/moc_settingsmultisenddialog.cpp \
-  qt/tanzanite/settings/moc_settingsmultisendwidget.cpp \
-  qt/tanzanite/settings/moc_settingssignmessagewidgets.cpp \
-  qt/tanzanite/settings/moc_settingswalletoptionswidget.cpp \
-  qt/tanzanite/settings/moc_settingswalletrepairwidget.cpp \
-  qt/tanzanite/settings/moc_settingswidget.cpp \
-  qt/tanzanite/moc_welcomecontentwidget.cpp \
-  qt/tanzanite/moc_splash.cpp
+  qt/altecoin/moc_pwidget.cpp \
+  qt/altecoin/moc_snackbar.cpp \
+  qt/altecoin/moc_navmenuwidget.cpp \
+  qt/altecoin/moc_lockunlock.cpp \
+  qt/altecoin/moc_expandablebutton.cpp \
+  qt/altecoin/moc_furabstractlistitemdelegate.cpp \
+  qt/altecoin/moc_receivedialog.cpp \
+  qt/altecoin/moc_walletpassworddialog.cpp \
+  qt/altecoin/moc_pfborderimage.cpp \
+  qt/altecoin/moc_topbar.cpp \
+  qt/altecoin/moc_txrow.cpp \
+  qt/altecoin/moc_dashboardwidget.cpp \
+  qt/altecoin/moc_coincontrolpivwidget.cpp \
+  qt/altecoin/moc_addresslabelrow.cpp \
+  qt/altecoin/moc_contactdropdownrow.cpp \
+  qt/altecoin/moc_mninfodialog.cpp \
+  qt/altecoin/moc_optionbutton.cpp \
+  qt/altecoin/moc_coldstakingmodel.cpp \
+  qt/altecoin/moc_mnmodel.cpp \
+  qt/altecoin/moc_masternodewizarddialog.cpp \
+  qt/altecoin/moc_mnrow.cpp \
+  qt/altecoin/moc_masternodeswidget.cpp \
+  qt/altecoin/moc_myaddressrow.cpp \
+  qt/altecoin/moc_csrow.cpp \
+  qt/altecoin/moc_contactsdropdown.cpp \
+  qt/altecoin/moc_sendchangeaddressdialog.cpp \
+  qt/altecoin/moc_sendconfirmdialog.cpp \
+  qt/altecoin/moc_sendcustomfeedialog.cpp \
+  qt/altecoin/moc_sendchangeaddressdialog.cpp \
+  qt/altecoin/moc_sendmultirow.cpp \
+  qt/altecoin/moc_send.cpp \
+  qt/altecoin/moc_addnewaddressdialog.cpp \
+  qt/altecoin/moc_addnewcontactdialog.cpp \
+  qt/altecoin/moc_requestdialog.cpp \
+  qt/altecoin/moc_receivewidget.cpp \
+  qt/altecoin/moc_tooltipmenu.cpp \
+  qt/altecoin/moc_addresseswidget.cpp \
+  qt/altecoin/moc_defaultdialog.cpp \
+  qt/altecoin/moc_denomgenerationdialog.cpp \
+  qt/altecoin/moc_privacywidget.cpp \
+  qt/altecoin/moc_coldstakingwidget.cpp \
+  qt/altecoin/settings/moc_settingsbackupwallet.cpp \
+  qt/altecoin/settings/moc_settingsbittoolwidget.cpp \
+  qt/altecoin/settings/moc_settingsconsolewidget.cpp \
+  qt/altecoin/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/altecoin/settings/moc_settingsfaqwidget.cpp \
+  qt/altecoin/settings/moc_settingsinformationwidget.cpp \
+  qt/altecoin/settings/moc_settingsmainoptionswidget.cpp \
+  qt/altecoin/settings/moc_settingsmultisenddialog.cpp \
+  qt/altecoin/settings/moc_settingsmultisendwidget.cpp \
+  qt/altecoin/settings/moc_settingssignmessagewidgets.cpp \
+  qt/altecoin/settings/moc_settingswalletoptionswidget.cpp \
+  qt/altecoin/settings/moc_settingswalletrepairwidget.cpp \
+  qt/altecoin/settings/moc_settingswidget.cpp \
+  qt/altecoin/moc_welcomecontentwidget.cpp \
+  qt/altecoin/moc_splash.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/tanzanite.moc \
+  qt/altecoin.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/rpcconsole.moc \
-  qt/tanzanite/settings/moc_settingsconsolewidget.cpp
+  qt/altecoin/settings/moc_settingsconsolewidget.cpp
 
-QT_QRC_CPP = qt/qrc_tanzanite.cpp
-QT_QRC = qt/tanzanite.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_tanzanite_locale.cpp
-QT_QRC_LOCALE = qt/tanzanite_locale.qrc
+QT_QRC_CPP = qt/qrc_altecoin.cpp
+QT_QRC = qt/altecoin.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_altecoin_locale.cpp
+QT_QRC_LOCALE = qt/altecoin_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -230,7 +230,7 @@ BITCOIN_QT_H = \
   qt/bantablemodel.h \
   qt/bitcoinaddressvalidator.h \
   qt/bitcoinamountfield.h \
-  qt/tanzanite/tanzanitegui.h \
+  qt/altecoin/altecoingui.h \
   qt/bitcoinunits.h \
   qt/blockexplorer.h \
   qt/clientmodel.h \
@@ -267,72 +267,72 @@ BITCOIN_QT_H = \
   qt/utilitydialog.h \
   qt/walletmodel.h \
   qt/walletmodeltransaction.h \
-  qt/tanzanite/prunnable.h \
-  qt/tanzanite/pfborderimage.h \
-  qt/tanzanite/loadingdialog.h \
+  qt/altecoin/prunnable.h \
+  qt/altecoin/pfborderimage.h \
+  qt/altecoin/loadingdialog.h \
   qt/winshutdownmonitor.h \
   qt/zpivcontroldialog.h \
-  qt/tanzanite/pwidget.h \
-  qt/tanzanite/guitransactionsutils.h \
-  qt/tanzanite/snackbar.h \
-  qt/tanzanite/navmenuwidget.h \
-  qt/tanzanite/lockunlock.h \
-  qt/tanzanite/receivedialog.h \
-  qt/tanzanite/furlistrow.h \
-  qt/tanzanite/furabstractlistitemdelegate.h \
-  qt/tanzanite/txviewholder.h \
-  qt/tanzanite/qtutils.h \
-  qt/tanzanite/expandablebutton.h \
-  qt/tanzanite/walletpassworddialog.h \
-  qt/tanzanite/topbar.h \
-  qt/tanzanite/txrow.h \
-  qt/tanzanite/addressholder.h \
-  qt/tanzanite/addressfilterproxymodel.h \
-  qt/tanzanite/dashboardwidget.h \
-  qt/tanzanite/coincontrolpivwidget.h \
-  qt/tanzanite/addresslabelrow.h \
-  qt/tanzanite/contactdropdownrow.h \
-  qt/tanzanite/mninfodialog.h \
-  qt/tanzanite/optionbutton.h \
-  qt/tanzanite/coldstakingmodel.h \
-  qt/tanzanite/mnmodel.h \
-  qt/tanzanite/masternodewizarddialog.h \
-  qt/tanzanite/mnrow.h \
-  qt/tanzanite/masternodeswidget.h \
-  qt/tanzanite/myaddressrow.h \
-  qt/tanzanite/csrow.h \
-  qt/tanzanite/contactsdropdown.h \
-  qt/tanzanite/sendchangeaddressdialog.h \
-  qt/tanzanite/sendconfirmdialog.h \
-  qt/tanzanite/sendcustomfeedialog.h \
-  qt/tanzanite/sendchangeaddressdialog.h \
-  qt/tanzanite/sendmultirow.h \
-  qt/tanzanite/send.h \
-  qt/tanzanite/addnewaddressdialog.h \
-  qt/tanzanite/addnewcontactdialog.h \
-  qt/tanzanite/requestdialog.h \
-  qt/tanzanite/receivewidget.h \
-  qt/tanzanite/tooltipmenu.h \
-  qt/tanzanite/addresseswidget.h \
-  qt/tanzanite/defaultdialog.h \
-  qt/tanzanite/denomgenerationdialog.h \
-  qt/tanzanite/privacywidget.h \
-  qt/tanzanite/coldstakingwidget.h \
-  qt/tanzanite/settings/settingsbackupwallet.h \
-  qt/tanzanite/settings/settingsbittoolwidget.h \
-  qt/tanzanite/settings/settingsconsolewidget.h \
-  qt/tanzanite/settings/settingsdisplayoptionswidget.h \
-  qt/tanzanite/settings/settingsfaqwidget.h \
-  qt/tanzanite/settings/settingsinformationwidget.h \
-  qt/tanzanite/settings/settingsmainoptionswidget.h \
-  qt/tanzanite/settings/settingsmultisenddialog.h \
-  qt/tanzanite/settings/settingsmultisendwidget.h \
-  qt/tanzanite/settings/settingssignmessagewidgets.h \
-  qt/tanzanite/settings/settingswalletoptionswidget.h \
-  qt/tanzanite/settings/settingswalletrepairwidget.h \
-  qt/tanzanite/settings/settingswidget.h \
-  qt/tanzanite/welcomecontentwidget.h \
-  qt/tanzanite/splash.h
+  qt/altecoin/pwidget.h \
+  qt/altecoin/guitransactionsutils.h \
+  qt/altecoin/snackbar.h \
+  qt/altecoin/navmenuwidget.h \
+  qt/altecoin/lockunlock.h \
+  qt/altecoin/receivedialog.h \
+  qt/altecoin/furlistrow.h \
+  qt/altecoin/furabstractlistitemdelegate.h \
+  qt/altecoin/txviewholder.h \
+  qt/altecoin/qtutils.h \
+  qt/altecoin/expandablebutton.h \
+  qt/altecoin/walletpassworddialog.h \
+  qt/altecoin/topbar.h \
+  qt/altecoin/txrow.h \
+  qt/altecoin/addressholder.h \
+  qt/altecoin/addressfilterproxymodel.h \
+  qt/altecoin/dashboardwidget.h \
+  qt/altecoin/coincontrolpivwidget.h \
+  qt/altecoin/addresslabelrow.h \
+  qt/altecoin/contactdropdownrow.h \
+  qt/altecoin/mninfodialog.h \
+  qt/altecoin/optionbutton.h \
+  qt/altecoin/coldstakingmodel.h \
+  qt/altecoin/mnmodel.h \
+  qt/altecoin/masternodewizarddialog.h \
+  qt/altecoin/mnrow.h \
+  qt/altecoin/masternodeswidget.h \
+  qt/altecoin/myaddressrow.h \
+  qt/altecoin/csrow.h \
+  qt/altecoin/contactsdropdown.h \
+  qt/altecoin/sendchangeaddressdialog.h \
+  qt/altecoin/sendconfirmdialog.h \
+  qt/altecoin/sendcustomfeedialog.h \
+  qt/altecoin/sendchangeaddressdialog.h \
+  qt/altecoin/sendmultirow.h \
+  qt/altecoin/send.h \
+  qt/altecoin/addnewaddressdialog.h \
+  qt/altecoin/addnewcontactdialog.h \
+  qt/altecoin/requestdialog.h \
+  qt/altecoin/receivewidget.h \
+  qt/altecoin/tooltipmenu.h \
+  qt/altecoin/addresseswidget.h \
+  qt/altecoin/defaultdialog.h \
+  qt/altecoin/denomgenerationdialog.h \
+  qt/altecoin/privacywidget.h \
+  qt/altecoin/coldstakingwidget.h \
+  qt/altecoin/settings/settingsbackupwallet.h \
+  qt/altecoin/settings/settingsbittoolwidget.h \
+  qt/altecoin/settings/settingsconsolewidget.h \
+  qt/altecoin/settings/settingsdisplayoptionswidget.h \
+  qt/altecoin/settings/settingsfaqwidget.h \
+  qt/altecoin/settings/settingsinformationwidget.h \
+  qt/altecoin/settings/settingsmainoptionswidget.h \
+  qt/altecoin/settings/settingsmultisenddialog.h \
+  qt/altecoin/settings/settingsmultisendwidget.h \
+  qt/altecoin/settings/settingssignmessagewidgets.h \
+  qt/altecoin/settings/settingswalletoptionswidget.h \
+  qt/altecoin/settings/settingswalletrepairwidget.h \
+  qt/altecoin/settings/settingswidget.h \
+  qt/altecoin/welcomecontentwidget.h \
+  qt/altecoin/splash.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -398,218 +398,218 @@ RES_ICONS = \
   qt/res/icons/ic-transaction-mint.svg \
   qt/res/icons/ic-transaction-sent.svg \
   qt/res/icons/ic-transaction-staked.svg \
-  qt/res/icons/unit_tanzanite.png \
-  qt/res/icons/unit_mtanzanite.png \
-  qt/res/icons/unit_utanzanite.png \
-  qt/res/icons/unit_ttanzanite.png \
-  qt/res/icons/unit_tmtanzanite.png \
-  qt/res/icons/unit_tutanzanite.png \
+  qt/res/icons/unit_altecoin.png \
+  qt/res/icons/unit_maltecoin.png \
+  qt/res/icons/unit_ualtecoin.png \
+  qt/res/icons/unit_taltecoin.png \
+  qt/res/icons/unit_tmaltecoin.png \
+  qt/res/icons/unit_tualtecoin.png \
   qt/res/icons/yesvote.png \
   qt/res/icons/novote.png \
   qt/res/icons/abstainvote.png \
-  qt/tanzanite/res/img/bg-dashboard-banner.png \
-  qt/tanzanite/res/img/bg-multi-number-dark.svg \
-  qt/tanzanite/res/img/ic-check-locked.svg \
-  qt/tanzanite/res/img/ic-nav-address.svg \
-  qt/tanzanite/res/img/ic-update.svg \
-  qt/tanzanite/res/img/bg-multi-number.svg \
-  qt/tanzanite/res/img/ic-check-mint-off.svg \
-  qt/tanzanite/res/img/ic-nav-cold-staking.svg \
-  qt/tanzanite/res/img/ic-nav-cold-staking-active.svg \
-  qt/tanzanite/res/img/ic-nav-dashboard-active.svg \
-  qt/tanzanite/res/img/ic-wallet-status-locked.svg \
-  qt/tanzanite/res/img/bg-splash.svg \
-  qt/tanzanite/res/img/bg-splash.png \
-  qt/tanzanite/res/img/ic-check-mint.svg \
-  qt/tanzanite/res/img/ic-nav-dashboard-hover.svg \
-  qt/tanzanite/res/img/ic-wallet-status-staking.svg \
-  qt/tanzanite/res/img/ic-check-peers-off.svg \
-  qt/tanzanite/res/img/ic-nav-dashboard.svg \
-  qt/tanzanite/res/img/ic-wallet-status-unlocked.svg \
-  qt/tanzanite/res/img/ic-check-peers.svg \
-  qt/tanzanite/res/img/ic-nav-master-active.svg \
-  qt/tanzanite/res/img/ic-watch-password-white.svg \
-  qt/tanzanite/res/img/bg-welcome-container.jpg \
-  qt/tanzanite/res/img/bg-welcome-container.png \
-  qt/tanzanite/res/img/bg-welcome-container.svg \
-  qt/tanzanite/res/img/bg-welcome-container@2x.png \
-  qt/tanzanite/res/img/bg-welcome-container@3x.png \
-  qt/tanzanite/res/img/ic-check-staking-off.svg \
-  qt/tanzanite/res/img/ic-nav-master-hover.svg \
-  qt/tanzanite/res/img/ic-watch-password.svg \
-  qt/tanzanite/res/img/bg-welcome.jpg \
-  qt/tanzanite/res/img/bg-welcome.svg \
-  qt/tanzanite/res/img/bg-welcome@2x.jpg \
-  qt/tanzanite/res/img/bg-welcome@3x.jpg \
-  qt/tanzanite/res/img/bg-welcome.png \
-  qt/tanzanite/res/img/ic-check-staking.svg \
-  qt/tanzanite/res/img/ic-nav-master.svg \
-  qt/tanzanite/res/img/img-dashboard-banner.jpg \
-  qt/tanzanite/res/img/btn-radio-active.svg \
-  qt/tanzanite/res/img/ic-check-sync-off.svg \
-  qt/tanzanite/res/img/ic-nav-privacy-active.svg \
-  qt/tanzanite/res/img/img-empty-contacts.svg \
-  qt/tanzanite/res/img/btn-radio-off.svg \
-  qt/tanzanite/res/img/ic-check-sync.png \
-  qt/tanzanite/res/img/ic-nav-privacy-hover.svg \
-  qt/tanzanite/res/img/img-empty-dark-contacts.svg \
-  qt/tanzanite/res/img/ic-contact-arrow-down.svg \
-  qt/tanzanite/res/img/ic-contact-arrow-down-white.svg \
-  qt/tanzanite/res/img/ic-check-sync.svg \
-  qt/tanzanite/res/img/ic-check-faq.svg \
-  qt/tanzanite/res/img/ic-nav-privacy.svg \
-  qt/tanzanite/res/img/img-empty-dark-error.svg \
-  qt/tanzanite/res/img/ic-add-label.svg \
-  qt/tanzanite/res/img/ic-pending.svg \
-  qt/tanzanite/res/img/ic-check-theme-dark.svg \
-  qt/tanzanite/res/img/ic-nav-receive-active.svg \
-  qt/tanzanite/res/img/img-empty-dark-masternode.svg \
-  qt/tanzanite/res/img/ic-add-liliac.svg \
-  qt/tanzanite/res/img/ic-check-theme-light.svg \
-  qt/tanzanite/res/img/ic-nav-receive-hover.svg \
-  qt/tanzanite/res/img/img-empty-dark-multisend.svg \
-  qt/tanzanite/res/img/ic-add-purple.svg \
-  qt/tanzanite/res/img/ic-check-white.svg \
-  qt/tanzanite/res/img/ic-nav-receive.svg \
-  qt/tanzanite/res/img/img-empty-dark-peers.svg \
-  qt/tanzanite/res/img/ic-add.svg \
-  qt/tanzanite/res/img/ic-check.svg \
-  qt/tanzanite/res/img/ic-nav-send-active.svg \
-  qt/tanzanite/res/img/img-empty-dark-staking-off.svg \
-  qt/tanzanite/res/img/img-empty-dark-staking-on.svg \
-  qt/tanzanite/res/img/ic-address-book-grey.svg \
-  qt/tanzanite/res/img/ic-chevron-left.svg \
-  qt/tanzanite/res/img/ic-nav-send-hover.svg \
-  qt/tanzanite/res/img/img-empty-dark-transactions.svg \
-  qt/tanzanite/res/img/ic-address-book-white.svg \
-  qt/tanzanite/res/img/ic-chevron-right.svg \
-  qt/tanzanite/res/img/ic-nav-send.svg \
-  qt/tanzanite/res/img/img-empty-error.svg \
-  qt/tanzanite/res/img/ic-address-book.svg \
-  qt/tanzanite/res/img/ic-clear-liliac.svg \
-  qt/tanzanite/res/img/ic-nav-settings-active.svg \
-  qt/tanzanite/res/img/img-empty-masternode.svg \
-  qt/tanzanite/res/img/ic-address-send-white.svg \
-  qt/tanzanite/res/img/ic-clear-purple.svg \
-  qt/tanzanite/res/img/ic-nav-settings-hover.svg \
-  qt/tanzanite/res/img/img-empty-multisend.svg \
-  qt/tanzanite/res/img/ic-address-send.svg \
-  qt/tanzanite/res/img/ic-close-white.svg \
-  qt/tanzanite/res/img/ic-nav-settings.svg \
-  qt/tanzanite/res/img/img-empty-peers.svg \
-  qt/tanzanite/res/img/img-empty-privacy.svg \
-  qt/tanzanite/res/img/img-empty-privacy-dark.svg \
-  qt/tanzanite/res/img/ic-arrow-drop-down-white.svg \
-  qt/tanzanite/res/img/ic-close.svg \
-  qt/tanzanite/res/img/ic-radio-liliac-on.svg \
-  qt/tanzanite/res/img/img-empty-staking-off.svg \
-  qt/tanzanite/res/img/ic-arrow-drop-down.svg \
-  qt/tanzanite/res/img/ic-coin-piv.svg \
-  qt/tanzanite/res/img/ic-receive-off.svg \
-  qt/tanzanite/res/img/img-empty-staking-on.svg \
-  qt/tanzanite/res/img/ic-arrow-drop-up-white.svg \
-  qt/tanzanite/res/img/ic-coin-zpiv.png \
-  qt/tanzanite/res/img/ic-receive-on.svg \
-  qt/tanzanite/res/img/img-empty-transactions.svg \
-  qt/tanzanite/res/img/ic-arrow-drop-up.svg \
-  qt/tanzanite/res/img/ic-coin-zpiv.svg \
-  qt/tanzanite/res/img/ic-received.svg \
-  qt/tanzanite/res/img/img-logo-tanzanite.png \
-  qt/tanzanite/res/img/ic-arrow-drop-white-down.svg \
-  qt/tanzanite/res/img/ic-combo-box.svg \
-  qt/tanzanite/res/img/ic-send.svg \
-  qt/tanzanite/res/img/img-logo-tanzanite@2x.png \
-  qt/tanzanite/res/img/ic-arrow-purple-down.svg \
-  qt/tanzanite/res/img/ic-connect.svg \
-  qt/tanzanite/res/img/ic-submenu-lock.svg \
-  qt/tanzanite/res/img/img-logo-tanzanite@3x.png \
-  qt/tanzanite/res/img/img-logo-tanzanite.svg \
-  qt/tanzanite/res/img/ic-arrow-right-white.svg \
-  qt/tanzanite/res/img/ic-arrow-left-white.svg \
-  qt/tanzanite/res/img/ic-arrow-left.svg \
-  qt/tanzanite/res/img/ic-copy-liliac.svg \
-  qt/tanzanite/res/img/ic-submenu-staking.svg \
-  qt/tanzanite/res/img/img-nav-logo-tanzanite.png \
-  qt/tanzanite/res/img/ic-arrow-right.svg \
-  qt/tanzanite/res/img/ic-copy.svg \
-  qt/tanzanite/res/img/ic-copy-big.svg \
-  qt/tanzanite/res/img/ic-copy-big-white.svg \
-  qt/tanzanite/res/img/ic-submenu-unlock.svg \
-  qt/tanzanite/res/img/img-nav-logo.png \
-  qt/tanzanite/res/img/ic-arrow-white-left.svg \
-  qt/tanzanite/res/img/ic-exit.svg \
-  qt/tanzanite/res/img/ic-switch-liliac-on.svg \
-  qt/tanzanite/res/img/img-nav-logo.svg \
-  qt/tanzanite/res/img/ic-arrow-white-right.svg \
-  qt/tanzanite/res/img/ic-expand.svg \
-  qt/tanzanite/res/img/ic-switch-off.svg \
-  qt/tanzanite/res/img/img-qr-test-big.png \
-  qt/tanzanite/res/img/ic-check-active.svg \
-  qt/tanzanite/res/img/ic-folder.svg \
-  qt/tanzanite/res/img/ic-switch-on.svg \
-  qt/tanzanite/res/img/img-qr-test.png \
-  qt/tanzanite/res/img/ic-check-box.svg \
-  qt/tanzanite/res/img/ic-check-box-dark-active.svg \
-  qt/tanzanite/res/img/ic-check-box-indeterminate.svg \
-  qt/tanzanite/res/img/ic-check-box-liliac-indeterminate.svg \
-  qt/tanzanite/res/img/ic-label-liliac.svg \
-  qt/tanzanite/res/img/ic-transaction-warning.svg \
-  qt/tanzanite/res/img/ic-transaction-mint.svg \
-  qt/tanzanite/res/img/ic-transaction-mint-inactive.svg \
-  qt/tanzanite/res/img/ic-check-cold-staking.svg \
-  qt/tanzanite/res/img/ic-check-cold-staking-off.svg \
-  qt/tanzanite/res/img/ic-check-cold-staking-enabled.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-cs-contract.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-cs-contract-inactive.svg \
-  qt/tanzanite/res/img/img-qr.svg \
-  qt/tanzanite/res/img/ic-check-connect-off.svg \
-  qt/tanzanite/res/img/ic-label.svg \
-  qt/tanzanite/res/img/ic-transaction-received.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-received.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-warning.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-mint.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-mint-inactive.svg \
-  qt/tanzanite/res/img/ic-transaction-received-inactive.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-received-inactive.svg \
-  qt/tanzanite/res/img/img-welcome-step1.png \
-  qt/tanzanite/res/img/ic-check-connect.svg \
-  qt/tanzanite/res/img/ic-menu-hover.svg \
-  qt/tanzanite/res/img/ic-transaction-sent.svg \
-  qt/tanzanite/res/img/ic-transaction-sent-inactive.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-sent.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-sent-inactive.svg \
-  qt/tanzanite/res/img/img-welcome-step2.png \
-  qt/tanzanite/res/img/ic-check-dark.svg \
-  qt/tanzanite/res/img/ic-mint.svg \
-  qt/tanzanite/res/img/ic-transaction-staked.svg \
-  qt/tanzanite/res/img/ic-transaction-staked-inactive.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-staked.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-staked-inactive.svg \
-  qt/tanzanite/res/img/img-welcome-step3.png \
-  qt/tanzanite/res/img/ic-check-liliac-on.svg \
-  qt/tanzanite/res/img/ic-nav-address-active.svg \
-  qt/tanzanite/res/img/ic-unlock-staking.svg \
-  qt/tanzanite/res/img/img-welcome-step4.png \
-  qt/tanzanite/res/img/ic-check-locked-off.svg \
-  qt/tanzanite/res/img/ic-nav-address-hover.svg \
-  qt/tanzanite/res/img/ic-update-liliac.svg \
-  qt/tanzanite/res/img/ic-arrow-drop-down-purple.svg \
-  qt/tanzanite/res/img/ic-arrow-drop-up-purple.svg \
-  qt/tanzanite/res/img/ic-check-liliac-indeterminate.svg \
-  qt/tanzanite/res/img/ic-check-box-liliac-indeterminate.svg \
-  qt/tanzanite/res/img/ic-transaction-stake-delegated.svg \
-  qt/tanzanite/res/img/ic-transaction-stake-delegated-inactive.svg \
-  qt/tanzanite/res/img/ic-transaction-stake-hot.svg \
-  qt/tanzanite/res/img/ic-transaction-stake-hot-inactive.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-stake-hot.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-stake-hot-inactive.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-stake-delegated.svg \
-  qt/tanzanite/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
-  qt/tanzanite/res/img/ic-transaction-cs-contract.svg \
-  qt/tanzanite/res/img/ic-transaction-cs-contract-inactive.svg \
-  qt/tanzanite/res/img/ic-check-box-indeterminate.svg \
-  qt/tanzanite/res/img/ani-loading-dark.gif \
-  qt/tanzanite/res/img/ani-loading.gif
+  qt/altecoin/res/img/bg-dashboard-banner.png \
+  qt/altecoin/res/img/bg-multi-number-dark.svg \
+  qt/altecoin/res/img/ic-check-locked.svg \
+  qt/altecoin/res/img/ic-nav-address.svg \
+  qt/altecoin/res/img/ic-update.svg \
+  qt/altecoin/res/img/bg-multi-number.svg \
+  qt/altecoin/res/img/ic-check-mint-off.svg \
+  qt/altecoin/res/img/ic-nav-cold-staking.svg \
+  qt/altecoin/res/img/ic-nav-cold-staking-active.svg \
+  qt/altecoin/res/img/ic-nav-dashboard-active.svg \
+  qt/altecoin/res/img/ic-wallet-status-locked.svg \
+  qt/altecoin/res/img/bg-splash.svg \
+  qt/altecoin/res/img/bg-splash.png \
+  qt/altecoin/res/img/ic-check-mint.svg \
+  qt/altecoin/res/img/ic-nav-dashboard-hover.svg \
+  qt/altecoin/res/img/ic-wallet-status-staking.svg \
+  qt/altecoin/res/img/ic-check-peers-off.svg \
+  qt/altecoin/res/img/ic-nav-dashboard.svg \
+  qt/altecoin/res/img/ic-wallet-status-unlocked.svg \
+  qt/altecoin/res/img/ic-check-peers.svg \
+  qt/altecoin/res/img/ic-nav-master-active.svg \
+  qt/altecoin/res/img/ic-watch-password-white.svg \
+  qt/altecoin/res/img/bg-welcome-container.jpg \
+  qt/altecoin/res/img/bg-welcome-container.png \
+  qt/altecoin/res/img/bg-welcome-container.svg \
+  qt/altecoin/res/img/bg-welcome-container@2x.png \
+  qt/altecoin/res/img/bg-welcome-container@3x.png \
+  qt/altecoin/res/img/ic-check-staking-off.svg \
+  qt/altecoin/res/img/ic-nav-master-hover.svg \
+  qt/altecoin/res/img/ic-watch-password.svg \
+  qt/altecoin/res/img/bg-welcome.jpg \
+  qt/altecoin/res/img/bg-welcome.svg \
+  qt/altecoin/res/img/bg-welcome@2x.jpg \
+  qt/altecoin/res/img/bg-welcome@3x.jpg \
+  qt/altecoin/res/img/bg-welcome.png \
+  qt/altecoin/res/img/ic-check-staking.svg \
+  qt/altecoin/res/img/ic-nav-master.svg \
+  qt/altecoin/res/img/img-dashboard-banner.jpg \
+  qt/altecoin/res/img/btn-radio-active.svg \
+  qt/altecoin/res/img/ic-check-sync-off.svg \
+  qt/altecoin/res/img/ic-nav-privacy-active.svg \
+  qt/altecoin/res/img/img-empty-contacts.svg \
+  qt/altecoin/res/img/btn-radio-off.svg \
+  qt/altecoin/res/img/ic-check-sync.png \
+  qt/altecoin/res/img/ic-nav-privacy-hover.svg \
+  qt/altecoin/res/img/img-empty-dark-contacts.svg \
+  qt/altecoin/res/img/ic-contact-arrow-down.svg \
+  qt/altecoin/res/img/ic-contact-arrow-down-white.svg \
+  qt/altecoin/res/img/ic-check-sync.svg \
+  qt/altecoin/res/img/ic-check-faq.svg \
+  qt/altecoin/res/img/ic-nav-privacy.svg \
+  qt/altecoin/res/img/img-empty-dark-error.svg \
+  qt/altecoin/res/img/ic-add-label.svg \
+  qt/altecoin/res/img/ic-pending.svg \
+  qt/altecoin/res/img/ic-check-theme-dark.svg \
+  qt/altecoin/res/img/ic-nav-receive-active.svg \
+  qt/altecoin/res/img/img-empty-dark-masternode.svg \
+  qt/altecoin/res/img/ic-add-liliac.svg \
+  qt/altecoin/res/img/ic-check-theme-light.svg \
+  qt/altecoin/res/img/ic-nav-receive-hover.svg \
+  qt/altecoin/res/img/img-empty-dark-multisend.svg \
+  qt/altecoin/res/img/ic-add-purple.svg \
+  qt/altecoin/res/img/ic-check-white.svg \
+  qt/altecoin/res/img/ic-nav-receive.svg \
+  qt/altecoin/res/img/img-empty-dark-peers.svg \
+  qt/altecoin/res/img/ic-add.svg \
+  qt/altecoin/res/img/ic-check.svg \
+  qt/altecoin/res/img/ic-nav-send-active.svg \
+  qt/altecoin/res/img/img-empty-dark-staking-off.svg \
+  qt/altecoin/res/img/img-empty-dark-staking-on.svg \
+  qt/altecoin/res/img/ic-address-book-grey.svg \
+  qt/altecoin/res/img/ic-chevron-left.svg \
+  qt/altecoin/res/img/ic-nav-send-hover.svg \
+  qt/altecoin/res/img/img-empty-dark-transactions.svg \
+  qt/altecoin/res/img/ic-address-book-white.svg \
+  qt/altecoin/res/img/ic-chevron-right.svg \
+  qt/altecoin/res/img/ic-nav-send.svg \
+  qt/altecoin/res/img/img-empty-error.svg \
+  qt/altecoin/res/img/ic-address-book.svg \
+  qt/altecoin/res/img/ic-clear-liliac.svg \
+  qt/altecoin/res/img/ic-nav-settings-active.svg \
+  qt/altecoin/res/img/img-empty-masternode.svg \
+  qt/altecoin/res/img/ic-address-send-white.svg \
+  qt/altecoin/res/img/ic-clear-purple.svg \
+  qt/altecoin/res/img/ic-nav-settings-hover.svg \
+  qt/altecoin/res/img/img-empty-multisend.svg \
+  qt/altecoin/res/img/ic-address-send.svg \
+  qt/altecoin/res/img/ic-close-white.svg \
+  qt/altecoin/res/img/ic-nav-settings.svg \
+  qt/altecoin/res/img/img-empty-peers.svg \
+  qt/altecoin/res/img/img-empty-privacy.svg \
+  qt/altecoin/res/img/img-empty-privacy-dark.svg \
+  qt/altecoin/res/img/ic-arrow-drop-down-white.svg \
+  qt/altecoin/res/img/ic-close.svg \
+  qt/altecoin/res/img/ic-radio-liliac-on.svg \
+  qt/altecoin/res/img/img-empty-staking-off.svg \
+  qt/altecoin/res/img/ic-arrow-drop-down.svg \
+  qt/altecoin/res/img/ic-coin-piv.svg \
+  qt/altecoin/res/img/ic-receive-off.svg \
+  qt/altecoin/res/img/img-empty-staking-on.svg \
+  qt/altecoin/res/img/ic-arrow-drop-up-white.svg \
+  qt/altecoin/res/img/ic-coin-zpiv.png \
+  qt/altecoin/res/img/ic-receive-on.svg \
+  qt/altecoin/res/img/img-empty-transactions.svg \
+  qt/altecoin/res/img/ic-arrow-drop-up.svg \
+  qt/altecoin/res/img/ic-coin-zpiv.svg \
+  qt/altecoin/res/img/ic-received.svg \
+  qt/altecoin/res/img/img-logo-altecoin.png \
+  qt/altecoin/res/img/ic-arrow-drop-white-down.svg \
+  qt/altecoin/res/img/ic-combo-box.svg \
+  qt/altecoin/res/img/ic-send.svg \
+  qt/altecoin/res/img/img-logo-altecoin@2x.png \
+  qt/altecoin/res/img/ic-arrow-purple-down.svg \
+  qt/altecoin/res/img/ic-connect.svg \
+  qt/altecoin/res/img/ic-submenu-lock.svg \
+  qt/altecoin/res/img/img-logo-altecoin@3x.png \
+  qt/altecoin/res/img/img-logo-altecoin.svg \
+  qt/altecoin/res/img/ic-arrow-right-white.svg \
+  qt/altecoin/res/img/ic-arrow-left-white.svg \
+  qt/altecoin/res/img/ic-arrow-left.svg \
+  qt/altecoin/res/img/ic-copy-liliac.svg \
+  qt/altecoin/res/img/ic-submenu-staking.svg \
+  qt/altecoin/res/img/img-nav-logo-altecoin.png \
+  qt/altecoin/res/img/ic-arrow-right.svg \
+  qt/altecoin/res/img/ic-copy.svg \
+  qt/altecoin/res/img/ic-copy-big.svg \
+  qt/altecoin/res/img/ic-copy-big-white.svg \
+  qt/altecoin/res/img/ic-submenu-unlock.svg \
+  qt/altecoin/res/img/img-nav-logo.png \
+  qt/altecoin/res/img/ic-arrow-white-left.svg \
+  qt/altecoin/res/img/ic-exit.svg \
+  qt/altecoin/res/img/ic-switch-liliac-on.svg \
+  qt/altecoin/res/img/img-nav-logo.svg \
+  qt/altecoin/res/img/ic-arrow-white-right.svg \
+  qt/altecoin/res/img/ic-expand.svg \
+  qt/altecoin/res/img/ic-switch-off.svg \
+  qt/altecoin/res/img/img-qr-test-big.png \
+  qt/altecoin/res/img/ic-check-active.svg \
+  qt/altecoin/res/img/ic-folder.svg \
+  qt/altecoin/res/img/ic-switch-on.svg \
+  qt/altecoin/res/img/img-qr-test.png \
+  qt/altecoin/res/img/ic-check-box.svg \
+  qt/altecoin/res/img/ic-check-box-dark-active.svg \
+  qt/altecoin/res/img/ic-check-box-indeterminate.svg \
+  qt/altecoin/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/altecoin/res/img/ic-label-liliac.svg \
+  qt/altecoin/res/img/ic-transaction-warning.svg \
+  qt/altecoin/res/img/ic-transaction-mint.svg \
+  qt/altecoin/res/img/ic-transaction-mint-inactive.svg \
+  qt/altecoin/res/img/ic-check-cold-staking.svg \
+  qt/altecoin/res/img/ic-check-cold-staking-off.svg \
+  qt/altecoin/res/img/ic-check-cold-staking-enabled.svg \
+  qt/altecoin/res/img/dark/ic-transaction-cs-contract.svg \
+  qt/altecoin/res/img/dark/ic-transaction-cs-contract-inactive.svg \
+  qt/altecoin/res/img/img-qr.svg \
+  qt/altecoin/res/img/ic-check-connect-off.svg \
+  qt/altecoin/res/img/ic-label.svg \
+  qt/altecoin/res/img/ic-transaction-received.svg \
+  qt/altecoin/res/img/dark/ic-transaction-received.svg \
+  qt/altecoin/res/img/dark/ic-transaction-warning.svg \
+  qt/altecoin/res/img/dark/ic-transaction-mint.svg \
+  qt/altecoin/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/altecoin/res/img/ic-transaction-received-inactive.svg \
+  qt/altecoin/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/altecoin/res/img/img-welcome-step1.png \
+  qt/altecoin/res/img/ic-check-connect.svg \
+  qt/altecoin/res/img/ic-menu-hover.svg \
+  qt/altecoin/res/img/ic-transaction-sent.svg \
+  qt/altecoin/res/img/ic-transaction-sent-inactive.svg \
+  qt/altecoin/res/img/dark/ic-transaction-sent.svg \
+  qt/altecoin/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/altecoin/res/img/img-welcome-step2.png \
+  qt/altecoin/res/img/ic-check-dark.svg \
+  qt/altecoin/res/img/ic-mint.svg \
+  qt/altecoin/res/img/ic-transaction-staked.svg \
+  qt/altecoin/res/img/ic-transaction-staked-inactive.svg \
+  qt/altecoin/res/img/dark/ic-transaction-staked.svg \
+  qt/altecoin/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/altecoin/res/img/img-welcome-step3.png \
+  qt/altecoin/res/img/ic-check-liliac-on.svg \
+  qt/altecoin/res/img/ic-nav-address-active.svg \
+  qt/altecoin/res/img/ic-unlock-staking.svg \
+  qt/altecoin/res/img/img-welcome-step4.png \
+  qt/altecoin/res/img/ic-check-locked-off.svg \
+  qt/altecoin/res/img/ic-nav-address-hover.svg \
+  qt/altecoin/res/img/ic-update-liliac.svg \
+  qt/altecoin/res/img/ic-arrow-drop-down-purple.svg \
+  qt/altecoin/res/img/ic-arrow-drop-up-purple.svg \
+  qt/altecoin/res/img/ic-check-liliac-indeterminate.svg \
+  qt/altecoin/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/altecoin/res/img/ic-transaction-stake-delegated.svg \
+  qt/altecoin/res/img/ic-transaction-stake-delegated-inactive.svg \
+  qt/altecoin/res/img/ic-transaction-stake-hot.svg \
+  qt/altecoin/res/img/ic-transaction-stake-hot-inactive.svg \
+  qt/altecoin/res/img/dark/ic-transaction-stake-hot.svg \
+  qt/altecoin/res/img/dark/ic-transaction-stake-hot-inactive.svg \
+  qt/altecoin/res/img/dark/ic-transaction-stake-delegated.svg \
+  qt/altecoin/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
+  qt/altecoin/res/img/ic-transaction-cs-contract.svg \
+  qt/altecoin/res/img/ic-transaction-cs-contract-inactive.svg \
+  qt/altecoin/res/img/ic-check-box-indeterminate.svg \
+  qt/altecoin/res/img/ani-loading-dark.gif \
+  qt/altecoin/res/img/ani-loading.gif
 
 
 
@@ -617,7 +617,7 @@ BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
   qt/bitcoinaddressvalidator.cpp \
   qt/bitcoinamountfield.cpp \
-  qt/tanzanite/tanzanitegui.cpp \
+  qt/altecoin/altecoingui.cpp \
   qt/bitcoinunits.cpp \
   qt/blockexplorer.cpp \
   qt/clientmodel.cpp \
@@ -659,68 +659,68 @@ BITCOIN_QT_WALLET_CPP = \
   qt/transactiontablemodel.cpp \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
-  qt/tanzanite/loadingdialog.cpp \
+  qt/altecoin/loadingdialog.cpp \
   qt/zpivcontroldialog.cpp \
-  qt/tanzanite/pwidget.cpp \
-  qt/tanzanite/guitransactionsutils.cpp \
-  qt/tanzanite/snackbar.cpp \
-  qt/tanzanite/navmenuwidget.cpp \
-  qt/tanzanite/lockunlock.cpp \
-  qt/tanzanite/receivedialog.cpp \
-  qt/tanzanite/furabstractlistitemdelegate.cpp \
-  qt/tanzanite/txviewholder.cpp \
-  qt/tanzanite/qtutils.cpp \
-  qt/tanzanite/expandablebutton.cpp \
-  qt/tanzanite/walletpassworddialog.cpp \
-  qt/tanzanite/topbar.cpp \
-  qt/tanzanite/txrow.cpp \
-  qt/tanzanite/addressholder.cpp \
-  qt/tanzanite/addressfilterproxymodel.cpp \
-  qt/tanzanite/dashboardwidget.cpp \
-  qt/tanzanite/coincontrolpivwidget.cpp \
-  qt/tanzanite/addresslabelrow.cpp \
-  qt/tanzanite/contactdropdownrow.cpp \
-  qt/tanzanite/contactsdropdown.cpp \
-  qt/tanzanite/optionbutton.cpp \
-  qt/tanzanite/mninfodialog.cpp \
-  qt/tanzanite/coldstakingmodel.cpp \
-  qt/tanzanite/mnmodel.cpp \
-  qt/tanzanite/masternodewizarddialog.cpp \
-  qt/tanzanite/mnrow.cpp \
-  qt/tanzanite/masternodeswidget.cpp \
-  qt/tanzanite/myaddressrow.cpp \
-  qt/tanzanite/csrow.cpp \
-  qt/tanzanite/sendchangeaddressdialog.cpp \
-  qt/tanzanite/sendconfirmdialog.cpp \
-  qt/tanzanite/sendcustomfeedialog.cpp \
-  qt/tanzanite/sendchangeaddressdialog.cpp \
-  qt/tanzanite/sendmultirow.cpp \
-  qt/tanzanite/send.cpp \
-  qt/tanzanite/addnewaddressdialog.cpp \
-  qt/tanzanite/addnewcontactdialog.cpp \
-  qt/tanzanite/requestdialog.cpp \
-  qt/tanzanite/receivewidget.cpp \
-  qt/tanzanite/tooltipmenu.cpp \
-  qt/tanzanite/addresseswidget.cpp \
-  qt/tanzanite/defaultdialog.cpp \
-  qt/tanzanite/denomgenerationdialog.cpp \
-  qt/tanzanite/privacywidget.cpp \
-  qt/tanzanite/coldstakingwidget.cpp \
-  qt/tanzanite/settings/settingsbackupwallet.cpp \
-  qt/tanzanite/settings/settingsbittoolwidget.cpp \
-  qt/tanzanite/settings/settingsconsolewidget.cpp \
-  qt/tanzanite/settings/settingsdisplayoptionswidget.cpp \
-  qt/tanzanite/settings/settingsfaqwidget.cpp \
-  qt/tanzanite/settings/settingsinformationwidget.cpp \
-  qt/tanzanite/settings/settingsmainoptionswidget.cpp \
-  qt/tanzanite/settings/settingsmultisenddialog.cpp \
-  qt/tanzanite/settings/settingsmultisendwidget.cpp \
-  qt/tanzanite/settings/settingssignmessagewidgets.cpp \
-  qt/tanzanite/settings/settingswalletoptionswidget.cpp \
-  qt/tanzanite/settings/settingswalletrepairwidget.cpp \
-  qt/tanzanite/settings/settingswidget.cpp \
-  qt/tanzanite/welcomecontentwidget.cpp \
-  qt/tanzanite/splash.cpp
+  qt/altecoin/pwidget.cpp \
+  qt/altecoin/guitransactionsutils.cpp \
+  qt/altecoin/snackbar.cpp \
+  qt/altecoin/navmenuwidget.cpp \
+  qt/altecoin/lockunlock.cpp \
+  qt/altecoin/receivedialog.cpp \
+  qt/altecoin/furabstractlistitemdelegate.cpp \
+  qt/altecoin/txviewholder.cpp \
+  qt/altecoin/qtutils.cpp \
+  qt/altecoin/expandablebutton.cpp \
+  qt/altecoin/walletpassworddialog.cpp \
+  qt/altecoin/topbar.cpp \
+  qt/altecoin/txrow.cpp \
+  qt/altecoin/addressholder.cpp \
+  qt/altecoin/addressfilterproxymodel.cpp \
+  qt/altecoin/dashboardwidget.cpp \
+  qt/altecoin/coincontrolpivwidget.cpp \
+  qt/altecoin/addresslabelrow.cpp \
+  qt/altecoin/contactdropdownrow.cpp \
+  qt/altecoin/contactsdropdown.cpp \
+  qt/altecoin/optionbutton.cpp \
+  qt/altecoin/mninfodialog.cpp \
+  qt/altecoin/coldstakingmodel.cpp \
+  qt/altecoin/mnmodel.cpp \
+  qt/altecoin/masternodewizarddialog.cpp \
+  qt/altecoin/mnrow.cpp \
+  qt/altecoin/masternodeswidget.cpp \
+  qt/altecoin/myaddressrow.cpp \
+  qt/altecoin/csrow.cpp \
+  qt/altecoin/sendchangeaddressdialog.cpp \
+  qt/altecoin/sendconfirmdialog.cpp \
+  qt/altecoin/sendcustomfeedialog.cpp \
+  qt/altecoin/sendchangeaddressdialog.cpp \
+  qt/altecoin/sendmultirow.cpp \
+  qt/altecoin/send.cpp \
+  qt/altecoin/addnewaddressdialog.cpp \
+  qt/altecoin/addnewcontactdialog.cpp \
+  qt/altecoin/requestdialog.cpp \
+  qt/altecoin/receivewidget.cpp \
+  qt/altecoin/tooltipmenu.cpp \
+  qt/altecoin/addresseswidget.cpp \
+  qt/altecoin/defaultdialog.cpp \
+  qt/altecoin/denomgenerationdialog.cpp \
+  qt/altecoin/privacywidget.cpp \
+  qt/altecoin/coldstakingwidget.cpp \
+  qt/altecoin/settings/settingsbackupwallet.cpp \
+  qt/altecoin/settings/settingsbittoolwidget.cpp \
+  qt/altecoin/settings/settingsconsolewidget.cpp \
+  qt/altecoin/settings/settingsdisplayoptionswidget.cpp \
+  qt/altecoin/settings/settingsfaqwidget.cpp \
+  qt/altecoin/settings/settingsinformationwidget.cpp \
+  qt/altecoin/settings/settingsmainoptionswidget.cpp \
+  qt/altecoin/settings/settingsmultisenddialog.cpp \
+  qt/altecoin/settings/settingsmultisendwidget.cpp \
+  qt/altecoin/settings/settingssignmessagewidgets.cpp \
+  qt/altecoin/settings/settingswalletoptionswidget.cpp \
+  qt/altecoin/settings/settingswalletrepairwidget.cpp \
+  qt/altecoin/settings/settingswidget.cpp \
+  qt/altecoin/welcomecontentwidget.cpp \
+  qt/altecoin/splash.cpp
 
 
 BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
@@ -736,7 +736,7 @@ RES_IMAGES = \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
   qt/res/images/splash_regtest.png \
-  qt/res/images/tanzanite_logo_horizontal.png \
+  qt/res/images/altecoin_logo_horizontal.png \
   qt/res/images/downArrow_dark.png \
   qt/res/images/downArrow_small_dark.png \
   qt/res/images/downArrow_small.png \
@@ -748,12 +748,12 @@ RES_IMAGES = \
 
 RES_CSS = \
   qt/res/css/default.css \
-  qt/tanzanite/res/css/style_dark.css \
-  qt/tanzanite/res/css/style_light.css
+  qt/altecoin/res/css/style_dark.css \
+  qt/altecoin/res/css/style_light.css
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/tanzanite-qt-res.rc
+BITCOIN_RC = qt/res/altecoin-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -775,71 +775,71 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_tanzanite_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_altecoin_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# tanzanite-qt binary #
-qt_tanzanite_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# altecoin-qt binary #
+qt_altecoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
-qt_tanzanite_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_altecoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_tanzanite_qt_SOURCES = qt/tanzanite.cpp
+qt_altecoin_qt_SOURCES = qt/altecoin.cpp
 if TARGET_DARWIN
-  qt_tanzanite_qt_SOURCES += $(BITCOIN_MM)
+  qt_altecoin_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_tanzanite_qt_SOURCES += $(BITCOIN_RC)
+  qt_altecoin_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_tanzanite_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_altecoin_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_tanzanite_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+qt_altecoin_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_tanzanite_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_altecoin_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_tanzanite_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+qt_altecoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_tanzanite_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_tanzanite_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+qt_altecoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_altecoin_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/tanzanitestrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+$(srcdir)/qt/altecoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/tanzanitestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/tanzanite.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/altecoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/altecoin.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/tanzanite_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/altecoin_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name tanzanite_locale $(@D)/temp_$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name altecoin_locale $(@D)/temp_$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name tanzanite $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name altecoin $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_tanzanite_locale.qrc
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_altecoin_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
-tanzanite_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_tanzanite_qt_OBJECTS) qt/tanzanite-qt$(EXEEXT) $(LIBBITCOINQT)
+altecoin_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_altecoin_qt_OBJECTS) qt/altecoin-qt$(EXEEXT) $(LIBBITCOINQT)
 
-tanzanite_qt : qt/tanzanite-qt$(EXEEXT)
+altecoin_qt : qt/altecoin-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

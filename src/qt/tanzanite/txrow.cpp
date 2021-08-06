@@ -1,12 +1,12 @@
-// Copyright (c) 2019-2020 The Tanzanite developers
+// Copyright (c) 2019-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/txrow.h"
-#include "qt/tanzanite/forms/ui_txrow.h"
+#include "qt/altecoin/txrow.h"
+#include "qt/altecoin/forms/ui_txrow.h"
 
 #include "guiutil.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/qtutils.h"
 
 TxRow::TxRow(QWidget *parent) :
     QWidget(parent),
@@ -59,7 +59,7 @@ void TxRow::setType(bool isLightTheme, int type, bool isConfirmed){
             css = "text-list-amount-send";
             break;
         case TransactionRecord::Generated:
-        case TransactionRecord::StakeZTZT:
+        case TransactionRecord::StakeZALTC:
         case TransactionRecord::MNReward:
         case TransactionRecord::StakeMint:
             path = "://ic-transaction-staked";

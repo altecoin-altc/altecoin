@@ -568,7 +568,7 @@
        </widget>
       </item>
       <item>
-       <widget class="OptionButton" name="btnTotalzTZT" native="true">
+       <widget class="OptionButton" name="btnTotalzALTC" native="true">
         <property name="minimumSize">
          <size>
           <width>0</width>
@@ -795,7 +795,7 @@
   <customwidget>
    <class>OptionButton</class>
    <extends>QWidget</extends>
-   <header>qt/tanzanite/optionbutton.h</header>
+   <header>qt/altecoin/optionbutton.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

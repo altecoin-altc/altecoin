@@ -1,15 +1,15 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef TOOLTIPMENU_H
 #define TOOLTIPMENU_H
 
-#include "qt/tanzanite/pwidget.h"
+#include "qt/altecoin/pwidget.h"
 #include <QWidget>
 #include <QModelIndex>
 
-class TanzaniteGUI;
+class AltecoinGUI;
 class WalletModel;
 
 namespace Ui {
@@ -25,7 +25,7 @@ class TooltipMenu : public PWidget
     Q_OBJECT
 
 public:
-    explicit TooltipMenu(TanzaniteGUI* _window, QWidget *parent = nullptr);
+    explicit TooltipMenu(AltecoinGUI* _window, QWidget *parent = nullptr);
     ~TooltipMenu() override;
 
     void setIndex(const QModelIndex &index);

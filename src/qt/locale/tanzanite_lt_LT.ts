@@ -76,12 +76,12 @@
         <translation>Gavimo adresai</translation>
     </message>
     <message>
-        <source>These are your Tanzanite addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tai jūsų Tanzanite adresai mokėjimų išsiuntimams. Visada patikrinkite sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
+        <source>These are your Altecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tai jūsų Altecoin adresai mokėjimų išsiuntimams. Visada patikrinkite sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
     </message>
     <message>
-        <source>These are your Tanzanite addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Tai jūsų Tanzanite adresai mokėjimų gavimams. Rekomenduojama naudoti naują adresą kiekvienam pavedimui.</translation>
+        <source>These are your Altecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Tai jūsų Altecoin adresai mokėjimų gavimams. Rekomenduojama naudoti naują adresą kiekvienam pavedimui.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -200,16 +200,16 @@
         <translation>Patvirtinkite piniginės užšifravimą.</translation>
     </message>
     <message>
-        <source>Tanzanite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TZTs from being stolen by malware infecting your computer.</source>
-        <translation>Dabar Tanzanite išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų TZT nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <source>Altecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALTCs from being stolen by malware infecting your computer.</source>
+        <translation>Dabar Altecoin išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų ALTC nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ar tikrai norite užšifruoti savo piniginę?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TZT&lt;/b&gt;!</source>
-        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO TZT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALTC&lt;/b&gt;!</source>
+        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO ALTC&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -290,8 +290,8 @@
         <translation>Teksto etiketė</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tanzanite.conf).</source>
-        <translation>Ne visi pavedimai bus rodomi. Norėdami peržiūrėti visus pavedimus, reikia nustatyti txindex = 1 konfigūracijos faile (tanzanite.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (altecoin.conf).</source>
+        <translation>Ne visi pavedimai bus rodomi. Norėdami peržiūrėti visus pavedimus, reikia nustatyti txindex = 1 konfigūracijos faile (altecoin.conf).</translation>
     </message>
 </context>
 <context>
@@ -522,8 +522,8 @@
 <context>
     <name>CoinControlPivWidget</name>
     <message>
-        <source>TZT:</source>
-        <translation>TZT:</translation>
+        <source>ALTC:</source>
+        <translation>ALTC:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -603,8 +603,8 @@
         <translation>Teksto etiketė</translation>
     </message>
     <message>
-        <source>zTZT</source>
-        <translation>zTZT</translation>
+        <source>zALTC</source>
+        <translation>zALTC</translation>
     </message>
     <message>
         <source>All</source>
@@ -680,8 +680,8 @@
         <translation>Keisti siuntimo adresą</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Tanzanite address.</source>
-        <translation>Įvestas adresas "%1" nėra galiojantis Tanzanite adresas.</translation>
+        <source>The entered address "%1" is not a valid Altecoin address.</source>
+        <translation>Įvestas adresas "%1" nėra galiojantis Altecoin adresas.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -744,16 +744,16 @@
         <translation>versija</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bitai)</translation>
     </message>
     <message>
-        <source>About Tanzanite Core</source>
-        <translation>Apie Tanzanite Core</translation>
+        <source>About Altecoin Core</source>
+        <translation>Apie Altecoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -799,24 +799,24 @@
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to Tanzanite Core.</source>
-        <translation>Sveiki atvykę į Tanzanite Core</translation>
+        <source>Welcome to Altecoin Core.</source>
+        <translation>Sveiki atvykę į Altecoin Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Tanzanite Core will store its data.</source>
-        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur Tanzanite Core saugos savo duomenis.</translation>
+        <source>As this is the first time the program is launched, you can choose where Altecoin Core will store its data.</source>
+        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur Altecoin Core saugos savo duomenis.</translation>
     </message>
     <message>
-        <source>Tanzanite Core will download and store a copy of the Tanzanite block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Tanzanite Core atsisiųs ir saugos Tanzanite blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
+        <source>Altecoin Core will download and store a copy of the Altecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Altecoin Core atsisiųs ir saugos Altecoin blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Naudoti numatytąjį duomenų katalogą</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -976,12 +976,12 @@
         <translation>Ekspertas</translation>
     </message>
     <message>
-        <source>Automatically start Tanzanite after logging in to the system.</source>
-        <translation>Automatiškai paleisti Tanzanite prisijungus prie sistemos.</translation>
+        <source>Automatically start Altecoin after logging in to the system.</source>
+        <translation>Automatiškai paleisti Altecoin prisijungus prie sistemos.</translation>
     </message>
     <message>
-        <source>&amp;Start Tanzanite on system login</source>
-        <translation>&amp;Paleisti Tanzanite sistemai įsijungiant</translation>
+        <source>&amp;Start Altecoin on system login</source>
+        <translation>&amp;Paleisti Altecoin sistemai įsijungiant</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1008,42 +1008,42 @@
         <translation>&amp;Tinklas</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Tanzanite.</source>
-        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "Tanzanite".</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Altecoin.</source>
+        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "Altecoin".</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tanzanite-project/tanzanite-project-translations</source>
+https://www.transifex.com/altecoin-project/altecoin-project-translations</source>
         <translation>Trūksta kalbos arba vertimas nebaigtas? Padėkite prisidėdami prie vertimų čia: 
-https://www.transifex.com/tanzanite-project/tanzanite-project-translations</translation>
+https://www.transifex.com/altecoin-project/altecoin-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of TZT units to zTZT</source>
-        <translation>Įgalinti automatinį konvertavimą iš TZT į zTZT</translation>
+        <source>Enable automatic minting of ALTC units to zALTC</source>
+        <translation>Įgalinti automatinį konvertavimą iš ALTC į zALTC</translation>
     </message>
     <message>
-        <source>Enable zTZT Automint</source>
-        <translation>Įgalinti zTZT Automatinį nukaldinima</translation>
+        <source>Enable zALTC Automint</source>
+        <translation>Įgalinti zALTC Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming TZT which get automatically converted to zTZT via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto TZT, kuris automatiškai bus konvertuotas į zTZT naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming ALTC which get automatically converted to zALTC via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto ALTC, kuris automatiškai bus konvertuotas į zALTC naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTZT</source>
-        <translation>Automatiškai sukurtų zTZT procentas</translation>
+        <source>Percentage of autominted zALTC</source>
+        <translation>Automatiškai sukurtų zALTC procentas</translation>
     </message>
     <message>
-        <source>Preferred Automint zTZT Denomination</source>
-        <translation>Pageidautinas zTZT Automatinio Nukaldinimo Nominalas</translation>
+        <source>Preferred Automint zALTC Denomination</source>
+        <translation>Pageidautinas zALTC Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
-        <source>Connect to the Tanzanite network through a SOCKS5 proxy.</source>
-        <translation>Jungtis prie Tanzanite tinklo naudojant SOCKS5 tarpinį serverį.</translation>
+        <source>Connect to the Altecoin network through a SOCKS5 proxy.</source>
+        <translation>Jungtis prie Altecoin tinklo naudojant SOCKS5 tarpinį serverį.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1143,10 +1143,10 @@ https://www.transifex.com/tanzanite-project/tanzanite-project-translations</tran
     </message>
 </context>
 <context>
-    <name>TanzaniteGUI</name>
+    <name>AltecoinGUI</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1173,8 +1173,8 @@ https://www.transifex.com/tanzanite-project/tanzanite-project-translations</tran
         <translation>Uždaryti programą</translation>
     </message>
     <message>
-        <source>Tanzanite Core client</source>
-        <translation>Tanzanite Core piniginė</translation>
+        <source>Altecoin Core client</source>
+        <translation>Altecoin Core piniginė</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1227,8 +1227,8 @@ Adresas: %4
         <translation>Netinkamas mokėjimo adresas %1</translation>
     </message>
     <message>
-        <source>Cannot start tanzanite: click-to-pay handler</source>
-        <translation>Nepavyksta paleisti tanzanite: apdorojimo "spustelėjimo ir apmokėjimo" funkcijos klaida</translation>
+        <source>Cannot start altecoin: click-to-pay handler</source>
+        <translation>Nepavyksta paleisti altecoin: apdorojimo "spustelėjimo ir apmokėjimo" funkcijos klaida</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1331,8 +1331,8 @@ Adresas: %4
         <translation>N/A</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     </context>
 <context>
@@ -1458,8 +1458,8 @@ Adresas: %4
         <translation>Iš:</translation>
     </message>
     <message>
-        <source>Welcome to the Tanzanite RPC console.</source>
-        <translation>Sveiki atvykę į Tanzanite RPC konsolę.</translation>
+        <source>Welcome to the Altecoin RPC console.</source>
+        <translation>Sveiki atvykę į Altecoin RPC konsolę.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1659,8 +1659,8 @@ Adresas: %4
         <translation>Teksto etiketė</translation>
     </message>
     <message>
-        <source>Welcome to the Tanzanite RPC console.</source>
-        <translation>Sveiki atvykę į Tanzanite RPC konsolę.</translation>
+        <source>Welcome to the Altecoin RPC console.</source>
+        <translation>Sveiki atvykę į Altecoin RPC konsolę.</translation>
     </message>
     </context>
 <context>
@@ -1894,15 +1894,15 @@ Adresas: %4
         <translation>Forma</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite Core</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin Core</translation>
     </message>
     </context>
 <context>
@@ -2075,7 +2075,7 @@ Adresas: %4
     </message>
     </context>
 <context>
-    <name>tanzanite-core</name>
+    <name>altecoin-core</name>
     <message>
         <source>(default: %s)</source>
         <translation>(numatytas: %s)</translation>
@@ -2101,8 +2101,8 @@ Adresas: %4
         <translation>Klaida kraunant wallet.dat: Piniginė yra sugadinta</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Tanzanite Core</source>
-        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės Tanzanite Core versijos</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Altecoin Core</source>
+        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės Altecoin Core versijos</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -2269,8 +2269,8 @@ Adresas: %4
         <translation>Piniginė %s yra ne duomenų kataloge %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Tanzanite Core to complete</source>
-        <translation>Piniginę reikia perrašyti: paleiskite Tanzanite Core iš naujo</translation>
+        <source>Wallet needed to be rewritten: restart Altecoin Core to complete</source>
+        <translation>Piniginę reikia perrašyti: paleiskite Altecoin Core iš naujo</translation>
     </message>
     <message>
         <source>Wallet options:</source>

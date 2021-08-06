@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2015-2019 The Tanzanite developers
+// Copyright (c) 2015-2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Tanzanite_SERIALIZE_H
-#define Tanzanite_SERIALIZE_H
+#ifndef Altecoin_SERIALIZE_H
+#define Altecoin_SERIALIZE_H
 
 #include <algorithm>
 #include <assert.h>
@@ -954,4 +954,4 @@ public:
     }
 };
 
-#endif // Tanzanite_SERIALIZE_H
+#endif // Altecoin_SERIALIZE_H

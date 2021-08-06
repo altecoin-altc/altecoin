@@ -1,6 +1,6 @@
-qt/tanzanite/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
- qt/tanzanite/moc_dashboardwidget.cpp /usr/include/stdc-predef.h \
- qt/tanzanite/dashboardwidget.h qt/tanzanite/pwidget.h \
+qt/altecoin/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
+ qt/altecoin/moc_dashboardwidget.cpp /usr/include/stdc-predef.h \
+ qt/altecoin/dashboardwidget.h qt/altecoin/pwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
@@ -257,8 +257,8 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
- qt/tanzanite/prunnable.h qt/tanzanite/furabstractlistitemdelegate.h \
- qt/tanzanite/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
+ qt/altecoin/prunnable.h qt/altecoin/furabstractlistitemdelegate.h \
+ qt/altecoin/furlistrow.h /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAbstractItemDelegate \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
@@ -298,7 +298,7 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
- qt/tanzanite/txviewholder.h qt/tanzanite/txrow.h \
+ qt/altecoin/txviewholder.h qt/altecoin/txrow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h \
  qt/transactionrecord.h uint256.h /usr/include/c++/7/cstring \
@@ -321,7 +321,7 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
- config/tanzanite-config.h \
+ config/altecoin-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/QChartView \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/qchartview.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCharts/QAbstractAxis \
@@ -371,9 +371,9 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_dashboardwidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/dashboardwidget.h:
+qt/altecoin/dashboardwidget.h:
 
-qt/tanzanite/pwidget.h:
+qt/altecoin/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
@@ -985,11 +985,11 @@ qt/tanzanite/pwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
-qt/tanzanite/prunnable.h:
+qt/altecoin/prunnable.h:
 
-qt/tanzanite/furabstractlistitemdelegate.h:
+qt/altecoin/furabstractlistitemdelegate.h:
 
-qt/tanzanite/furlistrow.h:
+qt/altecoin/furlistrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
 
@@ -1087,9 +1087,9 @@ sporkid.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h:
 
-qt/tanzanite/txviewholder.h:
+qt/altecoin/txviewholder.h:
 
-qt/tanzanite/txrow.h:
+qt/altecoin/txrow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime:
 
@@ -1141,7 +1141,7 @@ qt/transactionfilterproxy.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h:
 
-config/tanzanite-config.h:
+config/altecoin-config.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCharts/QChartView:
 

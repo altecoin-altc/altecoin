@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.tanzanite.tanzanited</string>
+	<string>org.altecoin.altecoind</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/tanzanited</string>
+		<string>/usr/local/bin/altecoind</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

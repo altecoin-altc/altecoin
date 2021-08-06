@@ -1,14 +1,14 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/pwidget.h"
-#include "qt/tanzanite/qtutils.h"
-#include "qt/tanzanite/loadingdialog.h"
+#include "qt/altecoin/pwidget.h"
+#include "qt/altecoin/qtutils.h"
+#include "qt/altecoin/loadingdialog.h"
 #include <QRunnable>
 #include <QThreadPool>
 
-PWidget::PWidget(TanzaniteGUI* _window, QWidget *parent) : QWidget((parent) ? parent : _window), window(_window){init();}
+PWidget::PWidget(AltecoinGUI* _window, QWidget *parent) : QWidget((parent) ? parent : _window), window(_window){init();}
 PWidget::PWidget(PWidget* parent) : QWidget(parent), window(parent->getWindow()){init();}
 
 void PWidget::init() {

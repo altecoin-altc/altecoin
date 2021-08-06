@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,10 +8,10 @@
 #include <QDialog>
 #include <QPixmap>
 #include "walletmodel.h"
-#include "qt/tanzanite/snackbar.h"
+#include "qt/altecoin/snackbar.h"
 
 class WalletModel;
-class TanzaniteGUI;
+class AltecoinGUI;
 
 namespace Ui {
 class RequestDialog;

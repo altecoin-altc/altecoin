@@ -1,12 +1,12 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/settings/settingswalletrepairwidget.h"
-#include "qt/tanzanite/settings/forms/ui_settingswalletrepairwidget.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/settings/settingswalletrepairwidget.h"
+#include "qt/altecoin/settings/forms/ui_settingswalletrepairwidget.h"
+#include "qt/altecoin/qtutils.h"
 
-SettingsWalletRepairWidget::SettingsWalletRepairWidget(TanzaniteGUI* _window, QWidget *parent) :
+SettingsWalletRepairWidget::SettingsWalletRepairWidget(AltecoinGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsWalletRepairWidget)
 {
@@ -156,7 +156,7 @@ void SettingsWalletRepairWidget::buildParameterlist(QString arg)
     // Append repair parameter to command line.
     args.append(arg);
 
-    // Send command-line arguments to TanzaniteGUI::handleRestart()
+    // Send command-line arguments to AltecoinGUI::handleRestart()
     emit handleRestart(args);
 }
 

@@ -7,11 +7,11 @@
 import socket
 import sys
 
-from test_framework.test_framework import TanzaniteTestFramework, SkipTest
+from test_framework.test_framework import AltecoinTestFramework, SkipTest
 from test_framework.util import *
 from test_framework.netutil import *
 
-class RPCBindTest(TanzaniteTestFramework):
+class RPCBindTest(AltecoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1

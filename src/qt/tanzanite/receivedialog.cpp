@@ -1,10 +1,10 @@
-// Copyright (c) 2019 The Tanzanite developers
+// Copyright (c) 2019 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/receivedialog.h"
-#include "qt/tanzanite/forms/ui_receivedialog.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/receivedialog.h"
+#include "qt/altecoin/forms/ui_receivedialog.h"
+#include "qt/altecoin/qtutils.h"
 #include "walletmodel.h"
 #include <QFile>
 

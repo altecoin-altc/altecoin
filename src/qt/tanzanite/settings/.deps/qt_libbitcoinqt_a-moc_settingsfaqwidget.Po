@@ -1,6 +1,6 @@
-qt/tanzanite/settings/qt_libbitcoinqt_a-moc_settingsfaqwidget.o: \
- qt/tanzanite/settings/moc_settingsfaqwidget.cpp \
- /usr/include/stdc-predef.h qt/tanzanite/settings/settingsfaqwidget.h \
+qt/altecoin/settings/qt_libbitcoinqt_a-moc_settingsfaqwidget.o: \
+ qt/altecoin/settings/moc_settingsfaqwidget.cpp \
+ /usr/include/stdc-predef.h qt/altecoin/settings/settingsfaqwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -257,7 +257,7 @@ qt/tanzanite/settings/qt_libbitcoinqt_a-moc_settingsfaqwidget.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/settings/settingsfaqwidget.h:
+qt/altecoin/settings/settingsfaqwidget.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

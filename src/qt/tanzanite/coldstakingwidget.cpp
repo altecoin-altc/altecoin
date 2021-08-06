@@ -1,23 +1,23 @@
-// Copyright (c) 2019-2020 The Tanzanite developers
+// Copyright (c) 2019-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/coldstakingwidget.h"
-#include "qt/tanzanite/forms/ui_coldstakingwidget.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/coldstakingwidget.h"
+#include "qt/altecoin/forms/ui_coldstakingwidget.h"
+#include "qt/altecoin/qtutils.h"
 #include "amount.h"
 #include "guiutil.h"
-#include "qt/tanzanite/requestdialog.h"
-#include "qt/tanzanite/tooltipmenu.h"
-#include "qt/tanzanite/furlistrow.h"
-#include "qt/tanzanite/sendconfirmdialog.h"
-#include "qt/tanzanite/addnewcontactdialog.h"
-#include "qt/tanzanite/guitransactionsutils.h"
+#include "qt/altecoin/requestdialog.h"
+#include "qt/altecoin/tooltipmenu.h"
+#include "qt/altecoin/furlistrow.h"
+#include "qt/altecoin/sendconfirmdialog.h"
+#include "qt/altecoin/addnewcontactdialog.h"
+#include "qt/altecoin/guitransactionsutils.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
 #include "coincontroldialog.h"
 #include "coincontrol.h"
-#include "qt/tanzanite/csrow.h"
+#include "qt/altecoin/csrow.h"
 
 #define DECORATION_SIZE 70
 #define NUM_ITEMS 3
@@ -67,7 +67,7 @@ private:
     CSRow *cachedRow = nullptr;
 };
 
-ColdStakingWidget::ColdStakingWidget(TanzaniteGUI* parent) :
+ColdStakingWidget::ColdStakingWidget(AltecoinGUI* parent) :
     PWidget(parent),
     ui(new Ui::ColdStakingWidget),
     isLoading(false)
@@ -97,7 +97,7 @@ ColdStakingWidget::ColdStakingWidget(TanzaniteGUI* parent) :
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can delegate your TZTs, letting a hot node (24/7 online node)\nstake on your behalf, while you keep the keys securely offline."));
+    ui->labelSubtitle1->setText(tr("You can delegate your ALTCs, letting a hot node (24/7 online node)\nstake on your behalf, while you keep the keys securely offline."));
     setCssSubtitleScreen(ui->labelSubtitle1);
     spacerDiv = new QSpacerItem(40, 20, QSizePolicy::Maximum, QSizePolicy::Expanding);
 
@@ -108,7 +108,7 @@ ColdStakingWidget::ColdStakingWidget(TanzaniteGUI* parent) :
     ui->lineEditOwnerAddress->setAttribute(Qt::WA_MacShowFocusRect, 0);
     setShadow(ui->lineEditOwnerAddress);
 
-    ui->labelSubtitle2->setText(tr("Accept TZT delegation / Delegate TZT"));
+    ui->labelSubtitle2->setText(tr("Accept ALTC delegation / Delegate ALTC"));
     setCssSubtitleScreen(ui->labelSubtitle2);
     ui->labelSubtitle2->setContentsMargins(0,2,0,0);
 
@@ -135,7 +135,7 @@ ColdStakingWidget::ColdStakingWidget(TanzaniteGUI* parent) :
     setCssProperty(ui->labelEmpty, "text-empty");
 
     ui->btnCoinControl->setTitleClassAndText("btn-title-grey", "Coin Control");
-    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select TZT outputs to delegate.");
+    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select ALTC outputs to delegate.");
 
     ui->btnColdStaking->setTitleClassAndText("btn-title-grey", "Create Cold Staking Address");
     ui->btnColdStaking->setSubTitleClassAndText("text-subtitle", "Creates an address to receive delegated coins\nand stake them on their owner's behalf.");
@@ -512,7 +512,7 @@ void ColdStakingWidget::onCoinControlClicked(){
             coinControlDialog->exec();
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
         } else {
-            inform(tr("You don't have any TZT to select."));
+            inform(tr("You don't have any ALTC to select."));
         }
     }
 }
@@ -735,7 +735,7 @@ void ColdStakingWidget::updateStakingTotalLabel()
 {
     const CAmount& total = csModel->getTotalAmount();
     ui->labelStakingTotal->setText(tr("Total Staking: %1").arg(
-            (total == 0) ? "0.00 TZT" : GUIUtil::formatBalance(total, nDisplayUnit))
+            (total == 0) ? "0.00 ALTC" : GUIUtil::formatBalance(total, nDisplayUnit))
     );
 }
 

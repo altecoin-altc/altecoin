@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The Dash developers
-// Copyright (c) 2015-2019 The Tanzanite developers
+// Copyright (c) 2015-2019 The Altecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,7 +14,7 @@
 #include "collateral.h"
 
 //
-// Bootup the Masternode, look for a 10000 Tanzanite input and register on the network
+// Bootup the Masternode, look for a 10000 Altecoin input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

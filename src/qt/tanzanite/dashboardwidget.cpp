@@ -1,12 +1,12 @@
-// Copyright (c) 2019-2020 The Tanzanite developers
+// Copyright (c) 2019-2020 The Altecoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/tanzanite/dashboardwidget.h"
-#include "qt/tanzanite/forms/ui_dashboardwidget.h"
-#include "qt/tanzanite/sendconfirmdialog.h"
-#include "qt/tanzanite/txrow.h"
-#include "qt/tanzanite/qtutils.h"
+#include "qt/altecoin/dashboardwidget.h"
+#include "qt/altecoin/forms/ui_dashboardwidget.h"
+#include "qt/altecoin/sendconfirmdialog.h"
+#include "qt/altecoin/txrow.h"
+#include "qt/altecoin/qtutils.h"
 #include "guiutil.h"
 #include "walletmodel.h"
 #include "clientmodel.h"
@@ -23,7 +23,7 @@
 #define REQUEST_LOAD_TASK 1
 #define CHART_LOAD_MIN_TIME_INTERVAL 15
 
-DashboardWidget::DashboardWidget(TanzaniteGUI* parent) :
+DashboardWidget::DashboardWidget(AltecoinGUI* parent) :
     PWidget(parent),
     ui(new Ui::DashboardWidget)
 {
@@ -55,7 +55,7 @@ DashboardWidget::DashboardWidget(TanzaniteGUI* parent) :
     setCssSubtitleScreen(ui->labelSubtitle);
 
     // Staking Information
-    ui->labelMessage->setText(tr("Amount of TZT staked."));
+    ui->labelMessage->setText(tr("Amount of ALTC staked."));
     setCssSubtitleScreen(ui->labelMessage);
     setCssProperty(ui->labelSquarePiv, "square-chart-piv");
     setCssProperty(ui->labelSquarezPiv, "square-chart-zpiv");
@@ -67,7 +67,7 @@ DashboardWidget::DashboardWidget(TanzaniteGUI* parent) :
 
     setCssProperty(ui->labelChart, "legend-chart");
 
-    ui->labelAmountPiv->setText("0 TZT");
+    ui->labelAmountPiv->setText("0 ALTC");
     setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
 
     setCssProperty({ui->pushButtonAll,  ui->pushButtonMonth, ui->pushButtonYear}, "btn-check-time");
@@ -140,7 +140,7 @@ DashboardWidget::DashboardWidget(TanzaniteGUI* parent) :
     setCssProperty(ui->chartContainer, "container-chart");
     setCssProperty(ui->pushImgEmptyChart, "img-empty-staking-on");
 
-    ui->btnHowTo->setText(tr("How to get TZT"));
+    ui->btnHowTo->setText(tr("How to get ALTC"));
     setCssBtnSecondary(ui->btnHowTo);
 
 
@@ -234,7 +234,7 @@ void DashboardWidget::loadWalletModel(){
         loadChart();
 #endif
     }
-    // update the display unit, to not use the default ("TZT")
+    // update the display unit, to not use the default ("ALTC")
     updateDisplayUnit();
 }
 
@@ -495,7 +495,7 @@ void DashboardWidget::updateStakeFilter() {
     }
 }
 
-// pair TZT, zTZT
+// pair ALTC, zALTC
 const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy() {
     updateStakeFilter();
     const int size = stakesFilter->rowCount();
@@ -505,7 +505,7 @@ const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy() {
         QModelIndex modelIndex = stakesFilter->index(i, TransactionTableModel::ToAddress);
         qint64 amount = llabs(modelIndex.data(TransactionTableModel::AmountRole).toLongLong());
         QDate date = modelIndex.data(TransactionTableModel::DateRole).toDateTime().date();
-        bool isPiv = modelIndex.data(TransactionTableModel::TypeRole).toInt() != TransactionRecord::StakeZTZT;
+        bool isPiv = modelIndex.data(TransactionTableModel::TypeRole).toInt() != TransactionRecord::StakeZALTC;
 
         int time = 0;
         switch (chartShow) {
@@ -550,7 +550,7 @@ bool DashboardWidget::loadChartData(bool withMonthNames) {
     }
 
     chartData = new ChartData();
-    chartData->amountsByCache = getAmountBy(); // pair TZT, zTZT
+    chartData->amountsByCache = getAmountBy(); // pair ALTC, zALTC
 
     std::pair<int,int> range = getChartRange(chartData->amountsByCache);
     if (range.first == 0 && range.second == 0) {
@@ -631,8 +631,8 @@ void DashboardWidget::onChartRefreshed() {
         axisX->clear();
     }
     // init sets
-    set0 = new QBarSet("TZT");
-    set1 = new QBarSet("zTZT");
+    set0 = new QBarSet("ALTC");
+    set1 = new QBarSet("zALTC");
     set0->setColor(QColor(9,23,133));
     set1->setColor(QColor(20,174,245));
 

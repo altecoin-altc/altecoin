@@ -1,6 +1,6 @@
-qt/tanzanite/qt_libbitcoinqt_a-moc_receivedialog.o: \
- qt/tanzanite/moc_receivedialog.cpp /usr/include/stdc-predef.h \
- qt/tanzanite/receivedialog.h \
+qt/altecoin/qt_libbitcoinqt_a-moc_receivedialog.o: \
+ qt/altecoin/moc_receivedialog.cpp /usr/include/stdc-predef.h \
+ qt/altecoin/receivedialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -259,7 +259,7 @@ qt/tanzanite/qt_libbitcoinqt_a-moc_receivedialog.o: \
 
 /usr/include/stdc-predef.h:
 
-qt/tanzanite/receivedialog.h:
+qt/altecoin/receivedialog.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog:
 

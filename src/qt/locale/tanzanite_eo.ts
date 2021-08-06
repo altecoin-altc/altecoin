@@ -76,11 +76,11 @@
         <translation>Ricevanta adresojn</translation>
     </message>
     <message>
-        <source>These are your Tanzanite addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ĉi tiuj estas viaj Tanzanite adreso por sendi pagojn. Ĉiam kontroku la kvanto kaj la ricevanta antaŭ ol sendi monerojn.</translation>
+        <source>These are your Altecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ĉi tiuj estas viaj Altecoin adreso por sendi pagojn. Ĉiam kontroku la kvanto kaj la ricevanta antaŭ ol sendi monerojn.</translation>
     </message>
     <message>
-        <source>These are your Tanzanite addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Altecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Ĉi tiuj estas vian adreson por ricevi pagojn. Ĝi rekomendas uzi novajn ricenvantan adreson por ĉiu nova transakcio.</translation>
     </message>
     <message>
@@ -196,15 +196,15 @@
         <translation>Konfirmi monerĉifrado</translation>
     </message>
     <message>
-        <source>Tanzanite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TZTs from being stolen by malware infecting your computer.</source>
-        <translation>Tanzanite fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn TZTs de esti ŝtelita per malware infektanta vian komputilon.</translation>
+        <source>Altecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ALTCs from being stolen by malware infecting your computer.</source>
+        <translation>Altecoin fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn ALTCs de esti ŝtelita per malware infektanta vian komputilon.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ĉu vi certas ke vi volas ĉifri vian monujon?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TZT&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ALTC&lt;/b&gt;!</source>
         <translation>Averto: se vi ĉifras vian monujo kaj perdi vian pasfrazon, vi &lt;b&gt;PERDOS VIAN TUTAN MONON&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -286,8 +286,8 @@
         <translation>Tekstetikedo</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tanzanite.conf).</source>
-        <translation>Ĉiuj transakcio ne estos montri. Peor vidi ĉiuj transakcio bezonas agordi txindekso=1 en la agordo dosiero (tanzanite.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (altecoin.conf).</source>
+        <translation>Ĉiuj transakcio ne estos montri. Peor vidi ĉiuj transakcio bezonas agordi txindekso=1 en la agordo dosiero (altecoin.conf).</translation>
     </message>
 </context>
 <context>
@@ -595,8 +595,8 @@
         <translation>Tekstetikedo</translation>
     </message>
     <message>
-        <source>zTZT</source>
-        <translation>zTZT</translation>
+        <source>zALTC</source>
+        <translation>zALTC</translation>
     </message>
     <message>
         <source>Received</source>
@@ -660,8 +660,8 @@
         <translation>Redaktu sendantan adreson</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Tanzanite address.</source>
-        <translation>La enirita "%1" adreso ne estas validan Tanzanite adreson.</translation>
+        <source>The entered address "%1" is not a valid Altecoin address.</source>
+        <translation>La enirita "%1" adreso ne estas validan Altecoin adreson.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -724,16 +724,16 @@
         <translation>versio</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite kerno</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin kerno</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bajto)</translation>
     </message>
     <message>
-        <source>About Tanzanite Core</source>
-        <translation>Pri Tanzanite Kerno</translation>
+        <source>About Altecoin Core</source>
+        <translation>Pri Altecoin Kerno</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -775,24 +775,24 @@
         <translation>Bonvenon</translation>
     </message>
     <message>
-        <source>Welcome to Tanzanite Core.</source>
-        <translation>Bonvenon al la Tanzanite Kerno.</translation>
+        <source>Welcome to Altecoin Core.</source>
+        <translation>Bonvenon al la Altecoin Kerno.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Tanzanite Core will store its data.</source>
-        <translation>Ĉar estas la unuan fojon ke la programo estas lanĉita, vi povas elekti kie Tanzanite kernk storigis sian datumojn. </translation>
+        <source>As this is the first time the program is launched, you can choose where Altecoin Core will store its data.</source>
+        <translation>Ĉar estas la unuan fojon ke la programo estas lanĉita, vi povas elekti kie Altecoin kernk storigis sian datumojn. </translation>
     </message>
     <message>
-        <source>Tanzanite Core will download and store a copy of the Tanzanite block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Tanzanite kerno elŝutos kaj konservi kopion de la Tanzanite blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
+        <source>Altecoin Core will download and store a copy of the Altecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Altecoin kerno elŝutos kaj konservi kopion de la Altecoin blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Uzi defaŭltan dosierujon</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite kerno</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin kerno</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -940,8 +940,8 @@
         <translation>&amp;Monujo</translation>
     </message>
     <message>
-        <source>Automatically open the Tanzanite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aŭtomate malfermi Tanzanite klienton havenon en la enkursigilo. Tio nur laboras kiam via enkursigilo subtenas UPnP kaj estas ebligita.</translation>
+        <source>Automatically open the Altecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aŭtomate malfermi Altecoin klienton havenon en la enkursigilo. Tio nur laboras kiam via enkursigilo subtenas UPnP kaj estas ebligita.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -952,8 +952,8 @@
         <translation>Sperta</translation>
     </message>
     <message>
-        <source>&amp;Start Tanzanite on system login</source>
-        <translation>&amp;Komencu Tanzanite en sistem-ensaluto</translation>
+        <source>&amp;Start Altecoin on system login</source>
+        <translation>&amp;Komencu Altecoin en sistem-ensaluto</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -964,18 +964,18 @@
         <translation>&amp;Reto</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Tanzanite.</source>
-        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci Tanzanite.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Altecoin.</source>
+        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci Altecoin.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tanzanite-project/tanzanite-project-translations</source>
+https://www.transifex.com/altecoin-project/altecoin-project-translations</source>
         <translation>Ĉu mankas lingvon aŭ nekompleta tradukado? Helpu la  tradukcio ĉi tie:
-https://www.transifex.com/tanzanite-project/tanzanite-project-translations</translation>
+https://www.transifex.com/altecoin-project/altecoin-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the Tanzanite network through a SOCKS5 proxy.</source>
-        <translation>Konekti al la Tanzanite reto per SOCKS5 prokurilo.</translation>
+        <source>Connect to the Altecoin network through a SOCKS5 proxy.</source>
+        <translation>Konekti al la Altecoin reto per SOCKS5 prokurilo.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1027,10 +1027,10 @@ https://www.transifex.com/tanzanite-project/tanzanite-project-translations</tran
     </message>
 </context>
 <context>
-    <name>TanzaniteGUI</name>
+    <name>AltecoinGUI</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite kerno</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin kerno</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1057,8 +1057,8 @@ https://www.transifex.com/tanzanite-project/tanzanite-project-translations</tran
         <translation>Eliri</translation>
     </message>
     <message>
-        <source>Tanzanite Core client</source>
-        <translation>Tanzanite Kerno kliento</translation>
+        <source>Altecoin Core client</source>
+        <translation>Altecoin Kerno kliento</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1151,8 +1151,8 @@ Adreso: %4
         <translation>NEKONATA</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite kerno</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin kerno</translation>
     </message>
     </context>
 <context>
@@ -1214,8 +1214,8 @@ Adreso: %4
         <translation>Rekonstrui indekson</translation>
     </message>
     <message>
-        <source>Welcome to the Tanzanite RPC console.</source>
-        <translation>Bonvenon al la Tanzanite RPC konzolo.</translation>
+        <source>Welcome to the Altecoin RPC console.</source>
+        <translation>Bonvenon al la Altecoin RPC konzolo.</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
@@ -1439,8 +1439,8 @@ Adreso: %4
         <translation>Tekstetikedo</translation>
     </message>
     <message>
-        <source>Welcome to the Tanzanite RPC console.</source>
-        <translation>Bonvenon al la Tanzanite RPC konzolo.</translation>
+        <source>Welcome to the Altecoin RPC console.</source>
+        <translation>Bonvenon al la Altecoin RPC konzolo.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
@@ -1636,8 +1636,8 @@ Adreso: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Tanzanite Core is shutting down...</source>
-        <translation>Tanzanite kerno fermanta...</translation>
+        <source>Altecoin Core is shutting down...</source>
+        <translation>Altecoin kerno fermanta...</translation>
     </message>
     </context>
 <context>
@@ -1654,15 +1654,15 @@ Adreso: %4
         <translation>Formo</translation>
     </message>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite kerno</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin kerno</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Tanzanite Core</source>
-        <translation>Tanzanite kerno</translation>
+        <source>Altecoin Core</source>
+        <translation>Altecoin kerno</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
@@ -1673,8 +1673,8 @@ Adreso: %4
         <translation>La Dash kerno programistoj</translation>
     </message>
     <message>
-        <source>The Tanzanite Core developers</source>
-        <translation>La Tanzanite kerno programistoj</translation>
+        <source>The Altecoin Core developers</source>
+        <translation>La Altecoin kerno programistoj</translation>
     </message>
     </context>
 <context>
@@ -1839,7 +1839,7 @@ Adreso: %4
     </message>
     </context>
 <context>
-    <name>tanzanite-core</name>
+    <name>altecoin-core</name>
     <message>
         <source>Connect through SOCKS5 proxy</source>
         <translation>Konekti per SOCKS5 prokurilo</translation>
