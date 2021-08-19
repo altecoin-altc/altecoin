@@ -287,7 +287,7 @@ public:
 
         nPoolMaxTransactions = 3;
         nBudgetCycleBlocks = 43200; //!< Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
-        strSporkPubKey = "043d9874088ab7c5b71bdce9416c1e218e18d615dbed5f8d7a6667a1819d7e86d265125de7766e845728c77f39abbd534505881eaaf3ec8ac300ebd2dc23d803d7";
+        strSporkPubKey = "048cab31db5c9900d673dbb61c81e91c784e845fb271fed2fd726fafbae05ee951da90dc98d805d8709f53783e395493d22b93d337022a5ed0947331a9c39a91e4";
         strObfuscationPoolDummyAddress = "";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
@@ -411,7 +411,7 @@ public:
         nBudgetCycleBlocks = 144; //!< Ten cycles per day on testnet
         strSporkPubKey = "04132dbb939ec44e342f09436918a91e70de97b109959172d55c6642931f87e43e16cd53968271e391bad5c5974d24d5600e3dbb163df968ba36c27a3bb84df0ac";
         strSporkPubKeyOld = "04348C2F50F90267E64FACC65BFDC9D0EB147D090872FB97ABAE92E9A36E6CA60983E28E741F8E7277B11A7479B626AC115BA31463AC48178A5075C5A9319D4A38";
-        strObfuscationPoolDummyAddress = "TCYqWMdvdXBUrLwwQnXVUdf1Xrvd53hc75";
+        strObfuscationPoolDummyAddress = "aaETNExaX6Z48JScyeyVQC98D3pziCYvFy";
         nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
