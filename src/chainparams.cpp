@@ -247,7 +247,7 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1628520687;
         genesis.nBits = 0x1e0fffff;
-        genesis.nNonce = 22045960;
+        genesis.nNonce = 22895133;
 		
 		hashGenesisBlock = uint256("0x01");
 		if (true && genesis.GetHash() != hashGenesisBlock)
@@ -270,9 +270,9 @@ public:
             printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
         }
 
-        //hashGenesisBlock = genesis.GetHash();
-        //assert(hashGenesisBlock == uint256("0x0000066f3f2e3feebc073037fd0956407cdaf83b026674be33efd03e5a1aaa01"));
-        //assert(genesis.hashMerkleRoot == uint256("0x8df99a015230272766dd7bfd68922aed1bd2185d4452a80c76bd7e4a8adf5c17"));
+        hashGenesisBlock = genesis.GetHash();
+        assert(hashGenesisBlock == uint256("0x00000aa9366c60174cbadde4cad95479c5fa4b1cca4f1f4aba1f9dd2f09bc881"));
+        assert(genesis.hashMerkleRoot == uint256("0x2e5f062c5647390ec2d3b81e30b36ee3b78cbdb7b803120da8a371161871bf0a"));
 
 		vFixedSeeds.clear();
 		vSeeds.clear();
