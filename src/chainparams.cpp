@@ -250,8 +250,8 @@ public:
         genesis.nNonce = 22895133;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000aa9366c60174cbadde4cad95479c5fa4b1cca4f1f4aba1f9dd2f09bc881"));
-        assert(genesis.hashMerkleRoot == uint256("0x2e5f062c5647390ec2d3b81e30b36ee3b78cbdb7b803120da8a371161871bf0a"));
+        assert(hashGenesisBlock == uint256("00000aa9366c60174cbadde4cad95479c5fa4b1cca4f1f4aba1f9dd2f09bc881"));
+        assert(genesis.hashMerkleRoot == uint256("2e5f062c5647390ec2d3b81e30b36ee3b78cbdb7b803120da8a371161871bf0a"));
 
 		vFixedSeeds.clear();
 		vSeeds.clear();
