@@ -250,11 +250,11 @@ public:
         genesis.nNonce = 21104764;
 
         hashGenesisBlock = genesis.GetHash();
-		printf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-		printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+		//printf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+		//printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
 		
-        assert(hashGenesisBlock == uint256("00000ecff770b2c9991d5a360f0382b2251bd5c645c8a418f8f4d8211badf109"));
-        assert(genesis.hashMerkleRoot == uint256("d87be81247131bb1a0813cb24851731a0a46d9ae92534067baebba675a800e5b"));
+        assert(hashGenesisBlock == uint256("901fa171c314989ccf6180b019580d947185497dc3f10bf31827d900bcd0dea6"));
+        assert(genesis.hashMerkleRoot == uint256("8df99a015230272766dd7bfd68922aed1bd2185d4452a80c76bd7e4a8adf5c17"));
 
         //vSeeds.push_back(CDNSSeedData("139.180.156.8", "139.180.156.8"));
 		//vSeeds.push_back(CDNSSeedData("178.62.46.38", "178.62.46.38"));
