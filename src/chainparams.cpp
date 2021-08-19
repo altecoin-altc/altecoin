@@ -272,7 +272,7 @@ public:
         //assert(hashGenesisBlock == uint256("00000ecff770b2c9991d5a360f0382b2251bd5c645c8a418f8f4d8211badf109"));
         //assert(genesis.hashMerkleRoot == uint256("d87be81247131bb1a0813cb24851731a0a46d9ae92534067baebba675a800e5b"));
 
-        vSeeds.push_back(CDNSSeedData("139.180.156.8", "139.180.156.8"));
+        //vSeeds.push_back(CDNSSeedData("139.180.156.8", "139.180.156.8"));
 		//vSeeds.push_back(CDNSSeedData("178.62.46.38", "178.62.46.38"));
 		//vSeeds.push_back(CDNSSeedData("188.166.16.5", "188.166.16.5"));
 		//vSeeds.push_back(CDNSSeedData("138.68.111.62", "138.68.111.62"));
