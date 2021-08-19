@@ -11,7 +11,7 @@ Altecoin Core integration/staging repository
 • Maturity: 100 Confirmations 
 • Total Coin Supply: 200000000 
 • Prefix: ALTC adresses start with the capital letter "X"  
-• Ports: 52367 (p2p) / 52366 (rpc)
+• Ports: 7429 (p2p) / 7430 (rpc)
 
 • Explorer http://explorer.altecoin.com
 

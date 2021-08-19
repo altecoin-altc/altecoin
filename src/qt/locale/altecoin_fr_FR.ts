@@ -6125,8 +6125,8 @@ Portefeuille Altecoin Core</translation>
         <translation>Vous devez spécifier une masternodeprivkey dans la configuration. Veuillez consulter la documentation pour obtenir de l'aide.</translation>
     </message>
     <message>
-        <source>(52367 could be used only on mainnet)</source>
-        <translation>(52367 ne peut être utilisé que pour le mainnet)</translation>
+        <source>(7429 could be used only on mainnet)</source>
+        <translation>(7429 ne peut être utilisé que pour le mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -6137,8 +6137,8 @@ Portefeuille Altecoin Core</translation>
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 52367 for mainnet)</source>
-        <translation>(doit être 52367 pour le mainnet)</translation>
+        <source>(must be 7429 for mainnet)</source>
+        <translation>(doit être 7429 pour le mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

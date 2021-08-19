@@ -253,10 +253,10 @@ QT_TRANSLATE_NOOP("altecoin-core", ""
 QT_TRANSLATE_NOOP("altecoin-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("altecoin-core", "(52367 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("altecoin-core", "(7429 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("altecoin-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("altecoin-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("altecoin-core", "(must be 52367 for mainnet)"),
+QT_TRANSLATE_NOOP("altecoin-core", "(must be 7429 for mainnet)"),
 QT_TRANSLATE_NOOP("altecoin-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("altecoin-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("altecoin-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

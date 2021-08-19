@@ -8012,8 +8012,8 @@ Altecoin Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>(52367 could be used only on mainnet)</source>
-        <translation type="unfinished">(52367 could be used only on mainnet)</translation>
+        <source>(7429 could be used only on mainnet)</source>
+        <translation type="unfinished">(7429 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -8027,7 +8027,7 @@ Altecoin Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 52367 for mainnet)</source>
+        <source>(must be 7429 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
