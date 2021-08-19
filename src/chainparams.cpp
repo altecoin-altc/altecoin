@@ -239,19 +239,43 @@ public:
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << std::vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 50 * COIN;
+        txNew.vout[0].nValue = 1 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("04eb59caa1297d0bcdbafcd0ff949e5ccdc58772415dbf48d2014e5aaf725c8c70e4e1a434dd1c91b8002c6d4c21fe5d6dc3c1f3e639c2e28a0595b65f8b701200") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = BlockMerkleRoot(genesis);
         genesis.nVersion = 1;
         genesis.nTime = 1628520687;
-        genesis.nBits = 0x1d00ffff;
+        genesis.nBits = 0x1e0fffff;
         genesis.nNonce = 22045960;
+		
+		hashGenesisBlock = uint256("0x01");
+		if (true && genesis.GetHash() != hashGenesisBlock)
+        {
+            printf("recalculating params for mainnet.\n");
+            std::string old_nonce;
+            std::stringstream oldss;
+            oldss << genesis.nNonce;
+            old_nonce = oldss.str();
+            printf("old mainnet genesis nonce: %s\n", old_nonce.c_str());
+            printf("old mainnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
+            // deliberately empty for loop finds nonce value.
+            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
+            printf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+            std::string new_nonce;
+            std::stringstream newss;
+            newss << genesis.nNonce;
+            new_nonce = newss.str();
+            printf("new mainnet genesis nonce: %s\n", new_nonce.c_str());
+            printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+        }
 
-        hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0000066f3f2e3feebc073037fd0956407cdaf83b026674be33efd03e5a1aaa01"));
-        assert(genesis.hashMerkleRoot == uint256("8df99a015230272766dd7bfd68922aed1bd2185d4452a80c76bd7e4a8adf5c17"));
+        //hashGenesisBlock = genesis.GetHash();
+        //assert(hashGenesisBlock == uint256("0x0000066f3f2e3feebc073037fd0956407cdaf83b026674be33efd03e5a1aaa01"));
+        //assert(genesis.hashMerkleRoot == uint256("0x8df99a015230272766dd7bfd68922aed1bd2185d4452a80c76bd7e4a8adf5c17"));
+
+		vFixedSeeds.clear();
+		vSeeds.clear();
 
         //vSeeds.push_back(CDNSSeedData("139.180.156.8", "139.180.156.8"));
 		//vSeeds.push_back(CDNSSeedData("178.62.46.38", "178.62.46.38"));
