@@ -164,7 +164,7 @@ public:
         pchMessageStart[1] = 0x83;
         pchMessageStart[2] = 0x55;
         pchMessageStart[3] = 0x4e;
-        vAlertPubKey = ParseHex("0429094540a8b623d33ebf63678e7bdb8e26b74deb92abdda5f34449d39b834592661b9f16ca2459373edbc85cb3121f79521adf7590634c5ccd037568e34cde68");
+        vAlertPubKey = ParseHex("0454501d1ac281b571c0016382898fbdd4aff6ed88243bb3299ba1b77bdff3495f9ba7027059e997ed3c04bf52d3f08fbce159ffe3ccbbc2734ddf1a21586041f6");
         nDefaultPort = 7429;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Altecoin starting difficulty is 1 / 2^12
         bnProofOfStakeLimit = ~uint256(0) >> 24;
@@ -234,42 +234,42 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "2027 Contact with the Voyager probes is lost";
+        const char* pszTimestamp = "Lionel Messi and Sergio Ramos are now playing in the same club. Two nemesis become team mates";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << std::vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 50 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("047e8027388f02827d13da9942f0d855ea18d316b515eff420a560c543e344d05ccdf60eae2d0f519e47e5d825c323b3c48140a54e3b85f3560445b20c0bbf525d") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04eb59caa1297d0bcdbafcd0ff949e5ccdc58772415dbf48d2014e5aaf725c8c70e4e1a434dd1c91b8002c6d4c21fe5d6dc3c1f3e639c2e28a0595b65f8b701200") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = BlockMerkleRoot(genesis);
         genesis.nVersion = 1;
-        genesis.nTime = 1608291612;
+        genesis.nTime = 1628520687;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 21104764;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("00000ecff770b2c9991d5a360f0382b2251bd5c645c8a418f8f4d8211badf109"));
-        assert(genesis.hashMerkleRoot == uint256("d87be81247131bb1a0813cb24851731a0a46d9ae92534067baebba675a800e5b"));
+        //assert(hashGenesisBlock == uint256("00000ecff770b2c9991d5a360f0382b2251bd5c645c8a418f8f4d8211badf109"));
+        //assert(genesis.hashMerkleRoot == uint256("d87be81247131bb1a0813cb24851731a0a46d9ae92534067baebba675a800e5b"));
 
-        vSeeds.push_back(CDNSSeedData("207.154.204.86", "207.154.204.86"));
-		vSeeds.push_back(CDNSSeedData("178.62.46.38", "178.62.46.38"));
-		vSeeds.push_back(CDNSSeedData("188.166.16.5", "188.166.16.5"));
-		vSeeds.push_back(CDNSSeedData("138.68.111.62", "138.68.111.62"));
-		vSeeds.push_back(CDNSSeedData("207.154.246.95", "207.154.246.95"));
-		vSeeds.push_back(CDNSSeedData("167.99.129.4", "167.99.129.4"));
-		vSeeds.push_back(CDNSSeedData("165.22.81.124", "165.22.81.124"));
-		vSeeds.push_back(CDNSSeedData("46.101.28.223", "46.101.28.223"));
+        vSeeds.push_back(CDNSSeedData("139.180.156.8", "139.180.156.8"));
+		//vSeeds.push_back(CDNSSeedData("178.62.46.38", "178.62.46.38"));
+		//vSeeds.push_back(CDNSSeedData("188.166.16.5", "188.166.16.5"));
+		//vSeeds.push_back(CDNSSeedData("138.68.111.62", "138.68.111.62"));
+		//vSeeds.push_back(CDNSSeedData("207.154.246.95", "207.154.246.95"));
+		//vSeeds.push_back(CDNSSeedData("167.99.129.4", "167.99.129.4"));
+		//vSeeds.push_back(CDNSSeedData("165.22.81.124", "165.22.81.124"));
+		//vSeeds.push_back(CDNSSeedData("46.101.28.223", "46.101.28.223"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 75);      // starting with 'X'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 73);
-        base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 78);     // starting with 'Y'
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 116);
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);      // starting with 'X'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 81);
+        base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 85);     // starting with 'Y'
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 5);
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0xb5)(0xea)(0xf7)(0x5c).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0xfc)(0xad)(0xd5)(0xb3).convert_to_container<std::vector<unsigned char> >();
         // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
-        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x97)(0x30)(0xf7)(0x0b).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
@@ -285,7 +285,6 @@ public:
         nPoolMaxTransactions = 3;
         nBudgetCycleBlocks = 43200; //!< Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
         strSporkPubKey = "043d9874088ab7c5b71bdce9416c1e218e18d615dbed5f8d7a6667a1819d7e86d265125de7766e845728c77f39abbd534505881eaaf3ec8ac300ebd2dc23d803d7";
-        strSporkPubKeyOld = "04B433E6598390C992F4F022F20D3B4CBBE691652EE7C48243B81701CBDB7CC7D7BF0EE09E154E6FCBF2043D65AF4E9E97B89B5DBAF830D83B9B7F469A6C45A717";
         strObfuscationPoolDummyAddress = "";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
@@ -331,7 +330,7 @@ public:
         pchMessageStart[1] = 0xb6;
         pchMessageStart[2] = 0x61;
         pchMessageStart[3] = 0xf3;
-        vAlertPubKey = ParseHex("04cfcfc7fc9d8609ca3d8c5b488eaddb4b72d296e9915d1c8a373d0b4738f7e0f1f6c21410d8f24e1fe007d4fb5553c160bb27aca0247c9ea58bba48831051576c");
+        vAlertPubKey = ParseHex("04c40fd4fddbc758797b0a2f713b15d65761cee77fc8518389494aa3db36d010855a3ac021154e8e91e412579962c03f720ae2eb774f613020ecb428f8e1165987");
         nDefaultPort = 8429;
         nEnforceBlockUpgradeMajority = 4320; // 75%
         nRejectBlockOutdatedMajority = 5472; // 95%
