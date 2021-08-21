@@ -2004,22 +2004,22 @@ int64_t GetBlockValue(int nHeight)
     }
 
     int64_t nSubsidy = 0;
-    if (nHeight > 1425600)	return 2     * COIN;
-    if (nHeight > 1296000)	return 2.14  * COIN;
-    if (nHeight > 1166400)	return 2.68  * COIN;
-    if (nHeight > 1036800)	return 3.35  * COIN;
-    if (nHeight > 907200)	return 4.19  * COIN;
-    if (nHeight > 777600)	return 5.24  * COIN;
-    if (nHeight > 648000)	return 6.55  * COIN;
-    if (nHeight > 518400)	return 8.19  * COIN;
-    if (nHeight > 388800)	return 10.24 * COIN;
-    if (nHeight > 259200)	return 12.8  * COIN;
-    if (nHeight > 129600)	return 16    * COIN;
-    if (nHeight > 2000)		return 20    * COIN;
-    if (nHeight > 1)		return 0.1   * COIN;
-    if (nHeight !=1)		return 1     * COIN;
+    if (nHeight > 1425600)	return 2 * COIN;
+    if (nHeight > 1296000)	return 2.5 * COIN;
+    if (nHeight > 1166400)	return 3 * COIN;
+    if (nHeight > 1036800)	return 3.5 * COIN;
+    if (nHeight > 907200)	return 4 * COIN;
+    if (nHeight > 777600)	return 5 * COIN;
+    if (nHeight > 648000)	return 6 * COIN;
+    if (nHeight > 518400)	return 8 * COIN;
+    if (nHeight > 388800)	return 10 * COIN;
+    if (nHeight > 259200)	return 13 * COIN;
+    if (nHeight > 129600)	return 16 * COIN;
+    if (nHeight > 2000)		return 20 * COIN;
+    if (nHeight > 1)		return 0.1 * COIN;
+    if (nHeight !=1)		return 1 * COIN;
     // Premine
-    return 210000 * COIN; // Premine 1%
+    return 210000 * COIN; // Premine 1% from Maximum Supply
 
     // Check if we reached the coin max supply.
     int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
