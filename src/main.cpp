@@ -2004,41 +2004,22 @@ int64_t GetBlockValue(int nHeight)
     }
 
     int64_t nSubsidy = 0;
-    if (nHeight == 0) {
-        nSubsidy = 0 * COIN;
-    } else if (nHeight == 1 ) {
-        nSubsidy = 1000000 * COIN;
-    } else if (nHeight > 1 && nHeight <= 500) {
-        nSubsidy = 5 * COIN;
-    } else if (nHeight > 500 && nHeight <= 1000) {
-        nSubsidy = 0.5 * COIN;
-    } else if (nHeight > 1000 && nHeight <= 10000) {
-        nSubsidy = 1 * COIN;
-    } else if (nHeight > 10000 && nHeight <= 20000) {
-        nSubsidy = 1.5 * COIN;
-    } else if (nHeight > 20000 && nHeight <= 30000) {
-        nSubsidy = 5 * COIN;
-    } else if (nHeight > 30000 && nHeight <= 50000) {
-        nSubsidy = 10 * COIN;
-    } else if (nHeight > 50000 && nHeight <= 60000) {
-        nSubsidy = 12.5 * COIN;
-    } else if (nHeight > 60000 && nHeight <= 90000) {
-        nSubsidy = 22.5 * COIN;
-    } else if (nHeight > 90000 && nHeight <= 120000) {
-        nSubsidy = 40 * COIN;
-    } else if (nHeight > 120000 && nHeight <= 150000) {
-        nSubsidy = 75 * COIN;
-    } else if (nHeight > 150000 && nHeight <= 200000) {
-        nSubsidy = 150 * COIN;
-    } else if (nHeight > 200000 && nHeight <= 250000) {
-        nSubsidy = 200 * COIN;
-    } else if (nHeight > 250000 && nHeight <= 300000) {
-        nSubsidy = 250 * COIN;
-    } else if (nHeight > 300000 && nHeight <= 400000) {
-        nSubsidy = 300 * COIN;  
-    } else {
-        nSubsidy = 350 * COIN;
-    }
+    if (nHeight > 1425600)	return 2     * COIN;
+    if (nHeight > 1296000)	return 2.14  * COIN;
+    if (nHeight > 1166400)	return 2.68  * COIN;
+    if (nHeight > 1036800)	return 3.35  * COIN;
+    if (nHeight > 907200)	return 4.19  * COIN;
+    if (nHeight > 777600)	return 5.24  * COIN;
+    if (nHeight > 648000)	return 6.55  * COIN;
+    if (nHeight > 518400)	return 8.19  * COIN;
+    if (nHeight > 388800)	return 10.24 * COIN;
+    if (nHeight > 259200)	return 12.8  * COIN;
+    if (nHeight > 129600)	return 16    * COIN;
+    if (nHeight > 2000)		return 20    * COIN;
+    if (nHeight > 1)		return 0.1   * COIN;
+    if (nHeight !=1)		return 1     * COIN;
+    // Premine
+    return 210000 * COIN; // Premine 1%
 
     // Check if we reached the coin max supply.
     int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
@@ -2054,40 +2035,7 @@ int64_t GetBlockValue(int nHeight)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZALTCStake)
 {
-    int64_t ret = 0;
-        
-    if (nHeight <= 500) {
-        ret = 0;
-    } else if (nHeight > 500 && nHeight <= 1000) {
-        ret = 0.44999 * COIN;
-    } else if (nHeight > 1000 && nHeight <= 10000) {
-        ret = 0.89999 * COIN;
-    } else if (nHeight > 10000 && nHeight <= 20000) {
-        ret = 1.34999 * COIN;
-    } else if (nHeight > 20000 && nHeight <= 30000) {
-        ret = 4.49999 * COIN;
-    } else if (nHeight > 30000 && nHeight <= 50000) {
-        ret = 8.99999 * COIN;
-    } else if (nHeight > 50000 && nHeight <= 60000) {
-        ret = 11.24999 * COIN;
-    } else if (nHeight > 60000 && nHeight <= 90000) {
-        ret = 20.24999 * COIN;
-    } else if (nHeight > 90000 && nHeight <= 120000) {
-        ret = 35.99999 * COIN;
-    } else if (nHeight > 120000 && nHeight <= 150000) {
-        ret = 71.24999 * COIN;
-    } else if (nHeight > 150000 && nHeight <= 200000) {
-        ret = 142.49999 * COIN;
-    } else if (nHeight > 200000 && nHeight <= 250000) {
-        ret = 189.99999 * COIN;
-    } else if (nHeight > 250000 && nHeight <= 300000) {
-        ret = 237.49999 * COIN;
-    } else if (nHeight > 300000 && nHeight <= 400000) {
-        ret = 284.99999 * COIN;  
-    } else {
-        ret = 332.49999 * COIN;
-    }
-    return ret;
+    return GetBlockValue(nHeight) * 0.80;
 }
 
 bool IsInitialBlockDownload()
