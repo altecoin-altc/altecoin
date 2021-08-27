@@ -146,7 +146,7 @@ Altecoin Core integration/staging repository
   <td class=xl6817252 align=right>0.5 ALTC</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>1425600 - MAX</td>
+  <td height=21 class=xl6417252 style='height:15.75pt'>1425601 - MAX</td>
   <td class=xl6517252>5000</td>
   <td class=xl6617252>2</td>
   <td class=xl6617252>80%</td>
