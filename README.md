@@ -43,8 +43,8 @@ Altecoin Core integration/staging repository
   <td class=xl6517252>0.1</td>
   <td class=xl6617252>80%</td>
   <td class=xl6617252>20%</td>
-  <td class=xl6717252>0.08 ALTC</td>
-  <td class=xl6553517252>0.02 ALTC</td>
+  <td class=xl6717252 align=right>0.08 ALTC</td>
+  <td class=xl6553517252 align=right>0.02 ALTC</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
   <td height=21 class=xl6417252 style='height:15.75pt'>2001-129600</td>
