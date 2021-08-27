@@ -256,18 +256,13 @@ public:
 		vFixedSeeds.clear();
 		vSeeds.clear();
 
-        vSeeds.push_back(CDNSSeedData("139.180.156.8", "139.180.156.8"));
-		//vSeeds.push_back(CDNSSeedData("178.62.46.38", "178.62.46.38"));
-		//vSeeds.push_back(CDNSSeedData("188.166.16.5", "188.166.16.5"));
-		//vSeeds.push_back(CDNSSeedData("138.68.111.62", "138.68.111.62"));
-		//vSeeds.push_back(CDNSSeedData("207.154.246.95", "207.154.246.95"));
-		//vSeeds.push_back(CDNSSeedData("167.99.129.4", "167.99.129.4"));
-		//vSeeds.push_back(CDNSSeedData("165.22.81.124", "165.22.81.124"));
-		//vSeeds.push_back(CDNSSeedData("46.101.28.223", "46.101.28.223"));
+        vSeeds.push_back(CDNSSeedData("seed1.atlecoin.cc", "ns1.altecoin.cc"));
+		vSeeds.push_back(CDNSSeedData("seed2.atlecoin.cc", "ns2.altecoin.cc"));
+		vSeeds.push_back(CDNSSeedData("seed3.atlecoin.cc", "ns3.altecoin.cc"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);      // starting with 'X'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 81);
-        base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 85);     // starting with 'Y'
+        base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 85);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 5);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0xb5)(0xea)(0xf7)(0x5c).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0xfc)(0xad)(0xd5)(0xb3).convert_to_container<std::vector<unsigned char> >();
