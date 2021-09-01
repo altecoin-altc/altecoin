@@ -24,18 +24,18 @@ URL:		https://altecoin.org/
 Source0:	https://altecoin.org/bin/altecoin-core-%{version}/altecoin-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
-Source10:	https://raw.githubusercontent.com/altecoin-project/altecoin/v%{version}/contrib/debian/examples/altecoin.conf
+Source10:	https://raw.githubusercontent.com/altecoin-altc/altecoin/v%{version}/contrib/debian/examples/altecoin.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/altecoin-project/altecoin/v%{version}/doc/man/altecoind.1
-Source21:	https://raw.githubusercontent.com/altecoin-project/altecoin/v%{version}/doc/man/altecoin-cli.1
-Source22:	https://raw.githubusercontent.com/altecoin-project/altecoin/v%{version}/doc/man/altecoin-qt.1
+Source20:	https://raw.githubusercontent.com/altecoin-altc/altecoin/v%{version}/doc/man/altecoind.1
+Source21:	https://raw.githubusercontent.com/altecoin-altc/altecoin/v%{version}/doc/man/altecoin-cli.1
+Source22:	https://raw.githubusercontent.com/altecoin-altc/altecoin/v%{version}/doc/man/altecoin-qt.1
 
 #selinux
-Source30:	https://raw.githubusercontent.com/altecoin-project/altecoin/v%{version}/contrib/rpm/altecoin.te
+Source30:	https://raw.githubusercontent.com/altecoin-altc/altecoin/v%{version}/contrib/rpm/altecoin.te
 # Source31 - what about altecoin-tx and bench_altecoin ???
-Source31:	https://raw.githubusercontent.com/altecoin-project/altecoin/v%{version}/contrib/rpm/altecoin.fc
-Source32:	https://raw.githubusercontent.com/altecoin-project/altecoin/v%{version}/contrib/rpm/altecoin.if
+Source31:	https://raw.githubusercontent.com/altecoin-altc/altecoin/v%{version}/contrib/rpm/altecoin.fc
+Source32:	https://raw.githubusercontent.com/altecoin-altc/altecoin/v%{version}/contrib/rpm/altecoin.if
 
 Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg
 

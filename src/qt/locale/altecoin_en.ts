@@ -2648,7 +2648,7 @@ Are you sure?</source>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/altecoin-project/altecoin-project-translations</source>
+https://www.transifex.com/altecoin-altc/altecoin-altc-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -1,8 +1,8 @@
-Altecoin Core version *3.1.1* is now available from:  <https://github.com/altecoin-project/altecoin/releases>
+Altecoin Core version *3.1.1* is now available from:  <https://github.com/altecoin-altc/altecoin/releases>
 
 This is a new minor version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/altecoin-project/altecoin/issues>
+Please report bugs using the issue tracker at github: <https://github.com/altecoin-altc/altecoin/issues>
 
 Non-Mandatory Update
 ==============
@@ -151,4 +151,4 @@ Thanks to everyone who directly contributed to this release:
  - presstab
 
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/altecoin-project-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/altecoin-altc-translations/).

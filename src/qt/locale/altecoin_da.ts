@@ -1434,9 +1434,9 @@ Den vil starte automatisk så snart at pungen har nok bekræftelser på nogen af
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/altecoin-project/altecoin-project-translations</source>
+https://www.transifex.com/altecoin-altc/altecoin-altc-translations</source>
         <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
-https://www.transifex.com/altecoin-project/altecoin-project-translations</translation>
+https://www.transifex.com/altecoin-altc/altecoin-altc-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>

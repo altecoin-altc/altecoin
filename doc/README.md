@@ -26,7 +26,7 @@ Drag Altecoin-Qt to your applications folder, and then run Altecoin-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Altecoin Wiki](https://github.com/Altecoin-Project/Altecoin/wiki)
+* See the documentation at the [Altecoin Wiki](https://github.com/altecoin-altc/altecoin/wiki)
 for help and more information.
 * Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Altecoin Forum](http://forum.altecoin.org/).
 * Join our Discord server [Discord Server](https://discord.altecoin.org)

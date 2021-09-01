@@ -1,8 +1,8 @@
-Altecoin Core version *3.1.0.1* is now available from:  <https://github.com/altecoin-project/altecoin/releases>
+Altecoin Core version *3.1.0.1* is now available from:  <https://github.com/altecoin-altc/altecoin/releases>
 
-This is a new bugfix release, specifically addressing a bug with windows OS masternode control wallets. Users upgrading to this version are encouraged to also read the detailed release notes for the previous [3.1.0](https://github.com/Altecoin-Project/Altecoin/releases/tag/v3.1.0) release as information will not be duplicated here.
+This is a new bugfix release, specifically addressing a bug with windows OS masternode control wallets. Users upgrading to this version are encouraged to also read the detailed release notes for the previous [3.1.0](https://github.com/altecoin-altc/Altecoin/releases/tag/v3.1.0) release as information will not be duplicated here.
 
-Please report bugs using the issue tracker at github: <https://github.com/altecoin-project/altecoin/issues>
+Please report bugs using the issue tracker at github: <https://github.com/altecoin-altc/altecoin/issues>
 
 How to Upgrade
 ==============
@@ -51,4 +51,4 @@ Detailed release notes follow. This overview includes changes that affect behavi
 Thanks to everyone who directly contributed to this release:
 - Fuzzbawls
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/altecoin-project-translations/), the QA team during Testing and the Node hosts supporting our Testnet.
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/altecoin-altc-translations/), the QA team during Testing and the Node hosts supporting our Testnet.

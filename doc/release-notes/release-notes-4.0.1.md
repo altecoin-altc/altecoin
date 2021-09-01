@@ -1,8 +1,8 @@
-Altecoin Core version *v4.0.1* is now available from:  <https://github.com/altecoin-project/altecoin/releases>
+Altecoin Core version *v4.0.1* is now available from:  <https://github.com/altecoin-altc/altecoin/releases>
 
 This is a new revision version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/altecoin-project/altecoin/issues>
+Please report bugs using the issue tracker at github: <https://github.com/altecoin-altc/altecoin/issues>
 
 
 Recommended Update
@@ -85,7 +85,7 @@ Some instances of the term "account" are rather loose, and possibly technically 
 Functional Test Suite Overhaul
 ------------------------------
 
-Our Regression/Functional testing suite has undergone a substantial overhaul, particularly in regards to the cached chain that can be used to speed up testing. Full details can be found in the description of [#1218](https://github.com/Altecoin-Project/Altecoin/pull/1218).
+Our Regression/Functional testing suite has undergone a substantial overhaul, particularly in regards to the cached chain that can be used to speed up testing. Full details can be found in the description of [#1218](https://github.com/altecoin-altc/Altecoin/pull/1218).
 
 Further Zerocoin Code Cleanup
 ------------------------------
@@ -175,4 +175,4 @@ Thanks to everyone who directly contributed to this release:
 - furszy
 - random-zebra
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/altecoin-project-translations/), the QA team during Testing and the Node hosts supporting our Testnet.
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/altecoin-altc-translations/), the QA team during Testing and the Node hosts supporting our Testnet.

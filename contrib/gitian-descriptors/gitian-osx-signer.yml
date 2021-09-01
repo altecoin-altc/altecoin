@@ -8,7 +8,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/altecoin-project/altecoin-detached-sigs.git"
+- "url": "https://github.com/altecoin-altc/altecoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "altecoin-osx-unsigned.tar.gz"

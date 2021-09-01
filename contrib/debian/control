@@ -28,9 +28,9 @@ Build-Depends: debhelper,
  libzmq3-dev,
  dh-systemd
 Standards-Version: 3.9.2
-Homepage: http://www.altecoin.org
-Vcs-Git: git://github.com/Altecoin-Project/Altecoin.git
-Vcs-Browser: http://github.com/Altecoin-Project/Altecoin
+Homepage: http://www.altecoin.cc
+Vcs-Git: git://github.com/altecoin-altc/altecoin.git
+Vcs-Browser: https://github.com/altecoin-altc/altecoin
 
 Package: altecoind
 Architecture: any

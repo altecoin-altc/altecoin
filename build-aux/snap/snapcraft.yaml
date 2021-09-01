@@ -68,7 +68,7 @@ apps:
     plugs: [home]
 parts:
   altecoin-core:
-    source: https://github.com/Altecoin-Project/Altecoin
+    source: https://github.com/altecoin-altc/altecoin
     source-type: git
     source-tag: master
     plugin: nil

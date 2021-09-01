@@ -1057,9 +1057,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/altecoin-project/altecoin-project-translations</source>
+https://www.transifex.com/altecoin-altc/altecoin-altc-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/altecoin-project/altecoin-project-translations</translation>
+https://www.transifex.com/altecoin-altc/altecoin-altc-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
