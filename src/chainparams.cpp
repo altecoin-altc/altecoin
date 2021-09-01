@@ -259,6 +259,7 @@ public:
         vSeeds.push_back(CDNSSeedData("seed1.atlecoin.cc", "ns1.altecoin.cc"));
 		vSeeds.push_back(CDNSSeedData("seed2.atlecoin.cc", "ns2.altecoin.cc"));
 		vSeeds.push_back(CDNSSeedData("seed3.atlecoin.cc", "ns3.altecoin.cc"));
+		vSeeds.push_back(CDNSSeedData("seed4.atlecoin.cc", "ns4.altecoin.cc"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 81);
