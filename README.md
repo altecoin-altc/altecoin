@@ -47,7 +47,7 @@ Altecoin Core integration/staging repository
   <td class=xl6553517252 align=right>0.02 ALTC</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>2001-129600</td>
+  <td height=21 class=xl6417252 style='height:15.75pt'>2001-98000</td>
   <td class=xl6517252>5000</td>
   <td class=xl6617252>20</td>
   <td class=xl6617252>80%</td>
@@ -56,79 +56,7 @@ Altecoin Core integration/staging repository
   <td class=xl6817252 align=right>4 ALTC</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>129601-259200</td>
-  <td class=xl6517252>5000</td>
-  <td class=xl6617252>16</td>
-  <td class=xl6617252>80%</td>
-  <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>12.8 ALTC</td>
-  <td class=xl6817252 align=right>3.2 ALTC</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>259201-388800</td>
-  <td class=xl6517252>5000</td>
-  <td class=xl6617252>13</td>
-  <td class=xl6617252>80%</td>
-  <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>10.4 ALTC</td>
-  <td class=xl6817252 align=right>2.6 ALTC</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>388801-518400</td>
-  <td class=xl6517252>5000</td>
-  <td class=xl6617252>10</td>
-  <td class=xl6617252>80%</td>
-  <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>8 ALTC</td>
-  <td class=xl6817252 align=right>2 ALTC</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>518401-648000</td>
-  <td class=xl6517252>5000</td>
-  <td class=xl6617252>8</td>
-  <td class=xl6617252>80%</td>
-  <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>6.4 ALTC</td>
-  <td class=xl6817252 align=right>1.6 ALTC</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>648001-777600</td>
-  <td class=xl6517252>5000</td>
-  <td class=xl6617252>6</td>
-  <td class=xl6617252>80%</td>
-  <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>4.8 ALTC</td>
-  <td class=xl6817252 align=right>1.2 ALTC</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>777601-907200</td>
-  <td class=xl6517252>5000</td>
-  <td class=xl6617252>5</td>
-  <td class=xl6617252>80%</td>
-  <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>4 ALTC</td>
-  <td class=xl6817252 align=right>1 ALTC</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-   <td height=21 class=xl6417252 style='height:15.75pt'>907201-1036800</td>
-   <td class=xl6517252>5000</td>
-   <td class=xl6617252>4</td>
-   <td class=xl6617252>80%</td>
-   <td class=xl6617252>20%</td>
-   <td class=xl6717252 align=right>3.2 ALTC</td>
-   <td class=xl6817252 align=right>0.8 ALTC</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>1036801-1166400</td>
-  <td class=xl6517252>5000</td>
-  <td class=xl6617252>3.5</td>
-  <td class=xl6617252>80%</td>
-  <td class=xl6617252>20%</td>
-  <td class=xl6717252 align=right>2.8 ALTC</td>
-  <td class=xl6817252 align=right>0.7 ALTC</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>1166401-1296000</td>
+  <td height=21 class=xl6417252 style='height:15.75pt'>98001-141200</td>
   <td class=xl6517252>5000</td>
   <td class=xl6617252>3</td>
   <td class=xl6617252>80%</td>
@@ -137,7 +65,7 @@ Altecoin Core integration/staging repository
   <td class=xl6817252 align=right>0.6 ALTC</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>1296001-1425600</td>
+  <td height=21 class=xl6417252 style='height:15.75pt'>141201-227600</td>
   <td class=xl6517252>5000</td>
   <td class=xl6617252>2.5</td>
   <td class=xl6617252>80%</td>
@@ -146,12 +74,30 @@ Altecoin Core integration/staging repository
   <td class=xl6817252 align=right>0.5 ALTC</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>1425601 - MAX</td>
+  <td height=21 class=xl6417252 style='height:15.75pt'>227601-357200</td>
   <td class=xl6517252>5000</td>
   <td class=xl6617252>2</td>
   <td class=xl6617252>80%</td>
   <td class=xl6617252>20%</td>
   <td class=xl6717252 align=right>1.6 ALTC</td>
   <td class=xl6817252 align=right>0.4 ALTC</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>357201-530000</td>
+  <td class=xl6517252>5000</td>
+  <td class=xl6617252>1.5</td>
+  <td class=xl6617252>80%</td>
+  <td class=xl6617252>20%</td>
+  <td class=xl6717252 align=right>1.2 ALTC</td>
+  <td class=xl6817252 align=right>0.3 ALTC</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>530001 - MAX</td>
+  <td class=xl6517252>5000</td>
+  <td class=xl6617252>1</td>
+  <td class=xl6617252>80%</td>
+  <td class=xl6617252>20%</td>
+  <td class=xl6717252 align=right>0.8 ALTC</td>
+  <td class=xl6817252 align=right>0.2 ALTC</td>
  </tr>
  </table>
