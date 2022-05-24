@@ -1998,33 +1998,35 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 int64_t GetBlockValue(int nHeight)
 {
-    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        if (nHeight < 200 && nHeight > 0)
-            return 250000 * COIN;
-    }
 
-    int64_t nSubsidy = 0;
-    if (nHeight > 530000)	return 1 * COIN;
-    if (nHeight > 357200)	return 1.5 * COIN;
-    if (nHeight > 227600)	return 2 * COIN;
-    if (nHeight > 141200)	return 2.5 * COIN;
-    if (nHeight > 98000)	return 3 * COIN;
-    if (nHeight > 2000)		return 20 * COIN;
-    if (nHeight > 1)		return 0.1 * COIN;
-    if (nHeight !=1)		return 1 * COIN;
-    // Premine
-    return 210000 * COIN; // Premine 1% from Maximum Supply
-
-    // Check if we reached the coin max supply.
-    int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-
-    if (nMoneySupply + nSubsidy >= Params().MaxMoneyOut())
-        nSubsidy = Params().MaxMoneyOut() - nMoneySupply;
-
-    if (nMoneySupply >= Params().MaxMoneyOut())
-        nSubsidy = 0;
-
-    return nSubsidy;
+    if (nHeight > 1900000)   return 100 * COIN;
+    if (nHeight > 1600000)   return 200 * COIN;
+    if (nHeight > 1500000)   return 400 * COIN;
+    if (nHeight > 1400000)   return 600 * COIN;
+    if (nHeight > 1300000)   return 800 * COIN;
+    if (nHeight > 1200000)   return 1000 * COIN;
+    if (nHeight > 1100000)   return 1000 * COIN;
+    if (nHeight > 1000000)   return 800 * COIN;
+    if (nHeight >  950000)   return 700 * COIN;
+    if (nHeight >  900000)   return 650 * COIN;
+    if (nHeight >  850000)   return 600 * COIN;
+    if (nHeight >  800000)   return 500 * COIN;
+    if (nHeight >  750000)   return 200 * COIN;
+    if (nHeight >  700000)   return 175 * COIN;
+    if (nHeight >  650000)   return 150 * COIN;
+    if (nHeight >  600000)   return 80 * COIN;
+    if (nHeight >  550000)   return 60 * COIN;
+    if (nHeight >  500000)   return 40 * COIN;
+    if (nHeight >  400000)   return 15 * COIN;
+    if (nHeight >  357200)	 return 1.5 * COIN;
+    if (nHeight >  227600)	 return 2 * COIN;
+    if (nHeight >  141200)	 return 2.5 * COIN;
+    if (nHeight >   98000)	 return 3 * COIN;
+    if (nHeight >    2000)	 return 20 * COIN;
+    if (nHeight >       1)	 return 0.1 * COIN;
+    if (nHeight ==      1)	 return 210000 * COIN;
+    
+    return 100 * COIN;
 }
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZALTCStake)
