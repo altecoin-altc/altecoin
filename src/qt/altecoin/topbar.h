@@ -1,4 +1,6 @@
-// Copyright (c) 2019-2020 The Altecoin developers
+// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2021-2022 The DECENOMY Core Developers
+// Copyright (c) 2022 The Altecoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +14,7 @@
 #include <QTimer>
 #include <QProgressBar>
 
-class AltecoinGUI;
+class ALTECOINGUI;
 class WalletModel;
 class ClientModel;
 
@@ -25,7 +27,7 @@ class TopBar : public PWidget
     Q_OBJECT
 
 public:
-    explicit TopBar(AltecoinGUI* _mainWindow, QWidget *parent = nullptr);
+    explicit TopBar(ALTECOINGUI* _mainWindow, QWidget *parent = nullptr);
     ~TopBar();
 
     void showTop();
@@ -34,36 +36,41 @@ public:
     void loadWalletModel() override;
     void loadClientModel() override;
 
+    void openPassPhraseDialog(AskPassphraseDialog::Mode mode, AskPassphraseDialog::Context ctx);
     void encryptWallet();
-public slots:
-    void updateBalances(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance,
-                        const CAmount& zerocoinBalance, const CAmount& unconfirmedZerocoinBalance, const CAmount& immatureZerocoinBalance,
-                        const CAmount& watchOnlyBalance, const CAmount& watchUnconfBalance, const CAmount& watchImmatureBalance,
-                        const CAmount& delegatedBalance, const CAmount& coldStakedBalance);
+    void showUpgradeDialog();
+
+    void run(int type) override;
+    void onError(QString error, int type) override;
+    void unlockWallet();
+
+public Q_SLOTS:
+    void updateBalances(const interfaces::WalletBalances& newBalance);
     void updateDisplayUnit();
 
     void setNumConnections(int count);
     void setNumBlocks(int count);
-    void updateAutoMintStatus();
     void setStakingStatusActive(bool fActive);
     void updateStakingStatus();
+    void updateHDState(const bool& upgraded, const QString& upgradeError);
 
-signals:
+Q_SIGNALS:
     void themeChanged(bool isLight);
     void walletSynced(bool isSync);
-    void onShowHideColdStakingChanged(bool show);
 
 protected:
     void resizeEvent(QResizeEvent *event) override;
-private slots:
+private Q_SLOTS:
     void onBtnReceiveClicked();
     void onThemeClicked();
     void onBtnLockClicked();
     void lockDropdownMouseLeave();
     void lockDropdownClicked(const StateClicked&);
     void refreshStatus();
+    void refreshMasternodeStatus();
     void openLockUnlock();
-    void onColdStakingClicked();
+    void onBtnConfClicked();
+    void onBtnMasternodesClicked();
     void refreshProgressBarSize();
     void expandSync();
 private:
@@ -74,6 +81,8 @@ private:
     int nDisplayUnit = -1;
     QTimer* timerStakingIcon = nullptr;
     bool isInitializing = true;
+
+    void updateTorIcon();
 };
 
 #endif // TOPBAR_H
