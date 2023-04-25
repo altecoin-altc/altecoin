@@ -1999,6 +1999,7 @@ double ConvertBitsToDouble(unsigned int nBits)
 int64_t GetBlockValue(int nHeight)
 {
 
+    /*
     if (nHeight > 1900000)   return 100 * COIN;
     if (nHeight > 1600000)   return 200 * COIN;
     if (nHeight > 1500000)   return 400 * COIN;
@@ -2009,6 +2010,9 @@ int64_t GetBlockValue(int nHeight)
     if (nHeight > 1000000)   return 800 * COIN;
     if (nHeight >  950000)   return 700 * COIN;
     if (nHeight >  900000)   return 650 * COIN;
+    */
+
+    if (nHeight >  860000)   return 0.1 * COIN;
     if (nHeight >  850000)   return 600 * COIN;
     if (nHeight >  800000)   return 500 * COIN;
     if (nHeight >  750000)   return 200 * COIN;
@@ -2026,7 +2030,7 @@ int64_t GetBlockValue(int nHeight)
     if (nHeight >       1)	 return 0.1 * COIN;
     if (nHeight ==      1)	 return 210000 * COIN;
     
-    return 100 * COIN;
+    return 0.1 * COIN;
 }
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZALTCStake)
